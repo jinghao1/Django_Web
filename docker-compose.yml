@@ -1,34 +1,21 @@
 version: "3"
 
-volumes:
-  mysite.mysqldb.volume:
-    name: mysite.mysqldb.volume
-  mysite.postgresdb.volume:
-    name: mysite.postgresdb.volume
+#volumes:
+#  mysite.mysqldb.volume:
+#    name: mysite.mysqldb.volume
+#  mysite.postgresdb.volume:
+#    name: mysite.postgresdb.volume
 
 services:
-  django_mysqldb:
-    image: mysql:5.7
-    platform: linux/x86_64
-    ports:
-      - 33063:3306
-    environment:
-      MYSQL_ROOT_PASSWORD: mysitepass
-      TZ: 'Asia/Shanghai'
-    volumes:
-      - ".:/app:rw"
-      - "mysite.mysqldb.volume:/var/lib/mysql"
-      - "./mysql:/docker-entrypoint-initdb.d/"
-    networks:
-      - DjangoWeb
-  web:
+
+  django_web:
     # the application's web service (container) will use an image based on our Dockerfile
     build: .
     # map the internal port 80 to port 8000 on the host
     ports:
-      - "8100:80"
-      - "8200:8200"
-      - "8300:8300"
+      - "8010:80"
+      - "8020:8200"
+      - "8030:8300"
     # map the host directory to app (which allows us to see and edit files inside the container)
     volumes:
       - ".:/app:rw"
@@ -37,12 +24,24 @@ services:
     command: python manage.py runserver 0.0.0.0:80
     # the URL 'postgres' or 'mysql' will point to the application's db service
     networks:
-      - DjangoWeb
+      - djangoweb2
     depends_on:
-      - django_mysqldb
+      - django_web_mysqldb2
     env_file: .env-local
 
-
-
+  django_web_mysqldb2:
+    image: mysql:5.7
+    platform: linux/x86_64
+    ports:
+      - '33065:3306'
+    environment:
+      MYSQL_ROOT_PASSWORD: mysitepass
+      TZ: 'Asia/Shanghai'
+    volumes:
+      - ".:/app:rw"
+#      - "mysite.mysqldb.volume:/var/lib/mysql"
+      - "./mysql:/docker-entrypoint-initdb.d/"
+    networks:
+      - djangoweb2
 networks:
-  DjangoWeb:
+  djangoweb2:

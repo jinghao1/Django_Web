@@ -425,6 +425,7 @@ def edit_banner(request):
 @require_POST
 @staff_member_required(login_url='/')
 def upload_file(request):
+    logger.info('upload test .....')
     # 上传文件
     # file变量就是 'InMemoryUploadedFile'类型的函数
     file = request.FILES.get('upfile')
@@ -432,6 +433,7 @@ def upload_file(request):
         return restful.params_error(message='没有上传任何文件！')
     name = file.name
     file_path = os.path.join(settings.MEDIA_ROOT, name)
+    print(file_path)
     with open(file_path, 'wb')as fp:  # 以数据流的形式进行存储
         for chunk in file.chunks():
             fp.write(chunk)  # chunk使用一种遍历的形式，以定义的一定量，对文件进行传输，保证内存不被溢出

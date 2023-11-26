@@ -46,8 +46,8 @@ INSTALLED_APPS = [
     'apps.payinfo',
     'apps.xfzauth',
     'rest_framework',
-    'debug_toolbar',
-    'silk',
+    # 'debug_toolbar',
+    # 'silk',
 ]
 
 # 中间键，针对所有的app有效,可以方便批量修改处理时使用
@@ -59,8 +59,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
-    'silk.middleware.SilkyMiddleware',
+    # 'debug_toolbar.middleware.DebugToolbarMiddleware',
+    # 'silk.middleware.SilkyMiddleware',
 ]
 
 # 配置debug-toolbar
@@ -142,7 +142,7 @@ DATABASES = {
         'USER': config.MYSQL_USER,
         'PASSWORD': config.MYSQL_PASSWORD,
         'HOST': config.MYSQL_HOST,
-        'POST': config.MYSQL_POST,
+        'PORT': config.MYSQL_PORT,
 
     }
 }

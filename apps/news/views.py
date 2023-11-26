@@ -5,7 +5,7 @@ from django.http import Http404
 # 当我们在查询的条件中需要组合条件时(例如两个条件“且”或者“或”)时。
 # 我们可以使用Q()查询对象
 from django.db.models import Q
-from silk.profiling.profiler import silk_profile
+# from silk.profiling.profiler import silk_profile
 
 # login_required：只能针对传统的页面跳转（如果没有登录，就跳转到login_url指定的页面）
 # 但是他不能处理这种ajax请求。就是说如果通过ajax请求去访问一个需要授权的页面
@@ -19,7 +19,7 @@ from .models import Comment
 from .models import NewCategory, News, Banner
 
 
-@silk_profile(name='get_news')
+# @silk_profile(name='get_news')
 def index(request):
     """新闻显示页,加入轮播图"""
     # newses = News.objects.all()
@@ -37,6 +37,22 @@ def index(request):
         'banners': banners  # 将轮播图数据返回给前端
     }
     return render(request, 'news/index.html', context=context)
+
+# hs cn index
+def hs_cn_index(request):
+
+    newses = News.objects.select_related('category', 'author')[
+        0:settings.ONE_PAGE_NEWS_COUNT]
+    categories = NewCategory.objects.all()
+    banners = Banner.objects.all()  # 获取轮播图
+    # context 中''中的数据是传入HTML模板中的变量，
+    # print(type(banners), 'banners:%s' % banners)
+    context = {
+        'newses': newses,
+        'categories': categories,
+        'banners': banners  # 将轮播图数据返回给前端
+    }
+    return render(request, 'hs/index.html', context=context)
 
 
 @require_GET

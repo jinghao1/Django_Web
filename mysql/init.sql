@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS mysite CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-use mysite;
+CREATE DATABASE IF NOT EXISTS django_web CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+use django_web;
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
@@ -25,6 +25,6 @@ COMMIT;
 SET FOREIGN_KEY_CHECKS = 1;
 
 CREATE USER IF NOT EXISTS 'mysiteuser'@'%' IDENTIFIED BY 'mysitepass';
-GRANT ALL PRIVILEGES ON mysite.* TO 'mysiteuser'@'%';
+GRANT ALL PRIVILEGES ON django_web.* TO 'mysiteuser'@'%';
 
 FLUSH PRIVILEGES;

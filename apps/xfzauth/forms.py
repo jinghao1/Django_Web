@@ -104,7 +104,8 @@ class RegisterForm(forms.Form, FormMixin):
             return self.add_error('img_captcha', '图形验证码错误！')
         sms_captcha = cleaned_data.get('sms_captcha')
         server_sms_captcha = request.session.get('sms_captcha')
-        if sms_captcha.lower() != server_sms_captcha.lower():
+        print(server_sms_captcha)
+        if server_sms_captcha is not None and sms_captcha.lower() != server_sms_captcha.lower():
             # 传统表单方式的错误信息提示
             # messages.info(request,'短信验证码错误！')
             # return redirect(reverse('xfzauth:register'))

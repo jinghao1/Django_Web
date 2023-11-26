@@ -2,13 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e62268d-292f-4458-bb17-b06968999966" name="Default" comment="添加展示页面url">
-      <change afterPath="$PROJECT_DIR$/.env-local" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_01/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysql/init.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/hs_base/jetpack.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/hs_base/jp-search.chunk-main-payload.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/hs_base/jump-forward.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/hs_base/main.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/hs_base/mediaelementplayer-legacy.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/hs_base/skip-back.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/hs_base/speed.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/hs_base/theme-styles.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/hs_base/e-202347.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/hs_base/hooks.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/hs_base/html-entities.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/hs_base/i18n-loader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/hs_base/i18n.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/hs_base/jp-search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/hs_base/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/hs_base/lodash.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/hs_base/lottie-player.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/hs_base/main.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/hs_base/regenerator-runtime.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/hs_base/theme-scripts.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/hs_base/url.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/hs_base/w.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/hs_base/wp-polyfill-inert.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/hs_base/wp-polyfill.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/hs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/django_01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/django_01.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/cms/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cms/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/news/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/news/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/news/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/xfzauth/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/xfzauth/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_01/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_01/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_01/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_01/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_01/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_01/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/course_teacher.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/course_teacher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/writ_news.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/writ_news.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/write_pay_info.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/write_pay_info.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -311,18 +348,19 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "true",
-    "last_opened_file_path": "/Users/sjh/Code/Django_Web"
+    "last_opened_file_path": "/Users/sjh/Code/Django_Web/static/js/hs_base"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/js/hs_base" />
+      <recent name="$PROJECT_DIR$/static/css/hs_base" />
       <recent name="$PROJECT_DIR$" />
       <recent name="D:\pycharmProject\study\django\django_01\templates\cms" />
       <recent name="D:\pycharmProject\study\django\django_01\static\js" />
-      <recent name="D:\pycharmProject\study\django\django_01\static" />
-      <recent name="D:\pycharmProject\study\django\django_01\static\videojs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/django_01" />
@@ -383,16 +421,45 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="django_01.settings" />
       </envs>
-      <option name="SDK_HOME" value="D:\workSpace_env\envs\django_01\Scripts\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="DockerContainerSettingsRunConfigurationExtension">
+        <option name="envVars">
+          <list />
+        </option>
+        <option name="extraHosts">
+          <list />
+        </option>
+        <option name="links">
+          <list />
+        </option>
+        <option name="networkDisabled" value="false" />
+        <option name="networkMode" value="bridge" />
+        <option name="portBindings">
+          <list />
+        </option>
+        <option name="publishAllPorts" value="false" />
+        <option name="runCliOptions" value="--entrypoint= --rm" />
+        <option name="version" value="2" />
+        <option name="volumeBindings">
+          <list>
+            <DockerVolumeBindingImpl>
+              <option name="containerPath" value="/opt/project" />
+              <option name="editable" value="true" />
+              <option name="hostPath" value="$PROJECT_DIR$" />
+              <option name="readOnly" value="false" />
+            </DockerVolumeBindingImpl>
+          </list>
+        </option>
+      </EXTENSION>
       <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="9000" />
-      <option name="host" value="127.0.0.1" />
+      <option name="port" value="8021" />
+      <option name="host" value="0.0.0.0" />
       <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="http://127.0.0.1:9000/" />
+      <option name="browserUrl" value="http://0.0.0.0:8021/" />
       <option name="runTestServer" value="false" />
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
@@ -426,7 +493,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1529122678684</updated>
-      <workItem from="1700930160739" duration="556000" />
+      <workItem from="1700930160739" duration="18668000" />
     </task>
     <task id="LOCAL-00127" summary="change notation">
       <created>1575856907430</created>

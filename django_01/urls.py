@@ -34,9 +34,9 @@ urlpatterns = [
 # 2.因为urlpatterns是一个列表参数，static()返回值也是一个列表，使用“+”直接变成列表相加，最终的static()也是urlpatterns中的一个元素。等效于：urlpatterns
 # += static()
 
-if settings.DEBUG:
-    import debug_toolbar
-    urlpatterns += [path("__debug__/",include(debug_toolbar.urls))]
+# if settings.DEBUG:
+#     import debug_toolbar
+#     urlpatterns += [path("__debug__/",include(debug_toolbar.urls))]
 
-if settings.DEBUG:
-    urlpatterns += [path('silk/', include('silk.urls', namespace='silk'))]
+# if settings.DEBUG:
+#     urlpatterns += [path('silk/', include('silk.urls', namespace='silk'))]
