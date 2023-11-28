@@ -6,17 +6,18 @@ from django.http import Http404
 # 我们可以使用Q()查询对象
 from django.db.models import Q
 # from silk.profiling.profiler import silk_profile
-
+from django.http import JsonResponse
 # login_required：只能针对传统的页面跳转（如果没有登录，就跳转到login_url指定的页面）
 # 但是他不能处理这种ajax请求。就是说如果通过ajax请求去访问一个需要授权的页面
 # 那么这个装饰器的页面跳转功能就不行了,针对Ajax请求的页面跳转自定义一个装饰器
 # from django.contrib.auth.decorators import login_required
-from apps.xfzauth.decorators import xfz_login_required   # y导入自定义的用于ajax请求的装饰器
+from apps.xfzauth.decorators import xfz_login_required  # y导入自定义的用于ajax请求的装饰器
 from .serializers import NewsSerializer, CommentSerializer  # 导入定义序列化
 from utils import restful
 from .forms import AddCommentForm
 from .models import Comment
 from .models import NewCategory, News, Banner
+import requests
 
 
 # @silk_profile(name='get_news')
@@ -26,7 +27,7 @@ def index(request):
     # 用于加载界面显示新闻的个数，settings中设置的ONE_PAGE_NEWS_COUNT是1，
     # 这里配置后，界面只会展示1篇文章
     newses = News.objects.select_related('category', 'author')[
-        0:settings.ONE_PAGE_NEWS_COUNT]
+             0:settings.ONE_PAGE_NEWS_COUNT]
     categories = NewCategory.objects.all()
     banners = Banner.objects.all()  # 获取轮播图
     # context 中''中的数据是传入HTML模板中的变量，
@@ -38,11 +39,80 @@ def index(request):
     }
     return render(request, 'news/index.html', context=context)
 
+
 # hs cn index
 def hs_cn_index(request):
+    search_string = request.GET.get("s_search", None)
+    if search_string is None:
+        newses = News.objects.select_related('category', 'author')[
+                 0:settings.ONE_PAGE_NEWS_COUNT]
+        categories = NewCategory.objects.all()
+        banners = Banner.objects.all()  # 获取轮播图
+        # context 中''中的数据是传入HTML模板中的变量，
+        # print(type(banners), 'banners:%s' % banners)
+        context = {
+            'newses': newses,
+            'categories': categories,
+            'banners': banners  # 将轮播图数据返回给前端
+        }
+        return render(request, 'hs/index.html', context=context)
+    else:
+        # try:
+        #     headers = {
+        #         "Referer": "/team/?s_page=1&s_per_page=6&s_search=字节&s_subtype=founder%2Ccompany%2Cteam-member%2Cpost"
+        #     }
+        #     result = requests.get(url, headers=headers, timeout=6)
+        #     print(result)
+        # except Exception as e:
+        if 1==1:
+            result = {
+                "results": [
+                    {
+                        "ID": 525,
+                        "post_title": "\u7ea2\u6749X\u98de\u4e66\u300c\u7ec4\u7ec7\u8fdb\u5316\u8bba\u300d\uff1a\u4e3a\u4ec0\u4e48\u5148\u8fdb\u7ec4\u7ec7\u53ef\u4ee5\u4fdd\u6301\u5f39\u6027\uff1f| Human Capital Talk\u7b2c\u56db\u671f",
+                        "post_type": "post",
+                        "permalink": "https:\/\/www.hongshan.com\/article\/sequoia-feishu-human-capital-talk-4\/",
+                        "terms": [],
+                        "meta": [],
+                        "acf": {
+                            "post_author_profile": null
+                        }
+                    },
+                    {
+                        "ID": 986,
+                        "post_title": "\u5b57\u8282\u8df3\u52a8",
+                        "post_type": "company",
+                        "permalink": "https:\/\/www.hongshan.com\/companies\/bytedance\/",
+                        "terms": {
+                            "sector": [
+                                {
+                                    "term_id": 12,
+                                    "slug": "tech",
+                                    "name": "\u79d1\u6280",
+                                    "parent": 0,
+                                    "term_taxonomy_id": 12,
+                                    "term_order": 0,
+                                    "facet": "{\"term_id\":12,\"slug\":\"tech\",\"name\":\"\\u79d1\\u6280\",\"parent\":0,\"term_taxonomy_id\":12,\"term_order\":0}"
+                                }
+                            ]
+                        },
+                        "meta": []
+                    }
+                ],
+                "total": 2,
+                "totals": {
+                    "post": 1,
+                    "company": 1
+                }
+            }
 
+        return JsonResponse(result)
+
+
+# 关于我们
+def hs_cn_about_us(request):
     newses = News.objects.select_related('category', 'author')[
-        0:settings.ONE_PAGE_NEWS_COUNT]
+             0:settings.ONE_PAGE_NEWS_COUNT]
     categories = NewCategory.objects.all()
     banners = Banner.objects.all()  # 获取轮播图
     # context 中''中的数据是传入HTML模板中的变量，
@@ -52,7 +122,23 @@ def hs_cn_index(request):
         'categories': categories,
         'banners': banners  # 将轮播图数据返回给前端
     }
-    return render(request, 'hs/index.html', context=context)
+    return render(request, 'hs/about_us.html', context=context)
+
+
+# 搜索
+def hs_cn_search(request):
+    newses = News.objects.select_related('category', 'author')[
+             0:settings.ONE_PAGE_NEWS_COUNT]
+    categories = NewCategory.objects.all()
+    banners = Banner.objects.all()  # 获取轮播图
+    # context 中''中的数据是传入HTML模板中的变量，
+    # print(type(banners), 'banners:%s' % banners)
+    context = {
+        'newses': newses,
+        'categories': categories,
+        'banners': banners  # 将轮播图数据返回给前端
+    }
+    return render(request, 'hs/search_cn.html', context=context)
 
 
 @require_GET

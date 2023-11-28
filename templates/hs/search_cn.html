@@ -1,0 +1,40 @@
+{% extends 'hs_base/hs_base.html' %}
+{% block main %}
+
+<div>
+    <div style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 9999; overflow: hidden auto; text-align: center; background: rgba(0, 0, 0, 0.5); cursor: pointer;">
+        <div style="display: inline-block; height: 100%; vertical-align: middle;"></div>
+        <div role="dialog" id="react-aria-modal-dialog" class="mgs-modal" aria-labelledby="mgs-search-modal-title"
+             style="display: inline-block; text-align: left; top: 0px; max-width: 100%; cursor: auto; vertical-align: middle;">
+            <div class="mgs-modal__inner">
+                <header class="mgs-modal__header header">
+                    <div class="mgs-modal__header-container header__container"><h1 id="mgs-search-modal-title"
+                                                                                   class="sr-only">Search results</h1>
+                        <button class="mgs-modal__button mgs-modal__close"><span
+                                class="mgs-modal__button-text caption caption--14">Close</span><i
+                                class="mgs-modal__button-icon ico--close" aria-hidden="true"></i></button>
+                    </div>
+                </header>
+                <section class="mgs-modal__main">
+                    <div class="mgs-modal__main-container">
+                        <div class="mgs-field mgs-modal__search-field mgs-field--is-valid mgs-field--has-errors"
+                             data-class="text" data-type="search">
+                            <div class="mgs-field__wrapper"><label class="mgs-field__label sr-only"
+                                                                   for="mgs-search-input">Search site</label>
+                                <div class="mgs-field__element mgs-field__element--large"><input autocomplete="off"
+                                                                                                 inputmode="search"
+                                                                                                 class="mgs-field__input"
+                                                                                                 placeholder="Search Sequoia"
+                                                                                                 type="search" name="s"
+                                                                                                 id="mgs-search-input"><i
+                                        class="mgs-field__icon ico--search" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

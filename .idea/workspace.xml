@@ -2,50 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e62268d-292f-4458-bb17-b06968999966" name="Default" comment="添加展示页面url">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/hs_base/jetpack.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/hs_base/jp-search.chunk-main-payload.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/hs_base/jump-forward.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/hs_base/main.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/hs_base/mediaelementplayer-legacy.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/hs_base/skip-back.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/hs_base/speed.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/hs_base/theme-styles.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/hs_base/e-202347.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/hs_base/hooks.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/hs_base/html-entities.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/hs_base/i18n-loader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/hs_base/i18n.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/hs_base/jp-search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/hs_base/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/hs_base/lodash.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/hs_base/lottie-player.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/hs_base/main.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/hs_base/regenerator-runtime.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/hs_base/theme-scripts.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/hs_base/url.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/hs_base/w.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/hs_base/wp-polyfill-inert.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/hs_base/wp-polyfill.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/hs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/django_01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/django_01.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/hs/about_us.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/hs/search_cn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/hs_base/hs_base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/cms/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cms/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/news/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/news/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/news/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/xfzauth/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/xfzauth/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_01/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_01/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_01/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_01/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_01/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_01/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/init.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/course_teacher.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/course_teacher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/writ_news.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/writ_news.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/write_pay_info.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/write_pay_info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_01.log" beforeDir="false" afterPath="$PROJECT_DIR$/django_01.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/hs_base/jp-search.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/hs_base/jp-search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/hs_base/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/hs_base/main.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/hs_base/w.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/hs_base/w.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/hs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/hs/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -351,16 +318,16 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "true",
-    "last_opened_file_path": "/Users/sjh/Code/Django_Web/static/js/hs_base"
+    "last_opened_file_path": "/Users/sjh/Code/Django_Web/templates/hs_base"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/hs_base" />
       <recent name="$PROJECT_DIR$/static/js/hs_base" />
       <recent name="$PROJECT_DIR$/static/css/hs_base" />
       <recent name="$PROJECT_DIR$" />
       <recent name="D:\pycharmProject\study\django\django_01\templates\cms" />
-      <recent name="D:\pycharmProject\study\django\django_01\static\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/django_01" />
@@ -493,7 +460,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1529122678684</updated>
-      <workItem from="1700930160739" duration="18668000" />
+      <workItem from="1700930160739" duration="27363000" />
     </task>
     <task id="LOCAL-00127" summary="change notation">
       <created>1575856907430</created>
