@@ -72,7 +72,7 @@ class NewsList(View):
         if category_id != 0:
             newses = newses.filter(category=category_id)
             # print('分类名称：%s' % category_id, '新闻数量%s' % len(newses))
-        paginator = Paginator(newses, 2)  # 将获取的新闻内容按照每页2篇的形式进行分页
+        paginator = Paginator(newses, 10)  # 将获取的新闻内容按照每页2篇的形式进行分页
         page_obj = paginator.page(page)  # 获取对应分页的数据
         categories = NewCategory.objects.all()
 
@@ -185,12 +185,14 @@ class WriteNewsView(View):
             # 获取分类id,因为是通过外键获取的id,
             # 需要通过NewCategory来获取实际分类名称
             category = NewCategory.objects.get(pk=category_id)  # 获取分类名
+
             News.objects.create(
                 title=title,
                 desc=desc,
                 thumbnail=thumbnail,
                 content=content,
                 category=category,
+
                 author=request.user)
             return restful.ok() and redirect(reverse('cms:news_list'))
         else:
@@ -225,9 +227,10 @@ class EditNewsViem(View):
     def post(self, request):
         form = EditNewsForm(request.POST)
         if form.is_valid():
+            pub_time = datetime.now()
             pk = form.cleaned_data.get('pk')
             title = form.cleaned_data.get('title')
-            desc = form.cleaned_data.get('desc')
+            desc = form.cleaned_data.get('desc',"")
             category_id = form.cleaned_data.get('category')
             thumbnail = form.cleaned_data.get('thumbnail')
             content = form.cleaned_data.get('content')
@@ -238,6 +241,7 @@ class EditNewsViem(View):
                 desc=desc,
                 thumbnail=thumbnail,
                 content=content,
+                pub_time=pub_time,
                 category=category)
             logger.info('编辑新闻%s成功！' % title)
             return restful.ok()

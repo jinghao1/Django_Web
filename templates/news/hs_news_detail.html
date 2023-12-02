@@ -1,0 +1,29 @@
+{% extends 'hs_base/hs_base.html' %}
+{#{% load news_filters %}#}
+
+
+{% block main %}
+
+
+
+    <main class="main" id="main">
+        <article class="content content--padded-top has-global-padding is-layout-constrained wysiwyg">
+
+            <section class="wp-block-mg-hero-stack hero-stack"><h1 class="hero-stack__title">{{ news.title }}</h1>
+                {% if news.desc %}
+                    <div class="hero-stack__paragraph"><p>{{ news.desc }}</p></div>
+                {% endif %}
+
+                <div class="hero-stack__credits"><p class="hero-stack__credit-text">发表于{{ news.pub_time }}</p></div>
+            </section>
+
+
+            <section style="--wp--custom--content-size:1200rem"
+                    class="wp-block-mg-post-container post-container wysiwyg has-global-padding is-layout-constrained wp-container-1 wp-block-post-container-is-layout-constrained">
+                {{ news.content|safe }}
+            </section>
+
+
+        </article>
+    </main>
+{% endblock %}

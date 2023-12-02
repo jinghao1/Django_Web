@@ -2,17 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e62268d-292f-4458-bb17-b06968999966" name="Default" comment="添加展示页面url">
-      <change afterPath="$PROJECT_DIR$/templates/hs/about_us.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/hs/search_cn.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/hs_base/hs_base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/news/hs_news_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/cms/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cms/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/cms/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cms/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/news/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/news/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/news/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/news/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/news/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_01.log" beforeDir="false" afterPath="$PROJECT_DIR$/django_01.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/hs_base/jp-search.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/hs_base/jp-search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/hs_base/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/hs_base/main.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/hs_base/w.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/hs_base/w.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_01/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_01/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/hs_base/theme-styles.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/hs_base/theme-styles.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/hs/about_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/hs/about_us.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/hs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/hs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/hs_base/hs_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/hs_base/hs_base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +111,11 @@
         </map>
       </branch-storage>
     </favorite-branches>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/Library/Caches/JetBrains/PyCharm2022.1/remote_sources/-1852708849/-337502517/django/db/models/query.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$USER_HOME$/Library/Caches/JetBrains/PyCharm2022.1/remote_sources/-1852708849/-337502517/django/http/response.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$USER_HOME$/Library/Caches/JetBrains/PyCharm2022.1/remote_sources/-1852708849/-337502517/requests/models.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -318,16 +325,17 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "true",
-    "last_opened_file_path": "/Users/sjh/Code/Django_Web/templates/hs_base"
+    "last_opened_file_path": "/Users/sjh/Code/Django_Web/templates/news",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/news" />
       <recent name="$PROJECT_DIR$/templates/hs_base" />
       <recent name="$PROJECT_DIR$/static/js/hs_base" />
       <recent name="$PROJECT_DIR$/static/css/hs_base" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="D:\pycharmProject\study\django\django_01\templates\cms" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/django_01" />
@@ -460,7 +468,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1529122678684</updated>
-      <workItem from="1700930160739" duration="27363000" />
+      <workItem from="1700930160739" duration="43062000" />
     </task>
     <task id="LOCAL-00127" summary="change notation">
       <created>1575856907430</created>

@@ -6,8 +6,8 @@ from . import views
 # 设置空间名
 app_name = 'news'
 urlpatterns = [
-	path('', views.index, name='index'),
-	path('hs/cn', views.hs_cn_index, name='hongshan_index'),
+	path('before', views.index, name='index'),
+	path('', views.hs_cn_index, name='hongshan_index'),
 	path('hs/cn_about_us', views.hs_cn_about_us, name='hs_about_us_cn'),
 	path('hs/cn_search', views.hs_cn_search, name='hs_about_us_cn'),
 	path('detail/<news_id>/', views.news_detail, name='news_detail'),

@@ -1,250 +1,100 @@
-{%  extends 'hs_base/hs_base.html' %}
+{% extends 'hs_base/hs_base.html' %}
 {% block main %}
-<main class="main" id="main">
+    <main class="main" id="main">
 
-    <article class="content is-layout-constrained has-global-padding wysiwyg">
-        <section class="hero hero--china">
-            <div class="hero__container">
-                <h1 class="hero__title hero__title--animated">创业者背后的创业者<br>红杉中国致力于发掘和培育<br><span
-                        class="hero__animation-container">产业界的「参天大树」<svg preserveAspectRatio="none" viewBox="0 0 595 97"
-                                                                         fill="none" xmlns="http://www.w3.org/2000/svg"
-                                                                         class="hero__animation hero__animation"><path
-                        d="M2 76.2585C26.6341 81.2084 50.7833 80.0978 76.2802 80.0978C107.448 80.0978 138.46 80.1154 169.591 81.0932C197.095 81.9571 224.547 80.0978 252.056 80.0978C276.198 80.0978 300.236 81.906 324.392 81.3065C361.86 80.3766 399.568 79.1318 437.04 78.818C466.779 78.5691 497.282 80.4133 526.872 78.1781C549.794 76.4468 571.154 75.8931 587.647 63.3895C591.988 60.0988 595.986 48.4997 589.87 40C581.171 27.9092 570.566 21.3184 553.679 14.8286C521.341 2.40077 480.049 1.81567 443.998 2.03071C411.421 2.22503 359.218 5.65237 339.228 26.4889C323.292 43.1001 323.114 59.5658 347.209 72.7746C385.152 93.5754 444.229 99.5744 490.039 91.6159"
-                        stroke="#00a33a" stroke-width="3" stroke-linecap="round"></path></svg></span></h1>
-            </div>
-        </section>
+        <article class="content is-layout-constrained has-global-padding wysiwyg">
+            <section class="hero hero--china">
+                <div class="hero__container">
+                    {% if lang == 'en' %}
 
+                        <h1 class="hero__title hero__title--animated">Entrepreneurship and Innovation<br><span
+                                class="hero__animation-container">Industry's「BIG TREE」<svg preserveAspectRatio="none"
+                                                                                           viewBox="0 0 595 97"
+                                                                                           fill="none"
+                                                                                           xmlns="http://www.w3.org/2000/svg"
+                                                                                           class="hero__animation hero__animation"><path
+                                d="M2 76.2585C26.6341 81.2084 50.7833 80.0978 76.2802 80.0978C107.448 80.0978 138.46 80.1154 169.591 81.0932C197.095 81.9571 224.547 80.0978 252.056 80.0978C276.198 80.0978 300.236 81.906 324.392 81.3065C361.86 80.3766 399.568 79.1318 437.04 78.818C466.779 78.5691 497.282 80.4133 526.872 78.1781C549.794 76.4468 571.154 75.8931 587.647 63.3895C591.988 60.0988 595.986 48.4997 589.87 40C581.171 27.9092 570.566 21.3184 553.679 14.8286C521.341 2.40077 480.049 1.81567 443.998 2.03071C411.421 2.22503 359.218 5.65237 339.228 26.4889C323.292 43.1001 323.114 59.5658 347.209 72.7746C385.152 93.5754 444.229 99.5744 490.039 91.6159"
+                                stroke="#00a33a" stroke-width="3" stroke-linecap="round"></path></svg></span></h1>
+                    {% else %}
+                        <h1 class="hero__title hero__title--animated">创业者背后的创业者<br>红杉中国致力于发掘和培育<br><span
+                                class="hero__animation-container">产业界的「参天大树」<svg preserveAspectRatio="none"
+                                                                                 viewBox="0 0 595 97"
+                                                                                 fill="none"
+                                                                                 xmlns="http://www.w3.org/2000/svg"
+                                                                                 class="hero__animation hero__animation"><path
+                                d="M2 76.2585C26.6341 81.2084 50.7833 80.0978 76.2802 80.0978C107.448 80.0978 138.46 80.1154 169.591 81.0932C197.095 81.9571 224.547 80.0978 252.056 80.0978C276.198 80.0978 300.236 81.906 324.392 81.3065C361.86 80.3766 399.568 79.1318 437.04 78.818C466.779 78.5691 497.282 80.4133 526.872 78.1781C549.794 76.4468 571.154 75.8931 587.647 63.3895C591.988 60.0988 595.986 48.4997 589.87 40C581.171 27.9092 570.566 21.3184 553.679 14.8286C521.341 2.40077 480.049 1.81567 443.998 2.03071C411.421 2.22503 359.218 5.65237 339.228 26.4889C323.292 43.1001 323.114 59.5658 347.209 72.7746C385.152 93.5754 444.229 99.5744 490.039 91.6159"
+                                stroke="#00a33a" stroke-width="3" stroke-linecap="round"></path></svg></span></h1>
+                    {% endif %}
 
-        <div class="ink-collection">
-            <div class="ink-collection__grid grid">
-                <div class="grid__instances" data-grid-columns="12">
-                    <div class="grid__instance aos-init aos-animate" data-size="lg" data-aos="fade-in"
-                         data-aos-duration="1000" data-aos-delay="100">
-                        <div class="grid__content"><a class="ink" style="background-color:#00a33a;"
-                                                      href="http://www.yue-accelerator.com/" target="_blank">
-                            <div class="ink__content ink__content--protected">
-                                <img loading="lazy" width="992" height="992"
-                                     src="./Home - HongShan_files/YUE新square-992x992.png" class="ink__image" alt=""
-                                     decoding="async"
-                                     srcset="/wp-content/uploads/sites/9/2023/11/YUE%E6%96%B0square-992x992.png 992w, /wp-content/uploads/sites/9/2023/11/YUE%E6%96%B0square-300x300.png 300w, /wp-content/uploads/sites/9/2023/11/YUE%E6%96%B0square-1024x1024.png 1024w, /wp-content/uploads/sites/9/2023/11/YUE%E6%96%B0square-150x150.png 150w, /wp-content/uploads/sites/9/2023/11/YUE%E6%96%B0square-768x768.png 768w, /wp-content/uploads/sites/9/2023/11/YUE%E6%96%B0square-1536x1536.png 1536w, /wp-content/uploads/sites/9/2023/11/YUE%E6%96%B0square-2048x2048.png 2048w, /wp-content/uploads/sites/9/2023/11/YUE%E6%96%B0square-576x576.png 576w"
-                                     sizes="(max-width: 992px) 100vw, 992px">
-                                <div class="ink__text" data-size="lg" data-color="light">
-
-                                    <h2 class="ink__title" data-size="lg" data-h-align="left" data-v-align="bottom"
-                                        data-font-family="unica" data-font-size="sm" data-width="wide"
-                                        data-word-wrap="false">点击报名 | 红杉中国创业加速器YUÈ</h2>
+                </div>
+            </section>
 
 
-                                    <div class="ink__cta" data-size="lg"></div>
+            <div class="ink-collection">
+                <div class="ink-collection__grid grid">
+                    <div class="grid__instances" data-grid-columns="12">
+                        {% for news in newses %}
+                            {% if forloop.counter0 in smalles %}
+                                <div class="grid__instance aos-init" data-size="sm" data-aos="fade-in"
+                                     data-aos-duration="1000"
+                                     data-aos-delay="100">
+                                    <div class="grid__content"><a class="ink" style="background-color:#1b1916;"
+                                                                  href="{% url 'news:news_detail' news_id=news.pk %}">
+                                        <div class="ink__content ink__content--protected">
+                                            <img loading="lazy" width="576" height="576"
+                                                 src="{{ news.thumbnail }}" class="ink__image" alt=""
+                                                 decoding="async"
+                                                 sizes="(max-width: 576px) 100vw, 576px">
+                                            <div class="ink__text" data-size="sm" data-color="light">
+
+                                                <h2 class="ink__title" data-size="sm" data-h-align="left"
+                                                    data-v-align="bottom"
+                                                    data-font-family="unica" data-font-size="sm" data-width="wide"
+                                                    data-word-wrap="false">{{ news.title }}</h2>
+
+
+                                                <div class="ink__category ink__category--%e6%96%b0%e9%97%bb"
+                                                     data-size="sm">{{ news.category.name }}</div>
+
+                                            </div>
+                                        </div>
+                                    </a></div>
                                 </div>
-                            </div>
-                        </a></div>
-                    </div>
-                    <div class="grid__instance aos-init aos-animate" data-size="lg" data-aos="fade-in"
-                         data-aos-duration="1000" data-aos-delay="100">
-                        <div class="grid__content"><a class="ink" style="background-color:#1b1916;"
-                                                      href="/article/neil-dialogue-howard-schultz/">
-                            <div class="ink__content ink__content--protected">
-                                <img loading="lazy" width="900" height="900"
-                                     src="./Home - HongShan_files/Howard-Schultz.jpg" class="ink__image" alt=""
-                                     decoding="async"
-                                     srcset="/wp-content/uploads/sites/9/2023/11/Howard-Schultz.jpg 900w, /wp-content/uploads/sites/9/2023/11/Howard-Schultz-300x300.jpg 300w, /wp-content/uploads/sites/9/2023/11/Howard-Schultz-150x150.jpg 150w, /wp-content/uploads/sites/9/2023/11/Howard-Schultz-768x768.jpg 768w, /wp-content/uploads/sites/9/2023/11/Howard-Schultz-576x576.jpg 576w"
-                                     sizes="(max-width: 900px) 100vw, 900px">
-                                <div class="ink__text" data-size="lg" data-color="light">
 
-                                    <h2 class="ink__title" data-size="lg" data-h-align="left" data-v-align="bottom"
-                                        data-font-family="unica" data-font-size="sm" data-width="wide"
-                                        data-word-wrap="false">沈南鹏对话霍华德·舒尔茨</h2>
+                            {% else %}
 
 
-                                    <div class="ink__category ink__category--%e8%a7%82%e7%82%b9" data-size="lg">观点</div>
+                                <div class="grid__instance aos-init aos-animate" data-size="lg" data-aos="fade-in"
+                                     data-aos-duration="1000" data-aos-delay="100">
+                                    <div class="grid__content"><a class="ink" style="background-color:#1b1916;"
+                                                                  href="{% url 'news:news_detail' news_id=news.pk %}">
+                                        <div class="ink__content ink__content--protected">
+                                            <img loading="lazy" width="900" height="900"
+                                                 src="{{ news.thumbnail }}" class="ink__image" alt=""
+                                                 decoding="async"
+                                                 sizes="(max-width: 900px) 100vw, 900px">
+                                            <div class="ink__text" data-size="lg" data-color="light">
 
+                                                <h2 class="ink__title" data-size="lg" data-h-align="left"
+                                                    data-v-align="bottom"
+                                                    data-font-family="unica" data-font-size="sm" data-width="wide"
+                                                    data-word-wrap="false">{{ news.title }}</h2>
+
+                                                <div class="ink__category ink__category--%e8%a7%82%e7%82%b9"
+                                                     data-size="lg">{{ news.category.name }}</div>
+
+                                            </div>
+                                        </div>
+                                    </a></div>
                                 </div>
-                            </div>
-                        </a></div>
-                    </div>
-                    <div class="grid__instance aos-init" data-size="sm" data-aos="fade-in" data-aos-duration="1000"
-                         data-aos-delay="100">
-                        <div class="grid__content"><a class="ink" style="background-color:#1b1916;"
-                                                      href="/article/sparkle-02-openning-for-registration/">
-                            <div class="ink__content ink__content--protected">
-                                <img loading="lazy" width="576" height="576"
-                                     src="./Home - HongShan_files/官网-576x576.png" class="ink__image" alt=""
-                                     decoding="async"
-                                     srcset="/wp-content/uploads/sites/9/2023/09/官网-576x576.png 576w, /wp-content/uploads/sites/9/2023/09/官网-300x300.png 300w, /wp-content/uploads/sites/9/2023/09/官网-150x150.png 150w, /wp-content/uploads/sites/9/2023/09/官网-768x768.png 768w, /wp-content/uploads/sites/9/2023/09/官网.png 900w"
-                                     sizes="(max-width: 576px) 100vw, 576px">
-                                <div class="ink__text" data-size="sm" data-color="light">
+                            {% endif %}
 
-                                    <h2 class="ink__title" data-size="sm" data-h-align="left" data-v-align="bottom"
-                                        data-font-family="unica" data-font-size="sm" data-width="wide"
-                                        data-word-wrap="false">Sparkle 02官宣报名｜消费早期创业者查收来信！</h2>
+                        {% endfor %}
 
 
-                                    <div class="ink__category ink__category--%e6%96%b0%e9%97%bb" data-size="sm">新闻</div>
-
-                                </div>
-                            </div>
-                        </a></div>
-                    </div>
-                    <div class="grid__instance aos-init" data-size="sm" data-aos="fade-in" data-aos-duration="1000"
-                         data-aos-delay="100">
-                        <div class="grid__content"><a class="ink" style="background-color:#928c86;"
-                                                      href="/china/about-us/">
-                            <div class="ink__content ink__content--protected">
-                                <img loading="lazy" width="576" height="576"
-                                     src="./Home - HongShan_files/About-us-rescale-576x576.png" class="ink__image"
-                                     alt="" decoding="async"
-                                     srcset="/wp-content/uploads/sites/9/2023/11/About-us-rescale-576x576.png 576w, /wp-content/uploads/sites/9/2023/11/About-us-rescale-300x300.png 300w, /wp-content/uploads/sites/9/2023/11/About-us-rescale-1024x1024.png 1024w, /wp-content/uploads/sites/9/2023/11/About-us-rescale-150x150.png 150w, /wp-content/uploads/sites/9/2023/11/About-us-rescale-768x768.png 768w, /wp-content/uploads/sites/9/2023/11/About-us-rescale-1536x1536.png 1536w, /wp-content/uploads/sites/9/2023/11/About-us-rescale-992x992.png 992w, /wp-content/uploads/sites/9/2023/11/About-us-rescale.png 1955w"
-                                     sizes="(max-width: 576px) 100vw, 576px">
-                                <div class="ink__text" data-size="sm" data-color="light">
-
-                                    <h2 class="ink__title" data-size="sm" data-h-align="left" data-v-align="bottom"
-                                        data-font-family="unica" data-font-size="sm" data-width="wide"
-                                        data-word-wrap="false">关于我们</h2>
-
-
-                                    <div class="ink__cta" data-size="sm"></div>
-                                </div>
-                            </div>
-                        </a></div>
-                    </div>
-
-                    <div class="grid__instance aos-init" data-size="lg" data-aos="fade-in" data-aos-duration="1000"
-                         data-aos-delay="100">
-                        <div class="grid__content"><a class="ink" style="background-color:#1b1916;"
-                                                      href="/article/new-global-coalition-will-take-action-on-climate-change/">
-                            <div class="ink__content ink__content--protected">
-                                <img loading="lazy" width="920" height="920" src="./Home - HongShan_files/零碳联盟-1.jpg"
-                                     class="ink__image" alt="" decoding="async"
-                                     srcset="/wp-content/uploads/sites/9/2022/11/零碳联盟-1.jpg 920w, /wp-content/uploads/sites/9/2022/11/零碳联盟-1-300x300.jpg 300w, /wp-content/uploads/sites/9/2022/11/零碳联盟-1-150x150.jpg 150w, /wp-content/uploads/sites/9/2022/11/零碳联盟-1-768x768.jpg 768w, /wp-content/uploads/sites/9/2022/11/零碳联盟-1-576x576.jpg 576w"
-                                     sizes="(max-width: 920px) 100vw, 920px">
-                                <div class="ink__text" data-size="lg" data-color="light">
-
-                                    <h2 class="ink__title" data-size="lg" data-h-align="left" data-v-align="bottom"
-                                        data-font-family="unica" data-font-size="sm" data-width="wide"
-                                        data-word-wrap="false">对碳宣战！这个全球新联盟将对气候变化“出实招”</h2>
-
-
-                                    <div class="ink__category ink__category--%e6%96%b0%e9%97%bb" data-size="lg">新闻</div>
-
-                                </div>
-                            </div>
-                        </a></div>
-                    </div>
-                    <div class="grid__instance aos-init" data-size="lg" data-aos="fade-in" data-aos-duration="1000"
-                         data-aos-delay="100">
-                        <div class="grid__content"><a class="ink" style="background-color:#1b1916;"
-                                                      href="/article/hong-kong-innox-academy/">
-                            <div class="ink__content ink__content--protected">
-                                <img loading="lazy" width="920" height="920" src="./Home - HongShan_files/香港科创教育中心.jpg"
-                                     class="ink__image" alt="" decoding="async"
-                                     srcset="/wp-content/uploads/sites/9/2022/07/香港科创教育中心.jpg 920w, /wp-content/uploads/sites/9/2022/07/香港科创教育中心-300x300.jpg 300w, /wp-content/uploads/sites/9/2022/07/香港科创教育中心-150x150.jpg 150w, /wp-content/uploads/sites/9/2022/07/香港科创教育中心-768x768.jpg 768w, /wp-content/uploads/sites/9/2022/07/香港科创教育中心-576x576.jpg 576w"
-                                     sizes="(max-width: 920px) 100vw, 920px">
-                                <div class="ink__text" data-size="lg" data-color="light">
-
-                                    <h2 class="ink__title" data-size="lg" data-h-align="left" data-v-align="bottom"
-                                        data-font-family="unica" data-font-size="sm" data-width="wide"
-                                        data-word-wrap="false">见证创科2.0时代来临——在香港创科教育中心，遇见新时代创科领军者</h2>
-
-
-                                    <div class="ink__category ink__category--%e6%96%b0%e9%97%bb" data-size="lg">新闻</div>
-
-                                </div>
-                            </div>
-                        </a></div>
-                    </div>
-                    <div class="grid__instance aos-init" data-size="sm" data-aos="fade-in" data-aos-duration="1000"
-                         data-aos-delay="100">
-                        <div class="grid__content"><a class="ink" style="background-color:#8b4c9e;"
-                                                      href="/china/team/">
-                            <div class="ink__content ink__content--protected">
-                                <img loading="lazy" width="576" height="576"
-                                     src="./Home - HongShan_files/Team-576x576.png" class="ink__image" alt=""
-                                     decoding="async"
-                                     srcset="/wp-content/uploads/sites/9/2023/11/Team-576x576.png 576w, /wp-content/uploads/sites/9/2023/11/Team-150x150.png 150w, /wp-content/uploads/sites/9/2023/11/Team-992x992.png 992w"
-                                     sizes="(max-width: 576px) 100vw, 576px">
-                                <div class="ink__text" data-size="sm" data-color="light">
-
-                                    <h2 class="ink__title" data-size="sm" data-h-align="left" data-v-align="bottom"
-                                        data-font-family="unica" data-font-size="sm" data-width="wide"
-                                        data-word-wrap="false">管理团队</h2>
-
-
-                                    <div class="ink__cta" data-size="sm"></div>
-                                </div>
-                            </div>
-                        </a></div>
-                    </div>
-                    <div class="grid__instance aos-init" data-size="sm" data-aos="fade-in" data-aos-duration="1000"
-                         data-aos-delay="100">
-                        <div class="grid__content"><a class="ink" style="background-color:#007354;"
-                                                      href="/china/companies/">
-                            <div class="ink__content ink__content--protected">
-                                <img loading="lazy" width="576" height="576"
-                                     src="./Home - HongShan_files/Companies-576x576.png" class="ink__image" alt=""
-                                     decoding="async"
-                                     srcset="/wp-content/uploads/sites/9/2023/11/Companies-576x576.png 576w, /wp-content/uploads/sites/9/2023/11/Companies-150x150.png 150w, /wp-content/uploads/sites/9/2023/11/Companies-992x992.png 992w"
-                                     sizes="(max-width: 576px) 100vw, 576px">
-                                <div class="ink__text" data-size="sm" data-color="light">
-
-                                    <h2 class="ink__title" data-size="sm" data-h-align="left" data-v-align="bottom"
-                                        data-font-family="unica" data-font-size="sm" data-width="wide"
-                                        data-word-wrap="false">成员企业</h2>
-
-
-                                    <div class="ink__cta" data-size="sm"></div>
-                                </div>
-                            </div>
-                        </a></div>
-                    </div>
-                    <div class="grid__instance aos-init" data-size="lg" data-aos="fade-in" data-aos-duration="1000"
-                         data-aos-delay="100">
-                        <div class="grid__content"><a class="ink" style="background-color:#1b1916;"
-                                                      href="/article/xiaohongshu-opens-imagination/">
-                            <div class="ink__content ink__content--protected">
-                                <img loading="lazy" width="900" height="900" src="./Home - HongShan_files/小红书.jpg"
-                                     class="ink__image" alt="" decoding="async"
-                                     srcset="/wp-content/uploads/sites/9/2023/11/小红书.jpg 900w, /wp-content/uploads/sites/9/2023/11/小红书-300x300.jpg 300w, /wp-content/uploads/sites/9/2023/11/小红书-150x150.jpg 150w, /wp-content/uploads/sites/9/2023/11/小红书-768x768.jpg 768w, /wp-content/uploads/sites/9/2023/11/小红书-576x576.jpg 576w"
-                                     sizes="(max-width: 900px) 100vw, 900px">
-                                <div class="ink__text" data-size="lg" data-color="light">
-
-                                    <h2 class="ink__title" data-size="lg" data-h-align="left" data-v-align="bottom"
-                                        data-font-family="unica" data-font-size="sm" data-width="wide"
-                                        data-word-wrap="false">来小红书打开生活的万种想象</h2>
-
-
-                                    <div class="ink__category ink__category--%e8%a7%82%e7%82%b9" data-size="lg">观点</div>
-
-                                </div>
-                            </div>
-                        </a></div>
-                    </div>
-                    <div class="grid__instance aos-init" data-size="lg" data-aos="fade-in" data-aos-duration="1000"
-                         data-aos-delay="100">
-                        <div class="grid__content"><a class="ink" style="background-color:#1b1916;"
-                                                      href="https://www.yunxianchang.com/pc/serviceCase/601"
-                                                      target="_blank">
-                            <div class="ink__content ink__content--protected">
-                                <img loading="lazy" width="900" height="900"
-                                     src="./Home - HongShan_files/HongShan-Podcast.png" class="ink__image" alt=""
-                                     decoding="async"
-                                     srcset="/wp-content/uploads/sites/9/2023/10/HongShan-Podcast.png 900w, /wp-content/uploads/sites/9/2023/10/HongShan-Podcast-300x300.png 300w, /wp-content/uploads/sites/9/2023/10/HongShan-Podcast-150x150.png 150w, /wp-content/uploads/sites/9/2023/10/HongShan-Podcast-768x768.png 768w, /wp-content/uploads/sites/9/2023/10/HongShan-Podcast-576x576.png 576w"
-                                     sizes="(max-width: 900px) 100vw, 900px">
-                                <div class="ink__text" data-size="lg" data-color="light">
-
-                                    <h2 class="ink__title" data-size="lg" data-h-align="left" data-v-align="bottom"
-                                        data-font-family="unica" data-font-size="sm" data-width="wide"
-                                        data-word-wrap="false">红杉播客</h2>
-
-
-                                    <div class="ink__cta" data-size="lg"></div>
-                                </div>
-                            </div>
-                        </a></div>
                     </div>
                 </div>
             </div>
-        </div>
-    </article>
-</main>
+        </article>
+    </main>
 {% endblock %}

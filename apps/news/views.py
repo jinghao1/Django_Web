@@ -43,17 +43,33 @@ def index(request):
 # hs cn index
 def hs_cn_index(request):
     search_string = request.GET.get("s_search", None)
+    lang = request.GET.get("lang", "cn")
     if search_string is None:
+        # title = models.CharField(max_length=200)  # 题目
+        # desc = models.CharField(max_length=200)  # 描述
+        # thumbnail = models.URLField()  # 缩略图链接
+        # content = models.TextField()  # 发布内容
+        # pub_time = models.DateTimeField(auto_now=True)  # 发布时间，设置为当前时间
         newses = News.objects.select_related('category', 'author')[
                  0:settings.ONE_PAGE_NEWS_COUNT]
-        categories = NewCategory.objects.all()
-        banners = Banner.objects.all()  # 获取轮播图
+        # categories = NewCategory.objects.all()
+        # banners = Banner.objects.all()  # 获取轮播图
         # context 中''中的数据是传入HTML模板中的变量，
         # print(type(banners), 'banners:%s' % banners)
+        if lang=="en":
+            menu_about_name = "ABOUT US"
+            menu_data_name = "DATA"
+        else:
+            menu_about_name = "关于我们"
+            menu_data_name = "数据仓库"
         context = {
             'newses': newses,
-            'categories': categories,
-            'banners': banners  # 将轮播图数据返回给前端
+            'smalles':[2,3,6,7],
+            'lang':lang,
+            'menu_about_name':menu_about_name,
+            'menu_data_name':menu_data_name,
+            # 'categories': categories
+            # 'banners': banners  # 将轮播图数据返回给前端
         }
         return render(request, 'hs/index.html', context=context)
     else:
@@ -71,7 +87,7 @@ def hs_cn_index(request):
                         "ID": 525,
                         "post_title": "\u7ea2\u6749X\u98de\u4e66\u300c\u7ec4\u7ec7\u8fdb\u5316\u8bba\u300d\uff1a\u4e3a\u4ec0\u4e48\u5148\u8fdb\u7ec4\u7ec7\u53ef\u4ee5\u4fdd\u6301\u5f39\u6027\uff1f| Human Capital Talk\u7b2c\u56db\u671f",
                         "post_type": "post",
-                        "permalink": "https:\/\/www.hongshan.com\/article\/sequoia-feishu-human-capital-talk-4\/",
+                        "permalink": "\/article\/sequoia-feishu-human-capital-talk-4\/",
                         "terms": [],
                         "meta": [],
                         "acf": {
@@ -82,7 +98,7 @@ def hs_cn_index(request):
                         "ID": 986,
                         "post_title": "\u5b57\u8282\u8df3\u52a8",
                         "post_type": "company",
-                        "permalink": "https:\/\/www.hongshan.com\/companies\/bytedance\/",
+                        "permalink": "\/companies\/bytedance\/",
                         "terms": {
                             "sector": [
                                 {
@@ -115,11 +131,13 @@ def hs_cn_about_us(request):
              0:settings.ONE_PAGE_NEWS_COUNT]
     categories = NewCategory.objects.all()
     banners = Banner.objects.all()  # 获取轮播图
+    lang = request.GET.get("lang", "cn")
     # context 中''中的数据是传入HTML模板中的变量，
     # print(type(banners), 'banners:%s' % banners)
     context = {
         'newses': newses,
         'categories': categories,
+        'lang':lang,
         'banners': banners  # 将轮播图数据返回给前端
     }
     return render(request, 'hs/about_us.html', context=context)
@@ -176,10 +194,12 @@ def news_detail(request, news_id):
         news = News.objects.select_related(
             'category', 'author').get(
             pk=news_id)
+        lang = request.GET.get("lang", "cn")
         context = {
-            'news': news
+            'news': news,
+            'lang':lang
         }
-        return render(request, 'news/news_detail.html', context=context)
+        return render(request, 'news/hs_news_detail.html', context=context)
     except News.DoesNotExist:
         raise Http404  # 抛出一个404错误，当抛出404时，django就会在根文件中的templates文件调用一个叫做404的文件
 

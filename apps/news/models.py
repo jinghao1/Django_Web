@@ -13,7 +13,7 @@ class NewCategory(models.Model):
 class News(models.Model):
     """新闻表"""
     title = models.CharField(max_length=200)  # 题目
-    desc = models.CharField(max_length=200)  # 描述
+    desc = models.CharField(max_length=200,null=True)  # 描述
     thumbnail = models.URLField()  # 缩略图链接
     content = models.TextField()  # 发布内容
     pub_time = models.DateTimeField(auto_now=True)  # 发布时间，设置为当前时间

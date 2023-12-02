@@ -241,7 +241,7 @@ UEDITOR_QINIU_DOMAIN = config.QINIU_DOMAIN
 UEDITOR_UPLOAD_TO_QINIU = True
 
 # 定义首页新闻一页展示多少条新闻
-ONE_PAGE_NEWS_COUNT = 2
+ONE_PAGE_NEWS_COUNT = 8
 
 # 百度云的配置
 # 控制台->用户中心->用户ID

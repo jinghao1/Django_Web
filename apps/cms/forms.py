@@ -15,7 +15,7 @@ class WriteNewsForm(forms.ModelForm, FormMixin):
 
     class Meta:
         model = News
-        fields = ('title', 'desc', 'thumbnail', 'content')
+        fields = ('title', 'thumbnail', 'content')
         error_messages = {
             'category': {
                 'required': '必须传分类的id！'
