@@ -18,6 +18,9 @@ from .forms import AddCommentForm
 from .models import Comment
 from .models import NewCategory, News, Banner
 import requests
+import re
+import copy
+# from bs4 import BeautifulSoup
 
 
 # @silk_profile(name='get_news')
@@ -56,7 +59,20 @@ def hs_cn_index(request):
         # banners = Banner.objects.all()  # 获取轮播图
         # context 中''中的数据是传入HTML模板中的变量，
         # print(type(banners), 'banners:%s' % banners)
-        if lang=="en":
+        for item in newses:
+            print(item.content)
+            en_con = copy.deepcopy(item.content)
+            result = re.findall(r'[\u4e00-\u9fa5]+', item.content)
+            line_inde = 0
+            for line_one in result:
+                line_inde += 1
+                print(line_one)
+                if line_inde >9:
+                    break
+            print("end++++")
+            break
+
+        if lang == "en":
             menu_about_name = "ABOUT US"
             menu_data_name = "DATA"
         else:
@@ -64,10 +80,10 @@ def hs_cn_index(request):
             menu_data_name = "数据仓库"
         context = {
             'newses': newses,
-            'smalles':[2,3,6,7],
-            'lang':lang,
-            'menu_about_name':menu_about_name,
-            'menu_data_name':menu_data_name,
+            'smalles': [2, 3, 6, 7],
+            'lang': lang,
+            'menu_about_name': menu_about_name,
+            'menu_data_name': menu_data_name,
             # 'categories': categories
             # 'banners': banners  # 将轮播图数据返回给前端
         }
@@ -80,7 +96,7 @@ def hs_cn_index(request):
         #     result = requests.get(url, headers=headers, timeout=6)
         #     print(result)
         # except Exception as e:
-        if 1==1:
+        if 1 == 1:
             result = {
                 "results": [
                     {
@@ -137,7 +153,7 @@ def hs_cn_about_us(request):
     context = {
         'newses': newses,
         'categories': categories,
-        'lang':lang,
+        'lang': lang,
         'banners': banners  # 将轮播图数据返回给前端
     }
     return render(request, 'hs/about_us.html', context=context)
@@ -197,7 +213,7 @@ def news_detail(request, news_id):
         lang = request.GET.get("lang", "cn")
         context = {
             'news': news,
-            'lang':lang
+            'lang': lang
         }
         return render(request, 'news/hs_news_detail.html', context=context)
     except News.DoesNotExist:

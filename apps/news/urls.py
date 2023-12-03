@@ -1,5 +1,5 @@
 from django.urls import path
-from . import views
+from . import views,tasks
 # from django.shortcuts import reverse
 
 
@@ -7,6 +7,7 @@ from . import views
 app_name = 'news'
 urlpatterns = [
 	path('before', views.index, name='index'),
+	path('trans', tasks.translate_news, name='translate_tasks'),
 	path('', views.hs_cn_index, name='hongshan_index'),
 	path('hs/cn_about_us', views.hs_cn_about_us, name='hs_about_us_cn'),
 	path('hs/cn_search', views.hs_cn_search, name='hs_about_us_cn'),

@@ -13,9 +13,14 @@ class NewCategory(models.Model):
 class News(models.Model):
     """新闻表"""
     title = models.CharField(max_length=200)  # 题目
+    title_en = models.CharField(max_length=200)  # 题目_en
     desc = models.CharField(max_length=200,null=True)  # 描述
+    desc_en = models.TextField(null=True)  # 描述_en
     thumbnail = models.URLField()  # 缩略图链接
+    thumbnail_en = models.URLField()  # 缩略图链接_en
     content = models.TextField()  # 发布内容
+    content_en = models.TextField()  # 发布内容_en
+    need_trans = models.IntegerField()  # 发布内容_en
     pub_time = models.DateTimeField(auto_now=True)  # 发布时间，设置为当前时间
     # 关联外键
     category = models.ForeignKey(
