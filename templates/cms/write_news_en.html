@@ -36,7 +36,7 @@
                                 <label for="title-form">标题</label>
                                 {% if news %}
                                     <input type="text" name="title" id="title-form" class="form-control"
-                                           value="{{ news.title }}">
+                                           value="{{ news.title_en }}">
                                 {% else %}
                                     <input type="text" name="title" id="title-form" class="form-control">
                                 {% endif %}
@@ -46,7 +46,7 @@
                                 <label for="desc-form">描述</label>
                                 {% if news %}
                                     <input type="text" class="form-control" name="desc" id="desc-form"
-                                           value="{{ news.desc }}">
+                                           value="{{ news.desc_en }}">
                                 {% else %}
                                     <input type="text" class="form-control" name="desc" id="desc-form">
                                 {% endif %}
@@ -70,7 +70,7 @@
                                 <div class="input-group">
                                     {% if news %}
                                         <input type="text" name="thumbnail" class="form-control" id="thumbnail-form"
-                                               value="{{ news.thumbnail }}">
+                                               value="{{ news.thumbnail_en }}">
                                     {% else %}
                                         <input type="text" name="thumbnail" class="form-control" id="thumbnail-form">
                                     {% endif %}
@@ -99,7 +99,7 @@
                             <div class="form-group">
                                 <label for="content-form">内容</label>
                                 {% if news %}
-                                    <script id="editor" type="text/plain">{{ news.content|safe }}</script>
+                                    <script id="editor" type="text/plain">{{ news.content_en|safe }}</script>
                                     {# 新闻内容加入safe当作HTML标签处理 #}
                                     {# type="text/plain"表示是一个纯文本类型 #}
                                 {% else %}
@@ -115,7 +115,7 @@
                     <div class="box-footer">
                         <button id="submit-btn" class="btn btn-primary pull-right" data-news-id="{{ news.pk }}">发布
                         </button>
-                         <input hidden type="text" class="btn btn-default" name="lang" value="cn">
+                        <input hidden type="text" class="btn btn-default" name="lang" value="en">
                         {# 发布时，根据news.pk进行判断，如果有值就是编辑，没有值就是新闻的新增 #}
                     </div>
                 </form>

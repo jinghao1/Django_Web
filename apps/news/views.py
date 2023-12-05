@@ -87,7 +87,10 @@ def hs_cn_index(request):
             # 'categories': categories
             # 'banners': banners  # 将轮播图数据返回给前端
         }
-        return render(request, 'hs/index.html', context=context)
+        if lang == "en":
+            return render(request, 'hs/index_en.html', context=context)
+        else:
+            return render(request, 'hs/index.html', context=context)
     else:
         # try:
         #     headers = {

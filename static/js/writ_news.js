@@ -115,6 +115,7 @@ $(function () {
         var desc = $("input[name='desc']").val();
         var category = $("select[name='category']").val();
         var thumbnail = $("input[name='thumbnail']").val();
+        var lang = $("input[name='lang']").val();
         var content = window.ue.getContent();
         var news_id = btn.attr('data-news-id');
         var url = '';
@@ -127,6 +128,7 @@ $(function () {
             'url':url,
             'data': {
                 'title':title,
+                'lang':lang,
                 'desc':desc,
                 'category':category,
                 'thumbnail':thumbnail,

@@ -92,7 +92,7 @@
                     <th class="pull-center">标题</th>
                     <th>分类</th>
                     <th>发布时间</th>
-                    <th>作者</th>
+
                     <th>操作</th>
                 </tr>
             </thead>
@@ -102,10 +102,11 @@
                         <td><a href="{% url 'news:news_detail' news_id=news.pk %}">{{ news.title }}</a></td>
                         <td>{{ news.category.name }}</td>
                         <td>{{ news.pub_time|time_format }}</td>
-                        <td>{{ news.author.name }}</td>
+
                         <td>
                             {# 使用这种形式传递参数/edit_news/?pk=? #}
                             <a href="{% url 'cms:edit_news' %}?pk={{ news.pk }}" class="btn btn-info btn-xs">编辑</a>
+                            <a href="{% url 'cms:edit_news' %}?pk={{ news.pk }}&lang=en" class="btn btn-info btn-xs">英文编辑</a>
                             <button class="btn btn-danger btn-xs delete-btn" data-news-id="{{ news.pk }}">删除</button>
                             {# 绑定pk,可以直接在前后端获取 #}
                         </td>

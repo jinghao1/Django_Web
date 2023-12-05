@@ -1,6 +1,7 @@
 # coding=utf-8
 import os
-from datetime import datetime  # 获取时间参数模块
+# from datetime import datetime  # 获取时间参数模块
+from django.utils import timezone as datetime
 from urllib import parse  # 导入url函数
 import logging
 
@@ -216,38 +217,62 @@ class EditNewsViem(View):
 
     def get(self, request):
         pk = request.GET.get('pk')
+        lang = request.GET.get('lang',"cn")
+
+
         news = News.objects.get(pk=pk)
         categories = NewCategory.objects.all()
         context = {
             'news': news,
             'categories': categories
         }
-        return render(request, 'cms/write_news.html', context=context)
+        if lang == "en":
+            return render(request, 'cms/write_news_en.html', context=context)
+        else:
+            return render(request, 'cms/write_news.html', context=context)
 
     def post(self, request):
+
         form = EditNewsForm(request.POST)
         if form.is_valid():
             pub_time = datetime.now()
             pk = form.cleaned_data.get('pk')
             title = form.cleaned_data.get('title')
-            desc = form.cleaned_data.get('desc',"")
+            desc = request.POST.get('desc',"")
             category_id = form.cleaned_data.get('category')
-            thumbnail = form.cleaned_data.get('thumbnail')
+            thumbnail = request.POST.get('thumbnail',"")
+
             content = form.cleaned_data.get('content')
+            lang = request.POST.get('lang')
+
             category = NewCategory.objects.get(pk=category_id)
-            News.objects.filter(
-                pk=pk).update(
-                title=title,
-                desc=desc,
-                thumbnail=thumbnail,
-                content=content,
-                pub_time=pub_time,
-                category=category)
+            if desc == "None":
+                desc = ""
+            if thumbnail == "None":
+                thumbnail = ""
+            if lang=="en":
+                News.objects.filter(
+                    pk=pk).update(
+                    title_en=title,
+                    desc_en=desc,
+                    content_en=content,
+                    thumbnail_en=thumbnail,
+                    pub_time=pub_time,
+                    category=category)
+            else:
+                News.objects.filter(
+                    pk=pk).update(
+                    title=title,
+                    desc=desc,
+                    thumbnail=thumbnail,
+                    content=content,
+                    pub_time=pub_time,
+                    category=category)
             logger.info('编辑新闻%s成功！' % title)
             return restful.ok()
         else:
-            logger.error('编辑新闻失败！')
-            return restful.params_error(form.get_error())
+            return restful.ok()
+
 
 
 @xfz_permission_required(News)

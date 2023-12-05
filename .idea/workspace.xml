@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e62268d-292f-4458-bb17-b06968999966" name="Default" comment="添加展示页面url">
-      <change afterPath="$PROJECT_DIR$/apps/news/tasks.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/fd4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/cms/write_news_en.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/hs/index_en.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/news/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/news/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/news/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/news/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/cms/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cms/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/cms/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cms/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/news/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_01.log" beforeDir="false" afterPath="$PROJECT_DIR$/django_01.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/hs_base/hs_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/hs_base/hs_base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/writ_news.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/writ_news.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cms/news_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cms/news_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cms/write_news.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cms/write_news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/news/hs_news_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/news/hs_news_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -322,17 +323,17 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "true",
-    "last_opened_file_path": "/Users/sjh/Code/Django_Web/templates/news",
+    "last_opened_file_path": "/Users/sjh/Code/Django_Web/templates/hs",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/hs" />
+      <recent name="$PROJECT_DIR$/templates/cms" />
       <recent name="$PROJECT_DIR$/templates/news" />
       <recent name="$PROJECT_DIR$/templates/hs_base" />
       <recent name="$PROJECT_DIR$/static/js/hs_base" />
-      <recent name="$PROJECT_DIR$/static/css/hs_base" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/django_01" />
@@ -465,7 +466,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1529122678684</updated>
-      <workItem from="1700930160739" duration="60683000" />
+      <workItem from="1700930160739" duration="71854000" />
     </task>
     <task id="LOCAL-00127" summary="change notation">
       <created>1575856907430</created>
