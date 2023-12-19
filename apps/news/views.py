@@ -163,7 +163,7 @@ def hs_cn_about_us(request):
 
 
 # 搜索
-def hs_cn_search(request):
+def hs_search(request):
     newses = News.objects.select_related('category', 'author')[
              0:settings.ONE_PAGE_NEWS_COUNT]
     categories = NewCategory.objects.all()
@@ -175,7 +175,49 @@ def hs_cn_search(request):
         'categories': categories,
         'banners': banners  # 将轮播图数据返回给前端
     }
-    return render(request, 'hs/search_cn.html', context=context)
+    result = {
+        "results": [
+            {
+                "ID": 525,
+                "post_title": "\u7ea2\u6749X\u98de\u4e66\u300c\u7ec4\u7ec7\u8fdb\u5316\u8bba\u300d\uff1a\u4e3a\u4ec0\u4e48\u5148\u8fdb\u7ec4\u7ec7\u53ef\u4ee5\u4fdd\u6301\u5f39\u6027\uff1f| Human Capital Talk\u7b2c\u56db\u671f",
+                "post_type": "post",
+                "permalink": "\/article\/sequoia-feishu-human-capital-talk-4\/",
+                "terms": [],
+                "meta": [],
+                "acf": {
+                    "post_author_profile": "null"
+                }
+            },
+            {
+                "ID": 986,
+                "post_title": "\u5b57\u8282\u8df3\u52a8",
+                "post_type": "company",
+                "permalink": "\/companies\/bytedance\/",
+                "terms": {
+                    "sector": [
+                        {
+                            "term_id": 12,
+                            "slug": "tech",
+                            "name": "\u79d1\u6280",
+                            "parent": 0,
+                            "term_taxonomy_id": 12,
+                            "term_order": 0,
+                            "facet": "{\"term_id\":12,\"slug\":\"tech\",\"name\":\"\\u79d1\\u6280\",\"parent\":0,\"term_taxonomy_id\":12,\"term_order\":0}"
+                        }
+                    ]
+                },
+                "meta": []
+            }
+        ],
+        "total": 2,
+        "totals": {
+            "post": 1,
+            "company": 1
+        }
+    }
+
+    return JsonResponse(result)
+    # return render(request, 'hs/search_cn.html', context=context)
 
 
 @require_GET

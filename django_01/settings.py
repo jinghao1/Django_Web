@@ -12,11 +12,11 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 
 import os
 from . import config
-
+from datetime import timedelta
+from celery.schedules import crontab
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
@@ -28,12 +28,23 @@ SECRET_KEY = '(!az*nhv-51*ki2f*d1(#m+e(@03-cqy77gtmy=a++2=4@7&fl'
 
 # DEBUG = False  # 调试开关，True是调试模式，False是关闭调试模式
 DEBUG = True  # 调试开关，True是调试模式，False是关闭调试模式
+LANGUAGE_CODE = 'zh-hans'
+
+TIME_ZONE = 'Asia/Shanghai'
+
+USE_I18N = True
+
+USE_L10N = True
+
+USE_TZ = False
 
 # 两种方式在括号种加*，或者加入该服务器的地址
 ALLOWED_HOSTS = ['*']
 
 # Application definition
 INSTALLED_APPS = [
+    'django_celery_results',
+    'django_celery_beat',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -46,6 +57,8 @@ INSTALLED_APPS = [
     'apps.payinfo',
     'apps.xfzauth',
     'rest_framework',
+    'django_01',
+    'taskApp',
     # 'debug_toolbar',
     # 'silk',
 ]
@@ -63,11 +76,63 @@ MIDDLEWARE = [
     # 'silk.middleware.SilkyMiddleware',
 ]
 
+# Broker配置，使用Redis作为消息中间件
+BROKER_URL = 'redis://dj_redis_v2:6379/0'
+
+# BACKEND配置，这里使用redis
+CELERY_RESULT_BACKEND = 'redis://dj_redis_v2:6379/0'
+
+# 结果序列化方案
+CELERY_RESULT_SERIALIZER = 'json'
+
+# 任务结果过期时间，秒
+CELERY_TASK_RESULT_EXPIRES = 60 * 60 * 24
+
+# 时区配置
+CELERY_TIMEZONE = 'Asia/Shanghai'
+
+# 指定导入的任务模块，可以指定多个
+CELERY_IMPORTS = (
+    'taskApp.tasks'
+)
+
+CELERYBEAT_SCHEDULE = {
+    'ali_script': {
+        # 任务路径
+        'task': 'taskApp.tasks.get_ali_script_status',
+        # 每日七点执行
+        # 'schedule': crontab(hour=7, minute=0),
+        'schedule': timedelta(seconds=20)
+        # 'schedule':5
+    },
+    # 'log_file': {
+    #     # 任务路径
+    #     'task': 'taskApp.tasks.produce_log',
+    #     # 每日零点执行
+    #     'schedule': crontab(hour=0, minute=0),  # 通过crontab进行定时
+    # },
+    'weather_file': {
+        'task': 'taskApp.tasks.get_weather_status',
+        # 'schedule': crontab(hour=7, minute=0)
+        'schedule': timedelta(seconds=20)
+    },
+    'power_file': {
+        'task': 'taskApp.tasks.get_power_status',
+        # 'schedule': crontab(hour=5, minute=30),
+        'schedule': timedelta(seconds=20)
+    },
+    'overview': {
+        'task': 'taskApp.tasks.get_overview_status',
+        # 'schedule': crontab(hour=7, minute=10),
+        'schedule': timedelta(seconds=30)
+    }
+}
+
 # 配置debug-toolbar
 INTERNAL_IPS = ['127.0.0.1']
 # Application definition
 DEBUG_TOOLBAR_PANELS = [
-     # 代表是哪个django版本
+    # 代表是哪个django版本
     'debug_toolbar.panels.versions.VersionsPanel',
     # 用来计时的，判断加载当前页面总共花的时间
     'debug_toolbar.panels.timer.TimerPanel',
@@ -94,12 +159,11 @@ DEBUG_TOOLBAR_PANELS = [
 
     # 配置第三方的panel
     'djdt_flamegraph.FlamegraphPanel',
-    ]
+]
 
 DEBUG_TOOLBAR_CONFIG = {
 
 }
-
 
 # 根目录的url路径设置
 ROOT_URLCONF = 'django_01.urls'
@@ -131,7 +195,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'django_01.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 # 数据库信息配置
@@ -146,7 +209,6 @@ DATABASES = {
 
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
@@ -173,7 +235,6 @@ AUTH_PASSWORD_VALIDATORS = [
 # 必须要在设置（setting文件配置）完这些东西之后执行
 AUTH_USER_MODEL = 'xfzauth.User'
 
-
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
     # or allow read-only access for unauthenticated users.
@@ -182,7 +243,6 @@ REST_FRAMEWORK = {
         # 'rest_framework.permissions.DjangoModelPermissions',
     ]
 }
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
@@ -273,10 +333,9 @@ HAYSTACK_CONNECTIONS = {
 # 当添加、修改、删除数据时，自动生成索引
 HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
 
-
 # log日志配置
 LOGGING = {
-    'version': 1,   # 版本
+    'version': 1,  # 版本
     'disable_existing_loggers': False,
     # 输出格式化：定义两种'verbose'/'simple'选择
     'formatters': {
@@ -284,9 +343,9 @@ LOGGING = {
             # 'format': '%(levelname)s %(asctime)s %(module)s %(process)d %(thread)d %(message)s' # 官方示例
             # WARNING 2018-11-08 16:19:23,113 views 24300 5424 文章分类修改'3'成功
             'format': '%(asctime)s - %(filename)s\%(funcName)s[line:%(lineno)d] - %(levelname)s: %(message)s',
-	        #  2018-11-08 16:34:17,512 - views.py\edit_news_category[line:329] - WARNING: 文章分类修改'时政热点'成功
-	        # 'format': '[%(asctime)s] %(levelname)s [%(name)s.%(funcName)s:%(lineno)d %(module)s] %(message)s'
-	        # [2018-11-08 16:22:29,817] WARNING [django.edit_news_category:329 views] 文章分类修改'4'成功
+            #  2018-11-08 16:34:17,512 - views.py\edit_news_category[line:329] - WARNING: 文章分类修改'时政热点'成功
+            # 'format': '[%(asctime)s] %(levelname)s [%(name)s.%(funcName)s:%(lineno)d %(module)s] %(message)s'
+            # [2018-11-08 16:22:29,817] WARNING [django.edit_news_category:329 views] 文章分类修改'4'成功
         },
         'simple': {
             'format': '%(levelname)s %(message)s'
@@ -340,4 +399,3 @@ LOGGING = {
         }
     }
 }
-

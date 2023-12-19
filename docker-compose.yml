@@ -10,7 +10,8 @@ services:
 
   django_web:
     # the application's web service (container) will use an image based on our Dockerfile
-    build: .
+    image: python:3.6
+#    build: .
     # map the internal port 80 to port 8000 on the host
     ports:
       - "8010:80"
@@ -21,7 +22,7 @@ services:
       - ".:/app:rw"
       - "./data:/data:rw"
     # the default command to run whenever the container is launched
-    command: python manage.py runserver 0.0.0.0:80
+    command: bash /app/start.sh
     # the URL 'postgres' or 'mysql' will point to the application's db service
     networks:
       - djangoweb2
@@ -43,5 +44,17 @@ services:
       - "./mysql:/docker-entrypoint-initdb.d/"
     networks:
       - djangoweb2
+  dj_redis_v2:
+    image: redis:6.2
+#    restart: always
+    volumes:
+      - ./redis/redis.conf:/etc/redis/redis.conf:ro
+      - ./redis/data:/data
+    command: redis-server /etc/redis/redis.conf
+    ports:
+      - 6378:6379
+    networks:
+      - djangoweb2
+
 networks:
   djangoweb2:
