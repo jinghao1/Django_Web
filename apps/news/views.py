@@ -20,6 +20,7 @@ from .models import NewCategory, News, Banner
 import requests
 import re
 import copy
+import requests
 # from bs4 import BeautifulSoup
 
 
@@ -164,17 +165,12 @@ def hs_cn_about_us(request):
 
 # 搜索
 def hs_search(request):
-    newses = News.objects.select_related('category', 'author')[
-             0:settings.ONE_PAGE_NEWS_COUNT]
-    categories = NewCategory.objects.all()
-    banners = Banner.objects.all()  # 获取轮播图
-    # context 中''中的数据是传入HTML模板中的变量，
-    # print(type(banners), 'banners:%s' % banners)
-    context = {
-        'newses': newses,
-        'categories': categories,
-        'banners': banners  # 将轮播图数据返回给前端
-    }
+    s_search = request.GET.get("s_search", None)
+    lang = request.GET.get("lang", "cn")
+    if s_search:
+        res = requests.get("https://www.xiniudata.com/search2?name={}".format(s_search),headers={"Cookie":"utoken=ND7HF4WRDLBINXYUL0A1TX576LHDF568"})
+        print(res.status_code)
+        print(res.content)
     result = {
         "results": [
             {

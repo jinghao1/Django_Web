@@ -337,3 +337,8 @@
 84:C 19 Dec 2023 14:22:01.489 * DB saved on disk
 84:C 19 Dec 2023 14:22:01.492 * RDB: 0 MB of memory used by copy-on-write
 1:M 19 Dec 2023 14:22:01.564 * Background saving terminated with success
+1:M 19 Dec 2023 14:27:02.061 * 10 changes in 300 seconds. Saving...
+1:M 19 Dec 2023 14:27:02.068 * Background saving started by pid 85
+85:C 19 Dec 2023 14:27:02.089 * DB saved on disk
+85:C 19 Dec 2023 14:27:02.092 * RDB: 0 MB of memory used by copy-on-write
+1:M 19 Dec 2023 14:27:02.174 * Background saving terminated with success
