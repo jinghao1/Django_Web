@@ -1,8 +1,9 @@
 import requests
-from lxml import  etree
-s_search="小菜园"
+from lxml import etree
+
+s_search = "小菜园"
 resqonse = requests.get("https://www.xiniudata.com/search2?name={}".format(s_search),
-                   headers={"Cookie": "utoken=ND7HF4WRDLBINXYUL0A1TX576LHDF568"})
+                        headers={"Cookie": "utoken=ND7HF4WRDLBINXYUL0A1TX576LHDF568"})
 if resqonse.status_code == 200:
 
     # 获取页面资源

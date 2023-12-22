@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'apps.cms',
     'apps.news',
     'apps.payinfo',
+    'apps.company',
     'apps.xfzauth',
     'rest_framework',
     'django_01',

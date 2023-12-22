@@ -123,3 +123,125 @@
 2023-12-19 22:44:43,080 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/news/views.py changed, reloading.
 2023-12-19 22:44:43,670 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
 2023-12-19 22:44:43,676 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 19:07:00,432 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/news/views.py changed, reloading.
+2023-12-22 19:07:00,433 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/news/views.py changed, reloading.
+2023-12-22 19:07:01,180 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 19:07:01,180 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 19:08:20,363 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/news/views.py changed, reloading.
+2023-12-22 19:08:20,372 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/news/views.py changed, reloading.
+2023-12-22 19:08:20,966 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 19:08:20,974 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 19:56:22,928 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/news/views.py changed, reloading.
+2023-12-22 19:56:22,932 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/news/views.py changed, reloading.
+2023-12-22 19:56:23,663 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 19:56:23,664 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 19:58:23,089 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/news/views.py changed, reloading.
+2023-12-22 19:58:23,091 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/news/views.py changed, reloading.
+2023-12-22 19:58:23,707 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 19:58:23,724 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 19:58:37,515 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/news/views.py changed, reloading.
+2023-12-22 19:58:37,538 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/news/views.py changed, reloading.
+2023-12-22 19:58:38,186 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 19:58:38,224 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 19:58:49,004 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/news/views.py changed, reloading.
+2023-12-22 19:58:49,007 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/news/views.py changed, reloading.
+2023-12-22 19:58:49,683 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 19:58:49,687 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 19:58:56,183 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/news/views.py changed, reloading.
+2023-12-22 19:58:56,184 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/news/views.py changed, reloading.
+2023-12-22 19:58:56,842 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 19:58:56,846 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 19:59:36,279 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/news/views.py changed, reloading.
+2023-12-22 19:59:36,282 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/news/views.py changed, reloading.
+2023-12-22 19:59:36,918 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 19:59:36,922 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 20:02:44,932 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/news/views.py changed, reloading.
+2023-12-22 20:02:44,935 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/news/views.py changed, reloading.
+2023-12-22 20:02:45,534 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 20:02:45,537 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 20:03:09,052 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/news/views.py changed, reloading.
+2023-12-22 20:03:09,054 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/news/views.py changed, reloading.
+2023-12-22 20:03:09,709 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 20:03:09,717 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 20:03:58,015 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/news/views.py changed, reloading.
+2023-12-22 20:03:58,015 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/news/views.py changed, reloading.
+2023-12-22 20:03:58,582 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 20:03:58,626 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 20:06:26,037 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/news/views.py changed, reloading.
+2023-12-22 20:06:26,038 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/news/views.py changed, reloading.
+2023-12-22 20:06:26,697 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 20:06:26,700 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 20:07:07,211 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 20:10:06,883 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 20:11:48,716 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 20:15:51,952 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 20:18:37,496 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 20:20:16,229 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 20:21:18,415 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 20:23:29,230 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 20:26:16,335 - autoreload.py\trigger_reload[line:217] - INFO: /app/django_01/settings.py changed, reloading.
+2023-12-22 20:26:17,058 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 20:26:19,501 - autoreload.py\trigger_reload[line:217] - INFO: /app/django_01/settings.py changed, reloading.
+2023-12-22 20:26:20,193 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 20:26:27,377 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 20:27:13,616 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 20:27:42,218 - autoreload.py\trigger_reload[line:217] - INFO: /app/django_01/settings.py changed, reloading.
+2023-12-22 20:27:42,627 - autoreload.py\trigger_reload[line:217] - INFO: /app/django_01/settings.py changed, reloading.
+2023-12-22 20:27:42,754 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 20:27:43,180 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 20:28:27,103 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 20:29:38,809 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 20:38:38,809 - autoreload.py\trigger_reload[line:217] - INFO: /app/django_01/config.py changed, reloading.
+2023-12-22 20:38:39,715 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 20:38:57,855 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 20:39:03,420 - basehttp.py\log_message[line:154] - INFO: "GET /?lang=en HTTP/1.1" 200 85989
+2023-12-22 20:39:03,472 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/hs_base/mediaelementplayer-legacy.min.css HTTP/1.1" 304 0
+2023-12-22 20:39:03,477 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/hs_base/skip-back.min.css HTTP/1.1" 304 0
+2023-12-22 20:39:03,479 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/hs_base/main.min.css HTTP/1.1" 304 0
+2023-12-22 20:39:03,484 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/hs_base/jump-forward.min.css HTTP/1.1" 304 0
+2023-12-22 20:39:03,490 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/hs_base/jetpack.css HTTP/1.1" 304 0
+2023-12-22 20:39:03,495 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/hs_base/speed.min.css HTTP/1.1" 304 0
+2023-12-22 20:39:03,512 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/lottie-player.js HTTP/1.1" 200 367111
+2023-12-22 20:39:03,512 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/hs_base/jp-search.chunk-main-payload.css HTTP/1.1" 304 0
+2023-12-22 20:39:03,527 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/wp-polyfill-inert.min.js HTTP/1.1" 304 0
+2023-12-22 20:39:03,539 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/i18n-loader.js HTTP/1.1" 304 0
+2023-12-22 20:39:03,541 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/wp-polyfill.min.js HTTP/1.1" 304 0
+2023-12-22 20:39:03,546 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/regenerator-runtime.min.js HTTP/1.1" 304 0
+2023-12-22 20:39:03,556 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/hooks.min.js HTTP/1.1" 304 0
+2023-12-22 20:39:03,561 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/i18n.min.js HTTP/1.1" 304 0
+2023-12-22 20:39:03,574 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/url.min.js HTTP/1.1" 304 0
+2023-12-22 20:39:03,576 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/main.min.js HTTP/1.1" 200 278570
+2023-12-22 20:39:03,588 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/w.js HTTP/1.1" 304 0
+2023-12-22 20:39:03,600 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/jp-search.js HTTP/1.1" 304 0
+2023-12-22 20:39:03,604 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/lodash.min.js HTTP/1.1" 304 0
+2023-12-22 20:39:03,604 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/jquery.min.js HTTP/1.1" 304 0
+2023-12-22 20:39:03,606 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/html-entities.min.js HTTP/1.1" 304 0
+2023-12-22 20:39:03,647 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/hs_base/theme-styles.min.css HTTP/1.1" 200 2245166
+2023-12-22 20:39:03,675 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/theme-scripts.min.js HTTP/1.1" 304 0
+2023-12-22 20:39:03,733 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/e-202347.js HTTP/1.1" 304 0
+2023-12-22 20:39:03,754 - basehttp.py\log_message[line:154] - WARNING: "GET /static/css/images/chinese-regulatory-logo.43806866.png HTTP/1.1" 404 1765
+2023-12-22 20:39:03,838 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/hs_base/lottie-player.js.map HTTP/1.1" 404 1717
+2023-12-22 20:39:03,857 - basehttp.py\log_message[line:154] - WARNING: "GET /static/css/fonts/Unica77LLWeb-Regular.5009057c.woff HTTP/1.1" 404 1756
+2023-12-22 20:39:03,857 - basehttp.py\log_message[line:154] - WARNING: "GET /static/css/fonts/icons.fb244726.ttf HTTP/1.1" 404 1708
+2023-12-22 20:39:03,866 - basehttp.py\log_message[line:154] - WARNING: "GET /static/css/fonts/Rosart-Regular.63cf825a.ttf HTTP/1.1" 404 1735
+2023-12-22 20:39:03,871 - basehttp.py\log_message[line:154] - WARNING: "GET /static/css/fonts/PitchSansApp-Regular.07f66690.woff2 HTTP/1.1" 404 1759
+2023-12-22 20:39:03,876 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4465
+2023-12-22 20:39:03,910 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2023-12-22 20:39:03,911 - basehttp.py\log_message[line:154] - WARNING: "GET /static/css/fonts/Rosart-Bold.03939f2d.ttf HTTP/1.1" 404 1726
+2023-12-22 20:39:03,919 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2023-12-22 20:39:03,925 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2023-12-22 20:39:03,928 - basehttp.py\log_message[line:154] - WARNING: "GET /static/css/fonts/icons.c5bfcebc.woff HTTP/1.1" 404 1711
+2023-12-22 20:39:03,928 - basehttp.py\log_message[line:154] - WARNING: "GET /static/css/fonts/Unica77LLWeb-Regular.1492eabb.woff2 HTTP/1.1" 404 1759
+2023-12-22 20:39:03,939 - basehttp.py\log_message[line:154] - WARNING: "GET /static/css/fonts/PitchSansApp-Regular.2b0c0bab.woff HTTP/1.1" 404 1756
+2023-12-22 20:39:03,942 - basehttp.py\log_message[line:154] - WARNING: "GET /static/css/fonts/Rosart-Regular.e5cb9549.woff HTTP/1.1" 404 1738
+2023-12-22 20:39:03,951 - basehttp.py\log_message[line:154] - WARNING: "GET /static/css/fonts/PitchSansApp-Regular.ca9341bc.ttf HTTP/1.1" 404 1753
+2023-12-22 20:39:03,947 - basehttp.py\log_message[line:154] - WARNING: "GET /static/css/fonts/Rosart-Bold.a8cb2b0d.woff HTTP/1.1" 404 1729
+2023-12-22 20:39:03,959 - basehttp.py\log_message[line:154] - WARNING: "GET /static/css/fonts/FZLanTingHeiS-L-GB.5c00b917.ttf HTTP/1.1" 404 1747
+2023-12-22 20:39:03,960 - basehttp.py\log_message[line:154] - WARNING: "GET /static/css/fonts/FZNewBaoSong-Z12S.feae127b.ttf HTTP/1.1" 404 1744
+2023-12-22 20:39:09,986 - basehttp.py\log_message[line:154] - INFO: "GET /hs/search?page=1&search=a&type=post&subtype=founder%2Ccompany%2Cteam-member%2Cpost&_fields=ID%2Cpost_title%2Cpost_type%2Cpermalink%2Cthumbnail%2Cacf.companies%2Cmeta.title%2Cacf.post_author_profile%2Cterms.role%2Cterms.category%2Cterms.sector&per_subtype=6 HTTP/1.1" 200 840
+2023-12-22 20:39:10,405 - basehttp.py\log_message[line:154] - INFO: "GET /hs/search?page=1&search=aa&type=post&subtype=founder%2Ccompany%2Cteam-member%2Cpost&_fields=ID%2Cpost_title%2Cpost_type%2Cpermalink%2Cthumbnail%2Cacf.companies%2Cmeta.title%2Cacf.post_author_profile%2Cterms.role%2Cterms.category%2Cterms.sector&per_subtype=6 HTTP/1.1" 200 840
+2023-12-22 20:40:43,176 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/news/views.py changed, reloading.
+2023-12-22 20:40:43,178 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/news/views.py changed, reloading.
+2023-12-22 20:40:43,740 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 20:40:43,775 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2023-12-22 20:40:47,858 - basehttp.py\log_message[line:154] - INFO: "GET /hs/search?page=1&search=aa4&type=post&subtype=founder%2Ccompany%2Cteam-member%2Cpost&_fields=ID%2Cpost_title%2Cpost_type%2Cpermalink%2Cthumbnail%2Cacf.companies%2Cmeta.title%2Cacf.post_author_profile%2Cterms.role%2Cterms.category%2Cterms.sector&per_subtype=6 HTTP/1.1" 200 840

@@ -5,7 +5,6 @@ from django.http import Http404
 # 当我们在查询的条件中需要组合条件时(例如两个条件“且”或者“或”)时。
 # 我们可以使用Q()查询对象
 from django.db.models import Q
-# from silk.profiling.profiler import silk_profile
 from django.http import JsonResponse
 # login_required：只能针对传统的页面跳转（如果没有登录，就跳转到login_url指定的页面）
 # 但是他不能处理这种ajax请求。就是说如果通过ajax请求去访问一个需要授权的页面
@@ -17,10 +16,14 @@ from utils import restful
 from .forms import AddCommentForm
 from .models import Comment
 from .models import NewCategory, News, Banner
+from utils.xn_request import xn_search
+from apps.company.views import Result_maker
 import requests
 import re
 import copy
 import requests
+
+
 # from bs4 import BeautifulSoup
 
 
@@ -68,7 +71,7 @@ def hs_cn_index(request):
             for line_one in result:
                 line_inde += 1
                 print(line_one)
-                if line_inde >9:
+                if line_inde > 9:
                     break
             print("end++++")
             break
@@ -165,12 +168,40 @@ def hs_cn_about_us(request):
 
 # 搜索
 def hs_search(request):
-    s_search = request.GET.get("s_search", None)
+    s_search = request.GET.get("search", None)
     lang = request.GET.get("lang", "cn")
     if s_search:
-        res = requests.get("https://www.xiniudata.com/search2?name={}".format(s_search),headers={"Cookie":"utoken=ND7HF4WRDLBINXYUL0A1TX576LHDF568"})
-        print(res.status_code)
-        print(res.content)
+        result_info = {
+            "xn_href": "com_url",
+            "title": "title",
+            "brief": "brief",
+            "highlight": "highlight",
+            "search_name": "search_name",
+        }
+
+        res_info = Result_maker(result_info)
+
+        # resqonse = xn_search(s_search)
+        # if resqonse.status_code == 200:
+        #
+        #     # 获取页面资源
+        #     page_text = resqonse.text
+        #     # 构造一个etree对象
+        #     tree = etree.HTML(page_text)
+        #     # 取值
+        #     res = tree.xpath('//section//div[@class="company-wrapper"]/div')
+        #     for div in res:
+        #         print("=====")
+        #         com_href = div.xpath('./div[1]/a/@href')
+        #         com_title = div.xpath('./div[2]/div[1]//a//text()')
+        #         com_brief = div.xpath('./div[2]/div[2]//span//text()')
+        #         com_highlight = div.xpath('./div[2]/div[3]//span//text()')
+        #         print(com_url[0])
+        #         print("".join(com_title))
+        #         print(com_brief)
+        #         print("".join(com_highlight))
+        # print(res.status_code)
+        # print(res.content)
     result = {
         "results": [
             {

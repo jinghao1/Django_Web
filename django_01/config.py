@@ -8,11 +8,12 @@ MYSQL_NAME = 'django_web'
 
 MYSQL_PASSWORD = 'mysitepass'
 # MYSQL_USER = 'mysiteuser'
-# MYSQL_HOST = 'django_web_mysqldb2'
-# MYSQL_PORT = '3306'
-MYSQL_HOST = 'django_web_db_2'
+MYSQL_HOST = 'django_web_mysqldb2'
+MYSQL_PORT = '3306' 
+# MYSQL_HOST = 'django_web_db_2'
+
+# MYSQL_PORT = '33065'
 MYSQL_USER = 'root'
-MYSQL_PORT = '33065'
 
 # 阿里云短信服务
 ALI_ACCESS_KEY_ID = ""
