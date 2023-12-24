@@ -19,8 +19,10 @@ from .models import NewCategory, News, Banner
 from utils.xn_request import xn_search
 from apps.company.views import Result_maker
 import requests
+from lxml import etree
 import re
 import copy
+import json
 import requests
 
 
@@ -51,101 +53,101 @@ def index(request):
 def hs_cn_index(request):
     search_string = request.GET.get("s_search", None)
     lang = request.GET.get("lang", "cn")
-    if search_string is None:
-        # title = models.CharField(max_length=200)  # 题目
-        # desc = models.CharField(max_length=200)  # 描述
-        # thumbnail = models.URLField()  # 缩略图链接
-        # content = models.TextField()  # 发布内容
-        # pub_time = models.DateTimeField(auto_now=True)  # 发布时间，设置为当前时间
-        newses = News.objects.select_related('category', 'author')[
-                 0:settings.ONE_PAGE_NEWS_COUNT]
-        # categories = NewCategory.objects.all()
-        # banners = Banner.objects.all()  # 获取轮播图
-        # context 中''中的数据是传入HTML模板中的变量，
-        # print(type(banners), 'banners:%s' % banners)
-        for item in newses:
-            print(item.content)
-            en_con = copy.deepcopy(item.content)
-            result = re.findall(r'[\u4e00-\u9fa5]+', item.content)
-            line_inde = 0
-            for line_one in result:
-                line_inde += 1
-                print(line_one)
-                if line_inde > 9:
-                    break
-            print("end++++")
-            break
+    # if search_string is None:
+    # title = models.CharField(max_length=200)  # 题目
+    # desc = models.CharField(max_length=200)  # 描述
+    # thumbnail = models.URLField()  # 缩略图链接
+    # content = models.TextField()  # 发布内容
+    # pub_time = models.DateTimeField(auto_now=True)  # 发布时间，设置为当前时间
+    newses = News.objects.select_related('category', 'author')[
+             0:settings.ONE_PAGE_NEWS_COUNT]
+    # categories = NewCategory.objects.all()
+    # banners = Banner.objects.all()  # 获取轮播图
+    # context 中''中的数据是传入HTML模板中的变量，
+    # print(type(banners), 'banners:%s' % banners)
+    for item in newses:
+        print(item.content)
+        en_con = copy.deepcopy(item.content)
+        result = re.findall(r'[\u4e00-\u9fa5]+', item.content)
+        line_inde = 0
+        for line_one in result:
+            line_inde += 1
+            print(line_one)
+            if line_inde > 9:
+                break
+        print("end++++")
+        break
 
-        if lang == "en":
-            menu_about_name = "ABOUT US"
-            menu_data_name = "DATA"
-        else:
-            menu_about_name = "关于我们"
-            menu_data_name = "数据仓库"
-        context = {
-            'newses': newses,
-            'smalles': [2, 3, 6, 7],
-            'lang': lang,
-            'menu_about_name': menu_about_name,
-            'menu_data_name': menu_data_name,
-            # 'categories': categories
-            # 'banners': banners  # 将轮播图数据返回给前端
-        }
-        if lang == "en":
-            return render(request, 'hs/index_en.html', context=context)
-        else:
-            return render(request, 'hs/index.html', context=context)
+    if lang == "en":
+        menu_about_name = "ABOUT US"
+        menu_data_name = "DATA"
     else:
-        # try:
-        #     headers = {
-        #         "Referer": "/team/?s_page=1&s_per_page=6&s_search=字节&s_subtype=founder%2Ccompany%2Cteam-member%2Cpost"
-        #     }
-        #     result = requests.get(url, headers=headers, timeout=6)
-        #     print(result)
-        # except Exception as e:
-        if 1 == 1:
-            result = {
-                "results": [
-                    {
-                        "ID": 525,
-                        "post_title": "\u7ea2\u6749X\u98de\u4e66\u300c\u7ec4\u7ec7\u8fdb\u5316\u8bba\u300d\uff1a\u4e3a\u4ec0\u4e48\u5148\u8fdb\u7ec4\u7ec7\u53ef\u4ee5\u4fdd\u6301\u5f39\u6027\uff1f| Human Capital Talk\u7b2c\u56db\u671f",
-                        "post_type": "post",
-                        "permalink": "\/article\/sequoia-feishu-human-capital-talk-4\/",
-                        "terms": [],
-                        "meta": [],
-                        "acf": {
-                            "post_author_profile": null
-                        }
-                    },
-                    {
-                        "ID": 986,
-                        "post_title": "\u5b57\u8282\u8df3\u52a8",
-                        "post_type": "company",
-                        "permalink": "\/companies\/bytedance\/",
-                        "terms": {
-                            "sector": [
-                                {
-                                    "term_id": 12,
-                                    "slug": "tech",
-                                    "name": "\u79d1\u6280",
-                                    "parent": 0,
-                                    "term_taxonomy_id": 12,
-                                    "term_order": 0,
-                                    "facet": "{\"term_id\":12,\"slug\":\"tech\",\"name\":\"\\u79d1\\u6280\",\"parent\":0,\"term_taxonomy_id\":12,\"term_order\":0}"
-                                }
-                            ]
-                        },
-                        "meta": []
-                    }
-                ],
-                "total": 2,
-                "totals": {
-                    "post": 1,
-                    "company": 1
-                }
-            }
-
-        return JsonResponse(result)
+        menu_about_name = "关于我们"
+        menu_data_name = "数据仓库"
+    context = {
+        'newses': newses,
+        'smalles': [2, 3, 6, 7],
+        'lang': lang,
+        'menu_about_name': menu_about_name,
+        'menu_data_name': menu_data_name,
+        # 'categories': categories
+        # 'banners': banners  # 将轮播图数据返回给前端
+    }
+    if lang == "en":
+        return render(request, 'hs/index_en.html', context=context)
+    else:
+        return render(request, 'hs/index.html', context=context)
+    # else:
+    #     # try:
+    #     #     headers = {
+    #     #         "Referer": "/team/?s_page=1&s_per_page=6&s_search=字节&s_subtype=founder%2Ccompany%2Cteam-member%2Cpost"
+    #     #     }
+    #     #     result = requests.get(url, headers=headers, timeout=6)
+    #     #     print(result)
+    #     # except Exception as e:
+    #     if 1 == 1:
+    #         result = {
+    #             "results": [
+    #                 {
+    #                     "ID": 525,
+    #                     "post_title": "\u7ea2\u6749X\u98de\u4e66\u300c\u7ec4\u7ec7\u8fdb\u5316\u8bba\u300d\uff1a\u4e3a\u4ec0\u4e48\u5148\u8fdb\u7ec4\u7ec7\u53ef\u4ee5\u4fdd\u6301\u5f39\u6027\uff1f| Human Capital Talk\u7b2c\u56db\u671f",
+    #                     "post_type": "post",
+    #                     "permalink": "\/article\/sequoia-feishu-human-capital-talk-4\/",
+    #                     "terms": [],
+    #                     "meta": [],
+    #                     "acf": {
+    #                         "post_author_profile": null
+    #                     }
+    #                 },
+    #                 {
+    #                     "ID": 986,
+    #                     "post_title": "\u5b57\u8282\u8df3\u52a8",
+    #                     "post_type": "company",
+    #                     "permalink": "\/companies\/bytedance\/",
+    #                     "terms": {
+    #                         "sector": [
+    #                             {
+    #                                 "term_id": 12,
+    #                                 "slug": "tech",
+    #                                 "name": "\u79d1\u6280",
+    #                                 "parent": 0,
+    #                                 "term_taxonomy_id": 12,
+    #                                 "term_order": 0,
+    #                                 "facet": "{\"term_id\":12,\"slug\":\"tech\",\"name\":\"\\u79d1\\u6280\",\"parent\":0,\"term_taxonomy_id\":12,\"term_order\":0}"
+    #                             }
+    #                         ]
+    #                     },
+    #                     "meta": []
+    #                 }
+    #             ],
+    #             "total": 2,
+    #             "totals": {
+    #                 "post": 1,
+    #                 "company": 1
+    #             }
+    #         }
+    #
+    #     return JsonResponse(result)
 
 
 # 关于我们
@@ -170,38 +172,75 @@ def hs_cn_about_us(request):
 def hs_search(request):
     s_search = request.GET.get("search", None)
     lang = request.GET.get("lang", "cn")
-    if s_search:
-        result_info = {
-            "xn_href": "com_url",
-            "title": "title",
-            "brief": "brief",
-            "highlight": "highlight",
-            "search_name": "search_name",
+    res_api = {
+        "results": [],
+        "total": 0,
+        'totals': {
+            'post': 0,
+            'company': 0
         }
+    }
+    if s_search:
+        response = xn_search(s_search)
 
-        res_info = Result_maker(result_info)
+        if "status_code" in dir(response) and response.status_code == 200:
 
-        # resqonse = xn_search(s_search)
-        # if resqonse.status_code == 200:
-        #
-        #     # 获取页面资源
-        #     page_text = resqonse.text
-        #     # 构造一个etree对象
-        #     tree = etree.HTML(page_text)
-        #     # 取值
-        #     res = tree.xpath('//section//div[@class="company-wrapper"]/div')
-        #     for div in res:
-        #         print("=====")
-        #         com_href = div.xpath('./div[1]/a/@href')
-        #         com_title = div.xpath('./div[2]/div[1]//a//text()')
-        #         com_brief = div.xpath('./div[2]/div[2]//span//text()')
-        #         com_highlight = div.xpath('./div[2]/div[3]//span//text()')
-        #         print(com_url[0])
-        #         print("".join(com_title))
-        #         print(com_brief)
-        #         print("".join(com_highlight))
-        # print(res.status_code)
-        # print(res.content)
+            # 获取页面资源
+            page_text = response.text
+            # 构造一个etree对象
+            tree = etree.HTML(page_text)
+            # 取值
+            res = tree.xpath('//section//div[@class="company-wrapper"]/div')
+            try:
+                for div in res:
+                    print("=====")
+                    com_href = div.xpath('./div[1]/a/@href')
+                    com_title = div.xpath('./div[2]/div[1]//a//text()')
+                    com_brief = div.xpath('./div[2]/div[2]//span//text()')
+
+                    com_brief = " ".join(com_brief)
+                    com_highlight = div.xpath('./div[2]/div[3]//span//text()')
+                    result_info = {
+                        "xn_href": com_href[0],
+                        "title": "".join(com_title),
+                        "brief": com_brief,
+                        "highlight": "".join(com_highlight),
+                        "search_name": s_search,
+                    }
+                    res_info = Result_maker(result_info)
+                    res_api['results'].append(
+                        {
+                            # "ID": 986,
+                            "post_title": result_info['title'],
+                            "post_type": "company",
+                            "permalink": result_info['xn_href'],
+                            "terms": {
+                                "sector": [
+                                    {
+                                        "term_id": 12,
+                                        "slug": "tech",
+                                        "name": com_brief,
+                                        "parent": 0,
+                                        "term_taxonomy_id": 12,
+                                        "term_order": 0,
+                                        # "facet": "{\"term_id\":12,\"slug\":\"tech\",\"name\":\"\\u79d1\\u6280\",\"parent\":0,\"term_taxonomy_id\":12,\"term_order\":0}"
+                                    }
+                                ]
+                            }
+                        }
+                    )
+                    print(com_href)
+                    print("".join(com_title))
+                    print(com_brief)
+                    print("".join(com_highlight))
+            except Exception as e:
+                print(e)
+    res_api['total'] = len(res_api['results'])
+    res_api['totals']['company'] = len(res_api['results'])
+    print(res_api)
+    return JsonResponse(res_api)
+    # print(res.status_code)
+    # print(res.content)
     result = {
         "results": [
             {
@@ -225,11 +264,11 @@ def hs_search(request):
                         {
                             "term_id": 12,
                             "slug": "tech",
-                            "name": "\u79d1\u6280",
+                            "name": "科技。。。--",
                             "parent": 0,
                             "term_taxonomy_id": 12,
                             "term_order": 0,
-                            "facet": "{\"term_id\":12,\"slug\":\"tech\",\"name\":\"\\u79d1\\u6280\",\"parent\":0,\"term_taxonomy_id\":12,\"term_order\":0}"
+                            # "facet": "{\"term_id\":12,\"slug\":\"tech\",\"name\":\"\\u79d1\\u6280\",\"parent\":0,\"term_taxonomy_id\":12,\"term_order\":0}"
                         }
                     ]
                 },
@@ -242,7 +281,7 @@ def hs_search(request):
             "company": 1
         }
     }
-
+    print(result)
     return JsonResponse(result)
     # return render(request, 'hs/search_cn.html', context=context)
 

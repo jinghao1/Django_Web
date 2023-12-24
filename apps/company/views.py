@@ -24,9 +24,14 @@ def Result_maker(result_info):
     info = Result.objects.filter(
         xn_href=result_info['xn_href']).exists()
     if info:
-        return "having"
+        Result.objects.filter(xn_href=result_info['xn_href']).update(
+            title=result_info['title'],
+            brief=result_info['brief'],
+            highlight=result_info['highlight'],
+            search_name=result_info['search_name'],
+        )
+        return "update"
     else:
-
         res = Result.objects.create(
             title=result_info['title'],
             brief=result_info['brief'],
@@ -34,6 +39,7 @@ def Result_maker(result_info):
             xn_href=result_info['xn_href'],
             search_name=result_info['search_name'],
         )
+        return "insert"
 
-
-    return restful.result(data={'result_id': res.id})
+    #
+    # return restful.result(data={'result_id': res.id})
