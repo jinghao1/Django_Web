@@ -1,0 +1,2332 @@
+{
+  "props": {
+    "pageProps": {
+      "company": {
+        "id": 233092,
+        "corporateId": 231283,
+        "code": "InterHousetjhd",
+        "name": "唐吉诃德",
+        "fullName": "北京唐吉诃德科技有限公司",
+        "brief": "连锁商业数字营建全栈式协同平台",
+        "desc": "唐吉诃德是一个连锁商业数字营建全栈式协同平台， 运用BIM、云计算、大数据、物联网、移动互联网、人工智能AI等信息化技术，为连锁商业空间提供设计、施工、运维一站式的数字整装交付服务。创造由业主、设计方、施工方、供应商等多方参与，共享、共创、共赢的数字整装新生态。",
+        "logo": "https://api.xiniudata.com/file/9212c4845d2411e9ae6000163e03b331",
+        "website": "http://interhouse.cn",
+        "round": 1040,
+        "roundName": "B轮",
+        "roundDesc": null,
+        "locationName": "北京",
+        "tagName": null,
+        "enTagName": null,
+        "establishDate": 1462464000000,
+        "companyStatus": "正常",
+        "statusDate": 0,
+        "funding": null,
+        "visited": false,
+        "tracked": false,
+        "otherMap": null,
+        "isLike": false,
+        "likeCnt": 0,
+        "commentCnt": 0,
+        "visitCnt": 0,
+        "trackedByPerson": false,
+        "hasGongShangInfoOnly": false,
+        "tagNameList": null,
+        "tagEnNameList": null,
+        "fundingList": null,
+        "regionName": "中国",
+        "provinceName": "北京市",
+        "cityName": "北京市",
+        "districtName": "海淀区",
+        "excellentCompany": false
+      },
+      "companyContact": null,
+      "fundings": [
+        {
+          "id": 552327,
+          "round": 0,
+          "roundName": "B轮",
+          "fundingDate": 1701302400000,
+          "fundingType": 0,
+          "publishDate": 1701302400000,
+          "source": 69001,
+          "gsDetectDate": 0,
+          "gsChangeDate": 0,
+          "corporateId": 231283,
+          "companyId": 233092,
+          "newsLink": "/news/6567e4addeb471794ca5f680",
+          "outerLink": null,
+          "fundingDesc": "{\"postMoney\":\"未披露\",\"postBrief\":\"\",\"money\":\"1亿人民币\",\"investorStr\":\"[{\\\"link\\\":\\\"http://www.apluscap.com/\\\",\\\"text\\\":\\\"洪泰基金\\\",\\\"id\\\":225,\\\"type\\\":\\\"investor\\\"},{\\\"text\\\":\\\"领投，\\\",\\\"type\\\":\\\"text\\\"},{\\\"text\\\":\\\"神骐资本\\\",\\\"id\\\":19693,\\\"type\\\":\\\"investor\\\"},{\\\"text\\\":\\\"、\\\",\\\"type\\\":\\\"text\\\"},{\\\"link\\\":\\\"http://www.brv.com.cn\\\",\\\"text\\\":\\\"蓝驰创投\\\",\\\"id\\\":115,\\\"type\\\":\\\"investor\\\"},{\\\"text\\\":\\\"跟投\\\",\\\"type\\\":\\\"text\\\"}]\",\"faBrief\":\"FA为凌霄资本。\",\"fa\":\"凌霄资本\",\"investorList\":[{\"id\":225,\"code\":\"0e973958db62484c383880c2e151bc95\",\"name\":\"洪泰基金\",\"logo\":\"fe6d0efa6fc611e99c5900163e03b331\"},{\"id\":19693,\"code\":\"3ba9963f4af14e288e857e110dfe5757\",\"name\":\"神骐资本\",\"logo\":\"0c11d24907ae4a3c90544b0c88fa737c\"},{\"id\":115,\"code\":\"8f27bb1a8dc90ac39c10e25f8edc5d98\",\"name\":\"蓝驰创投\",\"logo\":\"53c417346fc411e9b81800163e03b331\"}],\"ratio\":null,\"roundBrief\":\"完成1亿人民币B轮融资，\"}",
+          "topic": null,
+          "topicMessagePublishTime": 0,
+          "stockExchange": null,
+          "stockExchangeBoard": null
+        },
+        {
+          "id": 397218,
+          "round": 0,
+          "roundName": "Pre-B轮",
+          "fundingDate": 1636588800000,
+          "fundingType": 8030,
+          "publishDate": 1639526400000,
+          "source": 69001,
+          "gsDetectDate": 1636588800000,
+          "gsChangeDate": 1636588800000,
+          "corporateId": 231283,
+          "companyId": 233092,
+          "newsLink": "/news/61b930bedeb471098d1572e0",
+          "outerLink": null,
+          "fundingDesc": "{\"postMoney\":\"未披露\",\"postBrief\":\"\",\"money\":\"1亿人民币\",\"investorStr\":\"[{\\\"link\\\":\\\"http://www.sjhuatong.com\\\",\\\"text\\\":\\\"世纪华通\\\",\\\"id\\\":720,\\\"type\\\":\\\"investor\\\"},{\\\"text\\\":\\\"、\\\",\\\"type\\\":\\\"text\\\"},{\\\"text\\\":\\\"58产业基金\\\",\\\"id\\\":19693,\\\"type\\\":\\\"investor\\\"},{\\\"text\\\":\\\"领投，\\\",\\\"type\\\":\\\"text\\\"},{\\\"link\\\":\\\"http://www.brv.com.cn\\\",\\\"text\\\":\\\"蓝驰创投\\\",\\\"id\\\":115,\\\"type\\\":\\\"investor\\\"},{\\\"text\\\":\\\"跟投\\\",\\\"type\\\":\\\"text\\\"}]\",\"faBrief\":\"FA为凌霄资本。\",\"fa\":\"凌霄资本\",\"investorList\":[{\"id\":720,\"code\":\"a294b78c0932602d4d5a9a089c97376d\",\"name\":\"世纪华通\",\"logo\":\"120d51fe6fc711e99c5900163e03b331\"},{\"id\":19693,\"code\":\"3ba9963f4af14e288e857e110dfe5757\",\"name\":\"神骐资本\",\"logo\":\"0c11d24907ae4a3c90544b0c88fa737c\"},{\"id\":115,\"code\":\"8f27bb1a8dc90ac39c10e25f8edc5d98\",\"name\":\"蓝驰创投\",\"logo\":\"53c417346fc411e9b81800163e03b331\"}],\"ratio\":null,\"roundBrief\":\"完成1亿人民币Pre-B轮融资，\"}",
+          "topic": null,
+          "topicMessagePublishTime": 0,
+          "stockExchange": null,
+          "stockExchangeBoard": null
+        },
+        {
+          "id": 339073,
+          "round": 0,
+          "roundName": "A+轮",
+          "fundingDate": 1599609600000,
+          "fundingType": 0,
+          "publishDate": 1619049600000,
+          "source": 69002,
+          "gsDetectDate": 1599609600000,
+          "gsChangeDate": 1599609600000,
+          "corporateId": 231283,
+          "companyId": 233092,
+          "newsLink": "/news/6080c251deb4713b48c66f2f",
+          "outerLink": null,
+          "fundingDesc": "{\"postMoney\":\"未披露\",\"postBrief\":\"\",\"money\":\"数千万人民币\",\"investorStr\":\"[{\\\"link\\\":\\\"http://www.brv.com.cn\\\",\\\"text\\\":\\\"蓝驰创投\\\",\\\"id\\\":115,\\\"type\\\":\\\"investor\\\"}]\",\"faBrief\":\"\",\"fa\":\"\",\"investorList\":[{\"id\":115,\"code\":\"8f27bb1a8dc90ac39c10e25f8edc5d98\",\"name\":\"蓝驰创投\",\"logo\":\"53c417346fc411e9b81800163e03b331\"}],\"ratio\":null,\"roundBrief\":\"完成数千万人民币A+轮融资，\"}",
+          "topic": null,
+          "topicMessagePublishTime": 0,
+          "stockExchange": null,
+          "stockExchangeBoard": null
+        },
+        {
+          "id": 153027,
+          "round": 0,
+          "roundName": "A轮",
+          "fundingDate": 1520208000000,
+          "fundingType": 0,
+          "publishDate": 1520227925000,
+          "source": 69001,
+          "gsDetectDate": 0,
+          "gsChangeDate": 0,
+          "corporateId": 231283,
+          "companyId": 233092,
+          "newsLink": "/news/5a9cd74cdeb47101c46dfb9b",
+          "outerLink": null,
+          "fundingDesc": "{\"postMoney\":\"未披露\",\"postBrief\":\"\",\"money\":\"数千万人民币\",\"investorStr\":\"[{\\\"link\\\":\\\"http://www.hillhousecap.com\\\",\\\"text\\\":\\\"高瓴资本\\\",\\\"id\\\":116,\\\"type\\\":\\\"investor\\\"},{\\\"text\\\":\\\"领投，\\\",\\\"type\\\":\\\"text\\\"},{\\\"link\\\":\\\"http://www.danhuacap.com\\\",\\\"text\\\":\\\"丹华资本\\\",\\\"id\\\":2233,\\\"type\\\":\\\"investor\\\"},{\\\"text\\\":\\\"跟投\\\",\\\"type\\\":\\\"text\\\"}]\",\"faBrief\":\"\",\"fa\":\"\",\"investorList\":[{\"id\":116,\"code\":\"b067cab30a1ff079bdc0f858d6763b0b\",\"name\":\"高瓴资本\",\"logo\":\"53daeb766fc411e9b81800163e03b331\"},{\"id\":2233,\"code\":\"4496a8612efc3efec3e2dff4c0fa6a05\",\"name\":\"丹华资本\",\"logo\":\"c07c25ec6fc411e9b81800163e03b331\"}],\"ratio\":null,\"roundBrief\":\"完成数千万人民币A轮融资，\"}",
+          "topic": null,
+          "topicMessagePublishTime": 1520229481000,
+          "stockExchange": null,
+          "stockExchangeBoard": null
+        },
+        {
+          "id": 106640,
+          "round": 0,
+          "roundName": "Pre-A轮",
+          "fundingDate": 1498435200000,
+          "fundingType": 0,
+          "publishDate": 1498435200000,
+          "source": 69001,
+          "gsDetectDate": 0,
+          "gsChangeDate": 1507507200000,
+          "corporateId": 231283,
+          "companyId": 233092,
+          "newsLink": "/news/59508cf9deb4710498901fc5",
+          "outerLink": null,
+          "fundingDesc": "{\"postMoney\":\"未披露\",\"postBrief\":\"\",\"money\":\"1000万人民币\",\"investorStr\":\"[{\\\"link\\\":\\\"http://www.danhuacap.com\\\",\\\"text\\\":\\\"丹华资本\\\",\\\"id\\\":2233,\\\"type\\\":\\\"investor\\\"},{\\\"text\\\":\\\"，\\\",\\\"type\\\":\\\"text\\\"},{\\\"link\\\":\\\"http://www.interdream.cn/\\\",\\\"text\\\":\\\"广济创投\\\",\\\"id\\\":27128,\\\"type\\\":\\\"investor\\\"}]\",\"faBrief\":\"\",\"fa\":\"\",\"investorList\":[{\"id\":2233,\"code\":\"4496a8612efc3efec3e2dff4c0fa6a05\",\"name\":\"丹华资本\",\"logo\":\"c07c25ec6fc411e9b81800163e03b331\"},{\"id\":27128,\"code\":\"917d6d8b80c44ecd926d775697cac2fe\",\"name\":\"广济创投\",\"logo\":\"36383d0a6fcc11e9bce900163e03b331\"}],\"ratio\":null,\"roundBrief\":\"完成1000万人民币Pre-A轮融资，\"}",
+          "topic": null,
+          "topicMessagePublishTime": 1498458708705,
+          "stockExchange": null,
+          "stockExchangeBoard": null
+        },
+        {
+          "id": 104337,
+          "round": 0,
+          "roundName": "天使轮",
+          "fundingDate": 1465516800000,
+          "fundingType": 0,
+          "publishDate": 1494374400000,
+          "source": 69001,
+          "gsDetectDate": 0,
+          "gsChangeDate": 0,
+          "corporateId": 231283,
+          "companyId": 233092,
+          "newsLink": "/news/59126029deb4717b99c199a0",
+          "outerLink": null,
+          "fundingDesc": "{\"postMoney\":\"未披露\",\"postBrief\":\"\",\"money\":\"未披露\",\"investorStr\":null,\"faBrief\":\"\",\"fa\":\"\",\"ratio\":null,\"roundBrief\":\"完成天使轮融资，\"}",
+          "topic": null,
+          "topicMessagePublishTime": 0,
+          "stockExchange": null,
+          "stockExchangeBoard": null
+        }
+      ],
+      "gongshang": "{\"_id\":\"59156071b1d37e02b8832110\",\"regCapital\":\"406.8923万人民币\",\"regInstitute\":\"北京市海淀区市场监督管理局\",\"regLocation\":\"北京市海淀区西北旺东路10号院东区10号楼2层2-07室\",\"base\":\"bj\",\"members\":[{\"position\":\"董事\",\"name\":\"欧阳城山\",\"gongshangPeopleId\":4358250},{\"position\":\"董事\",\"name\":\"张大地\",\"gongshangPeopleId\":3185117},{\"position\":\"董事长\",\"name\":\"张洋\",\"gongshangPeopleId\":1299230},{\"position\":\"董事\",\"name\":\"苏新义\",\"gongshangPeopleId\":5603083},{\"position\":\"经理\",\"name\":\"张洋\",\"gongshangPeopleId\":1299230},{\"position\":\"董事\",\"name\":\"王永潮\",\"gongshangPeopleId\":1589510},{\"position\":\"董事\",\"name\":\"陈维广\",\"code\":\"8f27bb1a8dc90ac39c10e25f8edc5d98\",\"gongshangPeopleId\":409790,\"peopleId\":4495,\"investorName\":\"蓝驰创投\",\"pid\":\"1148327e9bf30122088284baa49c1dc4\"},{\"position\":\"董事\",\"name\":\"张超\",\"gongshangPeopleId\":22792027},{\"position\":\"董事\",\"name\":\"孔祥建\",\"gongshangPeopleId\":22659721},{\"position\":\"董事\",\"name\":\"于宁坡\",\"gongshangPeopleId\":5839120},{\"position\":\"董事\",\"name\":\"浦晓成\",\"code\":\"a294b78c0932602d4d5a9a089c97376d\",\"gongshangPeopleId\":22602680,\"peopleId\":85531,\"investorName\":\"世纪华通\",\"pid\":\"28625948f14c978c0db64bdbd4ea4c65\"},{\"position\":\"董事\",\"name\":\"李纳\",\"gongshangPeopleId\":22530547},{\"position\":\"监事\",\"name\":\"辛艳红\",\"gongshangPeopleId\":22528991},{\"position\":\"董事\",\"name\":\"卜春楠\",\"gongshangPeopleId\":22529589},{\"position\":\"董事\",\"name\":\"孙旭冉\",\"gongshangPeopleId\":25296754}],\"businessScope\":\"一般项目：技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；家居用品销售；家具制造；五金产品制造；化工产品销售（不含许可类化工产品）；化工产品生产（不含许可类化工产品）；建筑装饰材料销售；高性能有色金属及合金材料销售；铸造用造型材料销售；日用百货销售；信息技术咨询服务；软件销售；计算机系统服务；互联网数据服务；数据处理和存储支持服务；软件开发；工程和技术研究和试验发展。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）许可项目：第二类增值电信业务。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）（不得从事国家和本市产业政策禁止和限制类项目的经营活动。）\",\"establishTime\":1462492800000,\"createTime\":1494573169336,\"legalPersonId\":1928731790,\"companyOrgType\":\"有限责任公司（港澳台投资、非独资）\",\"diffChecked\":true,\"name\":\"北京唐吉诃德科技有限公司\",\"industry\":\"科技推广和应用服务业\",\"changeInfo\":[{\"changeTime\":\"2022-06-28\",\"changeItem\":\"经营范围\",\"contentAfter\":\"一般项目：技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；家居用品销售；家具制造；五金产品制造；化工产品销售（不含许可类化工产品）；化工产品生产（不含许可类化工产品）；建筑装饰材料销售；高性能有色金属及合金材料销售；铸造用造型材料销售；日用百货销售；信息技术咨询服务；软件销售；计算机系统服务；互联网数据服务；数据处理和存储支持服务；软件开发；工程和技术研究和试验发展。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）许可项目：第二类增值电信业务。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）（不得从事国家和本市产业政策禁止和限制类项目的经营活动。）\",\"contentBefore\":\"技术开发、技术推广、技术转让、技术咨询、技术服务；销售计算机、软件、自行开发后的产品；数据处理（数据处理中的银行卡中心、PUE值在1.5以上的云计算数据中心除外）；基础软件服务；应用软件服务；软件开发；工程和技术研究与试验发展；计算机系统服务；第二类增值电信业务。（市场主体依法自主选择经营项目，开展经营活动；第二类增值电信业务以及依法须经批准的项目，经相关部门批准后依批准的内容开展经营活动；不得从事国家和本市产业政策禁止和限制类项目的经营活动。）\",\"type\":\"经营范围变更\",\"id\":26},{\"changeTime\":\"2021-12-10\",\"changeItem\":\"经营范围\",\"contentAfter\":\"技术开发、技术推广、技术转让、技术咨询、技术服务；销售计算机、软件、自行开发后的产品；数据处理（数据处理中的银行卡中心、PUE值在1.5以上的云计算数据中心除外）；基础软件服务；应用软件服务；软件开发；工程和技术研究与试验发展；计算机系统服务；第二类增值电信业务。（市场主体依法自主选择经营项目，开展经营活动；第二类增值电信业务以及依法须经批准的项目，经相关部门批准后依批准的内容开展经营活动；不得从事国家和本市产业政策禁止和限制类项目的经营活动。）\",\"contentBefore\":\"技术开发、技术推广、技术转让、技术咨询、技术服务；销售计算机、软件、自行开发后的产品；数据处理（数据处理中的银行卡中心、PUE值在1.5以上的云计算数据中心除外） ；基础软件服务；应用软件服务；软件开发；工程和技术研究与试验发展；计算机系统服务。（市场主体依法自主选择经营项目，开展经营活动；依法须经批准的项目，经相关部门批准后依批准的内容开展经营活动；不得从事国家和本市产业政策禁止和限制类项目的经营活动。）\",\"type\":\"经营范围变更\",\"id\":25},{\"changeTime\":\"2021-11-11\",\"diffCapital\":59,\"changeItem\":\"注册资本\",\"contentAfter\":\"406.8923万人民币元\",\"contentBefore\":\"347.5338万人民币元\",\"type\":\"注册资金变更\",\"id\":24},{\"changeTime\":\"2021-11-11\",\"changeItem\":\"董事（理事）、经理、监事\",\"contentAfter\":\"卜春楠,陈维广,孔祥建,李纳,欧阳城山,浦晓成,苏新义,孙旭冉,王永潮,辛艳红,于宁坡,张超,张大地,张洋*\",\"contentBefore\":\"陈维广,欧阳城山,苏新义,王永潮,于宁坡,张超,张大地,张洋*\",\"type\":\"人员变更\",\"id\":23},{\"changeTime\":\"2021-11-11\",\"changeItem\":\"投资人\",\"type\":\"股东股权变更\",\"diffBefore\":[],\"contentAfter\":\"BRVAII Holdco Limited,外国(地区)企业,北京丹晟投资基金中心（有限合伙）,企业法人,高瓴智成长江（湖北）人工智能股权投资基金合伙企业（有限合伙）,企业法人,湖南五八阡陌股权投资基金合伙企业（有限合伙）,企业法人,宁波梅山保税港区初本投资管理合伙企业（有限合伙）,企业法人,宁波梅山保税港区智装投资合伙企业（有限合伙）,企业法人,盛趣私募基金管理（上海）有限公司,企业法人,张洋,自然人股东\",\"contentBefore\":\"BRVAII Holdco Limited,外国(地区)企业,北京丹晟投资基金中心（有限合伙）,法人股东,高瓴智成长江（湖北）人工智能股权投资基金合伙企业（有限合伙）,法人股东,宁波梅山保税港区初本投资管理合伙企业（有限合伙）,法人股东,宁波梅山保税港区智装投资合伙企业（有限合伙）,法人股东,张洋,自然人股东\",\"diffAfter\":[\"盛趣私募基金管理（上海）有限公司\",\"湖南五八阡陌股权投资基金合伙企业（有限合伙）\"],\"id\":22},{\"changeTime\":\"2021-07-01\",\"diffCapital\":17,\"changeItem\":\"注册资本\",\"contentAfter\":\"347.5338万人民币元\",\"contentBefore\":\"329.7333万人民币元\",\"type\":\"注册资金变更\",\"id\":21},{\"changeTime\":\"2020-09-09\",\"changeItem\":\"投资人\",\"type\":\"股东股权变更\",\"diffBefore\":[],\"contentAfter\":\"BRVAII Holdco Limited,外国(地区)企业,北京丹晟投资基金中心（有限合伙）,法人股东,高瓴智成长江（湖北）人工智能股权投资基金合伙企业（有限合伙）,法人股东,宁波梅山保税港区初本投资管理合伙企业（有限合伙）,法人股东,宁波梅山保税港区智装投资合伙企业（有限合伙）,法人股东,张洋,自然人股东\",\"contentBefore\":\"北京丹晟投资基金中心（有限合伙）,法人股东,高瓴智成长江（湖北）人工智能股权投资基金合伙企业（有限合伙）,法人股东,宁波梅山保税港区初本投资管理合伙企业（有限合伙）,法人股东,宁波梅山保税港区智装投资合伙企业（有限合伙）,法人股东,张洋,自然人股东\",\"diffAfter\":[\"BRVAII Holdco Limited\",\"外国(地区)企业\"],\"id\":20},{\"changeTime\":\"2020-09-09\",\"changeItem\":\"董事（理事）、经理、监事\",\"contentAfter\":\"陈维广,欧阳城山,苏新义,王宁波,王永潮,张超,张大地,张洋*\",\"contentBefore\":\"侯艳彬,欧阳城山,苏新义,魏珂,张大地,张洋*\",\"type\":\"人员变更\",\"id\":19},{\"changeTime\":\"2020-09-09\",\"changeItem\":\"董事（理事）、经理、监事\",\"contentAfter\":\"陈维广,欧阳城山,苏新义,王永潮,于宁坡,张超,张大地,张洋*\",\"contentBefore\":\"侯艳彬,欧阳城山,苏新义,魏珂,张大地,张洋*\",\"type\":\"人员变更\",\"id\":18},{\"changeTime\":\"2020-09-09\",\"changeItem\":\"企业类型\",\"contentAfter\":\"有限责任公司（港澳台投资、非独资）\",\"contentBefore\":\"其他有限责任公司\",\"type\":\"企业类型变更\",\"id\":17},{\"changeTime\":\"2020-09-09\",\"diffCapital\":58,\"changeItem\":\"注册资本\",\"contentAfter\":\"329.7333万人民币元\",\"contentBefore\":\"271.2968万\",\"type\":\"注册资金变更\",\"id\":16},{\"changeTime\":\"2018-04-19\",\"changeItem\":\"住所\",\"contentAfter\":\"北京市海淀区西北旺东路10号院东区10号楼2层2-07室\",\"contentBefore\":\"北京市海淀区上地信息路7号二层202-11号\",\"type\":\"地址变更\",\"id\":15},{\"changeTime\":\"2018-04-19\",\"changeItem\":\"董事（理事）、经理、监事\",\"contentAfter\":\"侯艳彬,欧阳城山,苏新义,魏珂,张大地,张洋*\",\"contentBefore\":\"侯艳彬,苏新义,张大地,张洋*\",\"type\":\"人员变更\",\"id\":14},{\"changeTime\":\"2018-04-19\",\"changeItem\":\"经营范围\",\"contentAfter\":\"技术开发、技术推广、技术转让、技术咨询、技术服务；销售计算机、软件、自行开发后的产品；数据处理（数据处理中的银行卡中心、PUE值在1.5以上的云计算数据中心除外） ；基础软件服务；应用软件服务；软件开发；工程和技术研究与试验发展；计算机系统服务。（企业依法自主选择经营项目，开展经营活动；依法须经批准的项目，经相关部门批准后依批准的内容开展经营活动；不得从事本市产业政策禁止和限制类项目的经营活动。）\",\"contentBefore\":\"技术开发、技术推广、技术转让、技术咨询、技术服务；数据处理（数据处理中的银行卡中心，PUE值在1.5以上的云计算数据中心除外）；基础软件服务；应用软件服务；软件开发；工程和技术研究与试验发展；计算机系统服务。（企业依法自主选择经营项目，开展经营活动；依法须经批准的项目，经相关部门批准后依批准的内容开展经营活动；不得从事本市产业政策禁止和限制类项目的经营活动。）\",\"type\":\"经营范围变更\",\"id\":13},{\"changeTime\":\"2018-04-19\",\"diffCapital\":8,\"changeItem\":\"注册资本\",\"contentAfter\":\"271.2968万\",\"contentBefore\":\"263.1579万\",\"type\":\"注册资金变更\",\"id\":12},{\"changeTime\":\"2018-04-19\",\"changeItem\":\"投资人\",\"type\":\"股东股权变更\",\"diffBefore\":[],\"contentAfter\":\"北京丹晟投资基金中心（有限合伙）,法人股东,高瓴智成长江（湖北）人工智能股权投资基金合伙企业（有限合伙）,法人股东,宁波梅山保税港区初本投资管理合伙企业（有限合伙）,法人股东,宁波梅山保税港区智装投资合伙企业（有限合伙）,法人股东,张洋,自然人股东\",\"contentBefore\":\"北京丹晟投资基金中心（有限合伙）,法人股东,宁波梅山保税港区初本投资管理合伙企业（有限合伙）,法人股东,宁波梅山保税港区智装投资合伙企业（有限合伙）,法人股东,张洋,自然人股东\",\"diffAfter\":[\"高瓴智成长江（湖北）人工智能股权投资基金合伙企业（有限合伙）\"],\"id\":11},{\"changeTime\":\"2017-10-09\",\"diffCapital\":13,\"changeItem\":\"注册资本\",\"contentAfter\":\"263.1579万\",\"contentBefore\":\"250万\",\"type\":\"注册资金变更\",\"id\":10},{\"changeTime\":\"2017-10-09\",\"changeItem\":\"董事（理事）、经理、监事\",\"contentAfter\":\"侯艳彬,苏新义,张大地,张洋*\",\"contentBefore\":\"侯艳彬,欧阳城山,苏新义,张洋*\",\"type\":\"人员变更\",\"id\":9},{\"changeTime\":\"2017-10-09\",\"changeItem\":\"投资人\",\"type\":\"股东股权变更\",\"diffBefore\":[],\"contentAfter\":\"北京丹晟投资基金中心（有限合伙）,法人股东,宁波梅山保税港区初本投资管理合伙企业（有限合伙）,法人股东,宁波梅山保税港区智装投资合伙企业（有限合伙）,法人股东,张洋,自然人股东\",\"contentBefore\":\"宁波梅山保税港区初本投资管理合伙企业（有限合伙）,法人股东,宁波梅山保税港区智装投资合伙企业（有限合伙）,法人股东,张洋,自然人股东\",\"diffAfter\":[\"北京丹晟投资基金中心（有限合伙）\"],\"id\":8},{\"changeTime\":\"2017-06-15\",\"changeItem\":\"企业类型\",\"contentAfter\":\"其他有限责任公司\",\"contentBefore\":\"有限责任公司(自然人投资或控股)\",\"type\":\"企业类型变更\",\"id\":7},{\"changeTime\":\"2017-06-15\",\"diffCapital\":100,\"changeItem\":\"注册资本\",\"contentAfter\":\"250万\",\"contentBefore\":\"150万\",\"type\":\"注册资金变更\",\"id\":6},{\"changeTime\":\"2017-06-15\",\"changeItem\":\"董事（理事）、经理、监事\",\"contentAfter\":\"侯艳彬,欧阳城山,苏新义,张洋*\",\"contentBefore\":\"侯艳彬,张洋*\",\"type\":\"人员变更\",\"id\":5},{\"changeTime\":\"2017-06-15\",\"changeItem\":\"投资人\",\"type\":\"股东股权变更\",\"diffBefore\":[],\"contentAfter\":\"宁波梅山保税港区初本投资管理合伙企业（有限合伙）,法人股东,宁波梅山保税港区智装投资合伙企业（有限合伙）,法人股东,张洋,自然人股东\",\"contentBefore\":\"宁波梅山保税港区初本投资管理合伙企业（有限合伙）,法人股东,张洋,自然人股东\",\"diffAfter\":[\"宁波梅山保税港区智装投资合伙企业（有限合伙）\"],\"id\":4},{\"changeTime\":\"2017-03-24\",\"changeItem\":\"企业类型\",\"contentAfter\":\"有限责任公司(自然人投资或控股)\",\"contentBefore\":\"有限责任公司(自然人独资)\",\"type\":\"企业类型变更\",\"id\":3},{\"changeTime\":\"2017-03-24\",\"changeItem\":\"投资人\",\"type\":\"股东股权变更\",\"diffBefore\":[],\"contentAfter\":\"宁波梅山保税港区初本投资管理合伙企业（有限合伙）,法人股东,张洋,自然人股东\",\"contentBefore\":\"张洋,自然人股东\",\"diffAfter\":[\"宁波梅山保税港区初本投资管理合伙企业（有限合伙）\"],\"id\":2},{\"changeTime\":\"2017-03-24\",\"diffCapital\":50,\"changeItem\":\"注册资本\",\"contentAfter\":\"150万\",\"contentBefore\":\"100万\",\"type\":\"注册资金变更\",\"id\":1}],\"regNumber\":\"110108021161582\",\"regStatus\":\"存续（在营、开业、在册）\",\"toTime\":null,\"modifyTime\":1698875960164,\"invests\":[{\"info\":{\"legal_person\":\"张洋\",\"percent\":\"0.8\",\"regist_capital\":\"100万元人民币\",\"start_date\":\"2019-07-10\"},\"name\":\"北京唐吉云装装饰工程有限公司\"},{\"info\":{\"legal_person\":\"张洋\",\"percent\":\"1\",\"regist_capital\":\"3000万元人民币\",\"start_date\":\"2020-01-14\"},\"name\":\"北京唐吉云巢建筑工程有限公司\"},{\"info\":{\"legal_person\":\"张洋\",\"percent\":\"1\",\"regist_capital\":\"2000万元人民币\",\"start_date\":\"2021-03-16\"},\"name\":\"北京唐吉云才建设工程有限公司\"}],\"fromTime\":null,\"legalPersonName\":\"张洋\",\"lastCheckChange\":\"2020-09-09\",\"changeInfoXiniu\":[{\"changeTime\":\"2022-06-28\",\"changeItem\":\"经营范围\",\"contentAfter\":\"一般项目：技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广；家居用品销售；家具制造；五金产品制造；化工产品销售（不含许可类化工产品）；化工产品生产（不含许可类化工产品）；建筑装饰材料销售；高性能有色金属及合金材料销售；铸造用造型材料销售；日用百货销售；信息技术咨询服务；软件销售；计算机系统服务；互联网数据服务；数据处理和存储支持服务；软件开发；工程和技术研究和试验发展。（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）许可项目：第二类增值电信业务。（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）（不得从事国家和本市产业政策禁止和限制类项目的经营活动。）\",\"contentBefore\":\"技术开发、技术推广、技术转让、技术咨询、技术服务；销售计算机、软件、自行开发后的产品；数据处理（数据处理中的银行卡中心、PUE值在1.5以上的云计算数据中心除外）；基础软件服务；应用软件服务；软件开发；工程和技术研究与试验发展；计算机系统服务；第二类增值电信业务。（市场主体依法自主选择经营项目，开展经营活动；第二类增值电信业务以及依法须经批准的项目，经相关部门批准后依批准的内容开展经营活动；不得从事国家和本市产业政策禁止和限制类项目的经营活动。）\",\"type\":\"经营范围变更\",\"id\":36},{\"changeTime\":\"2021-12-10\",\"changeItem\":\"经营范围\",\"contentAfter\":\"技术开发、技术推广、技术转让、技术咨询、技术服务；销售计算机、软件、自行开发后的产品；数据处理（数据处理中的银行卡中心、PUE值在1.5以上的云计算数据中心除外）；基础软件服务；应用软件服务；软件开发；工程和技术研究与试验发展；计算机系统服务；第二类增值电信业务。（市场主体依法自主选择经营项目，开展经营活动；第二类增值电信业务以及依法须经批准的项目，经相关部门批准后依批准的内容开展经营活动；不得从事国家和本市产业政策禁止和限制类项目的经营活动。）\",\"contentBefore\":\"技术开发、技术推广、技术转让、技术咨询、技术服务；销售计算机、软件、自行开发后的产品；数据处理（数据处理中的银行卡中心、PUE值在1.5以上的云计算数据中心除外） ；基础软件服务；应用软件服务；软件开发；工程和技术研究与试验发展；计算机系统服务。（市场主体依法自主选择经营项目，开展经营活动；依法须经批准的项目，经相关部门批准后依批准的内容开展经营活动；不得从事国家和本市产业政策禁止和限制类项目的经营活动。）\",\"type\":\"经营范围变更\",\"id\":35},{\"changeTime\":\"2021-11-11\",\"diffCapital\":59,\"changeItem\":\"注册资本\",\"contentAfter\":\"406.8923万人民币元\",\"contentBefore\":\"347.5338万人民币元\",\"type\":\"注册资金变更\",\"id\":34},{\"changeTime\":\"2021-11-11\",\"changeItem\":\"董事（理事）、经理、监事\",\"contentAfter\":\"卜春楠,陈维广,孔祥建,李纳,欧阳城山,浦晓成,苏新义,孙旭冉,王永潮,辛艳红,于宁坡,张超,张大地,张洋*\",\"contentBefore\":\"陈维广,欧阳城山,苏新义,王永潮,于宁坡,张超,张大地,张洋*\",\"type\":\"人员变更\",\"id\":33},{\"changeTime\":\"2021-11-11\",\"changeItem\":\"投资人\",\"type\":\"股东股权变更\",\"diffBefore\":[],\"contentAfter\":\"BRVAII Holdco Limited,外国(地区)企业,北京丹晟投资基金中心（有限合伙）,企业法人,高瓴智成长江（湖北）人工智能股权投资基金合伙企业（有限合伙）,企业法人,湖南五八阡陌股权投资基金合伙企业（有限合伙）,企业法人,宁波梅山保税港区初本投资管理合伙企业（有限合伙）,企业法人,宁波梅山保税港区智装投资合伙企业（有限合伙）,企业法人,盛趣私募基金管理（上海）有限公司,企业法人,张洋,自然人股东\",\"contentBefore\":\"BRVAII Holdco Limited,外国(地区)企业,北京丹晟投资基金中心（有限合伙）,法人股东,高瓴智成长江（湖北）人工智能股权投资基金合伙企业（有限合伙）,法人股东,宁波梅山保税港区初本投资管理合伙企业（有限合伙）,法人股东,宁波梅山保税港区智装投资合伙企业（有限合伙）,法人股东,张洋,自然人股东\",\"diffAfter\":[\"盛趣私募基金管理（上海）有限公司\",\"湖南五八阡陌股权投资基金合伙企业（有限合伙）\"],\"id\":32},{\"changeTime\":\"2021-11-11\",\"changeItem\":\"董事(理事)、经理、监事\",\"contentAfter\":\"卜春楠,陈维广,孔祥建,李纳,欧阳城山,浦晓成,苏新义,孙旭冉,王永潮,辛艳红,于宁坡,张超,张大地,张洋*\",\"patched\":true,\"contentBefore\":\"陈维广,欧阳城山,苏新义,王永潮,于宁坡,张超,张大地,张洋*\",\"type\":\"人员变更\",\"id\":31},{\"changeTime\":\"2021-07-01\",\"diffCapital\":17,\"changeItem\":\"注册资本\",\"contentAfter\":\"347.5338万人民币元\",\"contentBefore\":\"329.7333万人民币元\",\"type\":\"注册资金变更\",\"id\":30},{\"changeTime\":\"2020-09-09\",\"changeItem\":\"投资人\",\"type\":\"股东股权变更\",\"diffBefore\":[],\"contentAfter\":\"BRVAII Holdco Limited,外国(地区)企业,北京丹晟投资基金中心（有限合伙）,法人股东,高瓴智成长江（湖北）人工智能股权投资基金合伙企业（有限合伙）,法人股东,宁波梅山保税港区初本投资管理合伙企业（有限合伙）,法人股东,宁波梅山保税港区智装投资合伙企业（有限合伙）,法人股东,张洋,自然人股东\",\"contentBefore\":\"北京丹晟投资基金中心（有限合伙）,法人股东,高瓴智成长江（湖北）人工智能股权投资基金合伙企业（有限合伙）,法人股东,宁波梅山保税港区初本投资管理合伙企业（有限合伙）,法人股东,宁波梅山保税港区智装投资合伙企业（有限合伙）,法人股东,张洋,自然人股东\",\"diffAfter\":[\"BRVAII Holdco Limited\",\"外国(地区)企业\"],\"id\":29},{\"changeTime\":\"2020-09-09\",\"changeItem\":\"董事（理事）、经理、监事\",\"contentAfter\":\"陈维广,欧阳城山,苏新义,王宁波,王永潮,张超,张大地,张洋*\",\"contentBefore\":\"侯艳彬,欧阳城山,苏新义,魏珂,张大地,张洋*\",\"type\":\"人员变更\",\"id\":28},{\"changeTime\":\"2020-09-09\",\"changeItem\":\"董事（理事）、经理、监事\",\"contentAfter\":\"陈维广,欧阳城山,苏新义,王永潮,于宁坡,张超,张大地,张洋*\",\"contentBefore\":\"侯艳彬,欧阳城山,苏新义,魏珂,张大地,张洋*\",\"type\":\"人员变更\",\"id\":27},{\"changeTime\":\"2020-09-09\",\"changeItem\":\"企业类型\",\"contentAfter\":\"有限责任公司（港澳台投资、非独资）\",\"contentBefore\":\"其他有限责任公司\",\"type\":\"企业类型变更\",\"id\":26},{\"changeTime\":\"2020-09-09\",\"diffCapital\":58,\"changeItem\":\"注册资本\",\"contentAfter\":\"329.7333万人民币元\",\"contentBefore\":\"271.2968万\",\"type\":\"注册资金变更\",\"id\":25},{\"changeTime\":\"2020-09-09\",\"changeItem\":\"董事(理事)、经理、监事\",\"contentAfter\":\"陈维广,欧阳城山,苏新义,王永潮,于宁坡,张超,张大地,张洋*\",\"patched\":true,\"contentBefore\":\"侯艳彬,欧阳城山,苏新义,魏珂,张大地,张洋*\",\"type\":\"人员变更\",\"id\":24},{\"changeTime\":\"2020-09-09\",\"changeItem\":\"董事\",\"contentAfter\":\"（注：标有*标志的为法定代表人）1 张洋* 董事长 2 张大地 董事 3 苏新义 董事 4 陈维广 董事 5 欧阳城山 董事 6 张超 董事 7 王永潮 董事 8 张洋* 经理 9 王宁波 监事\",\"patched\":true,\"contentBefore\":\"（注：标有*标志的为法定代表人）1 张洋* 董事长 2 欧阳城山 董事 3 苏新义 董事 4 魏珂 董事 5 张大地 董事 6 张洋* 经理 7 侯艳彬 监事\",\"id\":23},{\"changeTime\":\"2018-04-19\",\"changeItem\":\"住所\",\"contentAfter\":\"北京市海淀区西北旺东路10号院东区10号楼2层2-07室\",\"contentBefore\":\"北京市海淀区上地信息路7号二层202-11号\",\"type\":\"地址变更\",\"id\":22},{\"changeTime\":\"2018-04-19\",\"changeItem\":\"董事（理事）、经理、监事\",\"contentAfter\":\"侯艳彬,欧阳城山,苏新义,魏珂,张大地,张洋*\",\"contentBefore\":\"侯艳彬,苏新义,张大地,张洋*\",\"type\":\"人员变更\",\"id\":21},{\"changeTime\":\"2018-04-19\",\"changeItem\":\"经营范围\",\"contentAfter\":\"技术开发、技术推广、技术转让、技术咨询、技术服务；销售计算机、软件、自行开发后的产品；数据处理（数据处理中的银行卡中心、PUE值在1.5以上的云计算数据中心除外） ；基础软件服务；应用软件服务；软件开发；工程和技术研究与试验发展；计算机系统服务。（企业依法自主选择经营项目，开展经营活动；依法须经批准的项目，经相关部门批准后依批准的内容开展经营活动；不得从事本市产业政策禁止和限制类项目的经营活动。）\",\"contentBefore\":\"技术开发、技术推广、技术转让、技术咨询、技术服务；数据处理（数据处理中的银行卡中心，PUE值在1.5以上的云计算数据中心除外）；基础软件服务；应用软件服务；软件开发；工程和技术研究与试验发展；计算机系统服务。（企业依法自主选择经营项目，开展经营活动；依法须经批准的项目，经相关部门批准后依批准的内容开展经营活动；不得从事本市产业政策禁止和限制类项目的经营活动。）\",\"type\":\"经营范围变更\",\"id\":20},{\"changeTime\":\"2018-04-19\",\"diffCapital\":8,\"changeItem\":\"注册资本\",\"contentAfter\":\"271.2968万\",\"contentBefore\":\"263.1579万\",\"type\":\"注册资金变更\",\"id\":19},{\"changeTime\":\"2018-04-19\",\"changeItem\":\"投资人\",\"type\":\"股东股权变更\",\"diffBefore\":[],\"contentAfter\":\"北京丹晟投资基金中心（有限合伙）,法人股东,高瓴智成长江（湖北）人工智能股权投资基金合伙企业（有限合伙）,法人股东,宁波梅山保税港区初本投资管理合伙企业（有限合伙）,法人股东,宁波梅山保税港区智装投资合伙企业（有限合伙）,法人股东,张洋,自然人股东\",\"contentBefore\":\"北京丹晟投资基金中心（有限合伙）,法人股东,宁波梅山保税港区初本投资管理合伙企业（有限合伙）,法人股东,宁波梅山保税港区智装投资合伙企业（有限合伙）,法人股东,张洋,自然人股东\",\"diffAfter\":[\"高瓴智成长江（湖北）人工智能股权投资基金合伙企业（有限合伙）\"],\"id\":18},{\"changeTime\":\"2018-04-19\",\"changeItem\":\"董事(理事)、经理、监事\",\"contentAfter\":\"侯艳彬,欧阳城山,苏新义,魏珂,张大地,张洋*\",\"patched\":true,\"contentBefore\":\"侯艳彬,苏新义,张大地,张洋*\",\"type\":\"人员变更\",\"id\":17},{\"changeTime\":\"2018-04-19\",\"changeItem\":\"董事\",\"contentAfter\":\"（注：标有*标志的为法定代表人）1 张洋* 董事长 2 欧阳城山 董事 3 苏新义 董事 4 魏珂 董事 5 张大地 董事 6 张洋* 经理 7 侯艳彬 监事\",\"patched\":true,\"contentBefore\":\"（注：标有*标志的为法定代表人）1 张洋* 董事长 2 张大地 董事 3 苏新义 董事 4 张洋* 经理 5 侯艳彬 监事\",\"id\":16},{\"changeTime\":\"2018-04-19\",\"changeItem\":\"地址\",\"contentAfter\":\"北京市海淀区西北旺东路10号院东区10号楼2层2-07室\",\"patched\":true,\"contentBefore\":\"北京市海淀区上地信息路7号二层202-11号\",\"id\":15},{\"changeTime\":\"2017-10-09\",\"diffCapital\":13,\"changeItem\":\"注册资本\",\"contentAfter\":\"263.1579万\",\"contentBefore\":\"250万\",\"type\":\"注册资金变更\",\"id\":14},{\"changeTime\":\"2017-10-09\",\"changeItem\":\"董事（理事）、经理、监事\",\"contentAfter\":\"侯艳彬,苏新义,张大地,张洋*\",\"contentBefore\":\"侯艳彬,欧阳城山,苏新义,张洋*\",\"type\":\"人员变更\",\"id\":13},{\"changeTime\":\"2017-10-09\",\"changeItem\":\"投资人\",\"type\":\"股东股权变更\",\"diffBefore\":[],\"contentAfter\":\"北京丹晟投资基金中心（有限合伙）,法人股东,宁波梅山保税港区初本投资管理合伙企业（有限合伙）,法人股东,宁波梅山保税港区智装投资合伙企业（有限合伙）,法人股东,张洋,自然人股东\",\"contentBefore\":\"宁波梅山保税港区初本投资管理合伙企业（有限合伙）,法人股东,宁波梅山保税港区智装投资合伙企业（有限合伙）,法人股东,张洋,自然人股东\",\"diffAfter\":[\"北京丹晟投资基金中心（有限合伙）\"],\"id\":12},{\"changeTime\":\"2017-10-09\",\"changeItem\":\"董事(理事)、经理、监事\",\"contentAfter\":\"侯艳彬,苏新义,张大地,张洋*\",\"patched\":true,\"contentBefore\":\"侯艳彬,欧阳城山,苏新义,张洋*\",\"type\":\"人员变更\",\"id\":11},{\"changeTime\":\"2017-10-09\",\"changeItem\":\"董事\",\"contentAfter\":\"（注：标有*标志的为法定代表人）1 张洋* 董事长 2 张大地 董事 3 苏新义 董事 4 张洋* 经理 5 侯艳彬 监事\",\"patched\":true,\"contentBefore\":\"（注：标有*标志的为法定代表人）1 张洋* 董事长 2 欧阳城山 董事 3 苏新义 董事 4 张洋* 经理 5 侯艳彬 监事\",\"id\":10},{\"changeTime\":\"2017-06-15\",\"changeItem\":\"企业类型\",\"contentAfter\":\"其他有限责任公司\",\"contentBefore\":\"有限责任公司(自然人投资或控股)\",\"type\":\"企业类型变更\",\"id\":9},{\"changeTime\":\"2017-06-15\",\"diffCapital\":100,\"changeItem\":\"注册资本\",\"contentAfter\":\"250万\",\"contentBefore\":\"150万\",\"type\":\"注册资金变更\",\"id\":8},{\"changeTime\":\"2017-06-15\",\"changeItem\":\"董事（理事）、经理、监事\",\"contentAfter\":\"侯艳彬,欧阳城山,苏新义,张洋*\",\"contentBefore\":\"侯艳彬,张洋*\",\"type\":\"人员变更\",\"id\":7},{\"changeTime\":\"2017-06-15\",\"changeItem\":\"投资人\",\"type\":\"股东股权变更\",\"diffBefore\":[],\"contentAfter\":\"宁波梅山保税港区初本投资管理合伙企业（有限合伙）,法人股东,宁波梅山保税港区智装投资合伙企业（有限合伙）,法人股东,张洋,自然人股东\",\"contentBefore\":\"宁波梅山保税港区初本投资管理合伙企业（有限合伙）,法人股东,张洋,自然人股东\",\"diffAfter\":[\"宁波梅山保税港区智装投资合伙企业（有限合伙）\"],\"id\":6},{\"changeTime\":\"2017-06-15\",\"changeItem\":\"董事(理事)、经理、监事\",\"contentAfter\":\"侯艳彬,欧阳城山,苏新义,张洋*\",\"patched\":true,\"contentBefore\":\"侯艳彬,张洋*\",\"type\":\"人员变更\",\"id\":5},{\"changeTime\":\"2017-06-15\",\"changeItem\":\"董事\",\"contentAfter\":\"（注：标有*标志的为法定代表人）1 张洋* 董事长 2 欧阳城山 董事 3 苏新义 董事 4 张洋* 经理 5 侯艳彬 监事\",\"patched\":true,\"contentBefore\":\"（注：标有*标志的为法定代表人）1 张洋* 执行董事 2 张洋* 经理 3 侯艳彬 监事\",\"id\":4},{\"changeTime\":\"2017-03-24\",\"changeItem\":\"企业类型\",\"contentAfter\":\"有限责任公司(自然人投资或控股)\",\"contentBefore\":\"有限责任公司(自然人独资)\",\"type\":\"企业类型变更\",\"id\":3},{\"changeTime\":\"2017-03-24\",\"changeItem\":\"投资人\",\"type\":\"股东股权变更\",\"diffBefore\":[],\"contentAfter\":\"宁波梅山保税港区初本投资管理合伙企业（有限合伙）,法人股东,张洋,自然人股东\",\"contentBefore\":\"张洋,自然人股东\",\"diffAfter\":[\"宁波梅山保税港区初本投资管理合伙企业（有限合伙）\"],\"id\":2},{\"changeTime\":\"2017-03-24\",\"diffCapital\":50,\"changeItem\":\"注册资本\",\"contentAfter\":\"150万\",\"contentBefore\":\"100万\",\"type\":\"注册资金变更\",\"id\":1}],\"changeInfo_xiniu\":true,\"contact\":{\"email\":\"xinyanhong@interhouse.cn\",\"telephone\":\"010-62150625\",\"address\":\"北京市海淀区西北旺东路10号院东区10号楼2层2-07室\"},\"creditNumber\":\"91110108MA0059D01Y\",\"domains\":[\"其他科技推广服务业\"],\"invests_cnt\":3,\"invests_xiniu\":[{\"info\":{\"legal_person\":\"张洋\",\"percent\":\"0.8\",\"regist_capital\":\"100万元人民币\",\"start_date\":\"2019-07-10\"},\"new\":true,\"name\":\"北京唐吉云装装饰工程有限公司\"},{\"info\":{\"legal_person\":\"张洋\",\"percent\":\"1\",\"regist_capital\":\"3000万元人民币\",\"start_date\":\"2020-01-14\"},\"new\":true,\"name\":\"北京唐吉云巢建筑工程有限公司\"},{\"info\":{\"legal_person\":\"张洋\",\"percent\":\"1\",\"regist_capital\":\"2000万元人民币\",\"start_date\":\"2021-03-16\"},\"new\":true,\"name\":\"北京唐吉云才建设工程有限公司\"}],\"history_names\":[],\"qixinId\":\"fd3875b6-50e4-461f-a438-5b205bb492a1\",\"logoutDate\":null,\"revokeDate\":null,\"check_date\":1656374400000,\"modifyDate\":\"2023-11-02\",\"cityId\":101,\"regionId\":1,\"provinceChecked\":false,\"provinceId\":1,\"districtId\":10106}",
+      "tagRelations": [
+        {
+          "lv1": {
+            "id": 81,
+            "name": "企业服务",
+            "enName": "Enterprise service",
+            "type": 11012,
+            "weight": null,
+            "novelty": 185,
+            "hot": "Y",
+            "verify": "Y",
+            "active": "Y",
+            "createTime": 1450854479000,
+            "modifyTime": 1678409507000,
+            "createUser": null,
+            "modifyUser": 214,
+            "confidence": null,
+            "sectorType": 1,
+            "rule": null
+          },
+          "lv2Tags": [
+            {
+              "lv2": {
+                "id": 988,
+                "name": "云服务",
+                "enName": null,
+                "type": 11013,
+                "weight": null,
+                "novelty": 1.8824,
+                "hot": "Y",
+                "verify": "Y",
+                "active": "Y",
+                "createTime": 1450856841000,
+                "modifyTime": 1612230378000,
+                "createUser": null,
+                "modifyUser": 17652,
+                "confidence": null,
+                "sectorType": 2,
+                "rule": null
+              },
+              "lv3Tags": [
+                {
+                  "id": 356,
+                  "name": "云计算",
+                  "enName": null,
+                  "type": 11013,
+                  "weight": null,
+                  "novelty": 2.0292,
+                  "hot": "N",
+                  "verify": "Y",
+                  "active": "Y",
+                  "createTime": 1450854593000,
+                  "modifyTime": 1647936343000,
+                  "createUser": null,
+                  "modifyUser": 17652,
+                  "confidence": null,
+                  "sectorType": 3,
+                  "rule": null
+                }
+              ]
+            },
+            {
+              "lv2": {
+                "id": 608885,
+                "name": "垂直行业信息化",
+                "enName": null,
+                "type": 11013,
+                "weight": null,
+                "novelty": 4.7447,
+                "hot": null,
+                "verify": "Y",
+                "active": "Y",
+                "createTime": 1515246567000,
+                "modifyTime": 1703124641000,
+                "createUser": 139,
+                "modifyUser": null,
+                "confidence": null,
+                "sectorType": 2,
+                "rule": null
+              },
+              "lv3Tags": []
+            }
+          ]
+        },
+        {
+          "lv1": {
+            "id": 42,
+            "name": "大数据",
+            "enName": "Big data",
+            "type": 11012,
+            "weight": null,
+            "novelty": 170,
+            "hot": "Y",
+            "verify": "Y",
+            "active": "Y",
+            "createTime": 1450854478000,
+            "modifyTime": 1678409561000,
+            "createUser": null,
+            "modifyUser": 17065,
+            "confidence": null,
+            "sectorType": 1,
+            "rule": null
+          },
+          "lv2Tags": [
+            {
+              "lv2": {
+                "id": 632677,
+                "name": "大数据垂直应用",
+                "enName": null,
+                "type": 11013,
+                "weight": null,
+                "novelty": 2.3394,
+                "hot": null,
+                "verify": "Y",
+                "active": "Y",
+                "createTime": null,
+                "modifyTime": 1703124641000,
+                "createUser": null,
+                "modifyUser": null,
+                "confidence": null,
+                "sectorType": 2,
+                "rule": null
+              },
+              "lv3Tags": [
+                {
+                  "id": 606309,
+                  "name": "房产大数据",
+                  "enName": null,
+                  "type": 11013,
+                  "weight": null,
+                  "novelty": 2.5128,
+                  "hot": null,
+                  "verify": "Y",
+                  "active": "Y",
+                  "createTime": 1514773244000,
+                  "modifyTime": 1522321243000,
+                  "createUser": 221,
+                  "modifyUser": null,
+                  "confidence": null,
+                  "sectorType": 3,
+                  "rule": "(房产,房地产)+(数据,大数据)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "lv1": {
+            "id": 328,
+            "name": "人工智能",
+            "enName": "AI",
+            "type": 11012,
+            "weight": null,
+            "novelty": 175,
+            "hot": "Y",
+            "verify": "Y",
+            "active": "Y",
+            "createTime": 1450854593000,
+            "modifyTime": 1678409542000,
+            "createUser": null,
+            "modifyUser": 22844,
+            "confidence": null,
+            "sectorType": 1,
+            "rule": ""
+          },
+          "lv2Tags": [
+            {
+              "lv2": {
+                "id": 589240,
+                "name": "人工智能行业应用",
+                "enName": null,
+                "type": 11013,
+                "weight": null,
+                "novelty": 2.5322,
+                "hot": null,
+                "verify": "Y",
+                "active": "Y",
+                "createTime": 1503684966000,
+                "modifyTime": 1703124641000,
+                "createUser": 139,
+                "modifyUser": null,
+                "confidence": null,
+                "sectorType": 2,
+                "rule": null
+              },
+              "lv3Tags": []
+            }
+          ]
+        },
+        {
+          "lv1": {
+            "id": 636,
+            "name": "物联网",
+            "enName": "IOT",
+            "type": 11012,
+            "weight": null,
+            "novelty": 155,
+            "hot": "Y",
+            "verify": "Y",
+            "active": "Y",
+            "createTime": 1450856829000,
+            "modifyTime": 1678409612000,
+            "createUser": null,
+            "modifyUser": 15827,
+            "confidence": null,
+            "sectorType": 1,
+            "rule": null
+          },
+          "lv2Tags": [
+            {
+              "lv2": {
+                "id": 602938,
+                "name": "物联网管理支持",
+                "enName": null,
+                "type": 11013,
+                "weight": null,
+                "novelty": 2.6982,
+                "hot": null,
+                "verify": "Y",
+                "active": "Y",
+                "createTime": 1512638581000,
+                "modifyTime": 1522321245000,
+                "createUser": 139,
+                "modifyUser": 219,
+                "confidence": null,
+                "sectorType": 2,
+                "rule": null
+              },
+              "lv3Tags": [
+                {
+                  "id": 602947,
+                  "name": "物联网云计算",
+                  "enName": null,
+                  "type": 11013,
+                  "weight": null,
+                  "novelty": 2.5049,
+                  "hot": null,
+                  "verify": "Y",
+                  "active": "Y",
+                  "createTime": 1512638581000,
+                  "modifyTime": 1522321241000,
+                  "createUser": 139,
+                  "modifyUser": null,
+                  "confidence": null,
+                  "sectorType": 3,
+                  "rule": "物联网云计算,物联网+云计算"
+                }
+              ]
+            },
+            {
+              "lv2": {
+                "id": 391658,
+                "name": "物联网应用",
+                "enName": null,
+                "type": 11013,
+                "weight": null,
+                "novelty": 2.3497,
+                "hot": null,
+                "verify": "Y",
+                "active": "Y",
+                "createTime": 1468773532000,
+                "modifyTime": 1522321248000,
+                "createUser": null,
+                "modifyUser": 219,
+                "confidence": null,
+                "sectorType": 2,
+                "rule": null
+              },
+              "lv3Tags": []
+            }
+          ]
+        },
+        {
+          "lv1": {
+            "id": 309067,
+            "name": "房地产",
+            "enName": "Real estate",
+            "type": 11012,
+            "weight": null,
+            "novelty": 90,
+            "hot": null,
+            "verify": "Y",
+            "active": "Y",
+            "createTime": 1466585975000,
+            "modifyTime": 1678409830000,
+            "createUser": 169,
+            "modifyUser": 223,
+            "confidence": null,
+            "sectorType": 1,
+            "rule": null
+          },
+          "lv2Tags": [
+            {
+              "lv2": {
+                "id": 309685,
+                "name": "房产开发",
+                "enName": null,
+                "type": 11013,
+                "weight": null,
+                "novelty": 2.4282,
+                "hot": null,
+                "verify": "Y",
+                "active": "Y",
+                "createTime": 1467260354000,
+                "modifyTime": 1620350785000,
+                "createUser": 168,
+                "modifyUser": null,
+                "confidence": null,
+                "sectorType": 2,
+                "rule": null
+              },
+              "lv3Tags": [
+                {
+                  "id": 345007,
+                  "name": "BIM",
+                  "enName": null,
+                  "type": 11013,
+                  "weight": null,
+                  "novelty": 3.5196,
+                  "hot": null,
+                  "verify": "Y",
+                  "active": "Y",
+                  "createTime": 1467882196000,
+                  "modifyTime": 1620350785000,
+                  "createUser": 123,
+                  "modifyUser": 14629,
+                  "confidence": null,
+                  "sectorType": 3,
+                  "rule": null
+                }
+              ]
+            },
+            {
+              "lv2": {
+                "id": 2310,
+                "name": "家装",
+                "enName": null,
+                "type": 11013,
+                "weight": null,
+                "novelty": 2.0429,
+                "hot": "Y",
+                "verify": "Y",
+                "active": "Y",
+                "createTime": 1450857164000,
+                "modifyTime": 1620350785000,
+                "createUser": null,
+                "modifyUser": 15654,
+                "confidence": null,
+                "sectorType": 2,
+                "rule": null
+              },
+              "lv3Tags": []
+            }
+          ]
+        },
+        {
+          "lv1": {
+            "id": 38,
+            "name": "移动互联网",
+            "enName": null,
+            "type": 11010,
+            "weight": null,
+            "novelty": 1.7171,
+            "hot": "N",
+            "verify": "Y",
+            "active": "Y",
+            "createTime": 1450854478000,
+            "modifyTime": 1619055479000,
+            "createUser": null,
+            "modifyUser": 17652,
+            "confidence": null,
+            "sectorType": null,
+            "rule": null
+          },
+          "lv2Tags": []
+        },
+        {
+          "lv1": {
+            "id": 469356,
+            "name": "IoT",
+            "enName": null,
+            "type": 11011,
+            "weight": null,
+            "novelty": null,
+            "hot": null,
+            "verify": "Y",
+            "active": "Y",
+            "createTime": 1474355510000,
+            "modifyTime": 1608082570000,
+            "createUser": 19,
+            "modifyUser": 15654,
+            "confidence": null,
+            "sectorType": null,
+            "rule": "物联网"
+          },
+          "lv2Tags": []
+        },
+        {
+          "lv1": {
+            "id": 479290,
+            "name": "知名媒体报道",
+            "enName": null,
+            "type": 11100,
+            "weight": null,
+            "novelty": 1.6418,
+            "hot": null,
+            "verify": "Y",
+            "active": "Y",
+            "createTime": 1474685692000,
+            "modifyTime": 1615875029000,
+            "createUser": 19,
+            "modifyUser": null,
+            "confidence": 6,
+            "sectorType": null,
+            "rule": null
+          },
+          "lv2Tags": []
+        },
+        {
+          "lv1": {
+            "id": 517333,
+            "name": "信创",
+            "enName": null,
+            "type": 11011,
+            "weight": null,
+            "novelty": 4,
+            "hot": null,
+            "verify": "Y",
+            "active": null,
+            "createTime": 1474905147000,
+            "modifyTime": 1685358588000,
+            "createUser": 139,
+            "modifyUser": 2706,
+            "confidence": null,
+            "sectorType": null,
+            "rule": "信创服务,信创安全,云服务,云计算,信息安全,芯片"
+          },
+          "lv2Tags": []
+        },
+        {
+          "lv1": {
+            "id": 603171,
+            "name": "建筑bim",
+            "enName": null,
+            "type": 11010,
+            "weight": null,
+            "novelty": 5.3647,
+            "hot": null,
+            "verify": "Y",
+            "active": null,
+            "createTime": 1512638582000,
+            "modifyTime": 1522321241000,
+            "createUser": 139,
+            "modifyUser": null,
+            "confidence": null,
+            "sectorType": null,
+            "rule": null
+          },
+          "lv2Tags": []
+        },
+        {
+          "lv1": {
+            "id": 646846,
+            "name": "36Kr报道项目",
+            "enName": null,
+            "type": 11111,
+            "weight": null,
+            "novelty": null,
+            "hot": null,
+            "verify": "Y",
+            "active": "Y",
+            "createTime": 1527142575000,
+            "modifyTime": 1582270933000,
+            "createUser": 215,
+            "modifyUser": 12856,
+            "confidence": null,
+            "sectorType": null,
+            "rule": null
+          },
+          "lv2Tags": []
+        },
+        {
+          "lv1": {
+            "id": 646848,
+            "name": "铅笔道报道项目",
+            "enName": null,
+            "type": 11111,
+            "weight": null,
+            "novelty": null,
+            "hot": null,
+            "verify": "Y",
+            "active": "Y",
+            "createTime": 1527142947000,
+            "modifyTime": 1563955427000,
+            "createUser": 215,
+            "modifyUser": 14629,
+            "confidence": null,
+            "sectorType": null,
+            "rule": null
+          },
+          "lv2Tags": []
+        },
+        {
+          "lv1": {
+            "id": 685035,
+            "name": "有专利",
+            "enName": null,
+            "type": 11100,
+            "weight": null,
+            "novelty": null,
+            "hot": null,
+            "verify": "Y",
+            "active": "Y",
+            "createTime": 1546074215000,
+            "modifyTime": 1615875029000,
+            "createUser": 875,
+            "modifyUser": null,
+            "confidence": 12,
+            "sectorType": null,
+            "rule": null
+          },
+          "lv2Tags": []
+        },
+        {
+          "lv1": {
+            "id": 685038,
+            "name": "高新技术企业",
+            "enName": null,
+            "type": 11100,
+            "weight": null,
+            "novelty": null,
+            "hot": null,
+            "verify": "Y",
+            "active": "Y",
+            "createTime": 1546074508000,
+            "modifyTime": 1615875029000,
+            "createUser": 875,
+            "modifyUser": null,
+            "confidence": 11,
+            "sectorType": null,
+            "rule": null
+          },
+          "lv2Tags": []
+        },
+        {
+          "lv1": {
+            "id": 687738,
+            "name": "AIoT",
+            "enName": null,
+            "type": 11011,
+            "weight": null,
+            "novelty": null,
+            "hot": null,
+            "verify": "Y",
+            "active": "Y",
+            "createTime": 1548990346000,
+            "modifyTime": 1548990360000,
+            "createUser": 2706,
+            "modifyUser": 2706,
+            "confidence": null,
+            "sectorType": null,
+            "rule": "人工智能+物联网"
+          },
+          "lv2Tags": []
+        },
+        {
+          "lv1": {
+            "id": 805123,
+            "name": "新基建",
+            "enName": null,
+            "type": 11011,
+            "weight": null,
+            "novelty": null,
+            "hot": null,
+            "verify": "Y",
+            "active": "Y",
+            "createTime": 1593487903000,
+            "modifyTime": 1614851604000,
+            "createUser": 2706,
+            "modifyUser": 15654,
+            "confidence": null,
+            "sectorType": null,
+            "rule": "5G,车联网,工业物联网,物联网基础技术,物联网管理支持,工业互联网,大数据基础技术,IT基础设施,CDN,IDC,轨交铁路,人工智能基础技术,AI芯片,云计算,区块链技术,特高压,新能源汽车充电桩"
+          },
+          "lv2Tags": []
+        },
+        {
+          "lv1": {
+            "id": 818699,
+            "name": "团队名校背景",
+            "enName": null,
+            "type": 11100,
+            "weight": null,
+            "novelty": null,
+            "hot": null,
+            "verify": "Y",
+            "active": "Y",
+            "createTime": 1611908570000,
+            "modifyTime": 1615875029000,
+            "createUser": null,
+            "modifyUser": 221,
+            "confidence": 15,
+            "sectorType": null,
+            "rule": null
+          },
+          "lv2Tags": []
+        },
+        {
+          "lv1": {
+            "id": 818814,
+            "name": "Top20投资方",
+            "enName": null,
+            "type": 11100,
+            "weight": null,
+            "novelty": null,
+            "hot": null,
+            "verify": null,
+            "active": "Y",
+            "createTime": 1612247216000,
+            "modifyTime": 1615875210000,
+            "createUser": null,
+            "modifyUser": 221,
+            "confidence": 16,
+            "sectorType": null,
+            "rule": null
+          },
+          "lv2Tags": []
+        },
+        {
+          "lv1": {
+            "id": 820558,
+            "name": "数字整装",
+            "enName": null,
+            "type": 11010,
+            "weight": null,
+            "novelty": null,
+            "hot": null,
+            "verify": "Y",
+            "active": "Y",
+            "createTime": 1619055528000,
+            "modifyTime": 1619055528000,
+            "createUser": 17652,
+            "modifyUser": 17652,
+            "confidence": null,
+            "sectorType": null,
+            "rule": null
+          },
+          "lv2Tags": []
+        }
+      ],
+      "navList": [
+        "equityRatioInfo",
+        "patentInfo",
+        "tagInfo",
+        "gsBasicInfo",
+        "trademarkInfo",
+        "gsShareholderInfo",
+        "gsMemberInfo",
+        "gsChangeInfo",
+        "gsInvestInfo",
+        "gongshangInfo",
+        "copyRightSoftInfo",
+        "artifactInfo",
+        "companyFeatureInfo",
+        "copyRightInfo",
+        "icpBeianInfo",
+        "newsInfo",
+        "certificateInfo",
+        "intellectualPropertyInfo",
+        "patentTongJiInfo",
+        "compsInfo",
+        "RivalIPOCompaniesInfo",
+        "fundingInfo",
+        "memberInfo",
+        "industryInfo",
+        "messageInfo",
+        "basicInfo"
+      ],
+      "industryList": [
+        {
+          "code": "0f4d29d1c57f401ca5bfc313d353d718",
+          "name": "BIM",
+          "isNew": false,
+          "isHot": false,
+          "createTime": 1615801022000,
+          "updateTime": 1703040523000,
+          "event": "国家铁路局发布两项铁路工程建设标准 推动铁路工程BIM技术应用\n",
+          "eventNewsId": null,
+          "countCompany": 197,
+          "tagId": 0,
+          "desc": "BIM即建筑信息模型（Building Information Modeling），BIM的核心是通过建立虚拟的建筑工程三维模型，利用数字化技术，为这个模型提供完整的、与实际情况一致的建筑工程信息库。",
+          "firstLetter": null,
+          "id": 1220,
+          "sort": 0,
+          "count": 0,
+          "companyVOs": null,
+          "lastUpdateVO": null,
+          "upperLevel1Tags": [
+            "{\"tagId\":309067,\"tagName\":\"房地产\"}",
+            "{\"tagId\":342884,\"tagName\":\"建筑业\"}"
+          ]
+        }
+      ],
+      "fundingRequire": null,
+      "companyId": 233092,
+      "code": "InterHousetjhd",
+      "message": {
+        "count": 140,
+        "msgVOList": [
+          {
+            "messageId": null,
+            "message": "洪泰基金领投,唐吉诃德完成亿元 B 轮融资",
+            "relateType": 10,
+            "displayType": null,
+            "relateCompany": {
+              "id": 233092,
+              "name": "唐吉诃德",
+              "round": "B轮",
+              "establishDate": 1462464000000,
+              "locationName": "北京",
+              "fullName": "北京唐吉诃德科技有限公司",
+              "logo": "https://api.xiniudata.com/file/9212c4845d2411e9ae6000163e03b331",
+              "companyMessageCount": 140,
+              "visited": false,
+              "tracked": false,
+              "trackedByPerson": false,
+              "tags": [
+                {
+                  "name": "有专利",
+                  "type": 11100
+                },
+                {
+                  "name": "Top20投资方",
+                  "type": 11100
+                },
+                {
+                  "name": "团队名校背景",
+                  "type": 11100
+                },
+                {
+                  "name": "高新技术企业",
+                  "type": 11100
+                },
+                {
+                  "name": "知名媒体报道",
+                  "type": 11100
+                },
+                {
+                  "name": "企业服务",
+                  "type": 11012
+                },
+                {
+                  "name": "房地产",
+                  "type": 11012
+                },
+                {
+                  "name": "大数据",
+                  "type": 11012
+                },
+                {
+                  "name": "物联网",
+                  "type": 11012
+                },
+                {
+                  "name": "人工智能",
+                  "type": 11012
+                },
+                {
+                  "name": "AIoT",
+                  "type": 11011
+                },
+                {
+                  "name": "IoT",
+                  "type": 11011
+                },
+                {
+                  "name": "新基建",
+                  "type": 11011
+                },
+                {
+                  "name": "信创",
+                  "type": 11011
+                },
+                {
+                  "name": "移动互联网",
+                  "type": 11010
+                },
+                {
+                  "name": "数字整装",
+                  "type": 11010
+                },
+                {
+                  "name": "建筑bim",
+                  "type": 11010
+                },
+                {
+                  "name": "36Kr报道项目",
+                  "type": 11111
+                },
+                {
+                  "name": "铅笔道报道项目",
+                  "type": 11111
+                },
+                {
+                  "name": "垂直行业信息化",
+                  "type": 11013
+                },
+                {
+                  "name": "物联网云计算",
+                  "type": 11013
+                },
+                {
+                  "name": "大数据垂直应用",
+                  "type": 11013
+                },
+                {
+                  "name": "房产开发",
+                  "type": 11013
+                },
+                {
+                  "name": "房产大数据",
+                  "type": 11013
+                },
+                {
+                  "name": "BIM",
+                  "type": 11013
+                },
+                {
+                  "name": "物联网管理支持",
+                  "type": 11013
+                },
+                {
+                  "name": "云计算",
+                  "type": 11013
+                },
+                {
+                  "name": "物联网应用",
+                  "type": 11013
+                },
+                {
+                  "name": "人工智能行业应用",
+                  "type": 11013
+                },
+                {
+                  "name": "云服务",
+                  "type": 11013
+                },
+                {
+                  "name": "家装",
+                  "type": 11013
+                }
+              ],
+              "type": 6010,
+              "active": null,
+              "description": "唐吉诃德是一个连锁商业数字营建全栈式协同平台， 运用BIM、云计算、大数据、物联网、移动互联网、人工智能AI等信息化技术，为连锁商业空间提供设计、施工、运维一站式的数字整装交付服务。创造由业主、设计方、施工方、供应商等多方参与，共享、共创、共赢的数字整装新生态。",
+              "modifyTime": null,
+              "code": "InterHousetjhd",
+              "topicCompanyId": null,
+              "publishTime": null,
+              "website": null,
+              "brief": "连锁商业数字营建全栈式协同平台",
+              "companyStatus": 2010,
+              "status": null,
+              "corporateId": 231283
+            },
+            "relateInvestor": null,
+            "trackDimension": 1001,
+            "trackDimensionName": "其他新闻类型",
+            "msgRelatedSourceInfo": null,
+            "createTime": 1701403203000,
+            "modifyTime": 1701406903000,
+            "publishTime": 1701403203680,
+            "relateId": "6569569b8854ebb962a0177e",
+            "newsVO": {
+              "relateId": null,
+              "title": "洪泰基金领投,唐吉诃德完成亿元 B 轮融资",
+              "link": "6569569b8854ebb962a0177e",
+              "image": null,
+              "sourceName": null,
+              "date": 1701398510000,
+              "type": null,
+              "sourceUrl": "https://www.sohu.com/a/740506675_121813057",
+              "summary": null,
+              "content": null
+            },
+            "artifactVO": {
+              "artifact": null,
+              "updateInfo": null,
+              "tags": null,
+              "hasArtifactTrend": false,
+              "artifactId": null,
+              "relateId": null
+            },
+            "trendVOs": [],
+            "artifactTrendVOs": null,
+            "jobVOs": null,
+            "gongshang": null,
+            "companys": [],
+            "fundingVO": {
+              "funding": null,
+              "investors": null,
+              "firList": null,
+              "investorList": null,
+              "fundingNews": null,
+              "modifyUser": null,
+              "news": null,
+              "round": null,
+              "fa": null,
+              "faList": null,
+              "investmentStr": null,
+              "investmentParseName": null
+            },
+            "companyFaVO": null,
+            "msgIds": null,
+            "features4MediaReport": null,
+            "tracked": false,
+            "feedback": false,
+            "msgId": 42763484,
+            "detailId": null,
+            "messageType": null,
+            "occurrenceTime": null,
+            "relatedJudiciaryInfo": null,
+            "announcementVO": null,
+            "detailMongoStr": null
+          },
+          {
+            "messageId": null,
+            "message": "投融日报|尧唐生物、拓烯科技、储慧智能等完成新一轮融资",
+            "relateType": 10,
+            "displayType": null,
+            "relateCompany": {
+            "relateCompany": {
+              "id": 233092,
+              "name": "唐吉诃德",
+              "round": "B轮",
+              "establishDate": 1462464000000,
+              "locationName": "北京",
+              "fullName": "北京唐吉诃德科技有限公司",
+              "logo": "https://api.xiniudata.com/file/9212c4845d2411e9ae6000163e03b331",
+              "companyMessageCount": 140,
+              "visited": false,
+              "tracked": false,
+              "trackedByPerson": false,
+              "tags": [
+                {
+                  "name": "有专利",
+                  "type": 11100
+                },
+                {
+                  "name": "Top20投资方",
+                  "type": 11100
+                },
+                {
+                  "name": "团队名校背景",
+                  "type": 11100
+                },
+                {
+                  "name": "高新技术企业",
+                  "type": 11100
+                },
+                {
+                  "name": "知名媒体报道",
+                  "type": 11100
+                },
+                {
+                  "name": "企业服务",
+                  "type": 11012
+                },
+                {
+                  "name": "房地产",
+                  "type": 11012
+                },
+                {
+                  "name": "大数据",
+                  "type": 11012
+                },
+                {
+                  "name": "物联网",
+                  "type": 11012
+                },
+                {
+                  "name": "人工智能",
+                  "type": 11012
+                },
+                {
+                  "name": "AIoT",
+                  "type": 11011
+                },
+                {
+                  "name": "IoT",
+                  "type": 11011
+                },
+                {
+                  "name": "新基建",
+                  "type": 11011
+                },
+                {
+                  "name": "信创",
+                  "type": 11011
+                },
+                {
+                  "name": "移动互联网",
+                  "type": 11010
+                },
+                {
+                  "name": "数字整装",
+                  "type": 11010
+                },
+                {
+                  "name": "建筑bim",
+                  "type": 11010
+                },
+                {
+                  "name": "36Kr报道项目",
+                  "type": 11111
+                },
+                {
+                  "name": "铅笔道报道项目",
+                  "type": 11111
+                },
+                {
+                  "name": "垂直行业信息化",
+                  "type": 11013
+                },
+                {
+                  "name": "物联网云计算",
+                  "type": 11013
+                },
+                {
+                  "name": "大数据垂直应用",
+                  "type": 11013
+                },
+                {
+                  "name": "房产开发",
+                  "type": 11013
+                },
+                {
+                  "name": "房产大数据",
+                  "type": 11013
+                },
+                {
+                  "name": "BIM",
+                  "type": 11013
+                },
+                {
+                  "name": "物联网管理支持",
+                  "type": 11013
+                },
+                {
+                  "name": "云计算",
+                  "type": 11013
+                },
+                {
+                  "name": "物联网应用",
+                  "type": 11013
+                },
+                {
+                  "name": "人工智能行业应用",
+                  "type": 11013
+                },
+                {
+                  "name": "云服务",
+                  "type": 11013
+                },
+                {
+                  "name": "家装",
+                  "type": 11013
+                }
+              ],
+              "type": 6010,
+              "active": null,
+              "description": "唐吉诃德是一个连锁商业数字营建全栈式协同平台， 运用BIM、云计算、大数据、物联网、移动互联网、人工智能AI等信息化技术，为连锁商业空间提供设计、施工、运维一站式的数字整装交付服务。创造由业主、设计方、施工方、供应商等多方参与，共享、共创、共赢的数字整装新生态。",
+              "modifyTime": null,
+              "code": "InterHousetjhd",
+              "topicCompanyId": null,
+              "publishTime": null,
+              "website": null,
+              "brief": "连锁商业数字营建全栈式协同平台",
+              "companyStatus": 2010,
+              "status": null,
+              "corporateId": 231283
+            },
+            "relateInvestor": null,
+            "trackDimension": 1001,
+            "trackDimensionName": "其他新闻类型",
+            "msgRelatedSourceInfo": null,
+            "createTime": 1701392403000,
+            "modifyTime": 1701396065000,
+            "publishTime": 1701392403459,
+            "relateId": "6569293b48e1ea468f0d1085",
+            "newsVO": {
+              "relateId": null,
+              "title": "投融日报|尧唐生物、拓烯科技、储慧智能等完成新一轮融资",
+              "link": "6569293b48e1ea468f0d1085",
+              "image": null,
+              "sourceName": null,
+              "date": 1701331612000,
+              "type": null,
+              "sourceUrl": "http://mp.weixin.qq.com/s?src=11\u0026timestamp=1701390633\u0026ver=4929\u0026signature=EmE583LQu9Ya12QzyHNF*7xeJOKTJ4PitCMh3jqEFCKeJCs-aDHJnt7w0iDqnPai7prD8bYOYEfYhCgWOPfoNsKiMnLneuvbQ3G-z-SrUqm7gdV4gL2AmliV2u3*hOqF\u0026new=1",
+              "summary": null,
+              "content": null
+            },
+            "artifactVO": {
+              "artifact": null,
+              "updateInfo": null,
+              "tags": null,
+              "hasArtifactTrend": false,
+              "artifactId": null,
+              "relateId": null
+            },
+            "trendVOs": [],
+            "artifactTrendVOs": null,
+            "jobVOs": null,
+            "gongshang": null,
+            "companys": [],
+            "fundingVO": {
+              "funding": null,
+              "investors": null,
+              "firList": null,
+              "investorList": null,
+              "fundingNews": null,
+              "modifyUser": null,
+              "news": null,
+              "round": null,
+              "fa": null,
+              "faList": null,
+              "investmentStr": null,
+              "investmentParseName": null
+            },
+            "companyFaVO": null,
+            "msgIds": null,
+            "features4MediaReport": null,
+            "tracked": false,
+            "feedback": false,
+            "msgId": 42763202,
+            "detailId": null,
+            "messageType": null,
+            "occurrenceTime": null,
+            "relatedJudiciaryInfo": null,
+            "announcementVO": null,
+            "detailMongoStr": null
+          },
+          {
+            "messageId": null,
+            "message": "日课·兴趣跟投:北京唐吉诃德科技有限公司获得约亿元B轮融资!",
+            "relateType": 10,
+            "displayType": null,
+            "relateCompany": {
+              "id": 233092,
+              "name": "唐吉诃德",
+              "round": "B轮",
+              "establishDate": 1462464000000,
+              "locationName": "北京",
+              "fullName": "北京唐吉诃德科技有限公司",
+              "logo": "https://api.xiniudata.com/file/9212c4845d2411e9ae6000163e03b331",
+              "companyMessageCount": 140,
+              "visited": false,
+              "tracked": false,
+              "trackedByPerson": false,
+              "tags": [
+                {
+                  "name": "有专利",
+                  "type": 11100
+                },
+                {
+                  "name": "Top20投资方",
+                  "type": 11100
+                },
+                {
+                  "name": "团队名校背景",
+                  "type": 11100
+                },
+                {
+                  "name": "高新技术企业",
+                  "type": 11100
+                },
+                {
+                  "name": "知名媒体报道",
+                  "type": 11100
+                },
+                {
+                  "name": "企业服务",
+                  "type": 11012
+                },
+                {
+                  "name": "房地产",
+                  "type": 11012
+                },
+                {
+                  "name": "大数据",
+                  "type": 11012
+                },
+                {
+                  "name": "物联网",
+                  "type": 11012
+                },
+                {
+                  "name": "人工智能",
+                  "type": 11012
+                },
+                {
+                  "name": "AIoT",
+                  "type": 11011
+                },
+                {
+                  "name": "IoT",
+                  "type": 11011
+                },
+                {
+                  "name": "新基建",
+                  "type": 11011
+                },
+                {
+                  "name": "信创",
+                  "type": 11011
+                },
+                {
+                  "name": "移动互联网",
+                  "type": 11010
+                },
+                {
+                  "name": "数字整装",
+                  "type": 11010
+                },
+                {
+                  "name": "建筑bim",
+                  "type": 11010
+                },
+                {
+                  "name": "36Kr报道项目",
+                  "type": 11111
+                },
+                {
+                  "name": "铅笔道报道项目",
+                  "type": 11111
+                },
+                {
+                  "name": "垂直行业信息化",
+                  "type": 11013
+                },
+                {
+                  "name": "物联网云计算",
+                  "type": 11013
+                },
+                {
+                  "name": "大数据垂直应用",
+                  "type": 11013
+                },
+                {
+                  "name": "房产开发",
+                  "type": 11013
+                },
+                {
+                  "name": "房产大数据",
+                  "type": 11013
+                },
+                {
+                  "name": "BIM",
+                  "type": 11013
+                },
+                {
+                  "name": "物联网管理支持",
+                  "type": 11013
+                },
+                {
+                  "name": "云计算",
+                  "type": 11013
+                },
+                {
+                  "name": "物联网应用",
+                  "type": 11013
+                },
+                {
+                  "name": "人工智能行业应用",
+                  "type": 11013
+                },
+                {
+                  "name": "云服务",
+                  "type": 11013
+                },
+                {
+                  "name": "家装",
+                  "type": 11013
+                }
+              ],
+              "type": 6010,
+              "active": null,
+              "description": "唐吉诃德是一个连锁商业数字营建全栈式协同平台， 运用BIM、云计算、大数据、物联网、移动互联网、人工智能AI等信息化技术，为连锁商业空间提供设计、施工、运维一站式的数字整装交付服务。创造由业主、设计方、施工方、供应商等多方参与，共享、共创、共赢的数字整装新生态。",
+              "modifyTime": null,
+              "code": "InterHousetjhd",
+              "topicCompanyId": null,
+              "publishTime": null,
+              "website": null,
+              "brief": "连锁商业数字营建全栈式协同平台",
+              "companyStatus": 2010,
+              "status": null,
+              "corporateId": 231283
+            },
+            "relateInvestor": null,
+            "trackDimension": 1001,
+            "trackDimensionName": "其他新闻类型",
+            "msgRelatedSourceInfo": null,
+            "createTime": 1701392403000,
+            "modifyTime": 1701396074000,
+            "publishTime": 1701392403251,
+            "relateId": "6569236348e1ea468f0d1038",
+            "newsVO": {
+              "relateId": null,
+              "title": "日课·兴趣跟投:北京唐吉诃德科技有限公司获得约亿元B轮融资!",
+              "link": "6569236348e1ea468f0d1038",
+              "image": null,
+              "sourceName": null,
+              "date": 1701317381000,
+              "type": null,
+              "sourceUrl": "http://mp.weixin.qq.com/s?src=11\u0026timestamp=1701389101\u0026ver=4929\u0026signature=ZdzdVpZ-EHOkCU7ENLGH7gN1mJBQOLiL2EALSWHei1Ou311v3QuJEoLQKemdHiaW*BKaKCmrpHT0VpmNohgVgSmK-s2pFoh5jtnOTxeAoGFkOiC452vBjs*EBoy03A4a\u0026new=1",
+              "summary": null,
+              "content": null
+            },
+            "artifactVO": {
+              "artifact": null,
+              "updateInfo": null,
+              "tags": null,
+              "hasArtifactTrend": false,
+              "artifactId": null,
+              "relateId": null
+            },
+            "trendVOs": [],
+            "artifactTrendVOs": null,
+            "jobVOs": null,
+            "gongshang": null,
+            "companys": [],
+            "fundingVO": {
+              "funding": null,
+              "investors": null,
+              "firList": null,
+              "investorList": null,
+              "fundingNews": null,
+              "modifyUser": null,
+              "news": null,
+              "round": null,
+              "fa": null,
+              "faList": null,
+              "investmentStr": null,
+              "investmentParseName": null
+            },
+            "companyFaVO": null,
+            "msgIds": null,
+            "features4MediaReport": null,
+            "tracked": false,
+            "feedback": false,
+            "msgId": 42763179,
+            "detailId": null,
+            "messageType": null,
+            "occurrenceTime": null,
+            "relatedJudiciaryInfo": null,
+            "announcementVO": null,
+            "detailMongoStr": null
+          }
+        ]
+      },
+      "tileTagList": [
+        {
+          "id": 81,
+          "name": "企业服务",
+          "enName": "Enterprise service",
+          "type": 11012,
+          "weight": null,
+          "novelty": 185,
+          "hot": "Y",
+          "verify": "Y",
+          "active": "Y",
+          "createTime": 1450854479000,
+          "modifyTime": 1678409507000,
+          "createUser": null,
+          "modifyUser": 214,
+          "confidence": null,
+          "sectorType": 1,
+          "rule": null
+        },
+        {
+          "id": 988,
+          "name": "云服务",
+          "enName": null,
+          "type": 11013,
+          "weight": null,
+          "novelty": 1.8824,
+          "hot": "Y",
+          "verify": "Y",
+          "active": "Y",
+          "createTime": 1450856841000,
+          "modifyTime": 1612230378000,
+          "createUser": null,
+          "modifyUser": 17652,
+          "confidence": null,
+          "sectorType": 2,
+          "rule": null
+        },
+        {
+          "id": 356,
+          "name": "云计算",
+          "enName": null,
+          "type": 11013,
+          "weight": null,
+          "novelty": 2.0292,
+          "hot": "N",
+          "verify": "Y",
+          "active": "Y",
+          "createTime": 1450854593000,
+          "modifyTime": 1647936343000,
+          "createUser": null,
+          "modifyUser": 17652,
+          "confidence": null,
+          "sectorType": 3,
+          "rule": null
+        },
+        {
+          "id": 608885,
+          "name": "垂直行业信息化",
+          "enName": null,
+          "type": 11013,
+          "weight": null,
+          "novelty": 4.7447,
+          "hot": null,
+          "verify": "Y",
+          "active": "Y",
+          "createTime": 1515246567000,
+          "modifyTime": 1703124641000,
+          "createUser": 139,
+          "modifyUser": null,
+          "confidence": null,
+          "sectorType": 2,
+          "rule": null
+        },
+        {
+          "id": 42,
+          "name": "大数据",
+          "enName": "Big data",
+          "type": 11012,
+          "weight": null,
+          "novelty": 170,
+          "hot": "Y",
+          "verify": "Y",
+          "active": "Y",
+          "createTime": 1450854478000,
+          "modifyTime": 1678409561000,
+          "createUser": null,
+          "modifyUser": 17065,
+          "confidence": null,
+          "sectorType": 1,
+          "rule": null
+        },
+        {
+          "id": 632677,
+          "name": "大数据垂直应用",
+          "enName": null,
+          "type": 11013,
+          "weight": null,
+          "novelty": 2.3394,
+          "hot": null,
+          "verify": "Y",
+          "active": "Y",
+          "createTime": null,
+          "modifyTime": 1703124641000,
+          "createUser": null,
+          "modifyUser": null,
+          "confidence": null,
+          "sectorType": 2,
+          "rule": null
+        },
+        {
+          "id": 606309,
+          "name": "房产大数据",
+          "enName": null,
+          "type": 11013,
+          "weight": null,
+          "novelty": 2.5128,
+          "hot": null,
+          "verify": "Y",
+          "active": "Y",
+          "createTime": 1514773244000,
+          "modifyTime": 1522321243000,
+          "createUser": 221,
+          "modifyUser": null,
+          "confidence": null,
+          "sectorType": 3,
+          "rule": "(房产,房地产)+(数据,大数据)"
+        },
+        {
+          "id": 328,
+          "name": "人工智能",
+          "enName": "AI",
+          "type": 11012,
+          "weight": null,
+          "novelty": 175,
+          "hot": "Y",
+          "verify": "Y",
+          "active": "Y",
+          "createTime": 1450854593000,
+          "modifyTime": 1678409542000,
+          "createUser": null,
+          "modifyUser": 22844,
+          "confidence": null,
+          "sectorType": 1,
+          "rule": ""
+        },
+        {
+          "id": 589240,
+          "name": "人工智能行业应用",
+          "enName": null,
+          "type": 11013,
+          "weight": null,
+          "novelty": 2.5322,
+          "hot": null,
+          "verify": "Y",
+          "active": "Y",
+          "createTime": 1503684966000,
+          "modifyTime": 1703124641000,
+          "createUser": 139,
+          "modifyUser": null,
+          "confidence": null,
+          "sectorType": 2,
+          "rule": null
+        },
+        {
+          "id": 636,
+          "name": "物联网",
+          "enName": "IOT",
+          "type": 11012,
+          "weight": null,
+          "novelty": 155,
+          "hot": "Y",
+          "verify": "Y",
+          "active": "Y",
+          "createTime": 1450856829000,
+          "modifyTime": 1678409612000,
+          "createUser": null,
+          "modifyUser": 15827,
+          "confidence": null,
+          "sectorType": 1,
+          "rule": null
+        },
+        {
+          "id": 602938,
+          "name": "物联网管理支持",
+          "enName": null,
+          "type": 11013,
+          "weight": null,
+          "novelty": 2.6982,
+          "hot": null,
+          "verify": "Y",
+          "active": "Y",
+          "createTime": 1512638581000,
+          "modifyTime": 1522321245000,
+          "createUser": 139,
+          "modifyUser": 219,
+          "confidence": null,
+          "sectorType": 2,
+          "rule": null
+        },
+        {
+          "id": 602947,
+          "name": "物联网云计算",
+          "enName": null,
+          "type": 11013,
+          "weight": null,
+          "novelty": 2.5049,
+          "hot": null,
+          "verify": "Y",
+          "active": "Y",
+          "createTime": 1512638581000,
+          "modifyTime": 1522321241000,
+          "createUser": 139,
+          "modifyUser": null,
+          "confidence": null,
+          "sectorType": 3,
+          "rule": "物联网云计算,物联网+云计算"
+        },
+        {
+          "id": 391658,
+          "name": "物联网应用",
+          "enName": null,
+          "type": 11013,
+          "weight": null,
+          "novelty": 2.3497,
+          "hot": null,
+          "verify": "Y",
+          "active": "Y",
+          "createTime": 1468773532000,
+          "modifyTime": 1522321248000,
+          "createUser": null,
+          "modifyUser": 219,
+          "confidence": null,
+          "sectorType": 2,
+          "rule": null
+        },
+        {
+          "id": 309067,
+          "name": "房地产",
+          "enName": "Real estate",
+          "type": 11012,
+          "weight": null,
+          "novelty": 90,
+          "hot": null,
+          "verify": "Y",
+          "active": "Y",
+          "createTime": 1466585975000,
+          "modifyTime": 1678409830000,
+          "createUser": 169,
+          "modifyUser": 223,
+          "confidence": null,
+          "sectorType": 1,
+          "rule": null
+        },
+        {
+          "id": 309685,
+          "name": "房产开发",
+          "enName": null,
+          "type": 11013,
+          "weight": null,
+          "novelty": 2.4282,
+          "hot": null,
+          "verify": "Y",
+          "active": "Y",
+          "createTime": 1467260354000,
+          "modifyTime": 1620350785000,
+          "createUser": 168,
+          "modifyUser": null,
+          "confidence": null,
+          "sectorType": 2,
+          "rule": null
+        },
+        {
+          "id": 345007,
+          "name": "BIM",
+          "enName": null,
+          "type": 11013,
+          "weight": null,
+          "novelty": 3.5196,
+          "hot": null,
+          "verify": "Y",
+          "active": "Y",
+          "createTime": 1467882196000,
+          "modifyTime": 1620350785000,
+          "createUser": 123,
+          "modifyUser": 14629,
+          "confidence": null,
+          "sectorType": 3,
+          "rule": null
+        },
+        {
+          "id": 2310,
+          "name": "家装",
+          "enName": null,
+          "type": 11013,
+          "weight": null,
+          "novelty": 2.0429,
+          "hot": "Y",
+          "verify": "Y",
+          "active": "Y",
+          "createTime": 1450857164000,
+          "modifyTime": 1620350785000,
+          "createUser": null,
+          "modifyUser": 15654,
+          "confidence": null,
+          "sectorType": 2,
+          "rule": null
+        },
+        {
+          "id": 38,
+          "name": "移动互联网",
+          "enName": null,
+          "type": 11010,
+          "weight": null,
+          "novelty": 1.7171,
+          "hot": "N",
+          "verify": "Y",
+          "active": "Y",
+          "createTime": 1450854478000,
+          "modifyTime": 1619055479000,
+          "createUser": null,
+          "modifyUser": 17652,
+          "confidence": null,
+          "sectorType": null,
+          "rule": null
+        },
+        {
+          "id": 469356,
+          "name": "IoT",
+          "enName": null,
+          "type": 11011,
+          "weight": null,
+          "novelty": null,
+          "hot": null,
+          "verify": "Y",
+          "active": "Y",
+          "createTime": 1474355510000,
+          "modifyTime": 1608082570000,
+          "createUser": 19,
+          "modifyUser": 15654,
+          "confidence": null,
+          "sectorType": null,
+          "rule": "物联网"
+        },
+        {
+          "id": 479290,
+          "name": "知名媒体报道",
+          "enName": null,
+          "type": 11100,
+          "weight": null,
+          "novelty": 1.6418,
+          "hot": null,
+          "verify": "Y",
+          "active": "Y",
+          "createTime": 1474685692000,
+          "modifyTime": 1615875029000,
+          "createUser": 19,
+          "modifyUser": null,
+          "confidence": 6,
+          "sectorType": null,
+          "rule": null
+        },
+        {
+          "id": 517333,
+          "name": "信创",
+          "enName": null,
+          "type": 11011,
+          "weight": null,
+          "novelty": 4,
+          "hot": null,
+          "verify": "Y",
+          "active": null,
+          "createTime": 1474905147000,
+          "modifyTime": 1685358588000,
+          "createUser": 139,
+          "modifyUser": 2706,
+          "confidence": null,
+          "sectorType": null,
+          "rule": "信创服务,信创安全,云服务,云计算,信息安全,芯片"
+        },
+        {
+          "id": 603171,
+          "name": "建筑bim",
+          "enName": null,
+          "type": 11010,
+          "weight": null,
+          "novelty": 5.3647,
+          "hot": null,
+          "verify": "Y",
+          "active": null,
+          "createTime": 1512638582000,
+          "modifyTime": 1522321241000,
+          "createUser": 139,
+          "modifyUser": null,
+          "confidence": null,
+          "sectorType": null,
+          "rule": null
+        },
+        {
+          "id": 646846,
+          "name": "36Kr报道项目",
+          "enName": null,
+          "type": 11111,
+          "weight": null,
+          "novelty": null,
+          "hot": null,
+          "verify": "Y",
+          "active": "Y",
+          "createTime": 1527142575000,
+          "modifyTime": 1582270933000,
+          "createUser": 215,
+          "modifyUser": 12856,
+          "confidence": null,
+          "sectorType": null,
+          "rule": null
+        },
+        {
+          "id": 646848,
+          "name": "铅笔道报道项目",
+          "enName": null,
+          "type": 11111,
+          "weight": null,
+          "novelty": null,
+          "hot": null,
+          "verify": "Y",
+          "active": "Y",
+          "createTime": 1527142947000,
+          "modifyTime": 1563955427000,
+          "createUser": 215,
+          "modifyUser": 14629,
+          "confidence": null,
+          "sectorType": null,
+          "rule": null
+        },
+        {
+          "id": 685035,
+          "name": "有专利",
+          "enName": null,
+          "type": 11100,
+          "weight": null,
+          "novelty": null,
+          "hot": null,
+          "verify": "Y",
+          "active": "Y",
+          "createTime": 1546074215000,
+          "modifyTime": 1615875029000,
+          "createUser": 875,
+          "modifyUser": null,
+          "confidence": 12,
+          "sectorType": null,
+          "rule": null
+        },
+        {
+          "id": 685038,
+          "name": "高新技术企业",
+          "enName": null,
+          "type": 11100,
+          "weight": null,
+          "novelty": null,
+          "hot": null,
+          "verify": "Y",
+          "active": "Y",
+          "createTime": 1546074508000,
+          "modifyTime": 1615875029000,
+          "createUser": 875,
+          "modifyUser": null,
+          "confidence": 11,
+          "sectorType": null,
+          "rule": null
+        },
+        {
+          "id": 687738,
+          "name": "AIoT",
+          "enName": null,
+          "type": 11011,
+          "weight": null,
+          "novelty": null,
+          "hot": null,
+          "verify": "Y",
+          "active": "Y",
+          "createTime": 1548990346000,
+          "modifyTime": 1548990360000,
+          "createUser": 2706,
+          "modifyUser": 2706,
+          "confidence": null,
+          "sectorType": null,
+          "rule": "人工智能+物联网"
+        },
+        {
+          "id": 805123,
+          "name": "新基建",
+          "enName": null,
+          "type": 11011,
+          "weight": null,
+          "novelty": null,
+          "hot": null,
+          "verify": "Y",
+          "active": "Y",
+          "createTime": 1593487903000,
+          "modifyTime": 1614851604000,
+          "createUser": 2706,
+          "modifyUser": 15654,
+          "confidence": null,
+          "sectorType": null,
+          "rule": "5G,车联网,工业物联网,物联网基础技术,物联网管理支持,工业互联网,大数据基础技术,IT基础设施,CDN,IDC,轨交铁路,人工智能基础技术,AI芯片,云计算,区块链技术,特高压,新能源汽车充电桩"
+        },
+        {
+          "id": 818699,
+          "name": "团队名校背景",
+          "enName": null,
+          "type": 11100,
+          "weight": null,
+          "novelty": null,
+          "hot": null,
+          "verify": "Y",
+          "active": "Y",
+          "createTime": 1611908570000,
+          "modifyTime": 1615875029000,
+          "createUser": null,
+          "modifyUser": 221,
+          "confidence": 15,
+          "sectorType": null,
+          "rule": null
+        },
+        {
+          "id": 818814,
+          "name": "Top20投资方",
+          "enName": null,
+          "type": 11100,
+          "weight": null,
+          "novelty": null,
+          "hot": null,
+          "verify": null,
+          "active": "Y",
+          "createTime": 1612247216000,
+          "modifyTime": 1615875210000,
+          "createUser": null,
+          "modifyUser": 221,
+          "confidence": 16,
+          "sectorType": null,
+          "rule": null
+        },
+        {
+          "id": 820558,
+          "name": "数字整装",
+          "enName": null,
+          "type": 11010,
+          "weight": null,
+          "novelty": null,
+          "hot": null,
+          "verify": "Y",
+          "active": "Y",
+          "createTime": 1619055528000,
+          "modifyTime": 1619055528000,
+          "createUser": 17652,
+          "modifyUser": 17652,
+          "confidence": null,
+          "sectorType": null,
+          "rule": null
+        }
+      ],
+      "router": "company",
+      "title": "【唐吉诃德】简介、官网、融资，北京唐吉诃德科技有限公司 · 烯牛数据",
+      "keywords": "企业服务,云服务,云计算,垂直行业信息化,大数据,大数据垂直应用,房产大数据,人工智能,人工智能行业应用,物联网,物联网管理支持,物联网云计算,物联网应用,房地产,房产开发,BIM,家装,移动互联网,IoT,知名媒体报道,信创,建筑bim,36Kr报道项目,铅笔道报道项目,有专利,高新技术企业,AIoT,新基建,团队名校背景,Top20投资方,数字整装",
+      "desc": "唐吉诃德是一个连锁商业数字营建全栈式协同平台， 运用BIM、云计算、大数据、物联网、移动互联网、人工智能AI等信息化技术，为连锁商业空间提供设计、施工、运维一站式的数字整装交付服务。创造由业主、设计方、施工方、供应商等多方参与，共享、共创、共赢的数字整装新生态。",
+      "userInfo": {
+        "login": true,
+        "init": true,
+        "username": "宋京浩",
+        "phone": "17703186690",
+        "password": "fb65fa60942a6f4855f71498beab2177",
+        "verifiedInvestor": false,
+        "orgUser": false,
+        "orgTrialUser": false,
+        "orgTrialEnd": false,
+        "inviteCode": "671196",
+        "subscription": false,
+        "userIdentify": 0,
+        "remainDay": -17,
+        "serviceStartDate": 1701302400000,
+        "serviceEndDate": 1701907200000,
+        "nickname": "京🎈"
+      },
+      "hotSearches": {
+        "code": 0,
+        "list": [
+          "保碧新能源",
+          "超芯星",
+          "朗合医疗",
+          "WorkMagic",
+          "金蝶国际",
+          "燕之屋"
+        ]
+      },
+      "hotIndustry": {
+        "code": 0,
+        "list": [
+          {
+            "code": "d03f61061be84cca8cd712a7fbe74ba5",
+            "name": "ADC药物",
+            "isNew": false,
+            "isHot": false,
+            "createTime": 1702865402000,
+            "updateTime": 1703402580000,
+            "event": "近期，抗体偶联药物（ADC）海外授权交易不断，包括和铂医药全资子公司诺纳生物就间皮ADC药物HBM9033全球临床开发及商业化与Seagen订立许可协议等。今年以来，ADC海外授权交易已超过10项。",
+            "eventNewsId": null,
+            "countCompany": 128,
+            "tagId": 0,
+            "desc": null,
+            "firstLetter": null,
+            "id": 0,
+            "sort": 0,
+            "count": 0,
+            "companyVOs": null,
+            "lastUpdateVO": null,
+            "upperLevel1Tags": null
+          },
+          {
+            "code": "94907fc152954d488ab1ec6ae381a8b6",
+            "name": "环境监测",
+            "isNew": false,
+            "isHot": false,
+            "createTime": 1557214704000,
+            "updateTime": 1703179423000,
+            "event": "方洋水务、安荣信、一目科技接连获投，赛道热度升温",
+            "eventNewsId": null,
+            "countCompany": 171,
+            "tagId": 0,
+            "desc": null,
+            "firstLetter": null,
+            "id": 0,
+            "sort": 0,
+            "count": 0,
+            "companyVOs": null,
+            "lastUpdateVO": null,
+            "upperLevel1Tags": null
+          },
+          {
+            "code": "d42c9f447f434263b7523604cba75c48",
+            "name": "AI视频生成",
+            "isNew": false,
+            "isHot": false,
+            "createTime": 1677639754000,
+            "updateTime": 1703411923000,
+            "event": "随AIGC、虚拟数字人等技术发展，AI视频生成技术愈发成熟",
+            "eventNewsId": null,
+            "countCompany": 72,
+            "tagId": 0,
+            "desc": null,
+            "firstLetter": null,
+            "id": 0,
+            "sort": 0,
+            "count": 0,
+            "companyVOs": null,
+            "lastUpdateVO": null,
+            "upperLevel1Tags": null
+          },
+          {
+            "code": "616cba09feeb466997755fbdab7702a3",
+            "name": "人形机器人",
+            "isNew": false,
+            "isHot": false,
+            "createTime": 1660808651000,
+            "updateTime": 1703357094000,
+            "event": "特斯拉二代人形机器人发布，人形机器人研发或提速。",
+            "eventNewsId": null,
+            "countCompany": 38,
+            "tagId": 0,
+            "desc": null,
+            "firstLetter": null,
+            "id": 0,
+            "sort": 0,
+            "count": 0,
+            "companyVOs": null,
+            "lastUpdateVO": null,
+            "upperLevel1Tags": null
+          },
+          {
+            "code": "2beaa15da5fefeee16034e3a0057a91f",
+            "name": "人工智能芯片",
+            "isNew": false,
+            "isHot": false,
+            "createTime": 1512373154000,
+            "updateTime": 1703302853000,
+            "event": "美国政府正与英伟达讨论允许向中国销售AI芯片的议题，但强调英伟达不能把最先进的芯片卖给中企，国产AI芯片创企迎来机会",
+            "eventNewsId": null,
+            "countCompany": 185,
+            "tagId": 0,
+            "desc": null,
+            "firstLetter": null,
+            "id": 0,
+            "sort": 0,
+            "count": 0,
+            "companyVOs": null,
+            "lastUpdateVO": null,
+            "upperLevel1Tags": null
+          },
+          {
+            "code": "1fa3d7380356e4a546009bfe43e0e23f",
+            "name": "商业航天",
+            "isNew": false,
+            "isHot": false,
+            "createTime": 1519802628000,
+            "updateTime": 1703407329000,
+            "event": "中央经济工作会议指出，要打造生物制造、商业航天、低空经济等若干战略性新兴产业。",
+            "eventNewsId": null,
+            "countCompany": 102,
+            "tagId": 0,
+            "desc": null,
+            "firstLetter": null,
+            "id": 0,
+            "sort": 0,
+            "count": 0,
+            "companyVOs": null,
+            "lastUpdateVO": null,
+            "upperLevel1Tags": null
+          },
+          {
+            "code": "3da51a4a801a40278a6065513c55013f",
+            "name": "智慧农业",
+            "isNew": false,
+            "isHot": false,
+            "createTime": 1606985708000,
+            "updateTime": 1703098368000,
+            "event": "中亿物联网、禾大科技、后稷智联等公司先后获投，赛道投资热度升温。",
+            "eventNewsId": null,
+            "countCompany": 269,
+            "tagId": 0,
+            "desc": null,
+            "firstLetter": null,
+            "id": 0,
+            "sort": 0,
+            "count": 0,
+            "companyVOs": null,
+            "lastUpdateVO": null,
+            "upperLevel1Tags": null
+          },
+          {
+            "code": "43eed9f63464438092fe150572a9e550",
+            "name": "介入医疗器械",
+            "isNew": false,
+            "isHot": false,
+            "createTime": 1629859156000,
+            "updateTime": 1703324404000,
+            "event": "介入器械大部分细分领域仍处于外资主导格局，尚存在较大的进口替代空间，有望逐步实现国产化替代。",
+            "eventNewsId": null,
+            "countCompany": 242,
+            "tagId": 0,
+            "desc": null,
+            "firstLetter": null,
+            "id": 0,
+            "sort": 0,
+            "count": 0,
+            "companyVOs": null,
+            "lastUpdateVO": null,
+            "upperLevel1Tags": null
+          },
+          {
+            "code": "d5b8a25f83d249c7ad9437e088e331eb",
+            "name": "养老服务",
+            "isNew": false,
+            "isHot": false,
+            "createTime": 1608778927000,
+            "updateTime": 1703149789000,
+            "event": "随着人口老龄化趋势的演化，国内养老市场的需求将进一步释放，养老服务赛道融资不断",
+            "eventNewsId": null,
+            "countCompany": 283,
+            "tagId": 0,
+            "desc": null,
+            "firstLetter": null,
+            "id": 0,
+            "sort": 0,
+            "count": 0,
+            "companyVOs": null,
+            "lastUpdateVO": null,
+            "upperLevel1Tags": null
+          },
+          {
+            "code": "de0cf5f96aa14a469ffafeb75cf693d0",
+            "name": "半导体设备",
+            "isNew": false,
+            "isHot": false,
+            "createTime": 1540364793000,
+            "updateTime": 1703322594000,
+            "event": "半导体生产设备和材料，是半导体产品的最上游。国际半导体产业协会(SEMI) 2018年1月26日公布的数据，2017年全球半导体设备商出货金额达到560亿美元，比起上一年大幅增长接近40%。",
+            "eventNewsId": null,
+            "countCompany": 319,
+            "tagId": 0,
+            "desc": null,
+            "firstLetter": null,
+            "id": 0,
+            "sort": 0,
+            "count": 0,
+            "companyVOs": null,
+            "lastUpdateVO": null,
+            "upperLevel1Tags": null
+          }
+        ]
+      },
+      "asPath": "/company/InterHousetjhd/overview"
+    }
+  },
+  "page": "/detail-company",
+  "query": {
+    "code": "InterHousetjhd"
+  },
+  "buildId": "RjcySRM3VKPcifQjniG~i"
+}

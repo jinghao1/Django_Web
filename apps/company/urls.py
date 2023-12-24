@@ -6,5 +6,5 @@ from . import views
 # 设置空间名
 app_name = 'company'
 urlpatterns = [
-	path('/company/<xn_href>/overview/', views.company_detail, name='company_detail'),
+	path('company/<xn_href>/overview', views.company_detail, name='company_detail'),
 ]
