@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e62268d-292f-4458-bb17-b06968999966" name="Default" comment="添加展示页面url">
+      <change afterPath="$PROJECT_DIR$/apps/company/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/company/hs_company_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/company/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/company/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/news/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_01.log" beforeDir="false" afterPath="$PROJECT_DIR$/django_01.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/hs_base/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/hs_base/main.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/xn_request.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/xn_request.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_01/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_01/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -318,17 +319,17 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "true",
-    "last_opened_file_path": "/Users/sjh/Code/Django_Web/apps",
+    "last_opened_file_path": "/Users/sjh/Code/Django_Web/templates/company",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/company" />
+      <recent name="$PROJECT_DIR$/apps/company" />
       <recent name="$PROJECT_DIR$/apps" />
       <recent name="$PROJECT_DIR$/templates/hs" />
       <recent name="$PROJECT_DIR$/templates/cms" />
-      <recent name="$PROJECT_DIR$/templates/news" />
-      <recent name="$PROJECT_DIR$/templates/hs_base" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/taskApp" />
@@ -463,7 +464,7 @@
       <updated>1529122678684</updated>
       <workItem from="1700930160739" duration="76820000" />
       <workItem from="1702215049530" duration="2582000" />
-      <workItem from="1702559627420" duration="26106000" />
+      <workItem from="1702559627420" duration="28230000" />
     </task>
     <task id="LOCAL-00127" summary="change notation">
       <created>1575856907430</created>

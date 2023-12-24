@@ -17,10 +17,12 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.static import static  # 用来拼接一些静态文件路径
 from django.conf import settings
+# from apps.company import urls as company_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),  # django自带的admin用户路由界面
     path('', include('apps.news.urls')),  # 新闻路由界面，apps.name用于区分命名空间下对应的urls
+    path('', include('apps.company.urls')),  # 公司路由界面，apps.name用于区分命名空间下对应的urls
     path('account/', include('apps.xfzauth.urls')),  # 登录注册界面的主urls
     path('course/', include('apps.course.urls')),  # 创业课堂页面的主urls
     path('payinfo/', include('apps.payinfo.urls')),  # 支付界面urls

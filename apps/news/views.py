@@ -193,7 +193,7 @@ def hs_search(request):
             res = tree.xpath('//section//div[@class="company-wrapper"]/div')
             try:
                 for div in res:
-                    print("=====")
+                    # print("=====")
                     com_href = div.xpath('./div[1]/a/@href')
                     com_title = div.xpath('./div[2]/div[1]//a//text()')
                     com_brief = div.xpath('./div[2]/div[2]//span//text()')
@@ -229,15 +229,15 @@ def hs_search(request):
                             }
                         }
                     )
-                    print(com_href)
-                    print("".join(com_title))
-                    print(com_brief)
-                    print("".join(com_highlight))
+                    # print(com_href)
+                    # print("".join(com_title))
+                    # print(com_brief)
+                    # print("".join(com_highlight))
             except Exception as e:
                 print(e)
     res_api['total'] = len(res_api['results'])
     res_api['totals']['company'] = len(res_api['results'])
-    print(res_api)
+    # print(res_api)
     return JsonResponse(res_api)
     # print(res.status_code)
     # print(res.content)
@@ -281,7 +281,6 @@ def hs_search(request):
             "company": 1
         }
     }
-    print(result)
     return JsonResponse(result)
     # return render(request, 'hs/search_cn.html', context=context)
 
@@ -329,6 +328,7 @@ def news_detail(request, news_id):
         return render(request, 'news/hs_news_detail.html', context=context)
     except News.DoesNotExist:
         raise Http404  # 抛出一个404错误，当抛出404时，django就会在根文件中的templates文件调用一个叫做404的文件
+
 
 
 @require_POST

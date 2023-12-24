@@ -43,3 +43,18 @@ def Result_maker(result_info):
 
     #
     # return restful.result(data={'result_id': res.id})
+
+
+def company_detail(request, xn_href):
+    """公司详情 """
+    try:
+        result_info = Result.objects.filter(
+            xn_href=xn_href).first()
+        lang = request.GET.get("lang", "cn")
+        context = {
+            'news': result_info,
+            'lang': lang
+        }
+        return render(request, 'company/hs_company_detail.html', context=context)
+    except News.DoesNotExist:
+        raise Http404  # 抛出一个404错误，当抛出404时，django就会在根文件中的templates文件调用一个叫做404的文件
