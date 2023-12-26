@@ -24,13 +24,55 @@ if response.status_code == 200:
     print("======")
     # 融资历程
     # print(cont["props"]["pageProps"]["fundings"])
+    licheng = cont["props"]["pageProps"]["fundings"]
+    roundName = licheng["roundName"]
+    fundingDate = licheng["fundingDate"]
+    fundingDesc = json.loads(licheng["fundingDesc"])
+    # 估值
+    postMoney = fundingDesc["postMoney"]
+    money = fundingDesc["money"]
+    # 比例
+    ratio = fundingDesc["ratio"]
+    # 投资方
+    investorArr = fundingDesc["investorStr"]
+    in_arr = []
+    for item in investorArr:
+        in_arr.append(item['text'])
+    investorStr = "".join(in_arr)
     # print("======")
     # # 工商信息
     # print(cont["props"]["pageProps"]["gongshang"])
+    gongshang = json.loads(cont["props"]["pageProps"]["gongshang"])
+    gs_name = gongshang.get("name", "")
+    # 法人
+    legalPersonName = gongshang.get("legalPersonName", "")
+    # 成立时间
+    establishTime = gongshang.get("establishTime", "0")
+    # 工商描述
+    businessScope = gongshang.get("businessScope", "")
+    # 经营状态
+    regStatus = gongshang.get("regStatus", "")
+    # 注册资本
+    regCapital = gongshang.get("regCapital", "")
+    # 联系方式
+    contact_info = gongshang.get("contact", {})
+    telephone = contact_info.get("telephone", "")
+    email = contact_info.get("email", "")
+    address = contact_info.get("address", "")
     # print("======")
+    # 标签画像
+
+    # 优势
     # # 行业分类
     # print(cont["props"]["pageProps"]["tileTagList"])
+    tileTagListArr = cont["props"]["pageProps"]["tileTagList"]
+    tag_arr_hy = []
+    tag_arr_ys = []
+    for item in tileTagListArr:
+        if item['confidence'] is null:
+            tag_arr_hy.append(item['name'])
+        else:
+            tag_arr_ys.append(item['name'])
     print("======")
-
 
     exit("jing end")
