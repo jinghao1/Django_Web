@@ -4,12 +4,16 @@ from django.db import models
 class Desc(models.Model):
     """定义一个企业描述"""
     name = models.CharField(max_length=255)
+    roundName = models.CharField(max_length=255)
+    cityName = models.CharField(max_length=255)
+    establishDate = models.DateTimeField()
     img_url = models.CharField(max_length=255)
     company_url = models.CharField(max_length=255)
-    tags = models.CharField(max_length=255)
+    brief = models.CharField(max_length=255)
     desc = models.TextField()  # 简介
     phone = models.CharField(max_length=255)
     email = models.CharField(max_length=255)
+    address = models.CharField(max_length=255)
     xn_href = models.CharField(max_length=255)
 
 

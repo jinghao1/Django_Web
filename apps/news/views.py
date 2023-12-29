@@ -17,7 +17,7 @@ from .forms import AddCommentForm
 from .models import Comment
 from .models import NewCategory, News, Banner
 from utils.xn_request import xn_search
-from apps.company.views import Result_maker
+from apps.company.data_deal import Result_maker
 import requests
 from lxml import etree
 import re

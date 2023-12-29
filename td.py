@@ -2,6 +2,11 @@ import requests
 from lxml import etree
 import re
 import json
+import datetime
+print(type(datetime.date.fromtimestamp(1462464000000/1000)))
+
+print(datetime.date.fromtimestamp(1462464000000/1000))
+exit()
 
 s_search = "小菜园"
 response = requests.get("https://www.xiniudata.com/company/InterHousetjhd/overview",
@@ -23,23 +28,29 @@ if response.status_code == 200:
     establishDate = com_info["establishDate"]
     print("======")
     # 融资历程
-    # print(cont["props"]["pageProps"]["fundings"])
+
     licheng = cont["props"]["pageProps"]["fundings"]
-    roundName = licheng["roundName"]
-    fundingDate = licheng["fundingDate"]
-    fundingDesc = json.loads(licheng["fundingDesc"])
-    # 估值
-    postMoney = fundingDesc["postMoney"]
-    money = fundingDesc["money"]
-    # 比例
-    ratio = fundingDesc["ratio"]
-    # 投资方
-    investorArr = fundingDesc["investorStr"]
-    in_arr = []
-    for item in investorArr:
-        in_arr.append(item['text'])
-    investorStr = "".join(in_arr)
-    # print("======")
+    for licheng in cont["props"]["pageProps"]["fundings"]:
+        print(licheng)
+        roundName = licheng["roundName"]
+        fundingDate = licheng["fundingDate"]
+        fundingDesc = json.loads(licheng["fundingDesc"])
+        # 估值
+        postMoney = fundingDesc["postMoney"]
+        money = fundingDesc["money"]
+        # 比例
+        ratio = fundingDesc["ratio"]
+        # 投资方
+
+        if fundingDesc.get("investorStr", None) is None:
+            investorStr = ""
+        else:
+            investorArr = json.loads(fundingDesc["investorStr"])
+            in_arr = []
+            for item in investorArr:
+                in_arr.append(item['text'])
+            investorStr = "".join(in_arr)
+        print("investorStr====", investorStr)
     # # 工商信息
     # print(cont["props"]["pageProps"]["gongshang"])
     gongshang = json.loads(cont["props"]["pageProps"]["gongshang"])
@@ -59,6 +70,7 @@ if response.status_code == 200:
     telephone = contact_info.get("telephone", "")
     email = contact_info.get("email", "")
     address = contact_info.get("address", "")
+    print(contact_info, address)
     # print("======")
     # 标签画像
 
@@ -69,10 +81,12 @@ if response.status_code == 200:
     tag_arr_hy = []
     tag_arr_ys = []
     for item in tileTagListArr:
-        if item['confidence'] is null:
-            tag_arr_hy.append(item['name'])
-        else:
+        if item['confidence']:
             tag_arr_ys.append(item['name'])
-    print("======")
+        else:
+            tag_arr_hy.append(item['name'])
+
+    print("youshi", tag_arr_ys)
+    print("hangye", tag_arr_hy)
 
     exit("jing end")
