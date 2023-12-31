@@ -19,18 +19,24 @@ class Desc(models.Model):
 
 class GongShang(models.Model):
     """定义一个工商信息"""
-    name = models.CharField(max_length=255)
-    faren = models.CharField(max_length=255)
+    code = models.CharField(max_length=255)
+    fullName = models.CharField(max_length=255)
+    legalPersonName = models.CharField(max_length=255)
     date = models.DateTimeField(auto_now_add=True)
+    establishTime = models.DateTimeField(auto_now_add=True)
     xn_href = models.CharField(max_length=255)
+    businessScope = models.TextField()
+    regCapital = models.CharField(max_length=255)
+    regStatus = models.CharField(max_length=255)
 
 
 class HuaXiang(models.Model):
     """定义一个企业画像"""
     youshi = models.CharField(max_length=255)
-    fenlei = models.CharField(max_length=255)
-    biaoxian = models.CharField(max_length=255)
+    fenlei = models.TextField()
+    date = models.DateTimeField(auto_now_add=True)
     xn_href = models.CharField(max_length=255)
+    date = models.DateTimeField(auto_now_add=True)
 
 
 class Result(models.Model):
@@ -44,12 +50,14 @@ class Result(models.Model):
 
 class RongZi(models.Model):
     """融资历程"""
-    lunci = models.CharField(max_length=255)
-    date = models.DateTimeField(auto_now_add=True)
-    money = models.CharField(max_length=255)
-    zifang = models.CharField(max_length=255)
-    bili = models.CharField(max_length=255)
-    guzhi = models.CharField(max_length=255)
-    fa = models.CharField(max_length=255)
-    laiyuan = models.CharField(max_length=255)
     xn_href = models.CharField(max_length=255)
+    xn_id = models.CharField(max_length=50)
+    roundName = models.CharField(max_length=255)
+    postMoney = models.CharField(max_length=255)
+    money = models.CharField(max_length=255)
+    ratio = models.CharField(max_length=255)
+    newsLink = models.CharField(max_length=255)
+    investorStr = models.CharField(max_length=255)
+    fundingDate = models.DateTimeField()
+    date = models.DateTimeField(auto_now_add=True)
+

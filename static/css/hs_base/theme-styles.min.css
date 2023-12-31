@@ -3,7 +3,7 @@
     font-family: PitchSans;
     font-style: normal;
     font-weight: 600;
-    src: url(../fonts/PitchSansApp-Bold.e62747bf.woff2) format("woff2"), url(../fonts/PitchSansApp-Bold.4bb0ecf4.woff) format("woff"), url(../fonts/PitchSansApp-Bold.31bbb13e.ttf) format("truetype")
+    /*src: url(../fonts/PitchSansApp-Bold.e62747bf.woff2) format("woff2"), url(../fonts/PitchSansApp-Bold.4bb0ecf4.woff) format("woff"), url(../fonts/PitchSansApp-Bold.31bbb13e.ttf) format("truetype")*/
 }
 
 @font-face {
@@ -11,7 +11,7 @@
     font-family: PitchSans;
     font-style: italic;
     font-weight: 600;
-    src: url(../fonts/PitchSansApp-BoldItalic.e8956d6e.woff2) format("woff2"), url(../fonts/PitchSansApp-BoldItalic.82293e5a.woff) format("woff"), url(../fonts/PitchSansApp-BoldItalic.b86efb4a.ttf) format("truetype")
+    /*src: url(../fonts/PitchSansApp-BoldItalic.e8956d6e.woff2) format("woff2"), url(../fonts/PitchSansApp-BoldItalic.82293e5a.woff) format("woff"), url(../fonts/PitchSansApp-BoldItalic.b86efb4a.ttf) format("truetype")*/
 }
 
 @font-face {

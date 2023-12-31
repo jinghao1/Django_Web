@@ -15,7 +15,7 @@ from django.contrib.auth.decorators import login_required  # 导入登录验证�
 from django.utils.decorators import method_decorator  # 验证登录才能访问函数的装饰器
 from utils.xn_request import xn_company_detail
 from utils import restful
-from .models import Result, Desc, GongShang
+from .models import Result, Desc, GongShang, RongZi, HuaXiang
 from .data_deal import Desc_maker, GongShang_maker
 import requests
 from lxml import etree
@@ -26,8 +26,8 @@ import json
 def company_detail(request, xn_href):
     """公司详情 """
     # try:
-    if 1==1:
-
+    if 1 == 1:
+        result_info = {}
         gs_info = GongShang.objects.filter(
             xn_href=xn_href).exists()
         if not gs_info:
@@ -35,6 +35,7 @@ def company_detail(request, xn_href):
             if "status_code" in dir(response) and response.status_code == 200:
                 # 获取页面资源
                 page_text = response.text
+                print("jing......")
                 # scriptlis = re.findall(r'<script>(.*?)</script>', page_text)
                 content = re.findall(r'__NEXT_DATA__ = (.*?);__NEXT_LOADED_PAGES__=', page_text)
                 cont = json.loads(content[0])
@@ -60,34 +61,26 @@ def company_detail(request, xn_href):
                     "address": contact_info.get("address", ""),
                 }, xn_href=xn_href)
                 # 工商信息写入
-                gs_name = gongshang.get("name", "")
-                # 法人
-                legalPersonName = gongshang.get("legalPersonName", "")
-                # 成立时间
-                establishTime = gongshang.get("establishTime", "0")
-                # 工商描述
-                businessScope = gongshang.get("businessScope", "")
-                # 经营状态
-                regStatus = gongshang.get("regStatus", "")
-                # 注册资本
-                regCapital = gongshang.get("regCapital", "")
-
-                print("======")
+                print("jingongshang......")
+                GongShang.objects.update_or_create(
+                    defaults={
+                        "code": com_info["code"],
+                        "xn_href": xn_href,
+                        "fullName": com_info["fullName"],
+                        "legalPersonName": gongshang["legalPersonName"],  # 法人
+                        "establishTime": datetime.date.fromtimestamp(gongshang.get("establishTime", 0) / 1000),  # 成立时间
+                        "businessScope": gongshang['businessScope'],  # 工商描述
+                        "regCapital": gongshang.get("regCapital", ""),  # 注册资本
+                        "regStatus": gongshang.get("regStatus", ""),  # 经营状态
+                        "date": datetime.date.fromtimestamp(time.time()),
+                    }, xn_href=xn_href
+                )
                 # 融资历程
-
+                print("rongzi......")
                 licheng = cont["props"]["pageProps"]["fundings"]
                 for licheng in cont["props"]["pageProps"]["fundings"]:
-                    print(licheng)
-                    roundName = licheng["roundName"]
-                    fundingDate = licheng["fundingDate"]
                     fundingDesc = json.loads(licheng["fundingDesc"])
-                    # 估值
-                    postMoney = fundingDesc["postMoney"]
-                    money = fundingDesc["money"]
-                    # 比例
-                    ratio = fundingDesc["ratio"]
-                    # 投资方
-
+                    xn_id = str(licheng.get("xn_id", ""))
                     if fundingDesc.get("investorStr", None) is None:
                         investorStr = ""
                     else:
@@ -96,16 +89,21 @@ def company_detail(request, xn_href):
                         for item in investorArr:
                             in_arr.append(item['text'])
                         investorStr = "".join(in_arr)
-                    print("investorStr====", investorStr)
-                # # 工商信息
-                # print(cont["props"]["pageProps"]["gongshang"])
-
-                # print("======")
-                # 标签画像
-
-                # 优势
-                # # 行业分类
-                # print(cont["props"]["pageProps"]["tileTagList"])
+                    RongZi.objects.update_or_create(
+                        defaults={
+                            "xn_href": xn_href,
+                            "xn_id": xn_id,  # 犀牛id
+                            "roundName": licheng["roundName"],
+                            "fundingDate": datetime.date.fromtimestamp(licheng.get("fundingDate", 0) / 1000),
+                            "postMoney": fundingDesc.get("postMoney",""),  # 估值
+                            "money": fundingDesc.get("money", ""),  # 投资金额
+                            "ratio": fundingDesc.get("ratio", ""),  # 投资比例
+                            "newsLink": licheng.get("newsLink", ""),  # 犀牛新闻链接
+                            "investorStr": investorStr,  # 投资方
+                            "date": datetime.date.fromtimestamp(time.time()),  # 录入时间
+                        }, xn_href=xn_href, xn_id=xn_id
+                    )
+                    # 标签画像 优势 行业分类
                 tileTagListArr = cont["props"]["pageProps"]["tileTagList"]
                 tag_arr_hy = []
                 tag_arr_ys = []
@@ -114,11 +112,18 @@ def company_detail(request, xn_href):
                         tag_arr_ys.append(item['name'])
                     else:
                         tag_arr_hy.append(item['name'])
-
-                print("youshi", tag_arr_ys)
-                print("hangye", tag_arr_hy)
-
-
+                HuaXiang.objects.update_or_create(
+                    defaults={
+                        "xn_href": xn_href,
+                        "youshi": " ".join(tag_arr_ys),  # 优势
+                        "fenlei": " ".join(tag_arr_hy),  # 行业
+                        "date": datetime.date.fromtimestamp(time.time()),  # 录入时间
+                    }, xn_href=xn_href
+                )
+        else:
+            result_info = GongShang.objects.filter(
+                xn_href=xn_href).first()
+        print(result_info)
         lang = request.GET.get("lang", "cn")
         context = {
             'news': result_info,
