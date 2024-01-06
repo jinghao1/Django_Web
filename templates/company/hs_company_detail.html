@@ -8,7 +8,36 @@
 
     <main class="main" id="main">
         <article class="content content--padded-top has-global-padding is-layout-constrained wysiwyg">
-            company info
+            {% if lang == "en" %}
+                <section class="wp-block-mg-hero-stack hero-stack"><h1 class="hero-stack__title">{{ news.title_en }}</h1>
+                    {% if news.desc_en %}
+                        <div class="hero-stack__paragraph"><p>{{ news.desc_en }}</p></div>
+                    {% endif %}
+
+                    <div class="hero-stack__credits"><p class="hero-stack__credit-text">Published on {{ news.pub_time }}</p></div>
+                </section>
+
+
+                <section style="--wp--custom--content-size:1200rem"
+                         class="wp-block-mg-post-container post-container wysiwyg has-global-padding is-layout-constrained wp-container-1 wp-block-post-container-is-layout-constrained">
+                    {{ news.content_en|safe }}
+                </section>
+            {% else %}
+                <section class="wp-block-mg-hero-stack hero-stack"><h1 class="hero-stack__title">{{ desc_info.name }}</h1>
+                    {% if desc_info.brief %}
+                        <div class="hero-stack__paragraph"><p>{{ desc_info.brief }}</p></div>
+                    {% endif %}
+
+                    <div class="hero-stack__credits"><p class="hero-stack__credit-text">发表于{{ desc_info.establishDate }}</p></div>
+                </section>
+
+
+                <section style="--wp--custom--content-size:1200rem"
+                         class="wp-block-mg-post-container post-container wysiwyg has-global-padding is-layout-constrained wp-container-1 wp-block-post-container-is-layout-constrained">
+                    {{ desc_info.desc|safe }}
+                </section>
+            {% endif %}
+
         </article>
     </main>
 {% endblock %}

@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e62268d-292f-4458-bb17-b06968999966" name="Default" comment="添加展示页面url">
-      <change beforePath="$PROJECT_DIR$/static/css/hs_base/theme-styles.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/hs_base/theme-styles.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/xn/xn_base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/company/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/company/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_01.log" beforeDir="false" afterPath="$PROJECT_DIR$/django_01.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/company/hs_company_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/company/hs_company_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -326,11 +330,11 @@
       <recent name="$PROJECT_DIR$/templates/cms" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/taskApp" />
       <recent name="$PROJECT_DIR$/django_01" />
       <recent name="$PROJECT_DIR$/redis" />
       <recent name="D:\pycharmProject\study\django\django_01\apps" />
-      <recent name="D:\pycharmProject\study\django\django_01\media" />
     </key>
   </component>
   <component name="RunManager" selected="Django Server.django_01">
@@ -458,7 +462,7 @@
       <updated>1529122678684</updated>
       <workItem from="1700930160739" duration="76820000" />
       <workItem from="1702215049530" duration="2582000" />
-      <workItem from="1702559627420" duration="50511000" />
+      <workItem from="1702559627420" duration="62592000" />
     </task>
     <task id="LOCAL-00127" summary="change notation">
       <created>1575856907430</created>

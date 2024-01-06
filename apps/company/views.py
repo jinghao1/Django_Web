@@ -4,6 +4,9 @@ import hmac
 import hashlib
 from hashlib import md5  # 导入md5加密
 import datetime
+from datetime import timedelta
+from django.forms.models import model_to_dict
+
 from django.conf import settings
 from django.shortcuts import render
 from django.shortcuts import reverse  # 重定向模块
@@ -28,14 +31,19 @@ def company_detail(request, xn_href):
     # try:
     if 1 == 1:
         result_info = {}
+        dt_s = datetime.datetime.now().date()  # 2018-7-15
+        dt_e = (dt_s - timedelta(7))  # 2018-7-08
+        # print(dt_e)
+        #objs = Record.objects.filter(end_time__range=[dt_s, dt_e])
+        #objs = Record.objects.filter(Q(end_time__=dt_s) & Q(end_time__lt=dt_e))  # 效果相同
         gs_info = GongShang.objects.filter(
-            xn_href=xn_href).exists()
+            xn_href=xn_href,date__gt=dt_e).exists()
+        # print("gs_info",gs_info)
         if not gs_info:
             response = xn_company_detail(xn_href)
             if "status_code" in dir(response) and response.status_code == 200:
                 # 获取页面资源
                 page_text = response.text
-                print("jing......")
                 # scriptlis = re.findall(r'<script>(.*?)</script>', page_text)
                 content = re.findall(r'__NEXT_DATA__ = (.*?);__NEXT_LOADED_PAGES__=', page_text)
                 cont = json.loads(content[0])
@@ -61,7 +69,6 @@ def company_detail(request, xn_href):
                     "address": contact_info.get("address", ""),
                 }, xn_href=xn_href)
                 # 工商信息写入
-                print("jingongshang......")
                 GongShang.objects.update_or_create(
                     defaults={
                         "code": com_info["code"],
@@ -76,11 +83,11 @@ def company_detail(request, xn_href):
                     }, xn_href=xn_href
                 )
                 # 融资历程
-                print("rongzi......")
+                # print("rongzi......")
                 licheng = cont["props"]["pageProps"]["fundings"]
                 for licheng in cont["props"]["pageProps"]["fundings"]:
                     fundingDesc = json.loads(licheng["fundingDesc"])
-                    xn_id = str(licheng.get("xn_id", ""))
+                    xn_id = str(licheng.get("id", "1"))
                     if fundingDesc.get("investorStr", None) is None:
                         investorStr = ""
                     else:
@@ -120,15 +127,36 @@ def company_detail(request, xn_href):
                         "date": datetime.date.fromtimestamp(time.time()),  # 录入时间
                     }, xn_href=xn_href
                 )
-        else:
-            result_info = GongShang.objects.filter(
-                xn_href=xn_href).first()
-        print(result_info)
+
+        gs_info = GongShang.objects.filter(
+            xn_href=xn_href).first()
+        desc_info = Desc.objects.filter(
+            xn_href=xn_href).first()
+
+        hx_info = HuaXiang.objects.filter(
+            xn_href=xn_href).first()
+        if hx_info:
+            if hx_info.youshi:
+                hx_info.youshi = hx_info.youshi.split(" ")
+            if hx_info.fenlei:
+                hx_info.fenlei = hx_info.fenlei.split(" ")
+        rz_info = RongZi.objects.filter(
+            xn_href=xn_href).all()
+        rz_arr = []
+        if rz_info:
+            for item in rz_info:
+                rz_arr.append(model_to_dict(item))
+
+        # print(result_info)
         lang = request.GET.get("lang", "cn")
         context = {
-            'news': result_info,
+            'rz_arr': rz_arr,
+            'gs_info': gs_info,
+            'desc_info': desc_info,
+            'hx_info': hx_info,
             'lang': lang
         }
-        return render(request, 'company/hs_company_detail.html', context=context)
+        return render(request, 'xn/xn_detail.html', context=context)
+        # return render(request, 'company/hs_company_detail.html', context=context)
     # except Exception as e:
     #     raise Http404  # 抛出一个404错误，当抛出404时，django就会在根文件中的templates文件调用一个叫做404的文件
