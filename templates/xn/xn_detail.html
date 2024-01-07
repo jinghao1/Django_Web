@@ -1,4 +1,13 @@
-{% extends 'xn/xn_base.html' %}
+{% extends 'hs_base/hs_xn_base.html' %}
+<style>
+
+    .page-detail {
+        display: inline-block;
+        width: 1200px;
+        margin: 0 auto 50px;
+    }
+
+</style>
 
 {% block main %}
     <body>
@@ -73,7 +82,7 @@
 
                             <div class="jsx-1699468856 container">
                                 <div class="jsx-1699468856 left-part">
-                                    <section id="tagInfo" class="jsx-3367680878" style="margin-top: 66px;">
+                                    <section id="tagInfo" class="jsx-3367680878" style="margin-top: 16px;">
                                         <div class="jsx-3367680878 name"><img src="{% static 'xn_source/tag.png' %}"
                                                                               class="jsx-3367680878 header-icon"><span
                                                 class="jsx-3367680878">标签画像</span></div>
@@ -90,7 +99,7 @@
                                                 </div>
                                             </div>
                                             <div class="jsx-2477992176 portrait"><label
-                                                    class="jsx-2477992176">行业分类：</label>
+                                                    class="jsx-2477992176">行业标签：</label>
                                                 <div class="jsx-2477992176 portrait-tag">
                                                     {% for name in hx_info.fenlei %}
                                                         <span class="jsx-3112032488 tag-border ">{{ name }}</span>
@@ -163,9 +172,11 @@
                                                              class="jsx-2526812992"><span
                                                                 class="jsx-2526812992">投资方</span>
                                                         </div>
-                                                        <div style="flex:1;padding:0 5px;text-align:left"
+                                                        <div style="flex:4;padding:0 5px;text-align:left"
                                                              class="jsx-2526812992"><span
-                                                                class="jsx-2526812992">比例（%）</span></div>
+                                                                class="jsx-2526812992">比例（%）</span>
+                                                        </div>
+
                                                         <div style="flex:1;padding:0 5px;text-align:left"
                                                              class="jsx-2526812992"><span
                                                                 class="jsx-2526812992">估值</span>
@@ -187,7 +198,7 @@
                                                                     </div>
 
                                                                     <div class="jsx-507231509 column">{{ item.ratio }}</div>
-                                                                           <div class="jsx-507231509 column">{{ item.postMoney }}</div>
+                                                                    <div class="jsx-507231509 column">{{ item.postMoney }}</div>
 
 
                                                                 </div>
@@ -212,12 +223,12 @@
         </div>
     </div>
 
-    <script async="" id="__NEXT_PAGE__/detail-company" src="xn_source/detail-company.js"></script>
-    <script async="" id="__NEXT_PAGE__/_app" src="xn_source/_app.js"></script>
-    <script async="" id="__NEXT_PAGE__/_error" src="xn_source/_error.js"></script>
-    <script src="xn_source/webpack-a2610b762163b80c7162.js" async=""></script>
-    <script src="xn_source/commons.e206d497c0aa2852c2e8.js" async=""></script>
-    <script src="xn_source/styles.6a1db4369d416f25b059.js" async=""></script>
-    <script src="xn_source/main-689bf5a4d9521d9d1a79.js" async=""></script>
+    <script async="" id="__NEXT_PAGE__/detail-company" src="{% static 'xn_source/detail-company.js' %}"></script>
+    <script async="" id="__NEXT_PAGE__/_app" src="{% static 'xn_source/_app.js' %}"></script>
+    <script async="" id="__NEXT_PAGE__/_error" src="{% static 'xn_source/_error.js' %}"></script>
+    <script src="{% static 'xn_source/webpack-a2610b762163b80c7162.js' %}"></script>
+    <script src="{% static 'xn_source/commons.e206d497c0aa2852c2e8.js' %}"></script>
+    <script src="{% static 'xn_source/styles.6a1db4369d416f25b059.js' %}"></script>
+    <script src="{% static 'xn_source/xn_source/main-689bf5a4d9521d9d1a79.js' %}"></script>
     </body>
 {% endblock %}

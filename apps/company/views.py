@@ -50,17 +50,20 @@ def company_detail(request, xn_href):
                 # company desc
                 com_info = cont["props"]["pageProps"]["company"]
                 gongshang = json.loads(cont["props"]["pageProps"]["gongshang"])
-
                 # 联系方式
                 contact_info = gongshang.get("contact", {})
+                if not com_info.get("districtName",""):
+                    cityName = com_info.get("cityName","")
+                else:
+                    cityName = com_info.get("cityName", "") + ">" + str(com_info.get("districtName", ""))
                 # 企业描述
                 Desc.objects.update_or_create(defaults={
                     "name": com_info["name"],
                     "xn_href": xn_href,
                     "brief": com_info["brief"],
                     "desc": com_info["desc"],
-                    "roundName": com_info["roundName"],
-                    "cityName": com_info["cityName"] + ">" + com_info["districtName"],
+                    "roundName": com_info.get("roundName",""),
+                    "cityName": cityName,
                     "establishDate": datetime.date.fromtimestamp(com_info["establishDate"] / 1000),
                     "img_url": com_info['logo'],
                     "company_url": com_info['website'],

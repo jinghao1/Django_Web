@@ -1859,14 +1859,14 @@ h2 {
 ._2gp3ndGjMq2fJhrgBdNqq7 {
   list-style: none;
 }
-body {
-  font: 14px / 1.4 Helvetica, Arial, "Century Gothic", system, Verdana, Tahoma, Open Sans, Hiragino Sans GB, Microsoft YaHei, Lantinghei SC, "\5FAE\8F6F\96C5\9ED1";
-  color: #333;
-  background: #f5f5f5;
-  overflow-x: hidden;
-  word-wrap: break-word;
-  -webkit-font-smoothing: antialiased;
-}
+/*body {*/
+/*  font: 14px / 1.4 Helvetica, Arial, "Century Gothic", system, Verdana, Tahoma, Open Sans, Hiragino Sans GB, Microsoft YaHei, Lantinghei SC, "\5FAE\8F6F\96C5\9ED1";*/
+/*  color: #333;*/
+/*  background: #f5f5f5;*/
+/*  overflow-x: hidden;*/
+/*  word-wrap: break-word;*/
+/*  -webkit-font-smoothing: antialiased;*/
+/*}*/
 ._1zpaALIcJ1wgn0ZvIu72Fv {
   width: 1200px;
   margin: 50px auto 0;
@@ -1921,17 +1921,17 @@ body {
 ._1zpaALIcJ1wgn0ZvIu72Fv ._2h6yvkOeJllmim3BBXtibz ._2_WmSyhduBIivVWwRspBdQ:first-child {
   margin-right: 1.5%;
 }
-footer {
-  background: #24262E;
-  color: #eee;
-  bottom: 0;
-  left: 0;
-  padding: 10px 0;
-  position: absolute;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-}
+/*footer {*/
+/*  background: #24262E;*/
+/*  color: #eee;*/
+/*  bottom: 0;*/
+/*  left: 0;*/
+/*  padding: 10px 0;*/
+/*  position: absolute;*/
+/*  display: inline-block;*/
+/*  width: 100%;*/
+/*  text-align: center;*/
+/*}*/
 ._2zz-PYaXNOFgsMLU_HBV3Q {
   margin-right: 20px;
 }
