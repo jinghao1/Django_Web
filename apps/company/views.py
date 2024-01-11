@@ -135,6 +135,7 @@ def company_detail(request, xn_href):
             xn_href=xn_href).first()
         desc_info = Desc.objects.filter(
             xn_href=xn_href).first()
+        desc_info.establishDate = desc_info.establishDate.strftime("%Y-%m-%d")
 
         hx_info = HuaXiang.objects.filter(
             xn_href=xn_href).first()
@@ -148,6 +149,7 @@ def company_detail(request, xn_href):
         rz_arr = []
         if rz_info:
             for item in rz_info:
+                item.fundingDate = item.fundingDate.strftime("%Y-%m-%d")
                 rz_arr.append(model_to_dict(item))
 
         # print(result_info)
