@@ -3,11 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="2e62268d-292f-4458-bb17-b06968999966" name="Default" comment="添加展示页面url">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/cms/staff_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cms/staff_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/cms/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cms/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/company/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/company/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/xfzauth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/xfzauth/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/xfzauth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/xfzauth/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_01.log" beforeDir="false" afterPath="$PROJECT_DIR$/django_01.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/xn_source/commons.8c690d35.chunk.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/xn_source/commons.8c690d35.chunk.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/auth/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base/front_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/front_base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cms/add_staff.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cms/add_staff.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cms/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cms/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cms/user_center.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cms/user_center.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/hs_base/hs_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/hs_base/hs_base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/hs_base/hs_xn_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/hs_base/hs_xn_base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/xn/xn_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/xn/xn_base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/xn/xn_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/xn/xn_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -464,7 +473,7 @@
       <updated>1529122678684</updated>
       <workItem from="1700930160739" duration="76820000" />
       <workItem from="1702215049530" duration="2582000" />
-      <workItem from="1702559627420" duration="73283000" />
+      <workItem from="1702559627420" duration="81068000" />
     </task>
     <task id="LOCAL-00127" summary="change notation">
       <created>1575856907430</created>

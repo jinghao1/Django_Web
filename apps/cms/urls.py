@@ -33,26 +33,26 @@ urlpatterns = [
 
     path('news_show', views.NewsClickShowView.as_view(), name='news_show'),
 ]
-# 课程相关的url
-urlpatterns += [
-    path('pub_course/', course_views.PubCourse.as_view(), name='pub_course'),
-    path('course_category/', course_views.CourseCategoryViem.as_view(), name='course_category'),
-    path('add_course_category/', course_views.add_course_category, name='add_course_category'),
-    path('edit_course_category/', course_views.edit_course_category, name='edit_course_category'),
-    path('delete_course_category/', course_views.delete_course_category, name='delete_course_category'),
-    path('course_teacher/', course_views.CourseTeacher.as_view(), name='course_teacher'),
-    path('course_teacher/<pk>/', course_views.CourseTeacherDetail.as_view(), name='course_teacher_detail'),
-    path('course_teacher_list/', course_views.CourseTeacherList.as_view(), name='course_teacher_list'),
-    path('course_teacher_list/<pk>/', course_views.CourseTeacherListDetail.as_view(), name='course_teacher_list_detail'),
-]
+# # 课程相关的url
+# urlpatterns += [
+#     path('pub_course/', course_views.PubCourse.as_view(), name='pub_course'),
+#     path('course_category/', course_views.CourseCategoryViem.as_view(), name='course_category'),
+#     path('add_course_category/', course_views.add_course_category, name='add_course_category'),
+#     path('edit_course_category/', course_views.edit_course_category, name='edit_course_category'),
+#     path('delete_course_category/', course_views.delete_course_category, name='delete_course_category'),
+#     path('course_teacher/', course_views.CourseTeacher.as_view(), name='course_teacher'),
+#     path('course_teacher/<pk>/', course_views.CourseTeacherDetail.as_view(), name='course_teacher_detail'),
+#     path('course_teacher_list/', course_views.CourseTeacherList.as_view(), name='course_teacher_list'),
+#     path('course_teacher_list/<pk>/', course_views.CourseTeacherListDetail.as_view(), name='course_teacher_list_detail'),
+# ]
 
-# 分享资料url
-urlpatterns += [
-    path('pay_info/', views.PayInfoIndex.as_view(), name='pay_info'),
-    path('payinfo_list/', views.PayInfoList.as_view(), name='payinfo_list'),
-    path('payinfo/', views.PayInfo.as_view(), name="payinfo"),
-    path('payinfo/<pk>/', views.PayInfo.as_view(), name="payinfo_detail"),
-]
+# # 分享资料url
+# urlpatterns += [
+#     path('pay_info/', views.PayInfoIndex.as_view(), name='pay_info'),
+#     path('payinfo_list/', views.PayInfoList.as_view(), name='payinfo_list'),
+#     path('payinfo/', views.PayInfo.as_view(), name="payinfo"),
+#     path('payinfo/<pk>/', views.PayInfo.as_view(), name="payinfo_detail"),
+# ]
 
 # 用户管理相关url配置
 urlpatterns += [

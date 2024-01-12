@@ -19,7 +19,7 @@ class UserManager(BaseUserManager):
 
     def create_superuser(self, telephone, username, password, **kwargs):
         """创建超级用户"""
-        kwargs['is_superuser'] = True
+        # kwargs['is_superuser'] = True
         return self._create_user(telephone, username, password, **kwargs)
 
 
@@ -30,8 +30,10 @@ class User(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(unique=True, null=True)
     is_active = models.BooleanField(default=True)
     gender = models.IntegerField(default=0)  # 0:代表未知，1：男，2：女
+
     date_joined = models.DateTimeField(auto_now_add=True)
     is_staff = models.BooleanField(default=False)  # 这里的命名是规定好的，
+    is_superuser = models.BooleanField(default=False)  # 这里的命名是规定好的，
     # user_img_url = models.URLField (default=None)
 
     # USERNAME_FIELD：这个属性是以后在使用authenticate

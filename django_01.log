@@ -4154,3 +4154,822 @@
 2024-01-11 20:05:37,069 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
 2024-01-11 20:05:37,071 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
 2024-01-11 20:05:37,071 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-11 20:30:13,074 - basehttp.py\log_message[line:154] - INFO: "GET /cms HTTP/1.1" 301 0
+2024-01-11 20:30:13,099 - basehttp.py\log_message[line:154] - INFO: "GET /cms/ HTTP/1.1" 302 0
+2024-01-11 20:30:13,164 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/?next=/cms/ HTTP/1.1" 200 4039
+2024-01-11 20:30:13,234 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/base/side.css HTTP/1.1" 200 2863
+2024-01-11 20:30:13,236 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/news/news.css HTTP/1.1" 200 2912
+2024-01-11 20:30:13,244 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/xfzajax.js HTTP/1.1" 200 1210
+2024-01-11 20:30:13,245 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/base/front_base.css HTTP/1.1" 200 4440
+2024-01-11 20:30:13,246 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/front_base.js HTTP/1.1" 200 2672
+2024-01-11 20:30:13,250 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/template-web.js HTTP/1.1" 200 16620
+2024-01-11 20:30:13,266 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/auth/auth.css HTTP/1.1" 200 1838
+2024-01-11 20:30:13,277 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/message.js HTTP/1.1" 200 3268
+2024-01-11 20:30:13,682 - basehttp.py\log_message[line:154] - INFO: "GET /static/images/favicon.ico HTTP/1.1" 200 9147
+2024-01-11 20:30:31,268 - basehttp.py\log_message[line:154] - INFO: "GET /cms/ HTTP/1.1" 302 0
+2024-01-11 20:30:31,288 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/?next=/cms/ HTTP/1.1" 200 4039
+2024-01-11 20:32:18,195 - basehttp.py\log_message[line:154] - INFO: "POST /account/login/?next=/cms/ HTTP/1.1" 302 0
+2024-01-11 20:32:18,292 - basehttp.py\log_message[line:154] - INFO: "GET /before HTTP/1.1" 200 16496
+2024-01-11 20:32:18,353 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/index.js HTTP/1.1" 200 3173
+2024-01-11 20:32:33,619 - basehttp.py\log_message[line:154] - WARNING: "GET /cms/list HTTP/1.1" 404 18079
+2024-01-11 20:32:48,599 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_list HTTP/1.1" 301 0
+2024-01-11 20:32:48,673 - views.py\get[line:116] - INFO: 用户查询了[]
+2024-01-11 20:32:48,742 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_list/ HTTP/1.1" 200 18244
+2024-01-11 20:32:48,817 - basehttp.py\log_message[line:154] - INFO: "GET /static/sweetalert/sweetalert.css HTTP/1.1" 200 22898
+2024-01-11 20:32:48,848 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 31000
+2024-01-11 20:32:48,876 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/dist/css/AdminLTE.min.css HTTP/1.1" 200 91501
+2024-01-11 20:32:48,885 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/dist/css/skins/_all-skins.min.css HTTP/1.1" 200 41583
+2024-01-11 20:32:48,886 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/jquery/dist/jquery.min.js HTTP/1.1" 200 86927
+2024-01-11 20:32:49,116 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap/dist/js/bootstrap.min.js HTTP/1.1" 200 37045
+2024-01-11 20:32:49,050 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css HTTP/1.1" 200 15731
+2024-01-11 20:32:48,954 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap/dist/css/bootstrap.min.css HTTP/1.1" 200 121200
+2024-01-11 20:32:49,137 - basehttp.py\log_message[line:154] - INFO: "GET /static/sweetalert/sweetalert.min.js HTTP/1.1" 200 16994
+2024-01-11 20:32:49,178 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/dist/js/adminlte.min.js HTTP/1.1" 200 14548
+2024-01-11 20:32:49,185 - basehttp.py\log_message[line:154] - INFO: "GET /static/sweetalert/xfzalert.js HTTP/1.1" 200 5429
+2024-01-11 20:32:49,224 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1" 200 593
+2024-01-11 20:32:49,265 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/cms_base.js HTTP/1.1" 200 1063
+2024-01-11 20:32:49,335 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js HTTP/1.1" 200 57553
+2024-01-11 20:32:49,379 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/cms_news_list.js HTTP/1.1" 200 1718
+2024-01-11 20:32:49,719 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap/dist/css/bootstrap.min.css.map HTTP/1.1" 200 542194
+2024-01-11 20:32:49,863 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160
+2024-01-11 20:32:56,200 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 9923
+2024-01-11 20:33:12,966 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 9923
+2024-01-11 20:33:17,146 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/ HTTP/1.1" 200 9389
+2024-01-11 20:33:25,145 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 9923
+2024-01-11 20:33:27,897 - basehttp.py\log_message[line:154] - INFO: "GET /cms/write_news/ HTTP/1.1" 200 12502
+2024-01-11 20:33:27,931 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/writ_news.js HTTP/1.1" 200 6299
+2024-01-11 20:33:27,965 - basehttp.py\log_message[line:154] - INFO: "GET /static/ueditor/ueditor.config.js HTTP/1.1" 200 22906
+2024-01-11 20:33:27,990 - basehttp.py\log_message[line:154] - INFO: "GET /static/ueditor/ueditor.all.min.js HTTP/1.1" 200 383120
+2024-01-11 20:33:28,689 - basehttp.py\log_message[line:154] - INFO: "GET /ueditor/upload/?action=config&&noCache=1704976408662 HTTP/1.1" 200 2686
+2024-01-11 20:33:28,692 - basehttp.py\log_message[line:154] - INFO: "GET /static/ueditor/lang/zh-cn/zh-cn.js HTTP/1.1" 200 29351
+2024-01-11 20:33:28,715 - basehttp.py\log_message[line:154] - INFO: "GET /static/ueditor/themes/default/css/ueditor.css HTTP/1.1" 200 43760
+2024-01-11 20:33:28,757 - basehttp.py\log_message[line:154] - INFO: "GET /static/ueditor/themes/default/images/scale.png HTTP/1.1" 200 167
+2024-01-11 20:33:28,758 - basehttp.py\log_message[line:154] - INFO: "GET /static/ueditor/themes/iframe.css HTTP/1.1" 200 41
+2024-01-11 20:33:28,762 - basehttp.py\log_message[line:154] - INFO: "GET /static/ueditor/themes/default/images/charts.png HTTP/1.1" 200 518
+2024-01-11 20:33:28,766 - basehttp.py\log_message[line:154] - INFO: "GET /static/ueditor/themes/default/images/icons.png HTTP/1.1" 200 19694
+2024-01-11 20:33:28,811 - basehttp.py\log_message[line:154] - INFO: "GET /static/ueditor/third-party/codemirror/codemirror.css HTTP/1.1" 200 2888
+2024-01-11 20:33:28,812 - basehttp.py\log_message[line:154] - INFO: "GET /static/ueditor/third-party/zeroclipboard/ZeroClipboard.js HTTP/1.1" 200 43216
+2024-01-11 20:33:28,838 - basehttp.py\log_message[line:154] - INFO: "GET /static/ueditor/third-party/codemirror/codemirror.js HTTP/1.1" 200 158605
+2024-01-11 20:33:30,347 - basehttp.py\log_message[line:154] - INFO: "GET /before HTTP/1.1" 200 16496
+2024-01-11 20:33:33,608 - basehttp.py\log_message[line:154] - INFO: "GET / HTTP/1.1" 200 84092
+2024-01-11 20:33:33,692 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-11 20:33:33,706 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-11 20:33:33,713 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-11 20:33:33,722 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-11 20:33:40,109 - views.py\get[line:116] - INFO: 用户查询了[]
+2024-01-11 20:33:40,158 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_list/ HTTP/1.1" 200 18244
+2024-01-11 20:33:44,471 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 9923
+2024-01-11 20:33:47,092 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/ HTTP/1.1" 200 9389
+2024-01-11 20:33:52,935 - basehttp.py\log_message[line:154] - INFO: "GET /cms/course_teacher/ HTTP/1.1" 200 13721
+2024-01-11 20:33:52,969 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/course_teacher.js HTTP/1.1" 200 8007
+2024-01-11 20:33:52,976 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/template.js HTTP/1.1" 200 5324
+2024-01-11 20:33:53,012 - basehttp.py\log_message[line:154] - INFO: "GET /cms/course_teacher_list/?format=json HTTP/1.1" 200 216
+2024-01-11 20:33:55,427 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 9923
+2024-01-11 20:33:56,904 - basehttp.py\log_message[line:154] - INFO: "GET /cms/course_category/ HTTP/1.1" 200 9591
+2024-01-11 20:33:56,935 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/courses_category.js HTTP/1.1" 200 4147
+2024-01-11 20:33:58,334 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_category/ HTTP/1.1" 200 10572
+2024-01-11 20:33:58,362 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/news_category.js HTTP/1.1" 200 6768
+2024-01-11 20:33:59,339 - basehttp.py\log_message[line:154] - INFO: "GET /cms/write_news/ HTTP/1.1" 200 12502
+2024-01-11 20:33:59,390 - basehttp.py\log_message[line:154] - INFO: "GET /ueditor/upload/?action=config&&noCache=1704976439376 HTTP/1.1" 200 2686
+2024-01-11 20:34:00,981 - views.py\get[line:116] - INFO: 用户查询了[]
+2024-01-11 20:34:01,030 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_list/ HTTP/1.1" 200 18244
+2024-01-11 20:34:02,932 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 9923
+2024-01-11 20:34:05,577 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/ HTTP/1.1" 200 9389
+2024-01-11 20:34:07,887 - basehttp.py\log_message[line:154] - INFO: "POST /cms/add_staff/ HTTP/1.1" 302 0
+2024-01-11 20:34:07,917 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/ HTTP/1.1" 200 9683
+2024-01-11 20:34:19,659 - basehttp.py\log_message[line:154] - ERROR: "POST /cms/add_staff/ HTTP/1.1" 500 92493
+2024-01-11 20:34:21,401 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/ HTTP/1.1" 200 9389
+2024-01-11 20:34:23,487 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 9923
+2024-01-11 20:34:40,885 - basehttp.py\log_message[line:154] - INFO: "GET /cms/user_center/ HTTP/1.1" 200 8829
+2024-01-11 20:34:43,515 - basehttp.py\log_message[line:154] - INFO: "GET /cms/edit_user_center/ HTTP/1.1" 200 9148
+2024-01-11 20:34:45,843 - basehttp.py\log_message[line:154] - INFO: "POST /cms/edit_user_center/ HTTP/1.1" 200 9148
+2024-01-11 20:34:48,022 - basehttp.py\log_message[line:154] - INFO: "POST /cms/edit_user_center/ HTTP/1.1" 200 9148
+2024-01-11 20:34:48,658 - basehttp.py\log_message[line:154] - INFO: "POST /cms/edit_user_center/ HTTP/1.1" 200 9148
+2024-01-11 20:34:55,799 - basehttp.py\log_message[line:154] - INFO: "POST /cms/edit_user_center/ HTTP/1.1" 200 9148
+2024-01-11 20:35:13,009 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 9923
+2024-01-11 20:35:42,804 - basehttp.py\log_message[line:154] - INFO: "GET /before HTTP/1.1" 200 16496
+2024-01-11 20:35:47,560 - basehttp.py\log_message[line:154] - INFO: "GET /cms/ HTTP/1.1" 200 8118
+2024-01-11 20:35:52,199 - basehttp.py\log_message[line:154] - INFO: "GET /account/logout/ HTTP/1.1" 302 0
+2024-01-11 20:35:52,251 - basehttp.py\log_message[line:154] - INFO: "GET / HTTP/1.1" 200 84092
+2024-01-11 20:35:52,356 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-11 20:35:52,357 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-11 20:35:52,360 - basehttp.py\log_message[line:154] - WARNING: "GET /static/css/images/chinese-regulatory-logo.43806866.png HTTP/1.1" 404 1765
+2024-01-11 20:35:52,362 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-11 20:35:52,370 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-11 20:35:57,634 - basehttp.py\log_message[line:154] - INFO: "GET /cms/ HTTP/1.1" 302 0
+2024-01-11 20:35:57,668 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/?next=/cms/ HTTP/1.1" 200 4039
+2024-01-11 20:36:03,207 - basehttp.py\log_message[line:154] - INFO: "GET /account/register/ HTTP/1.1" 200 4710
+2024-01-11 20:36:03,275 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/auth.js HTTP/1.1" 200 4251
+2024-01-11 20:36:03,329 - basehttp.py\log_message[line:154] - INFO: "GET /account/img_captcha/ HTTP/1.1" 200 1625
+2024-01-11 20:36:24,998 - basehttp.py\log_message[line:154] - ERROR: "GET /account/sms_captcha/?telephone= HTTP/1.1" 500 18614
+2024-01-11 20:36:48,775 - basehttp.py\log_message[line:154] - INFO: "POST /account/register/ HTTP/1.1" 200 96
+2024-01-11 20:36:52,039 - basehttp.py\log_message[line:154] - INFO: "POST /account/register/ HTTP/1.1" 200 96
+2024-01-11 20:36:56,387 - basehttp.py\log_message[line:154] - INFO: "POST /account/register/ HTTP/1.1" 200 42
+2024-01-11 20:36:56,448 - basehttp.py\log_message[line:154] - INFO: "GET / HTTP/1.1" 200 84092
+2024-01-11 20:36:56,498 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-11 20:36:56,525 - basehttp.py\log_message[line:154] - WARNING: "GET /static/css/images/chinese-regulatory-logo.43806866.png HTTP/1.1" 404 1765
+2024-01-11 20:36:56,540 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-11 20:36:56,545 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-11 20:36:56,550 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-11 20:37:02,072 - basehttp.py\log_message[line:154] - WARNING: "GET /cms/news_list/ HTTP/1.1" 404 1708
+2024-01-11 20:37:09,773 - basehttp.py\log_message[line:154] - INFO: "GET /cms/ HTTP/1.1" 302 0
+2024-01-11 20:37:09,812 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/?next=/cms/ HTTP/1.1" 200 4306
+2024-01-11 20:37:28,259 - basehttp.py\log_message[line:154] - INFO: "POST /account/login/?next=/cms/ HTTP/1.1" 302 0
+2024-01-11 20:37:28,330 - basehttp.py\log_message[line:154] - INFO: "GET /before HTTP/1.1" 200 16496
+2024-01-11 20:37:38,544 - views.py\get[line:116] - INFO: 用户查询了[]
+2024-01-11 20:37:38,596 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_list/ HTTP/1.1" 200 18244
+2024-01-11 20:37:41,003 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 9923
+2024-01-11 20:37:47,743 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 9923
+2024-01-11 20:37:48,460 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 9923
+2024-01-11 20:37:48,909 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 9923
+2024-01-11 20:37:49,238 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 9923
+2024-01-11 20:37:49,597 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 9923
+2024-01-11 20:39:06,856 - basehttp.py\log_message[line:154] - INFO: "GET /account/logout/ HTTP/1.1" 302 0
+2024-01-11 20:39:06,911 - basehttp.py\log_message[line:154] - INFO: "GET / HTTP/1.1" 200 84092
+2024-01-11 20:39:06,976 - basehttp.py\log_message[line:154] - WARNING: "GET /static/css/images/chinese-regulatory-logo.43806866.png HTTP/1.1" 404 1765
+2024-01-11 20:39:06,986 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-11 20:39:06,996 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-11 20:39:07,008 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-11 20:39:07,010 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-11 20:39:13,240 - basehttp.py\log_message[line:154] - INFO: "GET /cms/ HTTP/1.1" 302 0
+2024-01-11 20:39:13,259 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/?next=/cms/ HTTP/1.1" 200 4039
+2024-01-11 20:39:57,179 - basehttp.py\log_message[line:154] - INFO: "GET /account/register/ HTTP/1.1" 200 4710
+2024-01-11 20:39:57,231 - basehttp.py\log_message[line:154] - INFO: "GET /account/img_captcha/ HTTP/1.1" 200 1624
+2024-01-11 20:40:09,068 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 4039
+2024-01-11 20:40:10,325 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 4039
+2024-01-11 20:40:11,217 - basehttp.py\log_message[line:154] - INFO: "GET /account/register/ HTTP/1.1" 200 4710
+2024-01-11 20:40:11,255 - basehttp.py\log_message[line:154] - INFO: "GET /account/img_captcha/ HTTP/1.1" 200 1393
+2024-01-11 20:40:13,170 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 4039
+2024-01-11 20:40:26,812 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 4039
+2024-01-11 20:40:28,184 - basehttp.py\log_message[line:154] - INFO: "GET /account/register/ HTTP/1.1" 200 4710
+2024-01-11 20:40:28,225 - basehttp.py\log_message[line:154] - INFO: "GET /account/img_captcha/ HTTP/1.1" 200 1629
+2024-01-11 20:40:29,489 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 4039
+2024-01-11 20:40:33,106 - basehttp.py\log_message[line:154] - INFO: "GET /cms/ HTTP/1.1" 302 0
+2024-01-11 20:40:33,134 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/?next=/cms/ HTTP/1.1" 200 4039
+2024-01-11 20:43:57,755 - basehttp.py\log_message[line:154] - INFO: "GET / HTTP/1.1" 200 84092
+2024-01-11 20:43:57,864 - basehttp.py\log_message[line:154] - WARNING: "GET /static/css/images/chinese-regulatory-logo.43806866.png HTTP/1.1" 404 1765
+2024-01-11 20:43:57,913 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/hs_base/lottie-player.js.map HTTP/1.1" 404 1717
+2024-01-11 20:43:57,943 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-11 20:43:57,967 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-11 20:43:57,976 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-11 20:43:57,994 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-11 20:48:08,597 - basehttp.py\log_message[line:154] - INFO: "GET / HTTP/1.1" 200 83909
+2024-01-11 20:48:08,697 - basehttp.py\log_message[line:154] - WARNING: "GET /static/css/images/chinese-regulatory-logo.43806866.png HTTP/1.1" 404 1765
+2024-01-11 20:48:08,754 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/hs_base/lottie-player.js.map HTTP/1.1" 404 1717
+2024-01-11 20:48:08,791 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-11 20:48:08,813 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-11 20:48:08,813 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-11 20:48:08,818 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-11 20:48:18,229 - basehttp.py\log_message[line:154] - INFO: "GET /hs/search?page=1&search=hai&type=post&subtype=founder%2Ccompany%2Cteam-member%2Cpost&_fields=ID%2Cpost_title%2Cpost_type%2Cpermalink%2Cthumbnail%2Cacf.companies%2Cmeta.title%2Cacf.post_author_profile%2Cterms.role%2Cterms.category%2Cterms.sector&per_subtype=6 HTTP/1.1" 200 1809
+2024-01-11 20:48:18,236 - basehttp.py\log_message[line:154] - INFO: "GET /hs/search?page=1&search=h&type=post&subtype=founder%2Ccompany%2Cteam-member%2Cpost&_fields=ID%2Cpost_title%2Cpost_type%2Cpermalink%2Cthumbnail%2Cacf.companies%2Cmeta.title%2Cacf.post_author_profile%2Cterms.role%2Cterms.category%2Cterms.sector&per_subtype=6 HTTP/1.1" 200 1774
+2024-01-11 20:48:19,281 - basehttp.py\log_message[line:154] - INFO: "GET /hs/search?page=1&search=hainai&type=post&subtype=founder%2Ccompany%2Cteam-member%2Cpost&_fields=ID%2Cpost_title%2Cpost_type%2Cpermalink%2Cthumbnail%2Cacf.companies%2Cmeta.title%2Cacf.post_author_profile%2Cterms.role%2Cterms.category%2Cterms.sector&per_subtype=6 HTTP/1.1" 200 1916
+2024-01-11 20:48:20,138 - basehttp.py\log_message[line:154] - INFO: "GET /hs/search?page=1&search=hainan&type=post&subtype=founder%2Ccompany%2Cteam-member%2Cpost&_fields=ID%2Cpost_title%2Cpost_type%2Cpermalink%2Cthumbnail%2Cacf.companies%2Cmeta.title%2Cacf.post_author_profile%2Cterms.role%2Cterms.category%2Cterms.sector&per_subtype=6 HTTP/1.1" 200 1771
+2024-01-11 20:48:28,171 - basehttp.py\log_message[line:154] - ERROR: "GET /company/shishibang/overview HTTP/1.1" 500 99682
+2024-01-11 20:50:14,884 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/company/views.py changed, reloading.
+2024-01-11 20:50:17,032 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-11 20:50:23,958 - basehttp.py\log_message[line:154] - ERROR: "GET /company/shishibang/overview HTTP/1.1" 500 99873
+2024-01-11 20:50:54,801 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/company/views.py changed, reloading.
+2024-01-11 20:50:56,967 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-11 20:51:02,681 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/company/views.py changed, reloading.
+2024-01-11 20:51:03,821 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-11 20:51:07,002 - basehttp.py\log_message[line:154] - ERROR: "GET /company/shishibang/overview HTTP/1.1" 500 99834
+2024-01-11 20:51:07,003 - basehttp.py\log_message[line:154] - ERROR: "GET /company/shishibang/overview HTTP/1.1" 500 99834
+2024-01-11 20:51:54,510 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/company/views.py changed, reloading.
+2024-01-11 20:51:56,026 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-11 20:52:13,222 - basehttp.py\log_message[line:154] - ERROR: "GET /company/shishibang/overview HTTP/1.1" 500 99833
+2024-01-11 20:52:57,578 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/company/views.py changed, reloading.
+2024-01-11 20:52:59,228 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-11 20:53:48,977 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/company/views.py changed, reloading.
+2024-01-11 20:53:51,386 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-11 20:55:01,539 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/company/views.py changed, reloading.
+2024-01-11 20:55:03,284 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-11 20:55:40,243 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/company/views.py changed, reloading.
+2024-01-11 20:55:41,557 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-11 20:55:44,696 - basehttp.py\log_message[line:154] - INFO: "GET /company/shishibang/overview HTTP/1.1" 200 96668
+2024-01-11 20:55:44,747 - basehttp.py\log_message[line:154] - INFO: "GET /company/shishibang/overview HTTP/1.1" 200 96668
+2024-01-11 20:55:44,881 - basehttp.py\log_message[line:154] - WARNING: "GET /static/xn_source/xn_source/main-689bf5a4d9521d9d1a79.js HTTP/1.1" 404 1768
+2024-01-11 20:55:44,973 - basehttp.py\log_message[line:154] - WARNING: "GET /static/css/images/chinese-regulatory-logo.43806866.png HTTP/1.1" 404 1765
+2024-01-11 20:55:45,135 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/hs_base/lottie-player.js.map HTTP/1.1" 404 1717
+2024-01-11 20:55:45,232 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-11 20:55:45,233 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-11 20:55:45,238 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-11 20:55:45,240 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-11 20:55:57,827 - basehttp.py\log_message[line:154] - INFO: "GET /company/shishibang/overview HTTP/1.1" 200 96668
+2024-01-11 20:55:57,888 - basehttp.py\log_message[line:154] - WARNING: "GET /static/xn_source/xn_source/main-689bf5a4d9521d9d1a79.js HTTP/1.1" 404 1768
+2024-01-11 20:55:58,016 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/hs_base/lottie-player.js.map HTTP/1.1" 404 1717
+2024-01-11 20:55:58,081 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-11 20:55:58,119 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-11 20:55:58,124 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-11 20:55:58,125 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-11 20:56:02,804 - basehttp.py\log_message[line:154] - INFO: "GET / HTTP/1.1" 200 83909
+2024-01-11 20:56:02,905 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/hs_base/lottie-player.js.map HTTP/1.1" 404 1717
+2024-01-11 20:56:02,925 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-11 20:56:02,971 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-11 20:56:02,986 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-11 20:56:03,062 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-12 19:29:59,992 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/?next=/cms/ HTTP/1.1" 200 4039
+2024-01-12 19:31:08,099 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/?next=/cms/ HTTP/1.1" 200 4039
+2024-01-12 19:31:10,194 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/?next=/cms/ HTTP/1.1" 200 4039
+2024-01-12 19:31:10,591 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/?next=/cms/ HTTP/1.1" 200 4039
+2024-01-12 19:31:10,883 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/?next=/cms/ HTTP/1.1" 200 4039
+2024-01-12 19:31:17,257 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/?next=/cms/ HTTP/1.1" 200 4039
+2024-01-12 19:31:17,689 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/?next=/cms/ HTTP/1.1" 200 4039
+2024-01-12 19:31:17,938 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/?next=/cms/ HTTP/1.1" 200 4039
+2024-01-12 19:31:18,137 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/?next=/cms/ HTTP/1.1" 200 4039
+2024-01-12 19:31:18,334 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/?next=/cms/ HTTP/1.1" 200 4039
+2024-01-12 19:31:32,837 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/?next=/cms/ HTTP/1.1" 200 4039
+2024-01-12 19:31:32,867 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/base/front_base.css HTTP/1.1" 200 4440
+2024-01-12 19:31:32,880 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/template-web.js HTTP/1.1" 200 16620
+2024-01-12 19:31:32,882 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/base/side.css HTTP/1.1" 200 2863
+2024-01-12 19:31:32,888 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/message.js HTTP/1.1" 200 3268
+2024-01-12 19:31:32,889 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/news/news.css HTTP/1.1" 200 2912
+2024-01-12 19:31:32,897 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/xfzajax.js HTTP/1.1" 200 1210
+2024-01-12 19:31:32,903 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/auth/auth.css HTTP/1.1" 200 1838
+2024-01-12 19:31:32,912 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/front_base.js HTTP/1.1" 200 2672
+2024-01-12 19:31:32,958 - basehttp.py\log_message[line:154] - INFO: "GET /static/images/favicon.ico HTTP/1.1" 200 9147
+2024-01-12 19:32:04,970 - basehttp.py\log_message[line:154] - INFO: "GET /account/register/ HTTP/1.1" 200 4710
+2024-01-12 19:32:05,041 - basehttp.py\log_message[line:154] - INFO: "GET /account/img_captcha/ HTTP/1.1" 200 1532
+2024-01-12 19:32:06,926 - basehttp.py\log_message[line:154] - INFO: "GET /account/register/ HTTP/1.1" 200 4710
+2024-01-12 19:32:06,969 - basehttp.py\log_message[line:154] - INFO: "GET /account/img_captcha/ HTTP/1.1" 200 1626
+2024-01-12 19:32:08,040 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 4039
+2024-01-12 19:32:09,652 - basehttp.py\log_message[line:154] - INFO: "GET /account/register/ HTTP/1.1" 200 4710
+2024-01-12 19:32:09,702 - basehttp.py\log_message[line:154] - INFO: "GET /account/img_captcha/ HTTP/1.1" 200 1413
+2024-01-12 19:32:12,995 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 4039
+2024-01-12 19:32:14,108 - basehttp.py\log_message[line:154] - INFO: "GET /account/register/ HTTP/1.1" 200 4710
+2024-01-12 19:32:14,157 - basehttp.py\log_message[line:154] - INFO: "GET /account/img_captcha/ HTTP/1.1" 200 1792
+2024-01-12 19:32:32,986 - basehttp.py\log_message[line:154] - INFO: "GET /account/register/ HTTP/1.1" 200 4710
+2024-01-12 19:32:33,035 - basehttp.py\log_message[line:154] - INFO: "GET /account/img_captcha/ HTTP/1.1" 200 1198
+2024-01-12 19:32:33,390 - basehttp.py\log_message[line:154] - INFO: "GET /account/register/ HTTP/1.1" 200 4710
+2024-01-12 19:32:33,435 - basehttp.py\log_message[line:154] - INFO: "GET /account/img_captcha/ HTTP/1.1" 200 1805
+2024-01-12 19:32:34,382 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 4039
+2024-01-12 19:32:34,948 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 4039
+2024-01-12 19:32:35,265 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 4039
+2024-01-12 19:33:01,989 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 4039
+2024-01-12 19:33:03,005 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 4039
+2024-01-12 19:33:03,705 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 4039
+2024-01-12 19:33:05,544 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 4039
+2024-01-12 19:34:32,254 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 4039
+2024-01-12 19:34:33,191 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 4039
+2024-01-12 19:34:33,435 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 4039
+2024-01-12 19:34:34,640 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 4039
+2024-01-12 19:34:34,659 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/template-web.js HTTP/1.1" 200 16620
+2024-01-12 19:34:34,663 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/xfzajax.js HTTP/1.1" 200 1210
+2024-01-12 19:34:34,663 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/base/front_base.css HTTP/1.1" 200 4440
+2024-01-12 19:34:34,660 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/base/side.css HTTP/1.1" 200 2863
+2024-01-12 19:34:34,665 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/auth/auth.css HTTP/1.1" 200 1838
+2024-01-12 19:34:34,672 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/news/news.css HTTP/1.1" 200 2912
+2024-01-12 19:34:34,680 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/message.js HTTP/1.1" 200 3268
+2024-01-12 19:34:34,697 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/front_base.js HTTP/1.1" 200 2672
+2024-01-12 19:34:34,728 - basehttp.py\log_message[line:154] - INFO: "GET /static/images/favicon.ico HTTP/1.1" 200 9147
+2024-01-12 19:34:34,984 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 4039
+2024-01-12 19:34:35,004 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/front_base.js HTTP/1.1" 200 2672
+2024-01-12 19:34:35,021 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/xfzajax.js HTTP/1.1" 200 1210
+2024-01-12 19:34:35,012 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/news/news.css HTTP/1.1" 200 2912
+2024-01-12 19:34:35,016 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/template-web.js HTTP/1.1" 200 16620
+2024-01-12 19:34:35,018 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/base/side.css HTTP/1.1" 200 2863
+2024-01-12 19:34:35,007 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/base/front_base.css HTTP/1.1" 200 4440
+2024-01-12 19:34:35,027 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/auth/auth.css HTTP/1.1" 200 1838
+2024-01-12 19:34:35,046 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/message.js HTTP/1.1" 200 3268
+2024-01-12 19:34:35,063 - basehttp.py\log_message[line:154] - INFO: "GET /static/images/favicon.ico HTTP/1.1" 200 9147
+2024-01-12 19:34:35,231 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 4039
+2024-01-12 19:34:35,255 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/xfzajax.js HTTP/1.1" 200 1210
+2024-01-12 19:34:35,259 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/base/front_base.css HTTP/1.1" 200 4440
+2024-01-12 19:34:35,263 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/news/news.css HTTP/1.1" 200 2912
+2024-01-12 19:34:35,265 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/front_base.js HTTP/1.1" 200 2672
+2024-01-12 19:34:35,266 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/base/side.css HTTP/1.1" 200 2863
+2024-01-12 19:34:35,267 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/template-web.js HTTP/1.1" 200 16620
+2024-01-12 19:34:35,281 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/auth/auth.css HTTP/1.1" 200 1838
+2024-01-12 19:34:35,286 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/message.js HTTP/1.1" 200 3268
+2024-01-12 19:34:35,324 - basehttp.py\log_message[line:154] - INFO: "GET /static/images/favicon.ico HTTP/1.1" 200 9147
+2024-01-12 19:36:43,628 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-12 19:36:48,491 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 2408
+2024-01-12 19:36:49,283 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 2408
+2024-01-12 19:36:49,718 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 2408
+2024-01-12 19:36:50,083 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 2408
+2024-01-12 19:36:51,699 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 2408
+2024-01-12 19:36:52,155 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 2408
+2024-01-12 19:36:52,490 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 2408
+2024-01-12 19:36:52,852 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 2408
+2024-01-12 19:36:53,333 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 2408
+2024-01-12 19:36:53,750 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 2408
+2024-01-12 19:36:53,953 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 2408
+2024-01-12 19:37:15,504 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 2408
+2024-01-12 19:37:48,831 - basehttp.py\log_message[line:154] - INFO: "GET /account/register/ HTTP/1.1" 200 3079
+2024-01-12 19:37:48,946 - basehttp.py\log_message[line:154] - INFO: "GET /account/img_captcha/ HTTP/1.1" 200 1591
+2024-01-12 19:37:53,589 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 2408
+2024-01-12 19:38:26,386 - basehttp.py\log_message[line:154] - INFO: "POST /account/login/ HTTP/1.1" 302 0
+2024-01-12 19:38:26,524 - basehttp.py\log_message[line:154] - INFO: "GET /before HTTP/1.1" 200 14865
+2024-01-12 19:39:33,133 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/xfzauth/views.py changed, reloading.
+2024-01-12 19:39:34,470 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-12 19:39:39,070 - basehttp.py\log_message[line:154] - INFO: "GET / HTTP/1.1" 200 83909
+2024-01-12 19:39:39,113 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/main.min.js HTTP/1.1" 304 0
+2024-01-12 19:39:39,169 - basehttp.py\log_message[line:154] - WARNING: "GET /static/css/images/chinese-regulatory-logo.43806866.png HTTP/1.1" 404 1765
+2024-01-12 19:39:39,248 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-12 19:39:39,262 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-12 19:39:39,270 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-12 19:39:39,280 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-12 19:39:39,610 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/uploads/sites/9/2023/11/01-%E7%BB%BF%E8%89%B2-RGB.svg HTTP/1.1" 404 4553
+2024-01-12 19:39:46,543 - views.py\get[line:116] - INFO: 用户查询了[]
+2024-01-12 19:39:46,647 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_list/ HTTP/1.1" 200 18244
+2024-01-12 19:39:49,663 - basehttp.py\log_message[line:154] - INFO: "GET /account/logout/ HTTP/1.1" 302 0
+2024-01-12 19:39:49,717 - basehttp.py\log_message[line:154] - INFO: "GET / HTTP/1.1" 200 83909
+2024-01-12 19:39:49,811 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-12 19:39:49,833 - basehttp.py\log_message[line:154] - WARNING: "GET /static/css/images/chinese-regulatory-logo.43806866.png HTTP/1.1" 404 1765
+2024-01-12 19:39:49,842 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-12 19:39:49,852 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-12 19:39:49,862 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-12 19:39:54,247 - basehttp.py\log_message[line:154] - INFO: "GET /cms/ HTTP/1.1" 302 0
+2024-01-12 19:39:54,266 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/?next=/cms/ HTTP/1.1" 200 2408
+2024-01-12 19:40:01,161 - basehttp.py\log_message[line:154] - INFO: "POST /account/login/?next=/cms/ HTTP/1.1" 302 0
+2024-01-12 19:40:01,171 - basehttp.py\log_message[line:154] - WARNING: "GET /account/login/cms/news_list HTTP/1.1" 404 5265
+2024-01-12 19:40:01,195 - basehttp.py\log_message[line:154] - WARNING: "GET /favicon.ico HTTP/1.1" 404 4418
+2024-01-12 19:40:27,614 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/xfzauth/views.py changed, reloading.
+2024-01-12 19:40:28,817 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-12 19:40:37,389 - views.py\get[line:116] - INFO: 用户查询了[]
+2024-01-12 19:40:37,492 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_list/ HTTP/1.1" 200 18244
+2024-01-12 19:40:40,184 - basehttp.py\log_message[line:154] - INFO: "GET /account/logout/ HTTP/1.1" 302 0
+2024-01-12 19:40:40,237 - basehttp.py\log_message[line:154] - INFO: "GET / HTTP/1.1" 200 83909
+2024-01-12 19:40:40,357 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-12 19:40:40,361 - basehttp.py\log_message[line:154] - WARNING: "GET /static/css/images/chinese-regulatory-logo.43806866.png HTTP/1.1" 404 1765
+2024-01-12 19:40:40,363 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-12 19:40:40,364 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-12 19:40:40,366 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-12 19:40:43,758 - basehttp.py\log_message[line:154] - INFO: "GET /cms/ HTTP/1.1" 302 0
+2024-01-12 19:40:43,778 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/?next=/cms/ HTTP/1.1" 200 2408
+2024-01-12 19:40:47,428 - basehttp.py\log_message[line:154] - INFO: "POST /account/login/?next=/cms/ HTTP/1.1" 302 0
+2024-01-12 19:40:47,435 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_list HTTP/1.1" 301 0
+2024-01-12 19:40:47,453 - views.py\get[line:116] - INFO: 用户查询了[]
+2024-01-12 19:40:47,495 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_list/ HTTP/1.1" 200 18244
+2024-01-12 19:40:51,911 - basehttp.py\log_message[line:154] - INFO: "GET /account/logout/ HTTP/1.1" 302 0
+2024-01-12 19:40:52,005 - basehttp.py\log_message[line:154] - INFO: "GET / HTTP/1.1" 200 83909
+2024-01-12 19:40:52,068 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-12 19:40:52,084 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-12 19:40:52,091 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-12 19:40:52,093 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-12 19:40:56,439 - basehttp.py\log_message[line:154] - INFO: "GET /cms/ HTTP/1.1" 302 0
+2024-01-12 19:40:56,463 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/?next=/cms/ HTTP/1.1" 200 2408
+2024-01-12 19:41:02,612 - basehttp.py\log_message[line:154] - INFO: "GET /account/register/ HTTP/1.1" 200 3079
+2024-01-12 19:41:02,659 - basehttp.py\log_message[line:154] - INFO: "GET /account/img_captcha/ HTTP/1.1" 200 1365
+2024-01-12 19:41:08,549 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 2408
+2024-01-12 19:41:14,771 - basehttp.py\log_message[line:154] - INFO: "GET /account/register/ HTTP/1.1" 200 3079
+2024-01-12 19:41:14,815 - basehttp.py\log_message[line:154] - INFO: "GET /account/img_captcha/ HTTP/1.1" 200 1619
+2024-01-12 19:41:37,053 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 2408
+2024-01-12 19:41:58,854 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 2408
+2024-01-12 19:42:00,496 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 2408
+2024-01-12 19:42:01,222 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/ HTTP/1.1" 200 2408
+2024-01-12 19:42:21,395 - basehttp.py\log_message[line:154] - INFO: "POST /account/login/ HTTP/1.1" 302 0
+2024-01-12 19:42:21,404 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_list HTTP/1.1" 301 0
+2024-01-12 19:42:21,421 - views.py\get[line:116] - INFO: 用户查询了[]
+2024-01-12 19:42:21,480 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_list/ HTTP/1.1" 200 18244
+2024-01-12 19:42:25,093 - basehttp.py\log_message[line:154] - INFO: "GET /before HTTP/1.1" 200 14865
+2024-01-12 19:42:32,239 - basehttp.py\log_message[line:154] - INFO: "GET /cms/ HTTP/1.1" 200 8118
+2024-01-12 19:42:40,557 - views.py\get[line:116] - INFO: 用户查询了[]
+2024-01-12 19:42:40,606 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_list/?q=login&search= HTTP/1.1" 200 18244
+2024-01-12 19:42:46,635 - views.py\get[line:116] - INFO: 用户查询了[]
+2024-01-12 19:42:46,680 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_list/?q=%E7%BA%A2%E6%9D%89&search= HTTP/1.1" 200 18244
+2024-01-12 19:43:42,453 - views.py\get[line:116] - INFO: 用户查询了[]
+2024-01-12 19:43:42,514 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_list/?q=%E7%BA%A2%E6%9D%89&search= HTTP/1.1" 200 18244
+2024-01-12 19:43:44,525 - views.py\get[line:116] - INFO: 用户查询了[]
+2024-01-12 19:43:44,577 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_list/?q=%E7%BA%A2%E6%9D%89&search= HTTP/1.1" 200 18244
+2024-01-12 19:43:44,644 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/dist/css/skins/_all-skins.min.css HTTP/1.1" 200 41583
+2024-01-12 19:43:44,659 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 31000
+2024-01-12 19:43:44,668 - basehttp.py\log_message[line:154] - INFO: "GET /static/sweetalert/sweetalert.css HTTP/1.1" 200 22898
+2024-01-12 19:43:44,671 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/jquery/dist/jquery.min.js HTTP/1.1" 200 86927
+2024-01-12 19:43:44,684 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/dist/css/AdminLTE.min.css HTTP/1.1" 200 91501
+2024-01-12 19:43:44,685 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap/dist/css/bootstrap.min.css HTTP/1.1" 200 121200
+2024-01-12 19:43:44,715 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css HTTP/1.1" 200 15731
+2024-01-12 19:43:44,724 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap/dist/js/bootstrap.min.js HTTP/1.1" 200 37045
+2024-01-12 19:43:44,732 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/dist/js/adminlte.min.js HTTP/1.1" 200 14548
+2024-01-12 19:43:44,746 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/xfzajax.js HTTP/1.1" 200 1210
+2024-01-12 19:43:44,756 - basehttp.py\log_message[line:154] - INFO: "GET /static/sweetalert/xfzalert.js HTTP/1.1" 200 5429
+2024-01-12 19:43:44,894 - basehttp.py\log_message[line:154] - INFO: "GET /static/sweetalert/sweetalert.min.js HTTP/1.1" 200 16994
+2024-01-12 19:43:44,898 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/message.js HTTP/1.1" 200 3268
+2024-01-12 19:43:44,925 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/cms_base.js HTTP/1.1" 200 1063
+2024-01-12 19:43:44,980 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js HTTP/1.1" 200 57553
+2024-01-12 19:43:45,007 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1" 200 593
+2024-01-12 19:43:45,011 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/cms_news_list.js HTTP/1.1" 200 1718
+2024-01-12 19:43:45,081 - views.py\get[line:116] - INFO: 用户查询了[]
+2024-01-12 19:43:45,180 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160
+2024-01-12 19:43:45,252 - views.py\get[line:116] - INFO: 用户查询了[]
+2024-01-12 19:43:45,278 - basehttp.py\log_message[line:154] - INFO: "GET /static/images/favicon.ico HTTP/1.1" 200 9147
+2024-01-12 19:43:45,297 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_list/?q=%E7%BA%A2%E6%9D%89&search= HTTP/1.1" 200 18244
+2024-01-12 19:43:45,375 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_list/?q=%E7%BA%A2%E6%9D%89&search= HTTP/1.1" 200 18244
+2024-01-12 19:43:45,433 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 31000
+2024-01-12 19:43:45,441 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css HTTP/1.1" 200 15731
+2024-01-12 19:43:45,441 - basehttp.py\log_message[line:154] - INFO: "GET /static/sweetalert/sweetalert.css HTTP/1.1" 200 22898
+2024-01-12 19:43:45,451 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/dist/css/skins/_all-skins.min.css HTTP/1.1" 200 41583
+2024-01-12 19:43:45,458 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/dist/css/AdminLTE.min.css HTTP/1.1" 200 91501
+2024-01-12 19:43:45,473 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap/dist/css/bootstrap.min.css HTTP/1.1" 200 121200
+2024-01-12 19:43:45,518 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/jquery/dist/jquery.min.js HTTP/1.1" 200 86927
+2024-01-12 19:43:45,659 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/dist/js/adminlte.min.js HTTP/1.1" 200 14548
+2024-01-12 19:43:45,704 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap/dist/js/bootstrap.min.js HTTP/1.1" 200 37045
+2024-01-12 19:43:45,787 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/message.js HTTP/1.1" 200 3268
+2024-01-12 19:43:45,736 - basehttp.py\log_message[line:154] - INFO: "GET /static/sweetalert/xfzalert.js HTTP/1.1" 200 5429
+2024-01-12 19:43:45,768 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/xfzajax.js HTTP/1.1" 200 1210
+2024-01-12 19:43:45,778 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/cms_base.js HTTP/1.1" 200 1063
+2024-01-12 19:43:45,804 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1" 200 593
+2024-01-12 19:43:45,838 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/cms_news_list.js HTTP/1.1" 200 1718
+2024-01-12 19:43:45,714 - basehttp.py\log_message[line:154] - INFO: "GET /static/sweetalert/sweetalert.min.js HTTP/1.1" 200 16994
+2024-01-12 19:43:45,925 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js HTTP/1.1" 200 57553
+2024-01-12 19:43:45,980 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160
+2024-01-12 19:43:46,037 - views.py\get[line:116] - INFO: 用户查询了[]
+2024-01-12 19:43:46,213 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_list/?q=%E7%BA%A2%E6%9D%89&search= HTTP/1.1" 200 18244
+2024-01-12 19:43:46,262 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/dist/css/AdminLTE.min.css HTTP/1.1" 200 91501
+2024-01-12 19:43:46,264 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/jquery/dist/jquery.min.js HTTP/1.1" 200 86927
+2024-01-12 19:43:46,268 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap/dist/css/bootstrap.min.css HTTP/1.1" 200 121200
+2024-01-12 19:43:46,278 - basehttp.py\log_message[line:154] - INFO: "GET /static/sweetalert/sweetalert.css HTTP/1.1" 200 22898
+2024-01-12 19:43:46,379 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/message.js HTTP/1.1" 200 3268
+2024-01-12 19:43:46,281 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 31000
+2024-01-12 19:43:46,344 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css HTTP/1.1" 200 15731
+2024-01-12 19:43:46,365 - basehttp.py\log_message[line:154] - INFO: "GET /static/sweetalert/xfzalert.js HTTP/1.1" 200 5429
+2024-01-12 19:43:46,278 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/dist/css/skins/_all-skins.min.css HTTP/1.1" 200 41583
+2024-01-12 19:43:46,502 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap/dist/js/bootstrap.min.js HTTP/1.1" 200 37045
+2024-01-12 19:43:46,647 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/dist/js/adminlte.min.js HTTP/1.1" 200 14548
+2024-01-12 19:43:46,566 - basehttp.py\log_message[line:154] - INFO: "GET /static/sweetalert/sweetalert.min.js HTTP/1.1" 200 16994
+2024-01-12 19:43:46,593 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/xfzajax.js HTTP/1.1" 200 1210
+2024-01-12 19:43:46,641 - views.py\get[line:116] - INFO: 用户查询了[]
+2024-01-12 19:43:46,542 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/cms_base.js HTTP/1.1" 200 1063
+2024-01-12 19:43:46,666 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js HTTP/1.1" 200 57553
+2024-01-12 19:43:46,774 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/cms_news_list.js HTTP/1.1" 200 1718
+2024-01-12 19:43:46,832 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1" 200 593
+2024-01-12 19:43:46,900 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_list/?q=%E7%BA%A2%E6%9D%89&search= HTTP/1.1" 200 18244
+2024-01-12 19:43:46,974 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160
+2024-01-12 19:43:46,977 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css HTTP/1.1" 200 15731
+2024-01-12 19:43:46,985 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/dist/css/AdminLTE.min.css HTTP/1.1" 200 91501
+2024-01-12 19:43:47,018 - basehttp.py\log_message[line:154] - INFO: "GET /static/sweetalert/sweetalert.css HTTP/1.1" 200 22898
+2024-01-12 19:43:47,047 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 31000
+2024-01-12 19:43:47,049 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/dist/css/skins/_all-skins.min.css HTTP/1.1" 200 41583
+2024-01-12 19:43:47,062 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap/dist/css/bootstrap.min.css HTTP/1.1" 200 121200
+2024-01-12 19:43:47,103 - basehttp.py\log_message[line:154] - INFO: "GET /static/sweetalert/sweetalert.min.js HTTP/1.1" 200 16994
+2024-01-12 19:43:47,124 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/jquery/dist/jquery.min.js HTTP/1.1" 200 86927
+2024-01-12 19:43:47,201 - basehttp.py\log_message[line:154] - INFO: "GET /static/sweetalert/xfzalert.js HTTP/1.1" 200 5429
+2024-01-12 19:43:47,272 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/xfzajax.js HTTP/1.1" 200 1210
+2024-01-12 19:43:47,298 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/cms_base.js HTTP/1.1" 200 1063
+2024-01-12 19:43:47,344 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap/dist/js/bootstrap.min.js HTTP/1.1" 200 37045
+2024-01-12 19:43:47,361 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/dist/js/adminlte.min.js HTTP/1.1" 200 14548
+2024-01-12 19:43:47,470 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/message.js HTTP/1.1" 200 3268
+2024-01-12 19:43:47,529 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js HTTP/1.1" 200 57553
+2024-01-12 19:43:47,564 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1" 200 593
+2024-01-12 19:43:47,598 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/cms_news_list.js HTTP/1.1" 200 1718
+2024-01-12 19:43:47,735 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160
+2024-01-12 19:43:47,800 - basehttp.py\log_message[line:154] - INFO: "GET /static/images/favicon.ico HTTP/1.1" 200 9147
+2024-01-12 19:44:38,828 - views.py\get[line:116] - INFO: 用户查询了[]
+2024-01-12 19:44:38,881 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_list/?q=%E7%BA%A2%E6%9D%89&search= HTTP/1.1" 200 18244
+2024-01-12 19:44:48,519 - basehttp.py\log_message[line:154] - INFO: "GET /cms/edit_news/?pk=6 HTTP/1.1" 200 55285
+2024-01-12 19:44:48,597 - basehttp.py\log_message[line:154] - INFO: "GET /ueditor/upload/?action=config&&noCache=1705059888559 HTTP/1.1" 200 2686
+2024-01-12 19:44:53,652 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 9923
+2024-01-12 19:44:54,385 - basehttp.py\log_message[line:154] - INFO: "GET /cms/course_teacher/ HTTP/1.1" 200 13721
+2024-01-12 19:44:54,443 - basehttp.py\log_message[line:154] - INFO: "GET /cms/course_teacher_list/?format=json HTTP/1.1" 200 216
+2024-01-12 19:45:04,040 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 9923
+2024-01-12 19:45:07,018 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/ HTTP/1.1" 200 9389
+2024-01-12 19:45:14,117 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/ HTTP/1.1" 200 9389
+2024-01-12 19:45:29,551 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/ HTTP/1.1" 200 9389
+2024-01-12 19:46:12,499 - basehttp.py\log_message[line:154] - INFO: "GET /cms/user_center/ HTTP/1.1" 200 8829
+2024-01-12 19:46:14,937 - basehttp.py\log_message[line:154] - INFO: "GET /cms/edit_user_center/ HTTP/1.1" 200 9148
+2024-01-12 19:47:35,667 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 9923
+2024-01-12 19:48:33,892 - basehttp.py\log_message[line:154] - INFO: "GET /cms/user_center/ HTTP/1.1" 200 8678
+2024-01-12 19:48:42,978 - basehttp.py\log_message[line:154] - INFO: "GET / HTTP/1.1" 200 83909
+2024-01-12 19:48:43,128 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-12 19:48:43,130 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-12 19:48:43,136 - basehttp.py\log_message[line:154] - WARNING: "GET /static/css/images/chinese-regulatory-logo.43806866.png HTTP/1.1" 404 1765
+2024-01-12 19:48:43,152 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-12 19:48:43,156 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-12 19:48:43,393 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/uploads/sites/9/2023/11/01-%E7%BB%BF%E8%89%B2-RGB.svg HTTP/1.1" 404 4553
+2024-01-12 19:48:46,979 - basehttp.py\log_message[line:154] - INFO: "GET /hs/cn_about_us?lang=cn HTTP/1.1" 200 69481
+2024-01-12 19:48:47,040 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-12 19:48:47,074 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-12 19:48:47,079 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-12 19:48:47,086 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-12 19:48:48,876 - basehttp.py\log_message[line:154] - INFO: "GET / HTTP/1.1" 200 83909
+2024-01-12 19:48:48,937 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-12 19:48:48,958 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-12 19:48:48,971 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-12 19:48:48,975 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-12 19:48:50,187 - basehttp.py\log_message[line:154] - INFO: "GET /?lang=en HTTP/1.1" 200 85563
+2024-01-12 19:48:50,227 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-12 19:48:50,261 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-12 19:48:50,269 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-12 19:48:50,296 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-12 19:49:00,662 - basehttp.py\log_message[line:154] - INFO: "GET /hs/cn_about_us?lang=en HTTP/1.1" 200 69738
+2024-01-12 19:49:00,754 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-12 19:49:00,780 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-12 19:49:00,796 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-12 19:49:00,807 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-12 19:49:11,737 - basehttp.py\log_message[line:154] - INFO: "GET /hs/search?page=1&search=m&type=post&subtype=founder%2Ccompany%2Cteam-member%2Cpost&_fields=ID%2Cpost_title%2Cpost_type%2Cpermalink%2Cthumbnail%2Cacf.companies%2Cmeta.title%2Cacf.post_author_profile%2Cterms.role%2Cterms.category%2Cterms.sector&per_subtype=6 HTTP/1.1" 200 1742
+2024-01-12 19:49:11,959 - basehttp.py\log_message[line:154] - INFO: "GET /hs/search?page=1&search=mmo+fei&type=post&subtype=founder%2Ccompany%2Cteam-member%2Cpost&_fields=ID%2Cpost_title%2Cpost_type%2Cpermalink%2Cthumbnail%2Cacf.companies%2Cmeta.title%2Cacf.post_author_profile%2Cterms.role%2Cterms.category%2Cterms.sector&per_subtype=6 HTTP/1.1" 200 1767
+2024-01-12 19:49:12,322 - basehttp.py\log_message[line:154] - INFO: "GET /hs/search?page=1&search=mmofei&type=post&subtype=founder%2Ccompany%2Cteam-member%2Cpost&_fields=ID%2Cpost_title%2Cpost_type%2Cpermalink%2Cthumbnail%2Cacf.companies%2Cmeta.title%2Cacf.post_author_profile%2Cterms.role%2Cterms.category%2Cterms.sector&per_subtype=6 HTTP/1.1" 200 64
+2024-01-12 19:49:14,364 - basehttp.py\log_message[line:154] - INFO: "GET /hs/search?page=1&search=mmofe&type=post&subtype=founder%2Ccompany%2Cteam-member%2Cpost&_fields=ID%2Cpost_title%2Cpost_type%2Cpermalink%2Cthumbnail%2Cacf.companies%2Cmeta.title%2Cacf.post_author_profile%2Cterms.role%2Cterms.category%2Cterms.sector&per_subtype=6 HTTP/1.1" 200 64
+2024-01-12 19:49:16,929 - basehttp.py\log_message[line:154] - INFO: "GET /hs/search?page=1&search=mo+fei&type=post&subtype=founder%2Ccompany%2Cteam-member%2Cpost&_fields=ID%2Cpost_title%2Cpost_type%2Cpermalink%2Cthumbnail%2Cacf.companies%2Cmeta.title%2Cacf.post_author_profile%2Cterms.role%2Cterms.category%2Cterms.sector&per_subtype=6 HTTP/1.1" 200 1623
+2024-01-12 19:49:18,030 - basehttp.py\log_message[line:154] - INFO: "GET /hs/search?page=1&search=%E5%A2%A8%E8%8F%B2&type=post&subtype=founder%2Ccompany%2Cteam-member%2Cpost&_fields=ID%2Cpost_title%2Cpost_type%2Cpermalink%2Cthumbnail%2Cacf.companies%2Cmeta.title%2Cacf.post_author_profile%2Cterms.role%2Cterms.category%2Cterms.sector&per_subtype=6 HTTP/1.1" 200 1693
+2024-01-12 19:49:27,183 - basehttp.py\log_message[line:154] - ERROR: "GET /company/mofeisi/overview HTTP/1.1" 500 109582
+2024-01-12 19:49:27,260 - basehttp.py\log_message[line:154] - WARNING: "GET /favicon.ico HTTP/1.1" 404 4418
+2024-01-12 19:50:03,774 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/company/views.py changed, reloading.
+2024-01-12 19:50:05,173 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-12 19:50:16,566 - basehttp.py\log_message[line:154] - INFO: "GET /company/mofeisi/overview HTTP/1.1" 200 100142
+2024-01-12 19:50:16,593 - basehttp.py\log_message[line:154] - INFO: "GET /static/xn_source/tag.png HTTP/1.1" 304 0
+2024-01-12 19:50:16,596 - basehttp.py\log_message[line:154] - INFO: "GET /static/xn_source/commons.8c690d35.chunk.css HTTP/1.1" 304 0
+2024-01-12 19:50:16,598 - basehttp.py\log_message[line:154] - INFO: "GET /static/xn_source/styles.83a6ee69.chunk.css HTTP/1.1" 304 0
+2024-01-12 19:50:16,608 - basehttp.py\log_message[line:154] - INFO: "GET /static/xn_source/webpack-a2610b762163b80c7162.js HTTP/1.1" 304 0
+2024-01-12 19:50:16,630 - basehttp.py\log_message[line:154] - INFO: "GET /static/xn_source/_error.js HTTP/1.1" 304 0
+2024-01-12 19:50:16,632 - basehttp.py\log_message[line:154] - INFO: "GET /static/xn_source/_app.js HTTP/1.1" 304 0
+2024-01-12 19:50:16,633 - basehttp.py\log_message[line:154] - INFO: "GET /static/xn_source/detail-company.js HTTP/1.1" 304 0
+2024-01-12 19:50:16,644 - basehttp.py\log_message[line:154] - INFO: "GET /static/xn_source/styles.6a1db4369d416f25b059.js HTTP/1.1" 304 0
+2024-01-12 19:50:16,649 - basehttp.py\log_message[line:154] - INFO: "GET /static/xn_source/commons.e206d497c0aa2852c2e8.js HTTP/1.1" 304 0
+2024-01-12 19:50:16,677 - basehttp.py\log_message[line:154] - WARNING: "GET /static/xn_source/xn_source/main-689bf5a4d9521d9d1a79.js HTTP/1.1" 404 1768
+2024-01-12 19:50:16,723 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-12 19:50:16,745 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-12 19:50:16,749 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-12 19:50:16,758 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-12 19:52:17,058 - basehttp.py\log_message[line:154] - INFO: "GET /company/mofeisi/overview HTTP/1.1" 200 99666
+2024-01-12 19:52:17,087 - basehttp.py\log_message[line:154] - WARNING: "GET /static/xn_source/xn_source/main-689bf5a4d9521d9d1a79.js HTTP/1.1" 404 1768
+2024-01-12 19:52:17,137 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-12 19:52:17,172 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-12 19:52:17,174 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-12 19:52:17,177 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-12 19:52:26,859 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/hs_base/lottie-player.js.map HTTP/1.1" 404 1717
+2024-01-12 19:55:05,230 - basehttp.py\log_message[line:154] - INFO: "GET /company/mofeisi/overview HTTP/1.1" 200 99666
+2024-01-12 19:55:05,343 - basehttp.py\log_message[line:154] - WARNING: "GET /static/xn_source/xn_source/main-689bf5a4d9521d9d1a79.js HTTP/1.1" 404 1768
+2024-01-12 19:55:05,446 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/hs_base/lottie-player.js.map HTTP/1.1" 404 1717
+2024-01-12 19:55:05,487 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-12 19:55:05,508 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-12 19:55:05,511 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-12 19:55:05,513 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-12 19:55:06,659 - basehttp.py\log_message[line:154] - INFO: "GET /company/mofeisi/overview HTTP/1.1" 200 99666
+2024-01-12 19:55:06,692 - basehttp.py\log_message[line:154] - WARNING: "GET /static/xn_source/xn_source/main-689bf5a4d9521d9d1a79.js HTTP/1.1" 404 1768
+2024-01-12 19:55:06,816 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/hs_base/lottie-player.js.map HTTP/1.1" 404 1717
+2024-01-12 19:55:06,846 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-12 19:55:06,862 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-12 19:55:06,866 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-12 19:55:06,868 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-12 19:55:32,547 - basehttp.py\log_message[line:154] - INFO: "GET /company/mofeisi/overview HTTP/1.1" 200 99666
+2024-01-12 19:55:32,631 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/hs_base/speed.min.css HTTP/1.1" 200 1412
+2024-01-12 19:55:32,632 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/hs_base/jump-forward.min.css HTTP/1.1" 200 175
+2024-01-12 19:55:32,641 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/hs_base/mediaelementplayer-legacy.min.css HTTP/1.1" 200 11256
+2024-01-12 19:55:32,643 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/hs_base/skip-back.min.css HTTP/1.1" 200 169
+2024-01-12 19:55:32,647 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/hs_base/jp-search.chunk-main-payload.css HTTP/1.1" 200 36682
+2024-01-12 19:55:32,658 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/hs_base/jetpack.css HTTP/1.1" 200 100678
+2024-01-12 19:55:32,672 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/hs_base/main.min.css HTTP/1.1" 200 5228
+2024-01-12 19:55:32,747 - basehttp.py\log_message[line:154] - INFO: "GET /static/css/hs_base/theme-styles.min.css HTTP/1.1" 200 323677
+2024-01-12 19:55:32,778 - basehttp.py\log_message[line:154] - INFO: "GET /static/xn_source/commons.8c690d35.chunk.css HTTP/1.1" 200 48766
+2024-01-12 19:55:32,789 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/regenerator-runtime.min.js HTTP/1.1" 200 6607
+2024-01-12 19:55:32,789 - basehttp.py\log_message[line:154] - INFO: "GET /static/xn_source/styles.83a6ee69.chunk.css HTTP/1.1" 200 283634
+2024-01-12 19:55:32,801 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/wp-polyfill-inert.min.js HTTP/1.1" 200 8171
+2024-01-12 19:55:32,823 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/wp-polyfill.min.js HTTP/1.1" 200 16146
+2024-01-12 19:55:32,835 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/i18n.min.js HTTP/1.1" 200 9445
+2024-01-12 19:55:32,844 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/i18n-loader.js HTTP/1.1" 200 6061
+2024-01-12 19:55:32,929 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/html-entities.min.js HTTP/1.1" 200 837
+2024-01-12 19:55:33,049 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/hooks.min.js HTTP/1.1" 200 4627
+2024-01-12 19:55:33,146 - basehttp.py\log_message[line:154] - INFO: "GET /static/xn_source/tag.png HTTP/1.1" 200 1199
+2024-01-12 19:55:33,150 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/main.min.js HTTP/1.1" 200 278603
+2024-01-12 19:55:33,187 - basehttp.py\log_message[line:154] - INFO: "GET /static/xn_source/webpack-a2610b762163b80c7162.js HTTP/1.1" 200 2365
+2024-01-12 19:55:33,284 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/jp-search.js HTTP/1.1" 200 11996
+2024-01-12 19:55:33,299 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/url.min.js HTTP/1.1" 200 9079
+2024-01-12 19:55:33,315 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/w.js HTTP/1.1" 200 16488
+2024-01-12 19:55:33,377 - basehttp.py\log_message[line:154] - WARNING: "GET /static/xn_source/xn_source/main-689bf5a4d9521d9d1a79.js HTTP/1.1" 404 1768
+2024-01-12 19:55:33,858 - basehttp.py\log_message[line:154] - INFO: "GET /static/xn_source/commons.e206d497c0aa2852c2e8.js HTTP/1.1" 200 707741
+2024-01-12 19:55:33,894 - basehttp.py\log_message[line:154] - INFO: "GET /static/xn_source/styles.6a1db4369d416f25b059.js HTTP/1.1" 200 69834
+2024-01-12 19:55:34,233 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/jquery.min.js HTTP/1.1" 200 86927
+2024-01-12 19:55:34,297 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/lodash.min.js HTTP/1.1" 200 71085
+2024-01-12 19:55:34,814 - basehttp.py\log_message[line:154] - INFO: "GET /static/xn_source/_error.js HTTP/1.1" 200 7049
+2024-01-12 19:55:35,115 - basehttp.py\log_message[line:154] - INFO: "GET /static/xn_source/detail-company.js HTTP/1.1" 200 1546352
+2024-01-12 19:55:35,169 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/lottie-player.js HTTP/1.1" 200 367111
+2024-01-12 19:55:35,200 - basehttp.py\log_message[line:154] - INFO: "GET /static/xn_source/_app.js HTTP/1.1" 200 2895
+2024-01-12 19:55:35,545 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-12 19:55:35,378 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/theme-scripts.min.js HTTP/1.1" 200 151088
+2024-01-12 19:55:35,380 - basehttp.py\log_message[line:154] - WARNING: "GET /static/css/images/chinese-regulatory-logo.43806866.png HTTP/1.1" 404 1765
+2024-01-12 19:55:35,532 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/hs_base/lottie-player.js.map HTTP/1.1" 404 1717
+2024-01-12 19:55:35,553 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-12 19:55:35,377 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/hs_base/e-202347.js HTTP/1.1" 200 6931
+2024-01-12 19:55:35,663 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-12 19:55:35,846 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-12 19:55:35,860 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/uploads/sites/9/2023/11/01-%E7%BB%BF%E8%89%B2-RGB.svg HTTP/1.1" 404 4553
+2024-01-12 19:56:22,582 - basehttp.py\log_message[line:154] - INFO: "GET /company/mofeisi/overview HTTP/1.1" 200 99153
+2024-01-12 19:56:22,635 - basehttp.py\log_message[line:154] - INFO: "GET /static/xn_source/commons.8c690d35.chunk.css HTTP/1.1" 304 0
+2024-01-12 19:56:22,656 - basehttp.py\log_message[line:154] - WARNING: "GET /static/xn_source/xn_source/main-689bf5a4d9521d9d1a79.js HTTP/1.1" 404 1768
+2024-01-12 19:56:22,752 - basehttp.py\log_message[line:154] - WARNING: "GET /static/css/images/chinese-regulatory-logo.43806866.png HTTP/1.1" 404 1765
+2024-01-12 19:56:22,860 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/hs_base/lottie-player.js.map HTTP/1.1" 404 1717
+2024-01-12 19:56:22,938 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-12 19:56:22,951 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-12 19:56:22,957 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-12 19:56:22,967 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-12 19:56:24,620 - basehttp.py\log_message[line:154] - INFO: "GET /hs/cn_about_us?lang=cn HTTP/1.1" 200 69481
+2024-01-12 19:56:24,690 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/hs_base/lottie-player.js.map HTTP/1.1" 404 1717
+2024-01-12 19:56:24,719 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-12 19:56:24,739 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-12 19:56:24,743 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-12 19:56:24,749 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-12 19:56:27,914 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/hs_base/lottie-player.js.map HTTP/1.1" 404 1717
+2024-01-12 19:56:27,933 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/hs_base/lottie-player.js.map HTTP/1.1" 404 1717
+2024-01-12 19:56:27,957 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/hs_base/lottie-player.js.map HTTP/1.1" 404 1717
+2024-01-12 19:56:29,091 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/hs_base/lottie-player.js.map HTTP/1.1" 404 1717
+2024-01-12 19:56:29,112 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/hs_base/lottie-player.js.map HTTP/1.1" 404 1717
+2024-01-12 19:56:29,134 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/hs_base/lottie-player.js.map HTTP/1.1" 404 1717
+2024-01-12 19:56:29,953 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/hs_base/lottie-player.js.map HTTP/1.1" 404 1717
+2024-01-12 19:56:29,971 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/hs_base/lottie-player.js.map HTTP/1.1" 404 1717
+2024-01-12 19:56:29,984 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/hs_base/lottie-player.js.map HTTP/1.1" 404 1717
+2024-01-12 19:57:21,213 - basehttp.py\log_message[line:154] - INFO: "GET /company/mofeisi/overview HTTP/1.1" 200 99153
+2024-01-12 19:57:21,272 - basehttp.py\log_message[line:154] - INFO: "GET /static/xn_source/commons.8c690d35.chunk.css HTTP/1.1" 304 0
+2024-01-12 19:57:21,304 - basehttp.py\log_message[line:154] - WARNING: "GET /static/xn_source/xn_source/main-689bf5a4d9521d9d1a79.js HTTP/1.1" 404 1768
+2024-01-12 19:57:21,345 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-12 19:57:21,347 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/hs_base/lottie-player.js.map HTTP/1.1" 404 1717
+2024-01-12 19:57:21,362 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-12 19:57:21,366 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-12 19:57:21,367 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-12 20:04:08,153 - basehttp.py\log_message[line:154] - INFO: "GET /company/mofeisi/overview HTTP/1.1" 200 98970
+2024-01-12 20:04:08,200 - basehttp.py\log_message[line:154] - INFO: "GET /static/xn_source/commons.8c690d35.chunk.css HTTP/1.1" 304 0
+2024-01-12 20:04:08,240 - basehttp.py\log_message[line:154] - WARNING: "GET /static/xn_source/xn_source/main-689bf5a4d9521d9d1a79.js HTTP/1.1" 404 1768
+2024-01-12 20:04:08,613 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/hs_base/lottie-player.js.map HTTP/1.1" 404 1717
+2024-01-12 20:04:08,637 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-12 20:04:08,667 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-12 20:04:08,692 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-12 20:04:08,705 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-12 20:04:14,640 - basehttp.py\log_message[line:154] - INFO: "GET /?lang=en HTTP/1.1" 200 85563
+2024-01-12 20:04:14,772 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-12 20:04:14,797 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/hs_base/lottie-player.js.map HTTP/1.1" 404 1717
+2024-01-12 20:04:14,816 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-12 20:04:14,834 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-12 20:04:14,858 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-12 20:04:35,142 - basehttp.py\log_message[line:154] - INFO: "GET /hs/cn_about_us?lang=en HTTP/1.1" 200 69738
+2024-01-12 20:04:35,247 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-12 20:04:35,278 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/hs_base/lottie-player.js.map HTTP/1.1" 404 1717
+2024-01-12 20:04:35,298 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-12 20:04:35,325 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-12 20:04:35,327 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-12 20:04:57,671 - basehttp.py\log_message[line:154] - INFO: "GET / HTTP/1.1" 200 83909
+2024-01-12 20:04:57,743 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-12 20:04:57,759 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-12 20:04:57,778 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-12 20:04:57,783 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-12 20:05:09,132 - basehttp.py\log_message[line:154] - INFO: "GET /hs/cn_about_us?lang=cn HTTP/1.1" 200 69481
+2024-01-12 20:05:09,174 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-12 20:05:09,220 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-12 20:05:09,221 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-12 20:05:09,225 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-12 20:05:14,110 - basehttp.py\log_message[line:154] - INFO: "GET /hs/cn_about_us?lang=cn HTTP/1.1" 200 69481
+2024-01-12 20:05:14,191 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-12 20:05:14,210 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-12 20:05:14,210 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-12 20:05:14,217 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-12 20:05:58,995 - views.py\get[line:116] - INFO: 用户查询了[]
+2024-01-12 20:05:59,056 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_list/ HTTP/1.1" 200 18244
+2024-01-12 20:06:02,721 - views.py\get[line:116] - INFO: 用户查询了[]
+2024-01-12 20:06:02,784 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_list/ HTTP/1.1" 200 18244
+2024-01-12 20:06:02,821 - basehttp.py\log_message[line:154] - INFO: "GET /static/sweetalert/sweetalert.css HTTP/1.1" 200 22898
+2024-01-12 20:06:02,831 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/dist/js/adminlte.min.js HTTP/1.1" 200 14548
+2024-01-12 20:06:02,833 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 31000
+2024-01-12 20:06:02,836 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/jquery/dist/jquery.min.js HTTP/1.1" 200 86927
+2024-01-12 20:06:02,850 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/dist/css/AdminLTE.min.css HTTP/1.1" 200 91501
+2024-01-12 20:06:02,853 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/dist/css/skins/_all-skins.min.css HTTP/1.1" 200 41583
+2024-01-12 20:06:02,876 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css HTTP/1.1" 200 15731
+2024-01-12 20:06:02,879 - basehttp.py\log_message[line:154] - INFO: "GET /static/sweetalert/sweetalert.min.js HTTP/1.1" 200 16994
+2024-01-12 20:06:02,886 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap/dist/css/bootstrap.min.css HTTP/1.1" 200 121200
+2024-01-12 20:06:02,893 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/message.js HTTP/1.1" 200 3268
+2024-01-12 20:06:02,919 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap/dist/js/bootstrap.min.js HTTP/1.1" 200 37045
+2024-01-12 20:06:02,927 - basehttp.py\log_message[line:154] - INFO: "GET /static/sweetalert/xfzalert.js HTTP/1.1" 200 5429
+2024-01-12 20:06:02,934 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/cms_base.js HTTP/1.1" 200 1063
+2024-01-12 20:06:02,943 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/xfzajax.js HTTP/1.1" 200 1210
+2024-01-12 20:06:02,955 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1" 200 593
+2024-01-12 20:06:02,969 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js HTTP/1.1" 200 57553
+2024-01-12 20:06:02,977 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/cms_news_list.js HTTP/1.1" 200 1718
+2024-01-12 20:06:03,029 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160
+2024-01-12 20:06:03,084 - basehttp.py\log_message[line:154] - INFO: "GET /static/images/favicon.ico HTTP/1.1" 200 9147
+2024-01-12 20:06:05,711 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 9923
+2024-01-12 20:06:07,746 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/ HTTP/1.1" 200 9389
+2024-01-12 20:06:17,378 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 9923
+2024-01-12 20:06:20,046 - basehttp.py\log_message[line:154] - INFO: "GET /cms/user_center/ HTTP/1.1" 200 8668
+2024-01-12 20:06:21,540 - basehttp.py\log_message[line:154] - INFO: "GET /cms/edit_user_center/ HTTP/1.1" 200 9148
+2024-01-12 20:06:31,872 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 9923
+2024-01-12 20:06:34,351 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/ HTTP/1.1" 200 9389
+2024-01-12 20:06:47,857 - basehttp.py\log_message[line:154] - INFO: "POST /cms/add_staff/ HTTP/1.1" 302 0
+2024-01-12 20:06:47,882 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/ HTTP/1.1" 200 9683
+2024-01-12 20:07:07,387 - basehttp.py\log_message[line:154] - INFO: "POST /cms/add_staff/ HTTP/1.1" 302 0
+2024-01-12 20:07:07,420 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/ HTTP/1.1" 200 9683
+2024-01-12 20:12:25,199 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/cms/staff_views.py changed, reloading.
+2024-01-12 20:12:26,986 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-12 20:14:36,066 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/cms/staff_views.py changed, reloading.
+2024-01-12 20:14:37,245 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-12 20:16:10,803 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/cms/staff_views.py changed, reloading.
+2024-01-12 20:16:12,101 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-12 20:16:40,406 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/cms/staff_views.py changed, reloading.
+2024-01-12 20:16:41,553 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-12 20:23:05,956 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/cms/staff_views.py changed, reloading.
+2024-01-12 20:23:07,995 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-12 20:23:44,814 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/cms/staff_views.py changed, reloading.
+2024-01-12 20:23:46,314 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-12 20:23:53,674 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/cms/staff_views.py changed, reloading.
+2024-01-12 20:23:54,910 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-12 20:23:58,241 - basehttp.py\log_message[line:154] - ERROR: "GET /cms/staffs/ HTTP/1.1" 500 167860
+2024-01-12 20:23:58,390 - basehttp.py\log_message[line:154] - WARNING: "GET /favicon.ico HTTP/1.1" 404 4418
+2024-01-12 20:24:57,716 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-12 20:25:02,526 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 7413
+2024-01-12 20:25:06,879 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_category/ HTTP/1.1" 200 8062
+2024-01-12 20:25:08,409 - basehttp.py\log_message[line:154] - INFO: "GET /cms/write_news/ HTTP/1.1" 200 9992
+2024-01-12 20:25:08,552 - basehttp.py\log_message[line:154] - INFO: "GET /ueditor/upload/?action=config&&noCache=1705062308527 HTTP/1.1" 200 2686
+2024-01-12 20:25:10,583 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_category/ HTTP/1.1" 200 8062
+2024-01-12 20:25:11,468 - views.py\get[line:116] - INFO: 用户查询了[]
+2024-01-12 20:25:11,528 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_list/ HTTP/1.1" 200 15734
+2024-01-12 20:25:14,452 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 7413
+2024-01-12 20:25:18,658 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/ HTTP/1.1" 200 7860
+2024-01-12 20:25:49,851 - basehttp.py\log_message[line:154] - INFO: "POST /cms/add_staff/ HTTP/1.1" 302 0
+2024-01-12 20:25:49,884 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 7935
+2024-01-12 20:26:00,156 - basehttp.py\log_message[line:154] - INFO: "GET /account/logout/ HTTP/1.1" 302 0
+2024-01-12 20:26:00,218 - basehttp.py\log_message[line:154] - INFO: "GET / HTTP/1.1" 200 83909
+2024-01-12 20:26:00,288 - basehttp.py\log_message[line:154] - WARNING: "GET /static/css/images/chinese-regulatory-logo.43806866.png HTTP/1.1" 404 1765
+2024-01-12 20:26:00,409 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-12 20:26:00,427 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-12 20:26:00,441 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-12 20:26:00,446 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-12 20:26:00,607 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/uploads/sites/9/2023/11/01-%E7%BB%BF%E8%89%B2-RGB.svg HTTP/1.1" 404 4553
+2024-01-12 20:26:05,028 - basehttp.py\log_message[line:154] - INFO: "GET /cms/ HTTP/1.1" 302 0
+2024-01-12 20:26:05,072 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/?next=/cms/ HTTP/1.1" 200 2270
+2024-01-12 20:26:12,263 - basehttp.py\log_message[line:154] - INFO: "POST /account/login/?next=/cms/ HTTP/1.1" 302 0
+2024-01-12 20:26:12,272 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_list HTTP/1.1" 301 0
+2024-01-12 20:26:12,309 - basehttp.py\log_message[line:154] - WARNING: "GET /cms/news_list/ HTTP/1.1" 404 1708
+2024-01-12 20:26:21,744 - basehttp.py\log_message[line:154] - INFO: "GET / HTTP/1.1" 200 83909
+2024-01-12 20:26:21,806 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-12 20:26:21,827 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-12 20:26:21,830 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-12 20:26:21,836 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-12 20:26:26,381 - basehttp.py\log_message[line:154] - INFO: "GET /cms/ HTTP/1.1" 200 4229
+2024-01-12 20:26:31,137 - basehttp.py\log_message[line:154] - INFO: "GET /account/logout/ HTTP/1.1" 302 0
+2024-01-12 20:26:31,184 - basehttp.py\log_message[line:154] - INFO: "GET / HTTP/1.1" 200 83909
+2024-01-12 20:26:31,247 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-12 20:26:31,271 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-12 20:26:31,274 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-12 20:26:31,281 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-12 20:29:06,320 - basehttp.py\log_message[line:154] - INFO: "GET /cms/ HTTP/1.1" 302 0
+2024-01-12 20:29:06,353 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/?next=/cms/ HTTP/1.1" 200 2270
+2024-01-12 20:29:24,557 - basehttp.py\log_message[line:154] - INFO: "POST /account/login/?next=/cms/ HTTP/1.1" 302 0
+2024-01-12 20:29:24,569 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_list HTTP/1.1" 301 0
+2024-01-12 20:29:24,600 - views.py\get[line:116] - INFO: 用户查询了[]
+2024-01-12 20:29:24,660 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_list/ HTTP/1.1" 200 15734
+2024-01-12 20:29:27,722 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 7935
+2024-01-12 20:29:34,191 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 7935
+2024-01-12 20:29:54,746 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 7935
+2024-01-12 20:31:37,323 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/cms/staff_views.py changed, reloading.
+2024-01-12 20:31:38,877 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-12 20:32:39,023 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/ HTTP/1.1" 200 7860
+2024-01-12 20:32:58,424 - basehttp.py\log_message[line:154] - INFO: "POST /cms/add_staff/ HTTP/1.1" 302 0
+2024-01-12 20:32:58,463 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 8457
+2024-01-12 20:33:19,688 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/ HTTP/1.1" 200 7860
+2024-01-12 20:33:34,946 - basehttp.py\log_message[line:154] - INFO: "POST /cms/add_staff/ HTTP/1.1" 302 0
+2024-01-12 20:33:34,979 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 8979
+2024-01-12 20:35:31,374 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/cms/staff_views.py changed, reloading.
+2024-01-12 20:35:33,371 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-12 20:35:36,903 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/ HTTP/1.1" 200 7860
+2024-01-12 20:35:49,074 - staff_views.py\post[line:39] - WARNING: category分类:'0'已经存在！'
+2024-01-12 20:35:49,194 - basehttp.py\log_message[line:154] - ERROR: "POST /cms/add_staff/ HTTP/1.1" 500 244174
+2024-01-12 20:38:35,210 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/ HTTP/1.1" 200 7918
+2024-01-12 20:38:37,077 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/ HTTP/1.1" 200 7918
+2024-01-12 20:38:54,211 - staff_views.py\post[line:39] - WARNING: category分类:'0'已经存在！'
+2024-01-12 20:38:54,286 - basehttp.py\log_message[line:154] - INFO: "POST /cms/add_staff/ HTTP/1.1" 302 0
+2024-01-12 20:38:54,321 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 9501
+2024-01-12 20:39:30,442 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/cms/staff_views.py changed, reloading.
+2024-01-12 20:39:32,244 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-12 20:40:19,543 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/cms/staff_views.py changed, reloading.
+2024-01-12 20:40:21,457 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-12 20:40:23,749 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 9501
+2024-01-12 20:40:23,905 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 9501
+2024-01-12 20:40:25,179 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/ HTTP/1.1" 200 7918
+2024-01-12 20:40:38,953 - basehttp.py\log_message[line:154] - INFO: "POST /cms/add_staff/ HTTP/1.1" 302 0
+2024-01-12 20:40:38,996 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 10025
+2024-01-12 20:40:41,489 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 10025
+2024-01-12 20:42:00,284 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/cms/staff_views.py changed, reloading.
+2024-01-12 20:42:01,868 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-12 20:43:33,195 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 10025
+2024-01-12 20:43:35,015 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/ HTTP/1.1" 200 7792
+2024-01-12 20:45:15,208 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/ HTTP/1.1" 200 7771
+2024-01-12 20:45:34,170 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/ HTTP/1.1" 200 7770
+2024-01-12 20:45:36,250 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/ HTTP/1.1" 200 7770
+2024-01-12 20:45:58,663 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/ HTTP/1.1" 200 7714
+2024-01-12 20:46:14,704 - basehttp.py\log_message[line:154] - INFO: "POST /cms/add_staff/ HTTP/1.1" 302 0
+2024-01-12 20:46:14,746 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 10546
+2024-01-12 20:46:21,688 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 10546
+2024-01-12 20:47:15,941 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/cms/staff_views.py changed, reloading.
+2024-01-12 20:47:17,634 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-12 20:47:21,273 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/ HTTP/1.1" 200 7714
+2024-01-12 20:47:32,885 - staff_views.py\post[line:41] - INFO: 添加文章分类:1！
+2024-01-12 20:47:32,937 - basehttp.py\log_message[line:154] - INFO: "POST /cms/add_staff/ HTTP/1.1" 302 0
+2024-01-12 20:47:32,974 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 11068
+2024-01-12 20:48:52,708 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/cms/staff_views.py changed, reloading.
+2024-01-12 20:48:54,115 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-12 20:48:56,027 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/ HTTP/1.1" 200 7714
+2024-01-12 20:49:06,018 - staff_views.py\post[line:41] - INFO: 添加文章分类:1！
+2024-01-12 20:49:06,024 - staff_views.py\post[line:46] - INFO: 添加文章分===类:1！
+2024-01-12 20:49:06,082 - basehttp.py\log_message[line:154] - INFO: "POST /cms/add_staff/ HTTP/1.1" 302 0
+2024-01-12 20:49:06,119 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 11592
+2024-01-12 20:50:32,115 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/ HTTP/1.1" 200 7714
+2024-01-12 20:50:41,024 - staff_views.py\post[line:41] - INFO: 添加文章分类:1！
+2024-01-12 20:50:41,028 - staff_views.py\post[line:46] - INFO: 添加文章分===类:1！
+2024-01-12 20:50:41,075 - basehttp.py\log_message[line:154] - INFO: "POST /cms/add_staff/ HTTP/1.1" 302 0
+2024-01-12 20:50:41,117 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 12116
+2024-01-12 20:50:43,329 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 12116
+2024-01-12 20:52:51,383 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/cms/staff_views.py changed, reloading.
+2024-01-12 20:52:52,852 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-12 20:53:10,582 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 12116
+2024-01-12 20:53:11,844 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/ HTTP/1.1" 200 7714
+2024-01-12 20:53:21,876 - staff_views.py\post[line:41] - INFO: 添加文章分类:1！
+2024-01-12 20:53:21,889 - staff_views.py\post[line:46] - INFO: 添加文章分===类:True！
+2024-01-12 20:53:21,947 - basehttp.py\log_message[line:154] - INFO: "POST /cms/add_staff/ HTTP/1.1" 302 0
+2024-01-12 20:53:21,988 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 12657
+2024-01-12 20:53:23,628 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 12657

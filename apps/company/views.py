@@ -49,7 +49,11 @@ def company_detail(request, xn_href):
                 cont = json.loads(content[0])
                 # company desc
                 com_info = cont["props"]["pageProps"]["company"]
-                gongshang = json.loads(cont["props"]["pageProps"]["gongshang"])
+                gongshang_str = cont["props"].get("pageProps",{}).get("gongshang","{}")
+                if gongshang_str:
+                    gongshang = json.loads(gongshang_str)
+                else:
+                    gongshang = {}
                 # 联系方式
                 contact_info = gongshang.get("contact", {})
                 if not com_info.get("districtName",""):
@@ -72,19 +76,20 @@ def company_detail(request, xn_href):
                     "address": contact_info.get("address", ""),
                 }, xn_href=xn_href)
                 # 工商信息写入
-                GongShang.objects.update_or_create(
-                    defaults={
-                        "code": com_info["code"],
-                        "xn_href": xn_href,
-                        "fullName": com_info["fullName"],
-                        "legalPersonName": gongshang["legalPersonName"],  # 法人
-                        "establishTime": datetime.date.fromtimestamp(gongshang.get("establishTime", 0) / 1000),  # 成立时间
-                        "businessScope": gongshang['businessScope'],  # 工商描述
-                        "regCapital": gongshang.get("regCapital", ""),  # 注册资本
-                        "regStatus": gongshang.get("regStatus", ""),  # 经营状态
-                        "date": datetime.date.fromtimestamp(time.time()),
-                    }, xn_href=xn_href
-                )
+                if gongshang:
+                    GongShang.objects.update_or_create(
+                        defaults={
+                            "code": com_info["code"],
+                            "xn_href": xn_href,
+                            "fullName": com_info["fullName"],
+                            "legalPersonName": gongshang.get("legalPersonName"),  # 法人
+                            "establishTime": datetime.date.fromtimestamp(gongshang.get("establishTime", 0) / 1000),  # 成立时间
+                            "businessScope": gongshang['businessScope'],  # 工商描述
+                            "regCapital": gongshang.get("regCapital", ""),  # 注册资本
+                            "regStatus": gongshang.get("regStatus", ""),  # 经营状态
+                            "date": datetime.date.fromtimestamp(time.time()),
+                        }, xn_href=xn_href
+                    )
                 # 融资历程
                 # print("rongzi......")
                 licheng = cont["props"]["pageProps"]["fundings"]
