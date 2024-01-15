@@ -4973,3 +4973,189 @@
 2024-01-12 20:53:21,947 - basehttp.py\log_message[line:154] - INFO: "POST /cms/add_staff/ HTTP/1.1" 302 0
 2024-01-12 20:53:21,988 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 12657
 2024-01-12 20:53:23,628 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 12657
+2024-01-12 20:54:16,182 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-12 20:55:36,232 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 12657
+2024-01-12 20:55:38,743 - basehttp.py\log_message[line:154] - INFO: "GET /cms/ HTTP/1.1" 200 5608
+2024-01-12 20:55:39,974 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_category/ HTTP/1.1" 200 8062
+2024-01-12 20:55:41,043 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 12657
+2024-01-12 20:55:43,572 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/ HTTP/1.1" 200 7714
+2024-01-12 20:55:45,613 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/ HTTP/1.1" 200 7714
+2024-01-12 20:55:49,620 - basehttp.py\log_message[line:154] - INFO: "GET /account/logout/ HTTP/1.1" 302 0
+2024-01-12 20:55:49,716 - basehttp.py\log_message[line:154] - INFO: "GET / HTTP/1.1" 200 83909
+2024-01-12 20:55:49,873 - basehttp.py\log_message[line:154] - WARNING: "GET /static/css/images/chinese-regulatory-logo.43806866.png HTTP/1.1" 404 1765
+2024-01-12 20:55:49,929 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/hs_base/lottie-player.js.map HTTP/1.1" 404 1717
+2024-01-12 20:55:49,945 - basehttp.py\log_message[line:154] - WARNING: "GET /wp-content/languages/plugins/jetpack-zh_CN-2830d0baff716a2e4109fd6df428a8a8.json?minify=false&ver=cd1953e27d96b3ba0ce2 HTTP/1.1" 404 4667
+2024-01-12 20:55:50,108 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/747.min.js HTTP/1.1" 404 1687
+2024-01-12 20:55:50,115 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/114.min.js HTTP/1.1" 404 1687
+2024-01-12 20:55:50,126 - basehttp.py\log_message[line:154] - WARNING: "GET /static/js/scripts/90.min.js HTTP/1.1" 404 1684
+2024-01-15 19:23:32,949 - basehttp.py\log_message[line:154] - INFO: "GET /cms/ HTTP/1.1" 302 0
+2024-01-15 19:23:33,011 - basehttp.py\log_message[line:154] - INFO: "GET /account/login/?next=/cms/ HTTP/1.1" 200 2270
+2024-01-15 19:23:43,514 - basehttp.py\log_message[line:154] - INFO: "POST /account/login/?next=/cms/ HTTP/1.1" 302 0
+2024-01-15 19:23:43,527 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_list HTTP/1.1" 301 0
+2024-01-15 19:23:43,572 - views.py\get[line:116] - INFO: 用户查询了[]
+2024-01-15 19:23:43,645 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_list/ HTTP/1.1" 200 15734
+2024-01-15 19:23:46,566 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 12657
+2024-01-15 19:24:08,006 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_category/ HTTP/1.1" 200 8062
+2024-01-15 19:24:08,753 - basehttp.py\log_message[line:154] - INFO: "GET /cms/write_news/ HTTP/1.1" 200 9992
+2024-01-15 19:24:08,821 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/writ_news.js HTTP/1.1" 304 0
+2024-01-15 19:24:08,929 - basehttp.py\log_message[line:154] - INFO: "GET /ueditor/upload/?action=config&&noCache=1705317848847 HTTP/1.1" 200 2686
+2024-01-15 19:24:14,734 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_category/ HTTP/1.1" 200 8062
+2024-01-15 19:24:32,558 - views.py\add_news_category[line:338] - INFO: 添加文章分类:ccc！
+2024-01-15 19:24:32,562 - basehttp.py\log_message[line:154] - INFO: "POST /cms/add_news_category/ HTTP/1.1" 200 42
+2024-01-15 19:24:32,647 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_category/ HTTP/1.1" 200 8548
+2024-01-15 19:24:35,921 - views.py\delete_news_category[line:374] - WARNING: 删除文章分类:<QuerySet []>！
+2024-01-15 19:24:35,927 - basehttp.py\log_message[line:154] - INFO: "POST /cms/delete_news_category/ HTTP/1.1" 200 42
+2024-01-15 19:24:36,003 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_category/ HTTP/1.1" 200 8062
+2024-01-15 19:24:45,892 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 12657
+2024-01-15 19:24:46,643 - basehttp.py\log_message[line:154] - INFO: "GET /cms/write_news/ HTTP/1.1" 200 9992
+2024-01-15 19:24:46,778 - basehttp.py\log_message[line:154] - INFO: "GET /ueditor/upload/?action=config&&noCache=1705317886731 HTTP/1.1" 200 2686
+2024-01-15 19:24:48,381 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_category/ HTTP/1.1" 200 8062
+2024-01-15 19:24:50,624 - basehttp.py\log_message[line:154] - INFO: "GET /cms/write_news/ HTTP/1.1" 200 9992
+2024-01-15 19:24:50,747 - basehttp.py\log_message[line:154] - INFO: "GET /ueditor/upload/?action=config&&noCache=1705317890706 HTTP/1.1" 200 2686
+2024-01-15 19:24:51,583 - views.py\get[line:116] - INFO: 用户查询了[]
+2024-01-15 19:24:51,644 - basehttp.py\log_message[line:154] - INFO: "GET /cms/news_list/ HTTP/1.1" 200 15734
+2024-01-15 19:24:53,302 - basehttp.py\log_message[line:154] - INFO: "GET /cms/edit_news/?pk=6 HTTP/1.1" 200 52775
+2024-01-15 19:24:53,391 - basehttp.py\log_message[line:154] - INFO: "GET /ueditor/upload/?action=config&&noCache=1705317893383 HTTP/1.1" 200 2686
+2024-01-15 19:24:57,153 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 12657
+2024-01-15 19:41:41,277 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/cms/staff_views.py changed, reloading.
+2024-01-15 19:41:43,368 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-15 19:54:53,103 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/cms/staff_views.py changed, reloading.
+2024-01-15 19:54:55,414 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-15 19:54:58,696 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 13718
+2024-01-15 19:54:58,763 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/dist/js/adminlte.min.js HTTP/1.1" 200 14548
+2024-01-15 19:54:58,766 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 31000
+2024-01-15 19:54:58,812 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap/dist/css/bootstrap.min.css HTTP/1.1" 200 121200
+2024-01-15 19:54:58,800 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/dist/css/AdminLTE.min.css HTTP/1.1" 200 91501
+2024-01-15 19:54:58,807 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/dist/css/skins/_all-skins.min.css HTTP/1.1" 200 41583
+2024-01-15 19:54:58,784 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/jquery/dist/jquery.min.js HTTP/1.1" 200 86927
+2024-01-15 19:54:58,849 - basehttp.py\log_message[line:154] - INFO: "GET /static/sweetalert/sweetalert.css HTTP/1.1" 200 22898
+2024-01-15 19:54:58,884 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap/dist/js/bootstrap.min.js HTTP/1.1" 200 37045
+2024-01-15 19:54:58,885 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/xfzajax.js HTTP/1.1" 200 1210
+2024-01-15 19:54:58,887 - basehttp.py\log_message[line:154] - INFO: "GET /static/sweetalert/xfzalert.js HTTP/1.1" 200 5429
+2024-01-15 19:54:58,906 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/cms_base.js HTTP/1.1" 200 1063
+2024-01-15 19:54:59,102 - basehttp.py\log_message[line:154] - INFO: "GET /static/sweetalert/sweetalert.min.js HTTP/1.1" 200 16994
+2024-01-15 19:54:59,113 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/user_staffs.js HTTP/1.1" 200 1101
+2024-01-15 19:54:59,152 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/message.js HTTP/1.1" 200 3268
+2024-01-15 19:54:59,387 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160
+2024-01-15 19:54:59,577 - basehttp.py\log_message[line:154] - INFO: "GET /static/images/favicon.ico HTTP/1.1" 200 9147
+2024-01-15 19:55:02,994 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/?pk=5 HTTP/1.1" 200 7610
+2024-01-15 19:55:06,149 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/?pk=5 HTTP/1.1" 200 7610
+2024-01-15 19:55:06,622 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/?pk=5 HTTP/1.1" 200 7610
+2024-01-15 19:55:06,908 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/?pk=5 HTTP/1.1" 200 7610
+2024-01-15 19:55:47,969 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/cms/staff_views.py changed, reloading.
+2024-01-15 19:55:50,373 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-15 19:55:54,290 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/cms/staff_views.py changed, reloading.
+2024-01-15 19:55:56,137 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-15 19:56:01,330 - staff_views.py\get[line:43] - INFO: user_info
+2024-01-15 19:56:01,333 - staff_views.py\get[line:44] - INFO: 13544668855
+2024-01-15 19:56:01,372 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/?pk=5 HTTP/1.1" 200 7610
+2024-01-15 19:56:30,697 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/cms/staff_views.py changed, reloading.
+2024-01-15 19:56:33,376 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-15 19:56:38,046 - staff_views.py\get[line:43] - INFO: user_info
+2024-01-15 19:56:38,049 - staff_views.py\get[line:44] - INFO: 13544668855
+2024-01-15 19:56:38,087 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/?pk=5 HTTP/1.1" 200 7610
+2024-01-15 19:57:16,973 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/cms/staff_views.py changed, reloading.
+2024-01-15 19:57:18,656 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-15 19:57:23,132 - staff_views.py\get[line:43] - INFO: user_info
+2024-01-15 19:57:23,191 - basehttp.py\log_message[line:154] - ERROR: "GET /cms/add_staff/?pk=5 HTTP/1.1" 500 91823
+2024-01-15 19:57:23,266 - basehttp.py\log_message[line:154] - WARNING: "GET /favicon.ico HTTP/1.1" 404 4418
+2024-01-15 19:57:37,299 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/cms/staff_views.py changed, reloading.
+2024-01-15 19:57:39,451 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-15 19:57:43,137 - basehttp.py\log_message[line:154] - ERROR: "GET /cms/add_staff/?pk=5 HTTP/1.1" 500 95706
+2024-01-15 19:57:57,093 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/cms/staff_views.py changed, reloading.
+2024-01-15 19:57:58,665 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-15 19:58:49,747 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/cms/staff_views.py changed, reloading.
+2024-01-15 19:58:52,145 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-15 19:58:58,271 - staff_views.py\get[line:43] - INFO: user_info
+2024-01-15 19:58:58,273 - staff_views.py\get[line:44] - INFO: jing
+2024-01-15 19:58:58,315 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/?pk=5 HTTP/1.1" 200 7610
+2024-01-15 20:07:36,974 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/cms/staff_views.py changed, reloading.
+2024-01-15 20:07:38,979 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-15 20:08:13,462 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 13718
+2024-01-15 20:08:13,364 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/user_staffs.js HTTP/1.1" 304 0
+2024-01-15 20:08:20,086 - staff_views.py\post[line:80] - ERROR: name 'restful' is not defined
+2024-01-15 20:08:20,108 - basehttp.py\log_message[line:154] - ERROR: "POST /cms/delete_staff/ HTTP/1.1" 500 18975
+2024-01-15 20:09:20,956 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/cms/staff_views.py changed, reloading.
+2024-01-15 20:09:22,827 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-15 20:09:26,089 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 13110
+2024-01-15 20:09:27,231 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 13110
+2024-01-15 20:09:30,772 - basehttp.py\log_message[line:154] - INFO: "POST /cms/delete_staff/ HTTP/1.1" 200 42
+2024-01-15 20:09:30,824 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 12503
+2024-01-15 20:09:32,097 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 12503
+2024-01-15 20:09:33,152 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 12503
+2024-01-15 20:10:11,385 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 12503
+2024-01-15 20:10:15,389 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 12503
+2024-01-15 20:10:15,892 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 12503
+2024-01-15 20:10:16,132 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 12503
+2024-01-15 20:10:16,371 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 12503
+2024-01-15 20:10:19,259 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 12503
+2024-01-15 20:10:19,313 - basehttp.py\log_message[line:154] - INFO: "GET /static/sweetalert/sweetalert.css HTTP/1.1" 200 22898
+2024-01-15 20:10:19,317 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/dist/js/adminlte.min.js HTTP/1.1" 200 14548
+2024-01-15 20:10:19,325 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap/dist/css/bootstrap.min.css HTTP/1.1" 200 121200
+2024-01-15 20:10:19,326 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/jquery/dist/jquery.min.js HTTP/1.1" 200 86927
+2024-01-15 20:10:19,337 - basehttp.py\log_message[line:154] - INFO: "GET /static/sweetalert/sweetalert.min.js HTTP/1.1" 200 16994
+2024-01-15 20:10:19,339 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/dist/css/skins/_all-skins.min.css HTTP/1.1" 200 41583
+2024-01-15 20:10:19,361 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/dist/css/AdminLTE.min.css HTTP/1.1" 200 91501
+2024-01-15 20:10:19,373 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 31000
+2024-01-15 20:10:19,394 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/xfzajax.js HTTP/1.1" 200 1210
+2024-01-15 20:10:19,405 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/bootstrap/dist/js/bootstrap.min.js HTTP/1.1" 200 37045
+2024-01-15 20:10:19,425 - basehttp.py\log_message[line:154] - INFO: "GET /static/sweetalert/xfzalert.js HTTP/1.1" 200 5429
+2024-01-15 20:10:19,441 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/user_staffs.js HTTP/1.1" 200 1101
+2024-01-15 20:10:19,454 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/cms_base.js HTTP/1.1" 200 1063
+2024-01-15 20:10:19,466 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/message.js HTTP/1.1" 200 3268
+2024-01-15 20:10:19,683 - basehttp.py\log_message[line:154] - INFO: "GET /static/adminlte/bower_components/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160
+2024-01-15 20:10:19,806 - basehttp.py\log_message[line:154] - INFO: "GET /static/images/favicon.ico HTTP/1.1" 200 9147
+2024-01-15 20:10:22,191 - basehttp.py\log_message[line:154] - INFO: "POST /cms/delete_staff/ HTTP/1.1" 200 42
+2024-01-15 20:10:22,256 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 11898
+2024-01-15 20:10:22,287 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/user_staffs.js HTTP/1.1" 304 0
+2024-01-15 20:10:24,152 - staff_views.py\get[line:43] - INFO: user_info
+2024-01-15 20:10:24,158 - staff_views.py\get[line:44] - INFO: jii
+2024-01-15 20:10:24,178 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/?pk=9 HTTP/1.1" 200 7668
+2024-01-15 20:10:36,930 - basehttp.py\log_message[line:154] - INFO: "POST /cms/add_staff/?pk=9 HTTP/1.1" 302 0
+2024-01-15 20:10:36,982 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 12505
+2024-01-15 20:10:37,007 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/user_staffs.js HTTP/1.1" 304 0
+2024-01-15 20:10:40,869 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 12505
+2024-01-15 20:10:40,933 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/user_staffs.js HTTP/1.1" 304 0
+2024-01-15 20:10:43,525 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 12505
+2024-01-15 20:10:43,568 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/user_staffs.js HTTP/1.1" 304 0
+2024-01-15 20:10:49,301 - staff_views.py\get[line:43] - INFO: user_info
+2024-01-15 20:10:49,306 - staff_views.py\get[line:44] - INFO: jii
+2024-01-15 20:10:49,325 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/?pk=9 HTTP/1.1" 200 7668
+2024-01-15 20:10:56,149 - basehttp.py\log_message[line:154] - INFO: "POST /cms/add_staff/?pk=9 HTTP/1.1" 302 0
+2024-01-15 20:10:56,218 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 12510
+2024-01-15 20:10:56,244 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/user_staffs.js HTTP/1.1" 304 0
+2024-01-15 20:11:03,665 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 12510
+2024-01-15 20:11:03,727 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/user_staffs.js HTTP/1.1" 304 0
+2024-01-15 20:11:10,292 - staff_views.py\get[line:43] - INFO: user_info
+2024-01-15 20:11:10,301 - staff_views.py\get[line:44] - INFO: jii33333
+2024-01-15 20:11:10,317 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/?pk=9 HTTP/1.1" 200 7673
+2024-01-15 20:11:22,597 - basehttp.py\log_message[line:154] - INFO: "POST /cms/add_staff/?pk=9 HTTP/1.1" 302 0
+2024-01-15 20:11:22,660 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 13127
+2024-01-15 20:11:22,696 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/user_staffs.js HTTP/1.1" 304 0
+2024-01-15 20:11:28,607 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 13127
+2024-01-15 20:12:21,710 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/cms/staff_views.py changed, reloading.
+2024-01-15 20:12:23,406 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-15 20:12:50,436 - autoreload.py\trigger_reload[line:217] - INFO: /app/apps/cms/staff_views.py changed, reloading.
+2024-01-15 20:12:52,404 - autoreload.py\run_with_reloader[line:597] - INFO: Watching for file changes with StatReloader
+2024-01-15 20:12:56,301 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 13127
+2024-01-15 20:12:56,331 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/user_staffs.js HTTP/1.1" 304 0
+2024-01-15 20:12:57,806 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 13127
+2024-01-15 20:13:02,522 - staff_views.py\get[line:43] - INFO: user_info
+2024-01-15 20:13:02,530 - staff_views.py\get[line:44] - INFO: jii33333
+2024-01-15 20:13:02,543 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/?pk=9 HTTP/1.1" 200 7673
+2024-01-15 20:13:06,356 - basehttp.py\log_message[line:154] - INFO: "POST /cms/add_staff/?pk=9 HTTP/1.1" 302 0
+2024-01-15 20:13:06,414 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 13123
+2024-01-15 20:13:12,782 - staff_views.py\get[line:43] - INFO: user_info
+2024-01-15 20:13:12,786 - staff_views.py\get[line:44] - INFO: jing
+2024-01-15 20:13:12,813 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/?pk=6 HTTP/1.1" 200 7669
+2024-01-15 20:13:19,652 - basehttp.py\log_message[line:154] - INFO: "POST /cms/add_staff/?pk=6 HTTP/1.1" 302 0
+2024-01-15 20:13:19,716 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 13128
+2024-01-15 20:13:19,769 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/user_staffs.js HTTP/1.1" 304 0
+2024-01-15 20:13:22,334 - staff_views.py\get[line:43] - INFO: user_info
+2024-01-15 20:13:22,340 - staff_views.py\get[line:44] - INFO: jing11111
+2024-01-15 20:13:22,354 - basehttp.py\log_message[line:154] - INFO: "GET /cms/add_staff/?pk=6 HTTP/1.1" 200 7674
+2024-01-15 20:13:28,632 - basehttp.py\log_message[line:154] - INFO: "POST /cms/add_staff/?pk=6 HTTP/1.1" 302 0
+2024-01-15 20:13:28,686 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 13143
+2024-01-15 20:13:53,599 - basehttp.py\log_message[line:154] - INFO: "POST /cms/delete_staff/ HTTP/1.1" 200 42
+2024-01-15 20:13:53,666 - basehttp.py\log_message[line:154] - INFO: "GET /cms/staffs/ HTTP/1.1" 200 12533
+2024-01-15 20:13:53,767 - basehttp.py\log_message[line:154] - INFO: "GET /static/js/user_staffs.js HTTP/1.1" 304 0

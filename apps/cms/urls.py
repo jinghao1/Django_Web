@@ -58,6 +58,7 @@ urlpatterns = [
 urlpatterns += [
     path('staffs/', staff_views.staffs, name='staffs'),
     path('add_staff/', staff_views.AddStaffView.as_view(), name='add_staff'),
+    path('delete_staff/', staff_views.DelStaffView.as_view(), name='del_staff'),
     path('user_center/', views.UserCenter.as_view(), name='user_center'),
     path('edit_user_center/', views.EditUserCenter.as_view(), name='edit_user_center'),
 ]
