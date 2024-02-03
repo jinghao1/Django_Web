@@ -55,7 +55,7 @@ class RongZi(models.Model):
     roundName = models.CharField(max_length=255)
     postMoney = models.CharField(max_length=255)
     money = models.CharField(max_length=255)
-    ratio = models.CharField(max_length=255)
+    ratio = models.CharField(max_length=255,default="NUll",null=True)
     newsLink = models.CharField(max_length=255)
     investorStr = models.CharField(max_length=255)
     fundingDate = models.DateTimeField()

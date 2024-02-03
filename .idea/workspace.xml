@@ -2,14 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e62268d-292f-4458-bb17-b06968999966" name="Default" comment="添加展示页面url">
-      <change afterPath="$PROJECT_DIR$/static/js/user_staffs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/auth/login_before.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/hs_base/hs_local_base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/cms/staff_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cms/staff_views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/cms/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cms/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/cms/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/cms/migrations/0002_delete_newcategory.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/company/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/company/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/company/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/company/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/course/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/course/migrations/0002_courseorder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/course/migrations/0003_auto_20180802_1437.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/course/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/news/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/news/migrations/0002_auto_20180711_1451.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/news/migrations/0003_auto_20180711_1458.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/news/migrations/0004_auto_20180712_1547.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/news/migrations/0005_auto_20180712_2034.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/news/migrations/0006_auto_20180714_2158.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/news/migrations/0007_auto_20180802_1109.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/xfzauth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/xfzauth/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_01.log" beforeDir="false" afterPath="$PROJECT_DIR$/django_01.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cms/add_staff.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cms/add_staff.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cms/edit_user_center.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cms/edit_user_center.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cms/staffs.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cms/staffs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis/data/dump.rdb" beforeDir="false" afterPath="$PROJECT_DIR$/redis/data/dump.rdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis/data/redis.log" beforeDir="false" afterPath="$PROJECT_DIR$/redis/data/redis.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/auth/auth.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/auth/auth.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/auth/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/hs_base/hs_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/hs_base/hs_base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -320,17 +340,17 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "true",
-    "last_opened_file_path": "/Users/sjh/Code/Django_Web/static/js",
+    "last_opened_file_path": "/Users/sjh/Code/Django_Web/docker",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static/js" />
+      <recent name="$PROJECT_DIR$/docker" />
       <recent name="$PROJECT_DIR$/templates/hs_base" />
+      <recent name="$PROJECT_DIR$/templates/auth" />
+      <recent name="$PROJECT_DIR$/static/js" />
       <recent name="$PROJECT_DIR$/templates/company" />
-      <recent name="$PROJECT_DIR$/apps/company" />
-      <recent name="$PROJECT_DIR$/apps" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static" />
@@ -465,7 +485,7 @@
       <updated>1529122678684</updated>
       <workItem from="1700930160739" duration="76820000" />
       <workItem from="1702215049530" duration="2582000" />
-      <workItem from="1702559627420" duration="84474000" />
+      <workItem from="1702559627420" duration="96687000" />
     </task>
     <task id="LOCAL-00127" summary="change notation">
       <created>1575856907430</created>

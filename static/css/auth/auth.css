@@ -92,7 +92,7 @@
 .main-auth-group .submit-btn{
     width: 100%;
     height: 40px;
-    background: #5b86db;
+    background: rgb(0, 162, 58);
     border: none; /* 消除默认的蓝色边框 */
     color: #fff;
     cursor: pointer;

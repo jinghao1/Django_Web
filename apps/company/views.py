@@ -110,10 +110,10 @@ def company_detail(request, xn_href):
                             "xn_id": xn_id,  # 犀牛id
                             "roundName": licheng["roundName"],
                             "fundingDate": datetime.date.fromtimestamp(licheng.get("fundingDate", 0) / 1000),
-                            "postMoney": fundingDesc.get("postMoney",""),  # 估值
-                            "money": fundingDesc.get("money", ""),  # 投资金额
-                            "ratio": fundingDesc.get("ratio", ""),  # 投资比例
-                            "newsLink": licheng.get("newsLink", ""),  # 犀牛新闻链接
+                            "postMoney": fundingDesc.get("postMoney","暂无"),  # 估值
+                            "money": fundingDesc.get("money", "暂无"),  # 投资金额
+                            "ratio": fundingDesc.get("ratio", "暂无"),  # 投资比例
+                            "newsLink": licheng.get("newsLink", "暂无"),  # 犀牛新闻链接
                             "investorStr": investorStr,  # 投资方
                             "date": datetime.date.fromtimestamp(time.time()),  # 录入时间
                         }, xn_href=xn_href, xn_id=xn_id

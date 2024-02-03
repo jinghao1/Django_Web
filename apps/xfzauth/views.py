@@ -11,6 +11,8 @@ from utils.captcha.hycaptcha import Captcha
 from .forms import LoginFrom, RegisterForm  # 导入form表单
 # authentivate 用来验证用户是否登录，login和logout的登录和登出
 from .models import User
+import logging
+logger = logging.getLogger('django')
 # from django.forms.utils import ErrorDict
 from utils import restful
 
@@ -28,9 +30,12 @@ class LoginView(View):
     """
 
     def get(self, request):
+        logger.warning("gettest！")
         return render(request, 'auth/login.html')
 
     def post(self, request):
+
+        logger.warning("post test！")
         form = LoginFrom(request.POST)
         if form.is_valid():
             telephone = form.cleaned_data.get("telephone")
@@ -38,8 +43,10 @@ class LoginView(View):
             remember = form.cleaned_data.get("remember")
             # authenticate函数是判断凭证是否有效，有效返回一个user对象
             user = authenticate(request, username=telephone, password=password)
+            logger.info("post info %s" % telephone)
             if user:
                 login(request, user)  # 登陆成功
+
                 if remember:
                     # 如果设置过期时间位None,那么就会使用默认的过期时间
                     # 默认的过期时间位2个星期，14天
@@ -50,7 +57,7 @@ class LoginView(View):
                     print("session时长为关闭浏览器时结束")
                     request.session.set_expiry(0)
                 # 如果登陆成功，就返回首页
-                print("验证登录成功！")
+                logger.info("验证登录成功！")
                 return redirect('/cms/news_list')
             else:
                 # print("用户名或密码错误！", '电话 ：%s' % telephone, '密码 ：%s' % password)
@@ -58,7 +65,7 @@ class LoginView(View):
                 # message中包含由3中消息，1.info：提示消息；2.error：错误消息；3.debug：调试消息
                 return redirect(reverse('xfzauth:login'))
         else:
-            # print("表单验证失败！")
+            logger.info("表单验证失败！")
             messages.info(request, "表单验证失败！")
             return redirect(reverse('xfzauth:login'))
 
