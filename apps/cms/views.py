@@ -174,30 +174,38 @@ class WriteNewsView(View):
 
     def post(self, request):
         form = WriteNewsForm(request.POST)
-        if form.is_valid():
+        form = request.POST
+        # if form.is_valid():
             # cleaned_data：这个属性，必须要调用is_valid后，
             # 如果验证通过了才会生成这个属性，否则没有这个属性
             # 获取表单中的各个数据
-            title = form.cleaned_data.get('title')
-            desc = form.cleaned_data.get('desc')
-            thumbnail = form.cleaned_data.get('thumbnail')
-            content = form.cleaned_data.get('content')
-            category_id = form.cleaned_data.get('category')
-            # 获取分类id,因为是通过外键获取的id,
-            # 需要通过NewCategory来获取实际分类名称
-            category = NewCategory.objects.get(pk=category_id)  # 获取分类名
+        # logger.info(form.cleaned_data)
+        title = form.get('title',[''])[0]
+        desc = form.get('desc',[''])[0]
+        thumbnail = form.get('thumbnail',[''])[0]
+        content = form.get('content',[''])[0]
+        category_id = form.get('category',1)[0]
+        # title = form.cleaned_data.get('title')
+        # desc = form.cleaned_data.get('desc')
+        # thumbnail = form.cleaned_data.get('thumbnail')
+        # content = form.cleaned_data.get('content')
+        # category_id = form.cleaned_data.get('category')
+        # 获取分类id,因为是通过外键获取的id,
+        # 需要通过NewCategory来获取实际分类名称
+        category = NewCategory.objects.get(pk=category_id)  # 获取分类名
 
-            News.objects.create(
-                title=title,
-                desc=desc,
-                thumbnail=thumbnail,
-                content=content,
-                category=category,
+        News.objects.create(
+            title=title,
+            desc=desc,
+            thumbnail=thumbnail,
+            content=content,
+            category=category,
 
-                author=request.user)
-            return restful.ok() and redirect(reverse('cms:news_list'))
-        else:
-            return restful.params_error(message=form.get_error())
+            author=request.user)
+        return restful.ok()
+               # and redirect(reverse('cms:news_list'))
+        # else:
+        #     return restful.params_error(message=form.get_error())
 
 
 @method_decorator([login_required(login_url='/account/login/'),

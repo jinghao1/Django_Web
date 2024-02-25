@@ -40,8 +40,8 @@ class AddStaffView(View):
             'groups': groups,
             "user_info": user_info
         }
-        logger.info("user_info")
-        logger.info(user_info.username)
+        # logger.info("user_info")
+        # logger.info(user_info.username)
         return render(request, 'cms/add_staff.html', context=context)
 
     def post(self, request):

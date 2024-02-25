@@ -46,7 +46,7 @@ urlpatterns = [
 #     path('course_teacher_list/<pk>/', course_views.CourseTeacherListDetail.as_view(), name='course_teacher_list_detail'),
 # ]
 
-# # 分享资料url
+# # 分享资料urlwrite_news
 # urlpatterns += [
 #     path('pay_info/', views.PayInfoIndex.as_view(), name='pay_info'),
 #     path('payinfo_list/', views.PayInfoList.as_view(), name='payinfo_list'),
