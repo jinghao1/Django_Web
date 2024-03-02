@@ -26,8 +26,8 @@ services:
     # the URL 'postgres' or 'mysql' will point to the application's db service
     networks:
       - djangoweb2
-    depends_on:
-      - django_web_mysqldb2
+#    depends_on:
+#      - django_web_mysqldb2
     env_file: .env-local
 
 #  django_web_mysqldb2:
