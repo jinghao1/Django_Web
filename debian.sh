@@ -17,3 +17,4 @@ pip3 install -r requirements.txt
 # debug
 #https://blog.csdn.net/2202_75762088/article/details/134625775
 #python version 3.6.15
+#https://blog.csdn.net/weixin_49457994/article/details/132834992
