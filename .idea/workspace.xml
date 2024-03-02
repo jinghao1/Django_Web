@@ -396,8 +396,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django server.django_01">
-    <configuration name="Test: apps.cms.tests.NewsTest" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
+  <component name="RunManager" selected="Django Server.django_01">
+    <configuration name="Test: apps.cms.tests.NewsTest" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="django_01" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -408,15 +409,16 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="django_01" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="TARGET" value="apps.cms.tests.NewsTest" />
       <option name="SETTINGS_FILE" value="" />
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="forms" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="django_01" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -427,15 +429,18 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="django_01" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/forms.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="django_01" type="Python.DjangoServer" factoryName="Django server" singleton="true">
+      <module name="django_01" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -447,7 +452,6 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="django_01" />
       <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="9000" />
       <option name="host" value="127.0.0.1" />
@@ -457,16 +461,17 @@
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
+      <method v="2" />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Django server.django_01" />
-      <item index="1" class="java.lang.String" itemvalue="Django tests.Test: apps.cms.tests.NewsTest" />
-      <item index="2" class="java.lang.String" itemvalue="Python.forms" />
+    <list>
+      <item itemvalue="Django Server.django_01" />
+      <item itemvalue="Django tests.Test: apps.cms.tests.NewsTest" />
+      <item itemvalue="Python.forms" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Django tests.Test: apps.cms.tests.NewsTest" />
-        <item index="1" class="java.lang.String" itemvalue="Python.forms" />
+      <list>
+        <item itemvalue="Django tests.Test: apps.cms.tests.NewsTest" />
+        <item itemvalue="Python.forms" />
       </list>
     </recent_temporary>
   </component>
