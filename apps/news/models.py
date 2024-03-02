@@ -4,6 +4,7 @@ from django.db import models
 class NewCategory(models.Model):
     """新闻分类表"""
     name = models.CharField(max_length=100)
+    verbose_name = "test for NewCategory"
 
 
 # aware time：清醒的时间（清醒的知道自己这个时间代表的是哪个时区的）
