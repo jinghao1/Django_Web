@@ -78,10 +78,11 @@ MIDDLEWARE = [
 ]
 
 # Broker配置，使用Redis作为消息中间件
-BROKER_URL = 'redis://dj_redis_v2:6379/0'
-
+# BROKER_URL = 'redis://dj_redis_v2:6379/0'
+BROKER_URL = config.BROKER_URL
 # BACKEND配置，这里使用redis
-CELERY_RESULT_BACKEND = 'redis://dj_redis_v2:6379/0'
+# CELERY_RESULT_BACKEND = 'redis://dj_redis_v2:6379/0'
+CELERY_RESULT_BACKEND = config.CELERY_RESULT_BACKEND
 
 # 结果序列化方案
 CELERY_RESULT_SERIALIZER = 'json'

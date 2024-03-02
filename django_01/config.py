@@ -5,15 +5,14 @@
 
 # 数据库
 MYSQL_NAME = 'django_web'
-
-MYSQL_PASSWORD = 'mysitepass'
-# MYSQL_USER = 'mysiteuser'
-MYSQL_HOST = 'django_web_mysqldb2'
-MYSQL_PORT = '3306' 
-# MYSQL_HOST = 'django_web_db_2'
-
-# MYSQL_PORT = '33065'
+MYSQL_PASSWORD = '1823fengji'
+MYSQL_HOST = '10.0.16.2'
+MYSQL_PORT = '3306'
 MYSQL_USER = 'root'
+# 10.0.16.2
+# redis
+BROKER_URL = 'redis://10.0.16.2:6379/0'
+CELERY_RESULT_BACKEND = 'redis://10.0.16.2:6379/0'
 
 # 阿里云短信服务
 ALI_ACCESS_KEY_ID = ""
