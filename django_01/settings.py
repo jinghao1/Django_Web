@@ -60,6 +60,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'django_01',
     'taskApp',
+    'apps.news.models.NewCategory',
     # 'debug_toolbar',
     # 'silk',
 ]
