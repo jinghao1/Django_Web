@@ -17,7 +17,7 @@ from datetime import timedelta
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0,os.path.join(BASE_DIR,'apps'))
+# sys.path.insert(0,os.path.join(BASE_DIR,'apps'))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
@@ -51,19 +51,37 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.course',
-    'apps.cms',
-    'apps.news',
-    'apps.payinfo',
-    'apps.company',
-    'apps.xfzauth',
+    # 'Django_Web.apps.course',
+    # 'apps.cms',
+    # 'apps.news',
+    # 'apps.payinfo',
+    # 'apps.company',
+    # 'apps.xfzauth',
     'rest_framework',
     'django_01',
-    'taskApp',
-    'apps.news.models.NewCategory',
+    # 'taskApp',
+    # 'apps.news.models.NewCategory',
     # 'debug_toolbar',
     # 'silk',
 ]
+def get_installed_apps():
+    from os import walk, chdir, getcwd
+    previous_path = getcwd()
+    master = []
+    APPS_ROOT_PATH = BASE_DIR
+    chdir(APPS_ROOT_PATH)
+    for root, directories, files in walk(top=getcwd(), topdown=False):
+        for file_ in files:
+            if 'apps.py' in file_ and len(
+                    list(
+                        filter(lambda x: x != '',
+                               root.replace(getcwd(), '').split('/')))) == 1:
+                app_path = f"{root.replace(BASE_DIR + '/', '').replace('/', '.')}"
+                master.append(app_path)
+    chdir(previous_path)
+    return master
+CUSTOM_APPS = get_installed_apps()
+INSTALLED_APPS.extend(CUSTOM_APPS)
 
 # 中间键，针对所有的app有效,可以方便批量修改处理时使用
 MIDDLEWARE = [
