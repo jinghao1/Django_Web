@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 import os
 from . import config
 from datetime import timedelta
-from celery.schedules import crontab
+# from celery.schedules import crontab
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -43,8 +43,8 @@ ALLOWED_HOSTS = ['*']
 
 # Application definition
 INSTALLED_APPS = [
-    'django_celery_results',
-    'django_celery_beat',
+    # 'django_celery_results',
+    # 'django_celery_beat',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -83,53 +83,53 @@ BROKER_URL = config.BROKER_URL
 
 # BACKEND配置，这里使用redis
 
-CELERY_RESULT_BACKEND = config.CELERY_RESULT_BACKEND
+# CELERY_RESULT_BACKEND = config.CELERY_RESULT_BACKEND
+# 
+# # 结果序列化方案
+# CELERY_RESULT_SERIALIZER = 'json'
+# 
+# # 任务结果过期时间，秒
+# CELERY_TASK_RESULT_EXPIRES = 60 * 60 * 24
+# 
+# # 时区配置
+# CELERY_TIMEZONE = 'Asia/Shanghai'
+# 
+# # 指定导入的任务模块，可以指定多个
+# CELERY_IMPORTS = (
+#     'taskApp.tasks'
+# )
 
-# 结果序列化方案
-CELERY_RESULT_SERIALIZER = 'json'
-
-# 任务结果过期时间，秒
-CELERY_TASK_RESULT_EXPIRES = 60 * 60 * 24
-
-# 时区配置
-CELERY_TIMEZONE = 'Asia/Shanghai'
-
-# 指定导入的任务模块，可以指定多个
-CELERY_IMPORTS = (
-    'taskApp.tasks'
-)
-
-CELERYBEAT_SCHEDULE = {
-    'ali_script': {
-        # 任务路径
-        'task': 'taskApp.tasks.get_ali_script_status',
-        # 每日七点执行
-        # 'schedule': crontab(hour=7, minute=0),
-        'schedule': timedelta(seconds=20)
-        # 'schedule':5
-    },
-    # 'log_file': {
-    #     # 任务路径
-    #     'task': 'taskApp.tasks.produce_log',
-    #     # 每日零点执行
-    #     'schedule': crontab(hour=0, minute=0),  # 通过crontab进行定时
-    # },
-    'weather_file': {
-        'task': 'taskApp.tasks.get_weather_status',
-        # 'schedule': crontab(hour=7, minute=0)
-        'schedule': timedelta(seconds=20)
-    },
-    'power_file': {
-        'task': 'taskApp.tasks.get_power_status',
-        # 'schedule': crontab(hour=5, minute=30),
-        'schedule': timedelta(seconds=20)
-    },
-    'overview': {
-        'task': 'taskApp.tasks.get_overview_status',
-        # 'schedule': crontab(hour=7, minute=10),
-        'schedule': timedelta(seconds=30)
-    }
-}
+# CELERYBEAT_SCHEDULE = {
+#     'ali_script': {
+#         # 任务路径
+#         'task': 'taskApp.tasks.get_ali_script_status',
+#         # 每日七点执行
+#         # 'schedule': crontab(hour=7, minute=0),
+#         'schedule': timedelta(seconds=20)
+#         # 'schedule':5
+#     },
+#     # 'log_file': {
+#     #     # 任务路径
+#     #     'task': 'taskApp.tasks.produce_log',
+#     #     # 每日零点执行
+#     #     'schedule': crontab(hour=0, minute=0),  # 通过crontab进行定时
+#     # },
+#     'weather_file': {
+#         'task': 'taskApp.tasks.get_weather_status',
+#         # 'schedule': crontab(hour=7, minute=0)
+#         'schedule': timedelta(seconds=20)
+#     },
+#     'power_file': {
+#         'task': 'taskApp.tasks.get_power_status',
+#         # 'schedule': crontab(hour=5, minute=30),
+#         'schedule': timedelta(seconds=20)
+#     },
+#     'overview': {
+#         'task': 'taskApp.tasks.get_overview_status',
+#         # 'schedule': crontab(hour=7, minute=10),
+#         'schedule': timedelta(seconds=30)
+#     }
+# }
 
 # 配置debug-toolbar
 INTERNAL_IPS = ['127.0.0.1']
