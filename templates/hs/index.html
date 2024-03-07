@@ -1,100 +1,97 @@
 {% extends 'hs_base/hs_base.html' %}
 {% block main %}
-    <main class="main" id="main">
+<main class="main" id="main">
 
-        <article class="content is-layout-constrained has-global-padding wysiwyg">
-            <section class="hero hero--china">
-                <div class="hero__container">
-                    {% if lang == 'en' %}
+    <article class="content is-layout-constrained has-global-padding wysiwyg">
+        <section class="hero hero--china">
+            <div class="hero__container">
+                {% if lang == 'en' %}
 
-                        <h1 class="hero__title hero__title--animated">Entrepreneurship and Innovation<br><span
-                                class="hero__animation-container">Industry's「BIG TREE」<svg preserveAspectRatio="none"
-                                                                                           viewBox="0 0 595 97"
-                                                                                           fill="none"
-                                                                                           xmlns="http://www.w3.org/2000/svg"
-                                                                                           class="hero__animation hero__animation"><path
+                <h1 class="hero__title hero__title--animated">Entrepreneurship and Innovation<br><span
+                        class="hero__animation-container">Industry's「BIG TREE」<svg preserveAspectRatio="none"
+                            viewBox="0 0 595 97" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="hero__animation hero__animation">
+                            <path
                                 d="M2 76.2585C26.6341 81.2084 50.7833 80.0978 76.2802 80.0978C107.448 80.0978 138.46 80.1154 169.591 81.0932C197.095 81.9571 224.547 80.0978 252.056 80.0978C276.198 80.0978 300.236 81.906 324.392 81.3065C361.86 80.3766 399.568 79.1318 437.04 78.818C466.779 78.5691 497.282 80.4133 526.872 78.1781C549.794 76.4468 571.154 75.8931 587.647 63.3895C591.988 60.0988 595.986 48.4997 589.87 40C581.171 27.9092 570.566 21.3184 553.679 14.8286C521.341 2.40077 480.049 1.81567 443.998 2.03071C411.421 2.22503 359.218 5.65237 339.228 26.4889C323.292 43.1001 323.114 59.5658 347.209 72.7746C385.152 93.5754 444.229 99.5744 490.039 91.6159"
-                                stroke="#00a33a" stroke-width="3" stroke-linecap="round"></path></svg></span></h1>
+                                stroke="#00a33a" stroke-width="3" stroke-linecap="round"></path>
+                        </svg></span></h1>
+                {% else %}
+                <h1 class="hero__title hero__title--animated">巍巍中<span style="color:#263580;">华</span>, 和光同<span style="font-size:60px;">尘</span>
+                    <br>成为中国与世界的桥梁，陪伴企业和家族穿越周期 <br>
+                    <!-- <span class="hero__animation-container">产业界的「参天大树」<svg
+                            preserveAspectRatio="none" viewBox="0 0 595 97" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" class="hero__animation hero__animation">
+                            <path
+                                d="M2 76.2585C26.6341 81.2084 50.7833 80.0978 76.2802 80.0978C107.448 80.0978 138.46 80.1154 169.591 81.0932C197.095 81.9571 224.547 80.0978 252.056 80.0978C276.198 80.0978 300.236 81.906 324.392 81.3065C361.86 80.3766 399.568 79.1318 437.04 78.818C466.779 78.5691 497.282 80.4133 526.872 78.1781C549.794 76.4468 571.154 75.8931 587.647 63.3895C591.988 60.0988 595.986 48.4997 589.87 40C581.171 27.9092 570.566 21.3184 553.679 14.8286C521.341 2.40077 480.049 1.81567 443.998 2.03071C411.421 2.22503 359.218 5.65237 339.228 26.4889C323.292 43.1001 323.114 59.5658 347.209 72.7746C385.152 93.5754 444.229 99.5744 490.039 91.6159"
+                                stroke="#00a33a" stroke-width="3" stroke-linecap="round"></path>
+                        </svg></span> -->
+                </h1>
+                {% endif %}
+
+            </div>
+        </section>
+
+
+        <div class="ink-collection">
+            <div class="ink-collection__grid grid">
+                <div class="grid__instances" data-grid-columns="12">
+                    {% for news in newses %}
+                    {% if forloop.counter0 in smalles %}
+                    <div class="grid__instance aos-init" data-size="sm" data-aos="fade-in" data-aos-duration="1000"
+                        data-aos-delay="100">
+                        <div class="grid__content"><a class="ink" style="background-color:#1b1916;"
+                                href="{% url 'news:news_detail' news_id=news.pk %}">
+                                <div class="ink__content ink__content--protected">
+                                    <img loading="lazy" width="576" height="576" src="{{ news.thumbnail }}"
+                                        class="ink__image" alt="" decoding="async"
+                                        sizes="(max-width: 576px) 100vw, 576px">
+                                    <div class="ink__text" data-size="sm" data-color="light">
+
+                                        <h2 class="ink__title" data-size="sm" data-h-align="left" data-v-align="bottom"
+                                            data-font-family="unica" data-font-size="sm" data-width="wide"
+                                            data-word-wrap="false">{{ news.title }}</h2>
+
+
+                                        <div class="ink__category ink__category--%e6%96%b0%e9%97%bb" data-size="sm">{{
+                                            news.category.name }}</div>
+
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+
                     {% else %}
-                        <h1 class="hero__title hero__title--animated">创业者背后的创业者<br>红杉中国致力于发掘和培育<br><span
-                                class="hero__animation-container">产业界的「参天大树」<svg preserveAspectRatio="none"
-                                                                                 viewBox="0 0 595 97"
-                                                                                 fill="none"
-                                                                                 xmlns="http://www.w3.org/2000/svg"
-                                                                                 class="hero__animation hero__animation"><path
-                                d="M2 76.2585C26.6341 81.2084 50.7833 80.0978 76.2802 80.0978C107.448 80.0978 138.46 80.1154 169.591 81.0932C197.095 81.9571 224.547 80.0978 252.056 80.0978C276.198 80.0978 300.236 81.906 324.392 81.3065C361.86 80.3766 399.568 79.1318 437.04 78.818C466.779 78.5691 497.282 80.4133 526.872 78.1781C549.794 76.4468 571.154 75.8931 587.647 63.3895C591.988 60.0988 595.986 48.4997 589.87 40C581.171 27.9092 570.566 21.3184 553.679 14.8286C521.341 2.40077 480.049 1.81567 443.998 2.03071C411.421 2.22503 359.218 5.65237 339.228 26.4889C323.292 43.1001 323.114 59.5658 347.209 72.7746C385.152 93.5754 444.229 99.5744 490.039 91.6159"
-                                stroke="#00a33a" stroke-width="3" stroke-linecap="round"></path></svg></span></h1>
+
+
+                    <div class="grid__instance aos-init aos-animate" data-size="lg" data-aos="fade-in"
+                        data-aos-duration="1000" data-aos-delay="100">
+                        <div class="grid__content"><a class="ink" style="background-color:#1b1916;"
+                                href="{% url 'news:news_detail' news_id=news.pk %}">
+                                <div class="ink__content ink__content--protected">
+                                    <img loading="lazy" width="900" height="900" src="{{ news.thumbnail }}"
+                                        class="ink__image" alt="" decoding="async"
+                                        sizes="(max-width: 900px) 100vw, 900px">
+                                    <div class="ink__text" data-size="lg" data-color="light">
+
+                                        <h2 class="ink__title" data-size="lg" data-h-align="left" data-v-align="bottom"
+                                            data-font-family="unica" data-font-size="sm" data-width="wide"
+                                            data-word-wrap="false">{{ news.title }}</h2>
+
+                                        <div class="ink__category ink__category--%e8%a7%82%e7%82%b9" data-size="lg">{{
+                                            news.category.name }}</div>
+
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
                     {% endif %}
 
-                </div>
-            </section>
+                    {% endfor %}
 
 
-            <div class="ink-collection">
-                <div class="ink-collection__grid grid">
-                    <div class="grid__instances" data-grid-columns="12">
-                        {% for news in newses %}
-                            {% if forloop.counter0 in smalles %}
-                                <div class="grid__instance aos-init" data-size="sm" data-aos="fade-in"
-                                     data-aos-duration="1000"
-                                     data-aos-delay="100">
-                                    <div class="grid__content"><a class="ink" style="background-color:#1b1916;"
-                                                                  href="{% url 'news:news_detail' news_id=news.pk %}">
-                                        <div class="ink__content ink__content--protected">
-                                            <img loading="lazy" width="576" height="576"
-                                                 src="{{ news.thumbnail }}" class="ink__image" alt=""
-                                                 decoding="async"
-                                                 sizes="(max-width: 576px) 100vw, 576px">
-                                            <div class="ink__text" data-size="sm" data-color="light">
-
-                                                <h2 class="ink__title" data-size="sm" data-h-align="left"
-                                                    data-v-align="bottom"
-                                                    data-font-family="unica" data-font-size="sm" data-width="wide"
-                                                    data-word-wrap="false">{{ news.title }}</h2>
-
-
-                                                <div class="ink__category ink__category--%e6%96%b0%e9%97%bb"
-                                                     data-size="sm">{{ news.category.name }}</div>
-
-                                            </div>
-                                        </div>
-                                    </a></div>
-                                </div>
-
-                            {% else %}
-
-
-                                <div class="grid__instance aos-init aos-animate" data-size="lg" data-aos="fade-in"
-                                     data-aos-duration="1000" data-aos-delay="100">
-                                    <div class="grid__content"><a class="ink" style="background-color:#1b1916;"
-                                                                  href="{% url 'news:news_detail' news_id=news.pk %}">
-                                        <div class="ink__content ink__content--protected">
-                                            <img loading="lazy" width="900" height="900"
-                                                 src="{{ news.thumbnail }}" class="ink__image" alt=""
-                                                 decoding="async"
-                                                 sizes="(max-width: 900px) 100vw, 900px">
-                                            <div class="ink__text" data-size="lg" data-color="light">
-
-                                                <h2 class="ink__title" data-size="lg" data-h-align="left"
-                                                    data-v-align="bottom"
-                                                    data-font-family="unica" data-font-size="sm" data-width="wide"
-                                                    data-word-wrap="false">{{ news.title }}</h2>
-
-                                                <div class="ink__category ink__category--%e8%a7%82%e7%82%b9"
-                                                     data-size="lg">{{ news.category.name }}</div>
-
-                                            </div>
-                                        </div>
-                                    </a></div>
-                                </div>
-                            {% endif %}
-
-                        {% endfor %}
-
-
-                    </div>
                 </div>
             </div>
-        </article>
-    </main>
+        </div>
+    </article>
+</main>
 {% endblock %}
