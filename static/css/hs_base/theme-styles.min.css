@@ -11702,10 +11702,10 @@ body.rtl :where(.wysiwyg,[class^=is-layout-],[class*=" is-layout"]) > p.has-drop
 }
 
 @media (min-width: 1440px) {
-    .hero__title--animated, .hero__title--heritage, .hero__title--standard {
+    /* .hero__title--animated, .hero__title--heritage, .hero__title--standard {
         padding-left: 16rem;
         padding-right: 16rem
-    }
+    } */
 }
 
 .hero__title--standard {
