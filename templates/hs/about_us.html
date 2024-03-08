@@ -1,125 +1,294 @@
 {% extends 'hs_base/hs_base.html' %}
 {% block main %}
+<style>
+    .container_sj {
+        display: flex;
+        text-align: center;
+        font-family: PingFang SC, SF Pro Display, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    }
+
+    .column_sj {
+        flex: 1;
+        /* 每个column占据等分的空间 */
+        /* 可以添加额外的样式，比如边框、背景等 */
+    }
+
+    /* 或者明确地设置各列的宽度比例 */
+    .column_sj-1 {
+        flex: 1;
+    }
+
+    /* 占据容器宽度的1/3 */
+    .column_sj-2 {
+        flex: 2;
+    }
+
+    .font_size_sj-2 {
+        font-size: 2em;
+    }
+
+    .font_size_sj-15 {
+        font-size: 1.5em;
+    }
+
+    .back_yellow_tag {
+        background: rgb(221, 168, 89);
+        font-size: 1.5em;
+        color: #fff;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+
+    .padding_top_2 {
+        padding-top: 2em;
+    }
+
+    .padding_top_bottom_4 {
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    .p_img {
+        float: left;
+        height: 1em;
+    }
+
+    .top_img {
+        height: 2em;
+    }
+    .height_3_img {
+        height: 3em;
+    }
+
+    .font_06 {
+        font-size: 0.6em;
+    }
+    .pd2{
+        padding-left:1em;
+        padding-right:1em;
+        padding-top:0.2em;
+        padding-bottom:0.2em;
+        font-size:1.5em;
+    }
+
+    /* 占据容器宽度的2/3 */
+</style>
+
+<main class="main" id="main">
+
+    <article class="content is-layout-constrained has-global-padding wysiwyg">
+
+        {% if lang == "en" %}
+        <section class="hero">
+            <div class="hero__container">
+                <h1 class="hero__title hero__title--standard">Huachen Technology</h1>
+            </div>
+        </section>
 
 
-    <main class="main" id="main">
+        <section class="grid">
+            <section class="grid__instances" data-grid-columns="2">
+                <div class="wp-block-mg-grid-column-left grid__instance">
+                    <div class="grid__content">
+                        <div class="wysiwyg">
+                            <p><strong>Huachen Technology</strong></p>
 
-        <article class="content is-layout-constrained has-global-padding wysiwyg">
 
-            {% if lang == "en" %}
-                <section class="hero">
-                    <div class="hero__container">
-                        <h1 class="hero__title hero__title--standard">Huachen Technology</h1>
+                            <p>
+                                Sequoia China is a private equity investment institution focusing on investing in the
+                                three major fields of technology, medical and health, and consumption. Since its
+                                establishment in 2005, Sequoia China has been committed to discovering and cultivating
+                                innovation and entrepreneurial capabilities, and has invested in more than 1,500
+                                companies at home and abroad. Many of them have emerged with distinctive technical
+                                characteristics, innovative business models, high growth and high development potential.
+                                company of.</p>
+
+
+                            <p></p>
+
+
+                            <p>To date, more than 160 member companies of Sequoia China have been successfully listed,
+                                and nearly 130 unlisted companies have developed into unicorns.</p>
+
+
+                            <p></p>
+
+
+                            <p><strong>If you have financing plans, please send your letter and business plan to
+                                    bpchina@hongshan.com We will read it carefully and respond as soon as
+                                    possible</strong>.</p>
+                        </div>
                     </div>
-                </section>
+                </div>
 
 
-                <section class="grid">
-                    <section class="grid__instances" data-grid-columns="2">
-                        <div class="wp-block-mg-grid-column-left grid__instance">
-                            <div class="grid__content">
-                                <div class="wysiwyg">
-                                    <p><strong>Huachen Technology</strong></p>
-
-
-                                    <p>
-                                        Sequoia China is a private equity investment institution focusing on investing in the three major fields of technology, medical and health, and consumption. Since its establishment in 2005, Sequoia China has been committed to discovering and cultivating innovation and entrepreneurial capabilities, and has invested in more than 1,500 companies at home and abroad. Many of them have emerged with distinctive technical characteristics, innovative business models, high growth and high development potential. company of.</p>
-
-
-                                    <p></p>
-
-
-                                    <p>To date, more than 160 member companies of Sequoia China have been successfully listed, and nearly 130 unlisted companies have developed into unicorns.</p>
-
-
-                                    <p></p>
-
-
-                                    <p><strong>If you have financing plans, please send your letter and business plan to bpchina@hongshan.com We will read it carefully and respond as soon as possible</strong>.</p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="wp-block-mg-grid-column-right grid__instance">
-                            <div class="grid__content">
-                                <div class="wysiwyg"></div>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-
-
-                <p></p>
-
-
-                <figure class="wp-block-image size-large"><img decoding="async" loading="lazy" width="1024" height="462"
-                                                               src="/media/QR-code2.png"
-                                                               alt="" class="wp-image-2309"
-                                                               sizes="(max-width: 1024px) 100vw, 1024px">
-                    <figcaption class="wp-element-caption">Please scan the QR code to follow "Redwood City" <br> WeChat official account and video account</figcaption>
-                </figure>
-
-
-                <p></p>
-            {% else %}
-
-                <section class="hero">
-                    <div class="hero__container">
-                        <h1 class="hero__title hero__title--standard">华尘科技</h1>
+                <div class="wp-block-mg-grid-column-right grid__instance">
+                    <div class="grid__content">
+                        <div class="wysiwyg"></div>
                     </div>
-                </section>
+                </div>
+            </section>
+        </section>
 
 
-                <section class="grid">
-                    <section class="grid__instances" data-grid-columns="2">
-                        <div class="wp-block-mg-grid-column-left grid__instance">
-                            <div class="grid__content">
-                                <div class="wysiwyg">
-                                    <p><strong>华尘科技</strong></p>
+        <p></p>
 
 
-                                    <p>
-                                        红杉中国是专注于投资科技、医疗健康、消费三大领域的私募股权投资机构。自2005年成立以来，红杉中国致力于发掘和培育创新和创业力量，在海内外投资了逾1500家企业，其中涌现出许多具有鲜明技术特征、创新商业模式、具备高成长性和高发展潜力的公司。</p>
+        <figure class="wp-block-image size-large"><img decoding="async" loading="lazy" width="1024" height="462"
+                src="/media/QR-code2.png" alt="" class="wp-image-2309" sizes="(max-width: 1024px) 100vw, 1024px">
+            <figcaption class="wp-element-caption">Please scan the QR code to follow "Redwood City" <br> WeChat official
+                account and video account</figcaption>
+        </figure>
 
 
-                                    <p></p>
+        <p></p>
+        {% else %}
+
+        <!-- <section class="hero">
+            <div class="hero__container">
+                <h1 class="hero__title hero__title--standard">华尘科技</h1>
+            </div>
+        </section> -->
+        <p></p>
+        <!-- <div class="column_sj column_sj-1">Column 1</div>
+            <div class="column_sj column_sj-2">Column 2</div> -->
+        <div class="container_sj">
+
+            <div class="column_sj column_sj-1"></div>
+            <div class="column_sj column_sj-1">
+                <p class="font_size_sj-2"><strong>铂莲资本</strong></p>
+                <p class="font_size_sj-15 padding_top_bottom_4">（铂莲投资管理苏州有限公司）</p>
+            </div>
+            <div class="column_sj column_sj-1">
+                <div class="container_sj">
+
+                    <div class="column_sj  back_yellow_tag"> 基金管理人 </div>
+                    <div class="column_sj  "></div>
+                    <div class="column_sj  "></div>
+
+                </div>
 
 
-                                    <p>迄今为止，红杉中国有超过160家成员企业成功上市，近130家非上市公司已发展成为独角兽。</p>
+            </div>
+        </div>
+        <div class="container_sj">
+
+            <div class="column_sj">
+                <div class="container_sj padding_top_2">
+
+              
+
+                    <div class="column_sj  "> <span class="back_yellow_tag pd2">行业研究</span>  </div>
+                </div>
+            </div>
+
+            <div class="column_sj  column_sj-2">
+                <p class="font_size_sj-2"><strong>华尘公司</strong></p>
+                <p class="font_size_sj-15 padding_top_bottom_4">华尘科技（北京）有限公司</p>
+                <p class="font_size_sj-15 padding_top_bottom_4">华尘科技咨询（杭州）有限公司 </p>
+            </div>
+
+            <div class="column_sj column_sj-2">
+
+                <p class="font_size_sj-15 padding_top_bottom_4" style="display: inline-block;height:1.5em; width: 80%;"><span><img
+                            class="p_img" src="{% static 'images/bandaoti.png' %}"></span><span
+                        style="float:left;">北京半导体行业协会</span></p>
+                <p class="font_size_sj-15 padding_top_bottom_4" style="display: inline-block;height:1.5em;width: 70%;"><span><img
+                            class="p_img" src="{% static 'images/qiushi.png' %}"></span><span
+                        style="float:left;">求是缘半导体联盟</span></p>
+                <p class="font_size_sj-15 padding_top_bottom_4" style="display: inline-block;height:1.5em;"><span><img
+                            class="p_img" src="{% static 'images/jicheng1.png' %}"></span><span
+                        style="float:left;">北京集成电路学会</span></p>
+
+            </div>
+
+            <div class="column_sj">
+                <div class="container_sj padding_top_2">
+
+                    <!-- <div class="column_sj  back_yellow_tag"> 行业资源 </div> -->
+                    <div class="column_sj  "> <span class="back_yellow_tag pd2">行业资源</span>  </div>
+                
+                </div>
+
+            </div>
+        </div>
+        <div class="container_sj ">
+
+            <div class="column_sj  " style="padding-right:2em;padding-left:2em;">
+                <p class="padding_top_bottom_4"> 团队核心成员均毕业于国内外知名院校，曾就职于国内外头部科技大厂及境内外顶级金融机构。 团队目前聚焦泛半导体这一领域，拥有扎实的专业能力，在产业端、项目端积累了丰富资源。</p>
+             
+                <div class="container_sj" style="margin-top:1em;">
+
+                    <div class="column_sj  ">
+                        <span><img class="top_img" src="{% static 'images/ibm.png' %}"></span>
+                        <p class="font_06">国际商业化机器公司</p>
+                    </div>
+                    <div class="column_sj  ">
+                        <span><img class="top_img" src="{% static 'images/geluo.png' %}"></span>
+                        <p class="font_06">格罗方德 </p>
+                    </div>
+                    <div class="column_sj  ">
+                        <span><img class="height_3_img" src="{% static 'images/huawei.png' %}"></span>
+                    </div>
+
+                </div>
+                <div class="container_sj" style="margin-top:1em;">
+
+                    <div class="column_sj  ">
+                        <span><img class="top_img" src="{% static 'images/zhongxin.png' %}"></span>
+                        <p class="font_06">中芯国际
+                        </p>
+                    </div>
+                    <div class="column_sj  ">
+                        <span><img class="height_3_img" src="{% static 'images/zhongjin.png' %}"></span>
+                   
+                    </div>
+                    <div class="column_sj  ">
+                        <span><img class="top_img" src="{% static 'images/mogen.png' %}"></span>
+                        <p class="font_06">摩根士丹利
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="column_sj  " style="padding-left:2em;padding-right:2em;">
+                <p class="padding_top_bottom_4">团队隶属于多个半导体行业协会，协助协会从事半导体行业研究。 
+               同时，团队拥有众多半导体行业内的资深专家资源，如YC WANG、TY QIU和XJ LIU等。 
+               行业专家们拥有丰富的半导体IDM厂、设备等从业经验，曾在半导体头部大厂担任重要职务。</p>
+                <div class="container_sj" style="margin-top:1em;">
+
+                    <div class="column_sj  ">
+                        <span><img class="top_img" src="{% static 'images/zhongxin.png' %}"></span>
+                        <p class="font_06">中芯国际
+                        </p>
+                    </div>
+                    <div class="column_sj  ">
+                        <span><img class="height_3_img" src="{% static 'images/huahong.png' %}"></span>
+                   
+                    </div>
+                    <div class="column_sj  ">
+                        <span><img class="height_3_img" src="{% static 'images/taijidian.png' %}"></span>
+                     
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
 
-                                    <p></p>
 
 
-                                    <p><strong>如有融资计划，请将您的信件和商业计划书发送至 bpchina@hongshan.com 我们会悉心阅读并尽快予以回复</strong>。</p>
-                                </div>
-                            </div>
-                        </div>
+
+        <!-- 
+        <figure class="wp-block-image size-large"><img decoding="async" loading="lazy" width="1024" height="462"
+                src="/media/QR-code2.png" alt="" class="wp-image-2309" sizes="(max-width: 1024px) 100vw, 1024px">
+            <figcaption class="wp-element-caption">请扫码关注“红杉汇”<br>微信公众号和视频号</figcaption>
+        </figure> -->
 
 
-                        <div class="wp-block-mg-grid-column-right grid__instance">
-                            <div class="grid__content">
-                                <div class="wysiwyg"></div>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-
-
-                <p></p>
-
-
-                <figure class="wp-block-image size-large"><img decoding="async" loading="lazy" width="1024" height="462"
-                                                               src="/media/QR-code2.png"
-                                                               alt="" class="wp-image-2309"
-                                                               sizes="(max-width: 1024px) 100vw, 1024px">
-                    <figcaption class="wp-element-caption">请扫码关注“红杉汇”<br>微信公众号和视频号</figcaption>
-                </figure>
-
-
-                <p></p>
-            {% endif %}
-        </article>
-    </main>
+        <p></p>
+        {% endif %}
+    </article>
+</main>
 {% endblock %}
