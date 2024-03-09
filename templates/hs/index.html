@@ -1,5 +1,6 @@
 {% extends 'hs_base/hs_base.html' %}
 {% block main %}
+
 <main class="main" id="main">
 
     <article class="content is-layout-constrained has-global-padding wysiwyg">
@@ -16,8 +17,8 @@
                                 stroke="#00a33a" stroke-width="3" stroke-linecap="round"></path>
                         </svg></span></h1>
                 {% else %}
-                <h1 class="hero__title hero__title--animated">巍巍中<span style="color:#263580;">华</span>, 和光同<span
-                        style="font-size:60px;">尘</span>
+                <h1 class="hero__title hero__title--animated">巍巍中<span class="blue_bold">华</span>, 和光同<span
+                    class="blue_bold">尘</span>
                     <br>成为中国与世界的桥梁，陪伴企业和家族穿越周期 <br>
                     <!-- <span class="hero__animation-container">产业界的「参天大树」<svg
                             preserveAspectRatio="none" viewBox="0 0 595 97" fill="none"
@@ -53,7 +54,8 @@
                                             data-word-wrap="false">{{ news.title }}</h2>
 
 
-                                        <div class="ink__category ink__category--%e6%96%b0%e9%97%bb" data-size="sm">{{ news.category.name }}</div>
+                                        <div class="ink__category ink__category--%e6%96%b0%e9%97%bb" data-size="sm">
+                                            {{ news.category.name }}</div>
 
                                     </div>
                                 </div>
@@ -77,7 +79,8 @@
                                             data-font-family="unica" data-font-size="sm" data-width="wide"
                                             data-word-wrap="false">{{ news.title }}</h2>
 
-                                        <div class="ink__category ink__category--%e8%a7%82%e7%82%b9" data-size="lg">{{ news.category.name }}</div>
+                                        <div class="ink__category ink__category--%e8%a7%82%e7%82%b9" data-size="lg">
+                                            {{ news.category.name }}</div>
 
                                     </div>
                                 </div>
@@ -91,6 +94,142 @@
                 </div>
             </div>
         </div>
+    </article>
+
+    <article id="about_us" class="content is-layout-constrained has-global-padding wysiwyg">
+        <div class="container_sj">
+
+            <div class="column_sj column_sj-1"></div>
+            <div class="column_sj column_sj-1">
+                <p class="font_size_sj-2"><strong>铂莲资本</strong></p>
+                <p class="font_size_sj-15 padding_top_bottom_4">（铂莲投资管理苏州有限公司）</p>
+            </div>
+            <div class="column_sj column_sj-1">
+                <div class="container_sj">
+
+                    <div class="column_sj  back_yellow_tag"> 基金管理人 </div>
+                    <div class="column_sj  "></div>
+                    <div class="column_sj  "></div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="container_sj">
+
+            <div class="column_sj">
+                <div class="container_sj padding_top_2">
+
+
+
+                    <div class="column_sj  "> <span class="back_yellow_tag pd2">行业研究</span> </div>
+                </div>
+            </div>
+
+            <div class="column_sj  column_sj-2">
+                <p class="font_size_sj-2 line_height_15"><strong>华尘公司</strong></p>
+                <p class="font_size_sj-15 padding_top_bottom_4 ">华尘科技（北京）有限公司</p>
+                <p class="font_size_sj-15 padding_top_bottom_4 ">华尘科技咨询（杭州）有限公司 </p>
+            </div>
+
+            <div class="column_sj column_sj-2">
+
+                <p class="font_size_sj-15 padding_top_bottom_4" style="display: inline-block;height:1.5em; width: 80%;">
+                    <span><img class="p_img" src="{% static 'images/bandaoti.png' %}"></span><span
+                        style="float:left;">北京半导体行业协会</span></p>
+                <p class="font_size_sj-15 padding_top_bottom_4" style="display: inline-block;height:1.5em;width: 70%;">
+                    <span><img class="p_img" src="{% static 'images/qiushi.png' %}"></span><span
+                        style="float:left;">求是缘半导体联盟</span></p>
+                <p class="font_size_sj-15 padding_top_bottom_4" style="display: inline-block;height:1.5em;"><span><img
+                            class="p_img" src="{% static 'images/jicheng1.png' %}"></span><span
+                        style="float:left;">北京集成电路学会</span></p>
+
+            </div>
+
+            <div class="column_sj">
+                <div class="container_sj padding_top_2">
+
+                    <!-- <div class="column_sj  back_yellow_tag"> 行业资源 </div> -->
+                    <div class="column_sj  "> <span class="back_yellow_tag pd2">行业资源</span> </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="container_sj ">
+
+            <div class="column_sj  " class="padding_left_right_2">
+                <p class="padding_top_bottom_4 line_height_15"> 团队核心成员均毕业于国内外知名院校，曾就职于国内外头部科技大厂及境内外顶级金融机构。
+                    团队目前聚焦泛半导体这一领域，拥有扎实的专业能力，在产业端、项目端积累了丰富资源。</p>
+
+                <div class="container_sj" style="margin-top:1em;">
+
+                    <div class="column_sj  ">
+                        <span><img class="top_img" src="{% static 'images/ibm.png' %}"></span>
+                        <p class="font_06">国际商业化机器公司</p>
+                    </div>
+                    <div class="column_sj  ">
+                        <span><img class="top_img" src="{% static 'images/geluo.png' %}"></span>
+                        <p class="font_06">格罗方德 </p>
+                    </div>
+                    <div class="column_sj  ">
+                        <span><img class="height_3_img" src="{% static 'images/huawei.png' %}"></span>
+                    </div>
+
+                </div>
+                <div class="container_sj" style="margin-top:1em;">
+
+                    <div class="column_sj  ">
+                        <span><img class="top_img" src="{% static 'images/zhongxin.png' %}"></span>
+                        <p class="font_06">中芯国际
+                        </p>
+                    </div>
+                    <div class="column_sj  ">
+                        <span><img class="height_3_img" src="{% static 'images/zhongjin.png' %}"></span>
+
+                    </div>
+                    <div class="column_sj  ">
+                        <span><img class="top_img" src="{% static 'images/mogen.png' %}"></span>
+                        <p class="font_06">摩根士丹利
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="column_sj  " style="padding-left:2em;padding-right:2em;">
+                <p class="padding_top_bottom_4 line_height_15">团队隶属于多个半导体行业协会，协助协会从事半导体行业研究。
+                    同时，团队拥有众多半导体行业内的资深专家资源，如YC WANG、TY QIU和XJ LIU等。
+                    行业专家们拥有丰富的半导体IDM厂、设备等从业经验，曾在半导体头部大厂担任重要职务。</p>
+                <div class="container_sj" style="margin-top:1em;">
+
+                    <div class="column_sj  ">
+                        <span><img class="top_img" src="{% static 'images/zhongxin.png' %}"></span>
+                        <p class="font_06">中芯国际
+                        </p>
+                    </div>
+                    <div class="column_sj  ">
+                        <span><img class="height_3_img" src="{% static 'images/huahong.png' %}"></span>
+
+                    </div>
+                    <div class="column_sj  ">
+                        <span><img class="height_3_img" src="{% static 'images/taijidian.png' %}"></span>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <h4></h4>
+        <h4>
+            <bold>愿景：</bold>巍巍中<span class="blue_yuanjing">华</span>，和光同<span class="blue_yuanjing">尘</span>
+        </h4>
+        <h4></h4>
+        <h4>
+            <bold>使命：</bold>成为中国与世界的桥梁，陪伴企业和家族穿越周期
+        </h4>
+
     </article>
 </main>
 {% endblock %}

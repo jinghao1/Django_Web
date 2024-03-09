@@ -929,7 +929,102 @@
       data-color-mode="light" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0" data-browser="chrome"
       data-device="apple" style="--mg--scrollbar-width: 0px;">
 <a class="sr-only-focusable skip-to-main" href="/#main">Skip to main content</a>
+<style>
+    .container_sj {
+        display: flex;
+        text-align: center;
+        font-family: PingFang SC, SF Pro Display, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    }
 
+    .column_sj {
+        flex: 1;
+        /* 每个column占据等分的空间 */
+        /* 可以添加额外的样式，比如边框、背景等 */
+    }
+
+    /* 或者明确地设置各列的宽度比例 */
+    .column_sj-1 {
+        flex: 1;
+    }
+
+    /* 占据容器宽度的1/3 */
+    .column_sj-2 {
+        flex: 2;
+    }
+
+    .font_size_sj-2 {
+        font-size: 2em;
+    }
+
+    .font_size_sj-15 {
+        font-size: 1.5em;
+    }
+
+    .back_yellow_tag {
+        background: rgb(221, 168, 89);
+        font-size: 1.5em;
+        color: #fff;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+
+    .padding_top_2 {
+        padding-top: 2em;
+    }
+
+    .padding_top_bottom_4 {
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    .padding_left_right_2 {
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+
+    .padding_left_right_1 {
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+
+    .p_img {
+        float: left;
+        height: 1em;
+    }
+
+    .top_img {
+        height: 2em;
+    }
+
+    .height_3_img {
+        height: 3em;
+    }
+
+    .font_06 {
+        font-size: 0.6em;
+    }
+
+    .pd2 {
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+        font-size: 1.5em;
+    }
+
+    .line_height_15 {
+        line-height: 1.5em;
+    }
+    .blue_bold{
+        color:#263580;font-size:60px;
+    }
+    .blue_yuanjing{
+        color:#263580;font-size:1.2em;
+    }
+    #about_us{
+        padding-top:2em;
+    }
+</style>
 <header class="header" data-color-mode="">
     <div class="header__layer">
         <div class="header__container">
@@ -950,8 +1045,9 @@
                 <div class="header__menu">
                     <ul id="menu-header-navigation" class="menu menu__header">
                         <li id="menu-item-1059"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1059"><a
-                                href="/hs/cn_about_us?lang={{ lang }}">
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1059">
+                            <!-- <a  href="/hs/cn_about_us?lang={{ lang }}"> -->
+                                <a  href="#about_us">
                             {% if lang == "en" %}
                                 ABOUT US
                             {% else %}
@@ -1041,18 +1137,14 @@
                 <label class="footer__label" id="about-menu-label">
                     About </label>
                 <ul id="menu-footer-menu-about" class="menu menu__footer">
-                    <li id="menu-item-1395"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1395"><a
-                            href="/about-us/">关于我们</a></li>
+                   
                     <li id="menu-item-1393"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1393"><a
-                            href="/contact/">联系方式</a></li>
+                            href="/contact">联系方式</a></li>
                     <li id="menu-item-1392"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1392"><a
-                            href="/jobs/">工作机会</a></li>
-                    <li id="menu-item-1394"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1394"><a
-                            href="/legal/">法律</a></li>
+                            href="/jobs">工作机会</a></li>
+                
                 </ul>
             </nav>
         </section>
@@ -1068,7 +1160,7 @@
                 </div>
             </div>
             <div class="footer__row">
-                <address class="footer__copyright">© 2023 HongShan</address>
+                <address class="footer__copyright">© 2023 HarmonyCapital</address>
             </div>
         </section>
     </div>
