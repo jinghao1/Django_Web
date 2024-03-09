@@ -15,9 +15,9 @@
     <link rel="canonical" href="/">
     <meta property="og:locale" content="zh_CN">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Home - HongShan">
+    <meta property="og:title" content="Home - HarmonyCapital">
     <meta property="og:url" content="/">
-    <meta property="og:site_name" content="HongShan">
+    <meta property="og:site_name" content="HarmonyCapital">
     <meta property="article:modified_time" content="2023-11-07T05:27:29+00:00">
     <meta name="twitter:card" content="summary_large_image">
     <script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"/","url":"/","name":"Home - HongShan","isPartOf":{"@id":"/#website"},"datePublished":"2022-06-24T10:31:36+00:00","dateModified":"2023-11-07T05:27:29+00:00","breadcrumb":{"@id":"/#breadcrumb"},"inLanguage":"zh-CN","potentialAction":[{"@type":"ReadAction","target":["/"]}]},{"@type":"BreadcrumbList","@id":"/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"/#website","url":"/","name":"HongShan","description":"HongShan","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"zh-CN"}]}</script>
@@ -1028,7 +1028,12 @@
 <header class="header" data-color-mode="">
     <div class="header__layer">
         <div class="header__container">
-            <a href="/" title="HongShan" target="_self">
+           
+
+
+            {% if lang == "en" %}
+
+            <a href="/?lang=en" title="HarmonyCapital" target="_self">
                 <div class="header__image header__image--desktop">
                   
                     <img src="{% static 'images/logo.png' %}" >
@@ -1038,6 +1043,20 @@
                     <img src="{% static 'images/logo.png' %}" >
                 </div>
             </a>
+                {% else %}
+
+                <a href="/?lang=cn" title="HarmonyCapital" target="_self">
+                    <div class="header__image header__image--desktop">
+                      
+                        <img src="{% static 'images/logo.png' %}" >
+     
+                    </div>
+                    <div class="header__image header__image--mobile">
+                        <img src="{% static 'images/logo.png' %}" >
+                    </div>
+                </a>
+        {% endif %}
+
             <button class="header__toggle-menu" aria-hidden="true" data-menu-toggle="#header-nav">
                 <i class="ico--hamburger"></i>
             </button>
@@ -1047,10 +1066,12 @@
                         <li id="menu-item-1059"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1059">
                             <!-- <a  href="/hs/cn_about_us?lang={{ lang }}"> -->
-                                <a  href="#about_us">
+                                
                             {% if lang == "en" %}
+                            <a  href="/?lang=en#about_us"></a>
                                 ABOUT US
                             {% else %}
+                            <a  href="/?lang=cn#about_us"> 
                                 关于我们
                             {% endif %}
                             <svg fill="none" viewBox="0 0 182.24 72.42" class="menu-item-circle">
@@ -1139,11 +1160,28 @@
                 <ul id="menu-footer-menu-about" class="menu menu__footer">
                    
                     <li id="menu-item-1393"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1393"><a
-                            href="/contact">联系方式</a></li>
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1393">
+                     
+                            
+                            {% if lang == "en" %}
+                            <a  href="/contact?lang=en">
+                            CONTACT
+                        {% else %}
+                        <a  href="/contact?lang=cn">
+                        联系方式
+                        {% endif %}
+                        </a></li>
                     <li id="menu-item-1392"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1392"><a
-                            href="/jobs">工作机会</a></li>
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1392">
+                    
+                            {% if lang == "en" %}
+                            <a  href="/jobs?lang=en">
+                            JOBS
+                        {% else %}
+                        <a  href="/jobs?lang=cn">
+                        工作机会
+                        {% endif %}
+                            </a></li>
                 
                 </ul>
             </nav>

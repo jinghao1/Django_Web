@@ -5,39 +5,56 @@
 
     <article class="content is-layout-constrained has-global-padding wysiwyg">
 
+     
+
+
+        {% if lang == "en" %}
+        <style>
+            .post-container:before{
+                border:none;
+            }
+        </style>
+ 
         <section class="hero">
             <div class="hero__container">
-                <h1 class="hero__title hero__title--standard">工作机会</h1>
+                <h1 class="hero__title hero__title--standard" style="font-size:8rem;">JOBS</h1>
             </div>
-        </section>
-
-
-
+        </section> 
         <section class="wp-block-mg-post-container post-container wysiwyg has-global-padding is-layout-constrained wp-container-1 wp-block-post-container-is-layout-constrained">
-            <h1 class="wp-block-heading has-text-align-center" style="text-align: center;">加入优秀创业团队</h1>
+            <h1 class="wp-block-heading has-text-align-center" style="text-align: center;">Work with the best startups in the world.</h1>
 
             <p></p>
             <blockquote class="wp-block-quote">
-                <p>创业时代，期待有你<br>大牛通道，只为你开</p>
+                <p>There’s nothing like pairing the best and brightest minds with companies that want to change the world.</p>
                 <p style="padding-top:2em;padding-bottom:2em;"><img src="{% static 'images/hr.png' %}"></p>
-            </blockquote>
- 
-
-
-      
-
-
-
-            <p></p>
-
- 
-
-            <p></p>
-
-
-
+            </blockquote> 
+            <p></p> 
+            <p></p> 
             <p></p>
         </section>
+    {% else %}
+     
+    <section class="hero">
+        <div class="hero__container">
+            <h1 class="hero__title hero__title--standard">工作机会</h1>
+        </div>
+    </section> 
+    <section class="wp-block-mg-post-container post-container wysiwyg has-global-padding is-layout-constrained wp-container-1 wp-block-post-container-is-layout-constrained">
+        <h1 class="wp-block-heading has-text-align-center" style="text-align: center;">加入优秀创业团队</h1>
+
+        <p></p>
+        <blockquote class="wp-block-quote">
+            <p>创业时代，期待有你<br>大牛通道，只为你开</p>
+            <p style="padding-top:2em;padding-bottom:2em;"><img src="{% static 'images/hr.png' %}"></p>
+        </blockquote> 
+        <p></p> 
+        <p></p> 
+        <p></p>
+    </section>
+    
+    {% endif %}
+
+
     </article>
 
 </main>

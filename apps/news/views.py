@@ -169,15 +169,15 @@ def hs_cn_about_us(request):
 
 # 联系我们
 def hs_contact_us(request):
-   
-    context = {}
+    lang = request.GET.get("lang", "cn")
+    context = {'lang': lang}
     return render(request, 'hs/contact.html', context=context)
 
 
 # 联系我们
 def hs_job_us(request):
-   
-    context = {}
+    lang = request.GET.get("lang", "cn")
+    context = {'lang': lang}
     return render(request, 'hs/jobs.html', context=context)
 
 

@@ -3,24 +3,40 @@
 <main class="main" id="main"></main>
 <article class="content is-layout-constrained has-global-padding wysiwyg">
 
+    {% if lang == "en" %}
+ 
     <section class="hero">
         <div class="hero__container">
-            <h1 class="hero__title hero__title--standard">联系方式</h1>
+            <h1 class="hero__title hero__title--standard" style="font-size:8rem;">CONTACT            </h1>
         </div>
-    </section>
-
- 
-
-
-    <p><strong>上海</strong>
-        <br>上海市长宁路999号<br>兆丰广场2909室<br>
+    </section> 
+    <p><strong>Shanghai</strong>
+        <br>999 Changning Road, Shanghai<br>Room 2909, Zhaofeng Plaza<br>
         <a href="tel:+86%2013671150115">+86 13671150115</a>
     </p>
-    <p><strong>新加坡</strong>
+    <p><strong>Singapore</strong>
         <br>3 Ubi Ave 3, #04-01<br>Crocodile House, Singapore<br>
         <a href="tel:+65%20408857">+65 408857</a>
     </p>
+{% else %}
+ 
+<section class="hero">
+    <div class="hero__container">
+        <h1 class="hero__title hero__title--standard">联系方式</h1>
+    </div>
+</section> 
+<p><strong>上海</strong>
+    <br>上海市长宁路999号<br>兆丰广场2909室<br>
+    <a href="tel:+86%2013671150115">+86 13671150115</a>
+</p>
+<p><strong>新加坡</strong>
+    <br>3 Ubi Ave 3, #04-01<br>Crocodile House, Singapore<br>
+    <a href="tel:+65%20408857">+65 408857</a>
+</p>
 
+{% endif %}
+
+   
 
     <!-- <p><strong>香港</strong><br>金钟道 88 号<br>太古广场 2 座 3613 室<br><a
             href="tel:+852%202501%208989">+852 2501 8989</a></p> -->
