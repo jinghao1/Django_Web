@@ -31,7 +31,10 @@ class LoginView(View):
 
     def get(self, request):
         logger.warning("gettest！")
-        return render(request, 'auth/login.html')
+        lang = request.GET.get("lang", "cn")
+        context = {'lang': lang}
+        return render(request, 'auth/login.html', context=context)
+        # return render(request, 'auth/login.html')
 
     def post(self, request):
 

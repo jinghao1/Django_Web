@@ -1203,9 +1203,17 @@
         </section>
     </div>
     <div class="footer__regulatory-notice">
-        <div class="footer__regulatory-notice-container"><a class="footer__regulatory-notice-logo" target="_blank"
-                                                            href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42018502006203">鄂公网安备42018502007030号</a>
-            &nbsp;&nbsp; <a href="https://beian.miit.gov.cn/" target="_blank">鄂ICP备2022009854号-2</a></div>
+        {% if lang == "en" %}
+        <div class="footer__regulatory-notice-container">ICP
+            &nbsp;&nbsp; <a href="https://beian.miit.gov.cn/" target="_blank">Jing ICP Bei No. 2024053638</a>
+        
+        </div>
+    {% else %}
+    <div class="footer__regulatory-notice-container">ICP主体备案号
+        &nbsp;&nbsp; <a href="https://beian.miit.gov.cn/" target="_blank">京ICP备2024053638号</a></div>
+    {% endif %}
+
+    
     </div>
 
     <div id="mg-search-instant-results"></div>

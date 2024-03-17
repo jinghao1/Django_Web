@@ -2,7 +2,7 @@ from django.urls import path
 from rest_framework.urlpatterns import format_suffix_patterns
 
 from . import views
-from . import course_views
+from . import company_views
 from . import staff_views
 
 # from rest_framework import routers
@@ -33,18 +33,18 @@ urlpatterns = [
 
     path('news_show', views.NewsClickShowView.as_view(), name='news_show'),
 ]
-# # 课程相关的url
-# urlpatterns += [
-#     path('pub_course/', course_views.PubCourse.as_view(), name='pub_course'),
-#     path('course_category/', course_views.CourseCategoryViem.as_view(), name='course_category'),
-#     path('add_course_category/', course_views.add_course_category, name='add_course_category'),
-#     path('edit_course_category/', course_views.edit_course_category, name='edit_course_category'),
-#     path('delete_course_category/', course_views.delete_course_category, name='delete_course_category'),
-#     path('course_teacher/', course_views.CourseTeacher.as_view(), name='course_teacher'),
-#     path('course_teacher/<pk>/', course_views.CourseTeacherDetail.as_view(), name='course_teacher_detail'),
-#     path('course_teacher_list/', course_views.CourseTeacherList.as_view(), name='course_teacher_list'),
-#     path('course_teacher_list/<pk>/', course_views.CourseTeacherListDetail.as_view(), name='course_teacher_list_detail'),
-# ]
+#公司管理的url
+urlpatterns += [
+    path('company_list/', company_views.PubCompany.as_view(), name='company_list'),
+    # path('course_category/', course_views.CourseCategoryViem.as_view(), name='course_category'),
+    # path('add_course_category/', course_views.add_course_category, name='add_course_category'),
+    # path('edit_course_category/', course_views.edit_course_category, name='edit_course_category'),
+    # path('delete_course_category/', course_views.delete_course_category, name='delete_course_category'),
+    # path('course_teacher/', course_views.CourseTeacher.as_view(), name='course_teacher'),
+    # path('course_teacher/<pk>/', course_views.CourseTeacherDetail.as_view(), name='course_teacher_detail'),
+    # path('course_teacher_list/', course_views.CourseTeacherList.as_view(), name='course_teacher_list'),
+    # path('course_teacher_list/<pk>/', course_views.CourseTeacherListDetail.as_view(), name='course_teacher_list_detail'),
+]
 
 # # 分享资料urlwrite_news
 # urlpatterns += [
