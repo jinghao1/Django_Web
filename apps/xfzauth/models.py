@@ -55,4 +55,14 @@ class User(AbstractBaseUser, PermissionsMixin):
     def get_short_name(self):
         return self.username
 
-
+class Project(models.Model): 
+    '''项目申请'''
+    company_name = models.CharField(max_length=100)
+    username = models.CharField(max_length=100) 
+    telephone = models.CharField(max_length=11)
+    hangye = models.CharField(max_length=255)
+    rongzi = models.CharField(max_length=255)
+    other = models.TextField()  # 其他
+    is_del = models.BooleanField(default=False)  # 这里的命名是规定好的，
+    pub_time = models.DateTimeField(auto_now_add=True)  # 创建时间
+ 

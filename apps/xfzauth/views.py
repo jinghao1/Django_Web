@@ -8,9 +8,9 @@ from django.http import HttpResponse
 
 from utils.aliyunsdk import aliyun
 from utils.captcha.hycaptcha import Captcha
-from .forms import LoginFrom, RegisterForm  # 导入form表单
+from .forms import LoginFrom, RegisterForm, ProjectRegisterForm  # 导入form表单
 # authentivate 用来验证用户是否登录，login和logout的登录和登出
-from .models import User
+from .models import User,Project
 import logging
 logger = logging.getLogger('django')
 # from django.forms.utils import ErrorDict
@@ -94,7 +94,7 @@ class LoginView(View):
 
 
 class RegisterView(View):
-    """注册"""
+    """用户注册"""
 
     def get(self, request):
         return render(request, "auth/register.html")
@@ -150,3 +150,27 @@ def sms_captcha(request):
     print(telephone, code)
     request.session['sms_captcha'] = code
     return HttpResponse('success')
+
+
+class ProjectRegisterView(View):
+    """项目注册"""
+
+    def get(self, request):
+        return render(request, "auth/project_register.html")
+
+    def post(self, request):
+        form = ProjectRegisterForm(request.POST)
+        if form.is_valid() and form.validate_data(request):
+            telephone = form.cleaned_data.get('telephone')
+            username = form.cleaned_data.get('username')
+            hangye = form.cleaned_data.get('hangye')
+            company_name = form.cleaned_data.get('company_name') 
+            rongzi = form.cleaned_data.get('rongzi')
+            other = form.cleaned_data.get('other','')
+            Project.objects.create(
+                telephone=telephone, username=username, hangye=hangye,company_name=company_name,rongzi=rongzi,other=other)
+   
+            return restful.ok()
+        else:
+            message = form.get_error()
+            return restful.params_error(message=message)

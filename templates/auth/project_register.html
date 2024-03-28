@@ -19,9 +19,7 @@
             <a href="{% url 'xfzauth:login' %}" class="more-link">立即登录</a>
         </div>
         <div class="from-group">
-            <div class="input-group">
-                <input id="test" type="text" class="from-control" name="telephone" placeholder="请输入手机号码或邮箱">
-            </div>
+          
             <div class="input-group">
                 <input type="text" class="from-control" name="username" placeholder="请输入用户名">
             </div>
@@ -30,10 +28,19 @@
                 <img src="{% url 'xfzauth:img_captcha' %}" alt="" class="img-captcha input-group-addon">
             </div>
             <div class="input-group">
-                <input type="password" class="from-control" name="password1" placeholder="请输入密码">
+                <input type="text" class="from-control" name="company_name" placeholder="企业名称">
             </div>
             <div class="input-group">
-                <input type="password" class="from-control" name="password2" placeholder="请重新输入密码">
+                <input type="text" class="from-control" name="hangye" placeholder="行业标签">
+            </div>
+            <div class="input-group">
+                <input type="text" class="from-control" name="rongzi" placeholder="融资情况">
+            </div>
+            <div class="input-group">
+                <input type="text" class="from-control" name="other" placeholder="其他">
+            </div>
+            <div class="input-group">
+                <input id="test" type="text" class="from-control" name="telephone" placeholder="请输入手机号码">
             </div>
             <div class="input-group">
                 <input type="text" class="from-control split-form-control" name="sms_captcha" placeholder="请输入短信验证码">
@@ -48,7 +55,7 @@
                 </div>
             {% endif %}
             <div class="input-group">
-            <button class="submit-btn">注册</button>
+            <button class="submit-btn">提交</button>
             </div>
         </div>
     </div>

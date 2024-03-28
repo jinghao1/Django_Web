@@ -1776,8 +1776,15 @@
         </section>
     </div>
     <div class="footer__regulatory-notice">
-        <div class="footer__regulatory-notice-container">ICP subject registration number
-            &nbsp;&nbsp; <a href="https://beian.miit.gov.cn/" target="_blank">Jing ICP Bei No. 2024053638</a></div>
+        {% if lang == "en" %}
+        <div class="footer__regulatory-notice-container">ICP
+            &nbsp;&nbsp; <a href="https://beian.miit.gov.cn/" target="_blank">Jing ICP Bei No. 2024053638</a>
+        
+        </div>
+    {% else %}
+    <div class="footer__regulatory-notice-container">ICP主体备案号
+        &nbsp;&nbsp; <a href="https://beian.miit.gov.cn/" target="_blank">京ICP备2024053638号</a></div>
+    {% endif %}
     </div>
 
     <div id="mg-search-instant-results"></div>
