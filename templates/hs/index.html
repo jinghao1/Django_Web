@@ -37,6 +37,28 @@
         <div class="ink-collection">
             <div class="ink-collection__grid grid">
                 <div class="grid__instances" data-grid-columns="12">
+                    <div class="grid__instance aos-init aos-animate" data-size="lg" data-aos="fade-in"
+                    data-aos-duration="1000" data-aos-delay="100">
+                        <div class="grid__content"><a class="ink" style="background-color:#1b1916;"
+                                href="{% url 'xfzauth:project_register'   %}">
+                                <div class="ink__content ink__content--protected">
+                                    <img loading="lazy" width="900" height="900" src="http://huachen.group/media/hsbm.jpeg"
+                                        class="ink__image" alt="" decoding="async"
+                                        sizes="(max-width: 900px) 100vw, 900px">
+                                    <div class="ink__text" data-size="lg" data-color="light">
+
+                                        <h2 class="ink__title" data-size="lg" data-h-align="left" data-v-align="bottom"
+                                            data-font-family="unica" data-font-size="sm" data-width="wide"
+                                            data-word-wrap="false">{{ news.title }}</h2>
+
+                                        <div class="ink__category ink__category--%e8%a7%82%e7%82%b9" data-size="lg">
+                                            {{ news.category.name }}</div>
+
+                                    </div>
+                                </div>
+                            </a></div>
+                </div>
+
                     {% for news in newses %}
                     {% if forloop.counter0 in smalles %}
                     <div class="grid__instance aos-init" data-size="sm" data-aos="fade-in" data-aos-duration="1000"
