@@ -36,6 +36,7 @@ urlpatterns = [
 #公司管理的url
 urlpatterns += [
     path('company_list/', company_views.PubCompany.as_view(), name='company_list'),
+    path('company_edit/', company_views.EditPubCompany.as_view(), name='company_edit'),
     # path('course_category/', course_views.CourseCategoryViem.as_view(), name='course_category'),
     # path('add_course_category/', course_views.add_course_category, name='add_course_category'),
     # path('edit_course_category/', course_views.edit_course_category, name='edit_course_category'),
