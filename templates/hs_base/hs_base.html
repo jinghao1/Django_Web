@@ -802,6 +802,7 @@
             id="wp-html-entities-js"></script>
     <script type="text/javascript" id="mg-search-instant-results-js-extra">
         /* <![CDATA[ */
+
         var epInstantResults = {
             "disclosureButton": "#search-toggle",
             "apiEndpoint": "/hs/search",
@@ -838,13 +839,9 @@
                     "sanitize_callback": "sanitize_text_field",
                     "validate_callback": "rest_validate_request_arg"
                 },
-                "lang": {
-                    "description": "lang",
-                    "type": "string",
-                    "default": "{{ lang }}"
-                },
+
                 "type": {
-                    "default": "post",
+                    "default": "post&lang={{ lang }}",
                     "description": "\u9650\u5236\u7ed3\u679c\u4e3a\u4e00\u79cd\u5bf9\u8c61\u7c7b\u578b\u3002",
                     "type": "string",
                     "enum": ["post"]
