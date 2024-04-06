@@ -182,9 +182,9 @@ def hs_job_us(request):
 
 
 # 搜索
-def hs_search(request):
+def hs_search(request,lang_str='cn'):
     s_search = request.GET.get("search", None)
-    lang = request.GET.get("lang", "cn")
+    lang = lang_str
     res_api = {
         "results": [],
         "total": 0,
