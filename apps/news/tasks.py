@@ -28,8 +28,10 @@ def make_md5(s, encoding='utf-8'):
 
 def to_translate(query):
     # Set your own appid/appkey.
-    appid = '20231202001899147'
-    appkey = 'ciZbPXWbkBQnm2wAuk9U'
+    # appid = '20231202001899147'
+    # appkey = 'ciZbPXWbkBQnm2wAuk9U'
+    appid = '20240225001972867'
+    appkey = 'SL45TUTOvWDh74tDlvyB'
     #  litianshu   APP ID：20240225001972867
     # 密钥：SL45TUTOvWDh74tDlvyB
 
@@ -93,3 +95,7 @@ def translate_news(request):
     return JsonResponse(data={
         "msg": "success"
     })
+
+
+if __main__ == "main":
+    print("jing")

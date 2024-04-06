@@ -4,7 +4,9 @@ from django.db import models
 class Desc(models.Model):
     """定义一个企业描述"""
     name = models.CharField(max_length=255)
+    name_en = models.CharField(max_length=255)
     roundName = models.CharField(max_length=255)
+    roundName_en = models.CharField(max_length=255)
     cityName = models.CharField(max_length=255,default="NUll",null=True)
     establishDate = models.DateTimeField()
     img_url = models.CharField(max_length=255)

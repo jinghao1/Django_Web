@@ -35,9 +35,7 @@ def company_detail(request, xn_href):
         dt_s = datetime.datetime.now().date()  # 2018-7-15
         dt_e = (dt_s - timedelta(7))  # 2018-7-08
         lang = request.GET.get("lang", "cn")
-        # print(dt_e)
-        # objs = Record.objects.filter(end_time__range=[dt_s, dt_e])
-        # objs = Record.objects.filter(Q(end_time__=dt_s) & Q(end_time__lt=dt_e))  # 效果相同
+
         gs_info = GongShang.objects.filter(
             xn_href=xn_href, date__gt=dt_e).exists()
         # print("gs_info",gs_info)
