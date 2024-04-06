@@ -97,5 +97,5 @@ def translate_news(request):
     })
 
 
-if __main__ == "main":
+if __name__ == '__main__':
     print("jing")
