@@ -24,6 +24,7 @@ import requests
 from lxml import etree
 import re
 import json
+from apps.news.tasks import field_content_to_translate
 
 
 def company_detail(request, xn_href):
@@ -33,11 +34,12 @@ def company_detail(request, xn_href):
         result_info = {}
         dt_s = datetime.datetime.now().date()  # 2018-7-15
         dt_e = (dt_s - timedelta(7))  # 2018-7-08
+        lang = request.GET.get("lang", "cn")
         # print(dt_e)
-        #objs = Record.objects.filter(end_time__range=[dt_s, dt_e])
-        #objs = Record.objects.filter(Q(end_time__=dt_s) & Q(end_time__lt=dt_e))  # 效果相同
+        # objs = Record.objects.filter(end_time__range=[dt_s, dt_e])
+        # objs = Record.objects.filter(Q(end_time__=dt_s) & Q(end_time__lt=dt_e))  # 效果相同
         gs_info = GongShang.objects.filter(
-            xn_href=xn_href,date__gt=dt_e).exists()
+            xn_href=xn_href, date__gt=dt_e).exists()
         # print("gs_info",gs_info)
         if not gs_info:
             response = xn_company_detail(xn_href)
@@ -49,30 +51,36 @@ def company_detail(request, xn_href):
                 cont = json.loads(content[0])
                 # company desc
                 # com_info = cont["props"]["pageProps"]["company"]
-                gongshang_str = cont["props"].get("pageProps",{}).get("gongshang","{}")
-                com_info = cont["props"].get("pageProps",{}).get("company",{})
+                gongshang_str = cont["props"].get("pageProps", {}).get("gongshang", "{}")
+                com_info = cont["props"].get("pageProps", {}).get("company", {})
                 if gongshang_str:
                     gongshang = json.loads(gongshang_str)
                 else:
                     gongshang = {}
                 # 联系方式
                 contact_info = gongshang.get("contact", {})
-                if not com_info.get("districtName",""):
-                    cityName = com_info.get("cityName","")
+                if not com_info.get("districtName", ""):
+                    cityName = com_info.get("cityName", "")
                 else:
                     cityName = com_info.get("cityName", "") + ">" + str(com_info.get("districtName", ""))
                 # 企业描述
+                com_desc = com_info.get("desc", "")
+                if com_desc and lang == "en":
+                    com_desc_en = field_content_to_translate(com_desc)
+                else:
+                    com_desc_en = ""
                 Desc.objects.update_or_create(defaults={
-                    "name": com_info.get("name",""),
+                    "name": com_info.get("name", ""),
                     "xn_href": xn_href,
-                    "brief": com_info.get("brief","") ,
-                    "desc": com_info.get("desc","")  ,
-                    "roundName": com_info.get("roundName","")  ,
+                    "brief": com_info.get("brief", ""),
+                    "desc": com_desc,
+                    "desc_en": com_desc_en,
+                    "roundName": com_info.get("roundName", ""),
                     "cityName": cityName,
-                    "establishDate": datetime.date.fromtimestamp( com_info.get("establishDate",0) / 1000),
-                    "img_url": com_info.get("logo","")  ,
-                    "company_url" : com_info.get("website","")  ,
-                    "phone":  contact_info.get("telephone", ""),
+                    "establishDate": datetime.date.fromtimestamp(com_info.get("establishDate", 0) / 1000),
+                    "img_url": com_info.get("logo", ""),
+                    "company_url": com_info.get("website", ""),
+                    "phone": contact_info.get("telephone", ""),
                     "email": contact_info.get("email", ""),
                     "address": contact_info.get("address", ""),
                 }, xn_href=xn_href)
@@ -80,12 +88,13 @@ def company_detail(request, xn_href):
                 if gongshang:
                     GongShang.objects.update_or_create(
                         defaults={
-                            "code": com_info.get("code","") ,
+                            "code": com_info.get("code", ""),
                             "xn_href": xn_href,
-                            "fullName": com_info.get("fullName","") ,
-                            "legalPersonName": gongshang.get("legalPersonName",""),  # 法人
-                            "establishTime": datetime.date.fromtimestamp(gongshang.get("establishTime", 0) / 1000),  # 成立时间
-                            "businessScope": gongshang.get("businessScope", "") ,  # 工商描述
+                            "fullName": com_info.get("fullName", ""),
+                            "legalPersonName": gongshang.get("legalPersonName", ""),  # 法人
+                            "establishTime": datetime.date.fromtimestamp(gongshang.get("establishTime", 0) / 1000),
+                            # 成立时间
+                            "businessScope": gongshang.get("businessScope", ""),  # 工商描述
                             "regCapital": gongshang.get("regCapital", ""),  # 注册资本
                             "regStatus": gongshang.get("regStatus", ""),  # 经营状态
                             "date": datetime.date.fromtimestamp(time.time()),
@@ -94,7 +103,7 @@ def company_detail(request, xn_href):
                 # 融资历程
                 # print("rongzi......")
                 # licheng = cont["props"]["pageProps"].get("fundings",{})
-                for licheng in cont["props"]["pageProps"].get("fundings",{}):
+                for licheng in cont["props"]["pageProps"].get("fundings", {}):
                     fundingDesc = json.loads(licheng["fundingDesc"])
                     xn_id = str(licheng.get("id", "1"))
                     if fundingDesc.get("investorStr", None) is None:
@@ -111,7 +120,7 @@ def company_detail(request, xn_href):
                             "xn_id": xn_id,  # 犀牛id
                             "roundName": licheng["roundName"],
                             "fundingDate": datetime.date.fromtimestamp(licheng.get("fundingDate", 0) / 1000),
-                            "postMoney": fundingDesc.get("postMoney","暂无"),  # 估值
+                            "postMoney": fundingDesc.get("postMoney", "暂无"),  # 估值
                             "money": fundingDesc.get("money", "暂无"),  # 投资金额
                             "ratio": fundingDesc.get("ratio", "暂无"),  # 投资比例
                             "newsLink": licheng.get("newsLink", "暂无"),  # 犀牛新闻链接
@@ -120,7 +129,7 @@ def company_detail(request, xn_href):
                         }, xn_href=xn_href, xn_id=xn_id
                     )
                     # 标签画像 优势 行业分类
-                tileTagListArr = cont["props"]["pageProps"].get("tileTagList",{})
+                tileTagListArr = cont["props"]["pageProps"].get("tileTagList", {})
                 tag_arr_hy = []
                 tag_arr_ys = []
                 for item in tileTagListArr:
@@ -159,7 +168,7 @@ def company_detail(request, xn_href):
                 rz_arr.append(model_to_dict(item))
 
         # print(result_info)
-        lang = request.GET.get("lang", "cn")
+
         context = {
             'rz_arr': rz_arr,
             'gs_info': gs_info,
@@ -167,7 +176,10 @@ def company_detail(request, xn_href):
             'hx_info': hx_info,
             'lang': lang
         }
-        return render(request, 'xn/xn_detail.html', context=context)
+        if lang == "en":
+            return render(request, 'xn/xn_detail_en.html', context=context)
+        else:
+            return render(request, 'xn/xn_detail.html', context=context)
         # return render(request, 'company/hs_company_detail.html', context=context)
     # except Exception as e:
     #     raise Http404  # 抛出一个404错误，当抛出404时，django就会在根文件中的templates文件调用一个叫做404的文件

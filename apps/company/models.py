@@ -11,6 +11,7 @@ class Desc(models.Model):
     company_url = models.CharField(max_length=255)
     brief = models.CharField(max_length=255)
     desc = models.TextField()  # 简介
+    desc_en = models.TextField()  # 英文简介
     phone = models.CharField(max_length=255)
     email = models.CharField(max_length=255)
     address = models.CharField(max_length=255)

@@ -1,0 +1,229 @@
+{% extends 'hs_base/hs_xn_base.html' %}
+<style>
+
+    .page-detail {
+        display: inline-block;
+        width: 1200px;
+        margin: 0 auto 50px;
+    }
+
+</style>
+
+{% block main %}
+    <body>
+    <div id="__next">
+        <div data-reactroot="">
+            <div class="_1daRzdB6dN6MIy-t9OrIiU">
+
+                <div class="_1WthV-TSYt2hl2_wdptY36 _1Bc7sKvlUTD25JuvhHpazS">
+                    <div class="n-8D5H4wj_3heF91qx6_u _3_VZMizTAgO6cmPNPXsUsD">
+                        <div class="jsx-1699468856 page-detail">
+                            <div id="basicInfo">
+                                <div id="detailHeader" class="jsx-1095867679 _38stozkC24PhpjrZTB00V7">
+
+                                    <div id="header" class="jsx-1095867679 _3owE4m5nKeKHiowGIQuDU9">
+                                        <div class="jsx-1095867679 _1fATb8VqRyYZzJMYY3qzRg"><img
+                                                src="{{ desc_info.img_url }}" class="jsx-1095867679">
+                                        </div>
+                                        <div class="jsx-1095867679 _2xgwYewA62LYhRpEZdXOPL">
+                                            <div class="jsx-1095867679 _1JOIm3EpVvjsDllrJBQZJw"><span
+                                                    class="jsx-1095867679 _1kFfkW1sEHt3ayQfpwuQOz">{{ desc_info.name }}</span><span
+                                                    style="color:#444"
+                                                    class="jsx-1095867679 _11r7Lb8V7e-eMU2VBWnDG0">{{ desc_info.brief }}</span><span
+                                                    class="jsx-1095867679 _11r7Lb8V7e-eMU2VBWnDG0">{{ desc_info.roundName }}</span><span
+                                                    class="jsx-1095867679 _11r7Lb8V7e-eMU2VBWnDG0">{{ desc_info.cityName }}</span><span
+                                                    class="jsx-1095867679 _11r7Lb8V7e-eMU2VBWnDG0">{{ desc_info.establishDate }}</span><span
+                                                    class="jsx-1095867679"><a href="{{ desc_info.company_url }}"
+                                                                              target="_blank"
+                                                                              class="jsx-1095867679 _6q3RHhY-moeSg0j8M2_73">查看官网</a></span>
+                                            </div>
+                                            <div class="jsx-1095867679 h9xZKhPwJtYeya_Y4Jjh">
+                                                <div style="background:#cde2ea"
+                                                     class="jsx-1095867679 _1iLqW__AQKN3iyXxznfLpv"></div>
+                                                <div style="background:#cde2ea"
+                                                     class="jsx-1095867679 _3XkK2HK-CSk_zcTfj-_b7O"></div>
+                                            </div>
+                                            <div class="jsx-1095867679">
+                                                <div class="jsx-1095867679 _1B7QvtnoWCZE1Fj2T0Oq-j">
+                                                    <div class="jsx-1095867679 _17KX9AFbtNnLJN2xjsNEJe">
+                                                        <pre class="jsx-1095867679">{{ desc_info.desc_en }}</pre>
+                                                    </div>
+                                                </div>
+                                                <div class="jsx-1095867679 contact">
+                                                    <div class="jsx-1095867679 _3Kr-GwgO_aedJWeGfPkjjt">联系方式：
+                                                        <div class="jsx-1095867679 _3a5IC40xDHsJ0t_SvZxEMM"><i
+                                                                class="jsx-1095867679 iconfont icon-dianhua"></i><span
+                                                                class="jsx-1095867679">{{ desc_info.phone }}<!-- --> </span>
+                                                        </div>
+                                                        <div class="jsx-1095867679 _3a5IC40xDHsJ0t_SvZxEMM"><i
+                                                                class="jsx-1095867679 iconfont icon-youxiang"></i><span
+                                                                class="jsx-1095867679">{{ desc_info.email }}<!-- --> </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+{#                                        <div class="jsx-1095867679 _3t7LRzgobxS9Q06fa5XUEr">#}
+{#                                            <div class="ZrxmR96iEsVQnwIl6zYlC">#}
+{#                                                <div class="_1NLExUPlv0juQLPgeyuX_9"><span#}
+{#                                                        class="DOwtv64LKhiSXw0baVIB6"> + 收藏</span>#}
+{#                                                </div>#}
+{#                                            </div>#}
+{#                                        </div>#}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="jsx-1699468856 container">
+                                <div class="jsx-1699468856 left-part">
+                                    <section id="tagInfo" class="jsx-3367680878" style="margin-top: 16px;">
+                                        <div class="jsx-3367680878 name"><img src="{% static 'xn_source/tag.png' %}"
+                                                                              class="jsx-3367680878 header-icon"><span
+                                                class="jsx-3367680878">标签画像</span></div>
+
+                                        <div class="jsx-3618975690 portrait-section">
+                                            <div class="jsx-2477992176 portrait"><label
+                                                    class="jsx-2477992176">公司优势：</label>
+                                                <div class="jsx-2477992176 portrait-tag">
+                                                    {% for name in hx_info.youshi %}
+                                                        <a class="jsx-3112032488 tag-border  yellow-tag">{{ name }}</a>
+
+                                                    {% endfor %}
+
+                                                </div>
+                                            </div>
+                                            <div class="jsx-2477992176 portrait"><label
+                                                    class="jsx-2477992176">行业标签：</label>
+                                                <div class="jsx-2477992176 portrait-tag">
+                                                    {% for name in hx_info.fenlei %}
+                                                        <span class="jsx-3112032488 tag-border ">{{ name }}</span>
+                                                    {% endfor %}
+
+                                                </div>
+                                            </div>
+                                            {% if desc_info.biaoxian %}
+                                                <div class="jsx-2477992176 portrait"><label
+                                                        class="jsx-2477992176">活动表现：</label>
+                                                    <div class="jsx-2477992176 portrait-tag"><span
+                                                            class="jsx-3112032488 tag-border ">{{ desc_info.biaoxian }}</span>
+                                                    </div>
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    </section>
+                                    <section id="gongshangInfo" class="jsx-3367680878">
+                                        <div class="jsx-3367680878 name"><img src="{% static 'xn_source/tag.png' %}"
+                                                                              class="jsx-3367680878 header-icon"><span
+                                                class="jsx-3367680878">工商信息</span></div>
+
+                                        <div class="jsx-1025698136 section-body">
+                                            <div class="jsx-1025698136 column"><span
+                                                    class="jsx-1025698136 title">公司名称：</span><span
+                                                    class="jsx-1025698136 content">{{ gs_info.fullName }}</span></div>
+                                            <div class="jsx-1025698136 column"><span
+                                                    class="jsx-1025698136 title">法定代表人：</span><span
+                                                    class="jsx-1025698136 content">{{ gs_info.legalPersonName }}</span>
+                                            </div>
+                                            <div class="jsx-1025698136 column"><span
+                                                    class="jsx-1025698136 title">注册时间：</span><span
+                                                    class="jsx-1025698136 content">{{ desc_info.establishDate }}</span>
+                                            </div>
+                                            <div class="jsx-1025698136 column"><span
+                                                    class="jsx-1025698136 title">工商描述：</span><span
+                                                    class="jsx-1025698136 content">{{ gs_info.businessScope }}</span>
+                                            </div>
+                                            <div class="jsx-1025698136 column"><span
+                                                    class="jsx-1025698136 title">注册资本：</span><span
+                                                    class="jsx-1025698136 content">{{ gs_info.regCapital }}</span></div>
+                                            <div class="jsx-1025698136 column"><span
+                                                    class="jsx-1025698136 title">经营状态：</span><span
+                                                    class="jsx-1025698136 content">{{ gs_info.regStatus }}</span></div>
+
+                                        </div>
+                                    </section>
+                                    <section id="fundingInfo" class="jsx-3367680878">
+                                        <div class="jsx-3367680878 name"><img src="{% static 'xn_source/tag.png' %}"
+                                                                              class="jsx-3367680878 header-icon"><span
+                                                class="jsx-3367680878">融资历程</span></div>
+                                        <div class="section-body">
+                                            <div class="jsx-2526812992 table-section">
+                                                <div class="jsx-2526812992 table-main">
+
+                                                    <div class="jsx-2526812992 table-row table-row-head">
+                                                        <div style="flex:0.8;padding:0 5px;text-align:left"
+                                                             class="jsx-2526812992"><span
+                                                                class="jsx-2526812992">轮次</span>
+                                                        </div>
+                                                        <div style="flex:1;padding:0 5px;text-align:left"
+                                                             class="jsx-2526812992"><span
+                                                                class="jsx-2526812992">融资时间</span>
+                                                        </div>
+                                                        <div style="flex:1.3;padding:0 5px;text-align:left"
+                                                             class="jsx-2526812992"><span
+                                                                class="jsx-2526812992">融资金额</span>
+                                                        </div>
+                                                        <div style="flex:4;padding:0 5px;text-align:left"
+                                                             class="jsx-2526812992"><span
+                                                                class="jsx-2526812992">投资方</span>
+                                                        </div>
+                                                        <div style="flex:1;padding:0 5px;text-align:left"
+                                                             class="jsx-2526812992"><span
+                                                                class="jsx-2526812992">比例（%）</span>
+                                                        </div>
+
+                                                        <div style="flex:1;padding:0 5px;text-align:left"
+                                                             class="jsx-2526812992"><span
+                                                                class="jsx-2526812992">估值</span>
+                                                        </div>
+
+
+                                                    </div>
+                                                    <div class="jsx-2526812992 table-body">
+                                                        {% for item in rz_arr %}
+                                                            <div class="jsx-2833694364 table-section">
+                                                                <div class="jsx-2833694364 index">
+                                                                    <div class="jsx-3845231842 column">{{ item.roundName }}</div>
+                                                                    <div class="jsx-507231509 column">{{ item.fundingDate }}</div>
+                                                                    <div class="jsx-2134696232 column">{{ item.money }}</div>
+                                                                    <div class="jsx-4226749936 column"><span
+                                                                            class="_20pG4Z6V8aawEu5cWbRc0V"><span><span
+                                                                            class="_1t8roOH5CKN7_DdVwrwy9O _2LDXHpfmVvPi36oKhkKyYS">
+                                                                           {{ item.investorStr }}</span></span></span>
+                                                                    </div>
+
+                                                                    <div class="jsx-507231509 column">{{ item.ratio }}</div>
+                                                                    <div class="jsx-507231509 column">{{ item.postMoney }}</div>
+
+
+                                                                </div>
+                                                            </div>
+                                                        {% endfor %}
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script async="" id="__NEXT_PAGE__/detail-company" src="{% static 'xn_source/detail-company.js' %}"></script>
+    <script async="" id="__NEXT_PAGE__/_app" src="{% static 'xn_source/_app.js' %}"></script>
+    <script async="" id="__NEXT_PAGE__/_error" src="{% static 'xn_source/_error.js' %}"></script>
+    <script src="{% static 'xn_source/webpack-a2610b762163b80c7162.js' %}"></script>
+    <script src="{% static 'xn_source/commons.e206d497c0aa2852c2e8.js' %}"></script>
+    <script src="{% static 'xn_source/styles.6a1db4369d416f25b059.js' %}"></script>
+    <script src="{% static 'xn_source/xn_source/main-689bf5a4d9521d9d1a79.js' %}"></script>
+    </body>
+{% endblock %}
