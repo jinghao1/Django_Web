@@ -242,60 +242,13 @@ def hs_search(request):
                             }
                         }
                     )
-                    # print(com_href)
-                    # print("".join(com_title))
-                    # print(com_brief)
-                    # print("".join(com_highlight))
             except Exception as e:
                 print(e)
     res_api['total'] = len(res_api['results'])
     res_api['totals']['company'] = len(res_api['results'])
     # print(res_api)
     return JsonResponse(res_api)
-    # print(res.status_code)
-    # print(res.content)
-    result = {
-        "results": [
-            {
-                "ID": 525,
-                "post_title": "\u7ea2\u6749X\u98de\u4e66\u300c\u7ec4\u7ec7\u8fdb\u5316\u8bba\u300d\uff1a\u4e3a\u4ec0\u4e48\u5148\u8fdb\u7ec4\u7ec7\u53ef\u4ee5\u4fdd\u6301\u5f39\u6027\uff1f| Human Capital Talk\u7b2c\u56db\u671f",
-                "post_type": "post",
-                "permalink": "\/article\/sequoia-feishu-human-capital-talk-4\/",
-                "terms": [],
-                "meta": [],
-                "acf": {
-                    "post_author_profile": "null"
-                }
-            },
-            {
-                "ID": 986,
-                "post_title": "\u5b57\u8282\u8df3\u52a8",
-                "post_type": "company",
-                "permalink": "\/companies\/bytedance\/",
-                "terms": {
-                    "sector": [
-                        {
-                            "term_id": 12,
-                            "slug": "tech",
-                            "name": "科技。。。--",
-                            "parent": 0,
-                            "term_taxonomy_id": 12,
-                            "term_order": 0,
-                            # "facet": "{\"term_id\":12,\"slug\":\"tech\",\"name\":\"\\u79d1\\u6280\",\"parent\":0,\"term_taxonomy_id\":12,\"term_order\":0}"
-                        }
-                    ]
-                },
-                "meta": []
-            }
-        ],
-        "total": 2,
-        "totals": {
-            "post": 1,
-            "company": 1
-        }
-    }
-    return JsonResponse(result)
-    # return render(request, 'hs/search_cn.html', context=context)
+
 
 
 @require_GET
