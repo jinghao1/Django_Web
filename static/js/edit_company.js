@@ -20,19 +20,19 @@ $(function () {
         var btn = $(this); // 当前点击的这个按钮
         var fullName = $("input[name='fullName']").val();
         var legalPersonName = $("input[name='legalPersonName']").val();
-        var businessScope = $("input[name='businessScope']").val();
+        var businessScope = $("#businessScope").val();
         var phone = $("input[name='phone']").val();
         var email = $("input[name='email']").val();
         var address = $("input[name='address']").val();
         var company_url = $("input[name='company_url']").val();
-        var desc = $("textarea[name='desc']").val();
+        var desc = $("#desc_info_desc").val();
     
         var code = $("input[name='code']").val();
         var lang = $("input[name='lang']").val();
       
         var gs_info_id = btn.attr('data-gs_info-id'); 
         var url = '/cms/company_edit/';
-      
+        // console.log(businessScope)
         xfzajax.post({
             'url':url,
             'data': {

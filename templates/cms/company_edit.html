@@ -41,7 +41,7 @@
                           
                             <div class="form-group">
                                 <label  >工商信息</label>
-                                <textarea name="businessScope"   cols="30" rows="10" class="form-control">{{ gs_info.businessScope }}</textarea>
+                                <textarea id="businessScope"   cols="30" rows="10" class="form-control">{{ gs_info.businessScope }}</textarea>
                     
                             </div>
                             <div class="from-group">
@@ -67,15 +67,15 @@
                          
                             <div class="form-group">
                                 <label  >描述</label> 
-                                    <textarea name="desc"   cols="30" rows="10" class="form-control">{{ desc_info.desc }}</textarea>
+                                    <textarea id="desc_info_desc"   cols="30" rows="10" class="form-control">{{ desc_info.desc }}</textarea>
                             </div>
                         </div>
                     </div>
                     <div class="box-footer">
                         <button id="submit-btn" class="btn btn-primary pull-right" data-gs_info-id="{{ gs_info.pk }}">发布
                         </button>
-                         <input hidden type="text" class="btn btn-default" name="lang" value="cn">
-                         <input hidden type="text" class="btn btn-default" name="code" value="{{ gs_info.code }}">
+                         <input hidden type="text" disabled="true" class="btn btn-default" name="lang" value="cn">
+                         <input hidden type="text" disabled="true"  class="btn btn-default" name="code" value="{{ gs_info.code }}">
                     </div>
                 </form>
             </div>

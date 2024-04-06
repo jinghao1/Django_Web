@@ -214,7 +214,7 @@ def hs_search(request):
                     com_brief = " ".join(com_brief)
                     com_highlight = div.xpath('./div[2]/div[3]//span//text()')
                     result_info = {
-                        "xn_href": com_href[0],
+                        "xn_href": com_href[0]+"?lang={}".format(lang),
                         "title": "".join(com_title),
                         "brief": com_brief,
                         "highlight": "".join(com_highlight),

@@ -136,24 +136,25 @@ class EditPubCompany(View):
     def post(self, request):
         form = request.POST
         if form:
-            if form.get("lang","cn")=="en":
-                GongShang.objects.filter(
-                    pk=form.get("pk",0)).update(
-                    title_en=title,
-                    desc_en=desc,
-                    content_en=content,
-                    thumbnail_en=thumbnail,
-                    pub_time=pub_time,
-                    category=category)
-            else:
-                News.objects.filter(
-                    pk=pk).update(
-                    title=title,
-                    desc=desc,
-                    thumbnail=thumbnail,
-                    content=content,
-                    pub_time=pub_time,
-                    category=category)
+            #if form.get("lang","cn")=="en":
+            GongShang.objects.filter(
+                pk=form.get("pk",0)).update(
+                legalPersonName=form.get("legalPersonName",""),
+                businessScope=form.get("businessScope",""))
+            
+            Desc.objects.filter(
+                xn_href=form.get("code","")).update(
+                desc=form.get("desc",""),
+                email=form.get("email",""),
+                address=form.get("address",""),
+                company_url=form.get("company_url",""),
+                phone=form.get("phone",""))
+                
+            # else:
+            #     GongShang.objects.filter(
+            #         pk=form.get("pk",0)).update(
+            #         legalPersonName=form.get("legalPersonName",""),
+            #         businessScope=form.get("businessScope",""))
            
             return restful.ok()
         else:

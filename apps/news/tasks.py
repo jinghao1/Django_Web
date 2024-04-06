@@ -30,6 +30,8 @@ def to_translate(query):
     # Set your own appid/appkey.
     appid = '20231202001899147'
     appkey = 'ciZbPXWbkBQnm2wAuk9U'
+    #  litianshu   APP ID：20240225001972867
+    # 密钥：SL45TUTOvWDh74tDlvyB
 
     # For list of language codes, please refer to `https://api.fanyi.baidu.com/doc/21`
     from_lang = 'zh'

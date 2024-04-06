@@ -48,8 +48,9 @@ def company_detail(request, xn_href):
                 content = re.findall(r'__NEXT_DATA__ = (.*?);__NEXT_LOADED_PAGES__=', page_text)
                 cont = json.loads(content[0])
                 # company desc
-                com_info = cont["props"]["pageProps"]["company"]
+                # com_info = cont["props"]["pageProps"]["company"]
                 gongshang_str = cont["props"].get("pageProps",{}).get("gongshang","{}")
+                com_info = cont["props"].get("pageProps",{}).get("company",{})
                 if gongshang_str:
                     gongshang = json.loads(gongshang_str)
                 else:
@@ -62,16 +63,16 @@ def company_detail(request, xn_href):
                     cityName = com_info.get("cityName", "") + ">" + str(com_info.get("districtName", ""))
                 # 企业描述
                 Desc.objects.update_or_create(defaults={
-                    "name": com_info["name"],
+                    "name": com_info.get("name",""),
                     "xn_href": xn_href,
-                    "brief": com_info["brief"],
-                    "desc": com_info["desc"],
-                    "roundName": com_info.get("roundName",""),
+                    "brief": com_info.get("brief","") ,
+                    "desc": com_info.get("desc","")  ,
+                    "roundName": com_info.get("roundName","")  ,
                     "cityName": cityName,
-                    "establishDate": datetime.date.fromtimestamp(com_info["establishDate"] / 1000),
-                    "img_url": com_info['logo'],
-                    "company_url": com_info['website'],
-                    "phone": contact_info.get("telephone", ""),
+                    "establishDate": datetime.date.fromtimestamp( com_info.get("establishDate",0) / 1000),
+                    "img_url": com_info.get("logo","")  ,
+                    "company_url" : com_info.get("website","")  ,
+                    "phone":  contact_info.get("telephone", ""),
                     "email": contact_info.get("email", ""),
                     "address": contact_info.get("address", ""),
                 }, xn_href=xn_href)
@@ -79,12 +80,12 @@ def company_detail(request, xn_href):
                 if gongshang:
                     GongShang.objects.update_or_create(
                         defaults={
-                            "code": com_info["code"],
+                            "code": com_info.get("code","") ,
                             "xn_href": xn_href,
-                            "fullName": com_info["fullName"],
-                            "legalPersonName": gongshang.get("legalPersonName"),  # 法人
+                            "fullName": com_info.get("fullName","") ,
+                            "legalPersonName": gongshang.get("legalPersonName",""),  # 法人
                             "establishTime": datetime.date.fromtimestamp(gongshang.get("establishTime", 0) / 1000),  # 成立时间
-                            "businessScope": gongshang['businessScope'],  # 工商描述
+                            "businessScope": gongshang.get("businessScope", "") ,  # 工商描述
                             "regCapital": gongshang.get("regCapital", ""),  # 注册资本
                             "regStatus": gongshang.get("regStatus", ""),  # 经营状态
                             "date": datetime.date.fromtimestamp(time.time()),
@@ -92,8 +93,8 @@ def company_detail(request, xn_href):
                     )
                 # 融资历程
                 # print("rongzi......")
-                licheng = cont["props"]["pageProps"]["fundings"]
-                for licheng in cont["props"]["pageProps"]["fundings"]:
+                # licheng = cont["props"]["pageProps"].get("fundings",{})
+                for licheng in cont["props"]["pageProps"].get("fundings",{}):
                     fundingDesc = json.loads(licheng["fundingDesc"])
                     xn_id = str(licheng.get("id", "1"))
                     if fundingDesc.get("investorStr", None) is None:
@@ -119,7 +120,7 @@ def company_detail(request, xn_href):
                         }, xn_href=xn_href, xn_id=xn_id
                     )
                     # 标签画像 优势 行业分类
-                tileTagListArr = cont["props"]["pageProps"]["tileTagList"]
+                tileTagListArr = cont["props"]["pageProps"].get("tileTagList",{})
                 tag_arr_hy = []
                 tag_arr_ys = []
                 for item in tileTagListArr:
