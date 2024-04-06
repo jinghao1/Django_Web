@@ -804,7 +804,7 @@
         /* <![CDATA[ */
         var epInstantResults = {
             "disclosureButton": "#search-toggle",
-            "apiEndpoint": "/hs/search?lang={{ lang }}",
+            "apiEndpoint": "/hs/search",
             "apiHost": "",
             "argsSchema": {
                 "context": {
@@ -837,6 +837,11 @@
                     "type": "string",
                     "sanitize_callback": "sanitize_text_field",
                     "validate_callback": "rest_validate_request_arg"
+                },
+                "lang": {
+                    "description": "lang",
+                    "type": "string",
+                    "default": {{ lang }}
                 },
                 "type": {
                     "default": "post",
