@@ -6,6 +6,9 @@
         width: 1200px;
         margin: 0 auto 50px;
     }
+    .en_content_left_100{
+        margin-left:100px;
+    }
 
 </style>
 
@@ -80,11 +83,11 @@
                                     <section id="tagInfo" class="jsx-3367680878" style="margin-top: 16px;">
                                         <div class="jsx-3367680878 name"><img src="{% static 'xn_source/tag.png' %}"
                                                                               class="jsx-3367680878 header-icon"><span
-                                                class="jsx-3367680878">标签画像</span></div>
+                                                class="jsx-3367680878">Label Portrait</span></div>
 
                                         <div class="jsx-3618975690 portrait-section">
                                             <div class="jsx-2477992176 portrait"><label
-                                                    class="jsx-2477992176">公司优势：</label>
+                                                    class="jsx-2477992176">Company Advantages：</label>
                                                 <div class="jsx-2477992176 portrait-tag">
                                                     {% for name in hx_info.youshi %}
                                                         <a class="jsx-3112032488 tag-border  yellow-tag">{{ name }}</a>
@@ -94,7 +97,7 @@
                                                 </div>
                                             </div>
                                             <div class="jsx-2477992176 portrait"><label
-                                                    class="jsx-2477992176">行业标签：</label>
+                                                    class="jsx-2477992176">Industry Labels：</label>
                                                 <div class="jsx-2477992176 portrait-tag">
                                                     {% for name in hx_info.fenlei %}
                                                         <span class="jsx-3112032488 tag-border ">{{ name }}</span>
@@ -120,25 +123,25 @@
                                         <div class="jsx-1025698136 section-body">
                                             <div class="jsx-1025698136 column"><span
                                                     class="jsx-1025698136 title">Company Name：</span><span
-                                                    class="jsx-1025698136 content">{{ gs_info.fullName_en }}</span></div>
+                                                    class="jsx-1025698136 content en_content_left_100">{{ gs_info.fullName_en }}</span></div>
                                             <div class="jsx-1025698136 column"><span
                                                     class="jsx-1025698136 title">Legal Representative：</span><span
-                                                    class="jsx-1025698136 content">{{ gs_info.legalPersonName_en }}</span>
+                                                    class="jsx-1025698136 content en_content_left_100">{{ gs_info.legalPersonName_en }}</span>
                                             </div>
                                             <div class="jsx-1025698136 column"><span
                                                     class="jsx-1025698136 title">Registration Time：</span><span
-                                                    class="jsx-1025698136 content">{{ desc_info.establishDate }}</span>
+                                                    class="jsx-1025698136 content en_content_left_100">{{ desc_info.establishDate }}</span>
                                             </div>
                                             <div class="jsx-1025698136 column"><span
                                                     class="jsx-1025698136 title">Business Description：</span><span
-                                                    class="jsx-1025698136 content">{{ gs_info.businessScope_en }}</span>
+                                                    class="jsx-1025698136 content en_content_left_100">{{ gs_info.businessScope_en }}</span>
                                             </div>
                                             <div class="jsx-1025698136 column"><span
                                                     class="jsx-1025698136 title">Registered Capital：</span><span
-                                                    class="jsx-1025698136 content">{{ gs_info.regCapital_en }}</span></div>
+                                                    class="jsx-1025698136 content en_content_left_100">{{ gs_info.regCapital_en }}</span></div>
                                             <div class="jsx-1025698136 column"><span
                                                     class="jsx-1025698136 title">Business Status：</span><span
-                                                    class="jsx-1025698136 content">{{ gs_info.regStatus_en }}</span></div>
+                                                    class="jsx-1025698136 content en_content_left_100">{{ gs_info.regStatus_en }}</span></div>
 
                                         </div>
                                     </section>

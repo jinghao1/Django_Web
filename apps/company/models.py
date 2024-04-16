@@ -44,7 +44,9 @@ class GongShang(models.Model):
 class HuaXiang(models.Model):
     """定义一个企业画像"""
     youshi = models.CharField(max_length=255)
+    youshi_en = models.CharField(max_length=255)
     fenlei = models.TextField()
+    fenlei_en = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
     xn_href = models.CharField(max_length=255)
     date = models.DateTimeField(auto_now_add=True)

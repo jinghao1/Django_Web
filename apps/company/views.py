@@ -91,7 +91,7 @@ def company_detail(request, xn_href):
                             "fullName": com_info.get("fullName", ""),
                             "fullName_en": field_content_to_translate(com_info.get("fullName", "")) ,
                             "legalPersonName": gongshang.get("legalPersonName", ""),  # 法人
-                            "legalPersonName": field_content_to_translate(gongshang.get("legalPersonName", "")),  # 法人
+                            "legalPersonName_en": field_content_to_translate(gongshang.get("legalPersonName", "")),  # 法人
                             "establishTime": datetime.date.fromtimestamp(gongshang.get("establishTime", 0) / 1000),
                             # 成立时间
                             "businessScope": gongshang.get("businessScope", ""),  # 工商描述
@@ -140,11 +140,15 @@ def company_detail(request, xn_href):
                         tag_arr_ys.append(item['name'])
                     else:
                         tag_arr_hy.append(item['name'])
+                youshi = " ".join(tag_arr_ys)
+                fenlei = " ".join(tag_arr_hy)
                 HuaXiang.objects.update_or_create(
                     defaults={
                         "xn_href": xn_href,
-                        "youshi": " ".join(tag_arr_ys),  # 优势
-                        "fenlei": " ".join(tag_arr_hy),  # 行业
+                        "youshi": youshi,  # 优势
+                        "youshi_en": field_content_to_translate(youshi),  # 优势
+                        "fenlei": fenlei,  # 行业
+                        "fenlei_en": field_content_to_translate(fenlei),  # 行业
                         "date": datetime.date.fromtimestamp(time.time()),  # 录入时间
                     }, xn_href=xn_href
                 )
