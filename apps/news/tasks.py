@@ -57,6 +57,8 @@ def to_translate(query):
 
 
 def field_content_to_translate(trans_content):
+    if not trans_content:
+        return trans_content
     en_con = copy.deepcopy(trans_content)
     before_trans = re.findall(r'[\u4e00-\u9fa5]+', trans_content)
     line_ind = 0

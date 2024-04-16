@@ -61,26 +61,26 @@ def company_detail(request, xn_href):
                     cityName = com_info.get("cityName", "")
                 else:
                     cityName = com_info.get("cityName", "") + ">" + str(com_info.get("districtName", ""))
-                # 企业描述
-                com_desc = com_info.get("desc", "")
-                if com_desc and lang == "en":
-                    com_desc_en = field_content_to_translate(com_desc)
-                else:
-                    com_desc_en = ""
+
                 Desc.objects.update_or_create(defaults={
                     "name": com_info.get("name", ""),
+                    "name_en": field_content_to_translate(com_info.get("name", "")),
                     "xn_href": xn_href,
                     "brief": com_info.get("brief", ""),
-                    "desc": com_desc,
-                    "desc_en": com_desc_en,
+                    "brief_en": field_content_to_translate(com_info.get("brief", "")),
+                    "desc": com_info.get("desc", ""),
+                    "desc_en":  field_content_to_translate(com_info.get("desc", "")),
                     "roundName": com_info.get("roundName", ""),
+                    "roundName_en": field_content_to_translate(com_info.get("roundName", "")),
                     "cityName": cityName,
+                    "cityName_en": field_content_to_translate(cityName),
                     "establishDate": datetime.date.fromtimestamp(com_info.get("establishDate", 0) / 1000),
                     "img_url": com_info.get("logo", ""),
                     "company_url": com_info.get("website", ""),
                     "phone": contact_info.get("telephone", ""),
                     "email": contact_info.get("email", ""),
                     "address": contact_info.get("address", ""),
+                    "address_en": field_content_to_translate(contact_info.get("address", "")),
                 }, xn_href=xn_href)
                 # 工商信息写入
                 if gongshang:
@@ -89,12 +89,17 @@ def company_detail(request, xn_href):
                             "code": com_info.get("code", ""),
                             "xn_href": xn_href,
                             "fullName": com_info.get("fullName", ""),
+                            "fullName_en": field_content_to_translate(com_info.get("fullName", "")) ,
                             "legalPersonName": gongshang.get("legalPersonName", ""),  # 法人
+                            "legalPersonName": field_content_to_translate(gongshang.get("legalPersonName", "")),  # 法人
                             "establishTime": datetime.date.fromtimestamp(gongshang.get("establishTime", 0) / 1000),
                             # 成立时间
                             "businessScope": gongshang.get("businessScope", ""),  # 工商描述
+                            "businessScope_en": field_content_to_translate(gongshang.get("businessScope", "")),  # 工商描述
                             "regCapital": gongshang.get("regCapital", ""),  # 注册资本
+                            "regCapital_en": field_content_to_translate(gongshang.get("regCapital", "")),  # 注册资本
                             "regStatus": gongshang.get("regStatus", ""),  # 经营状态
+                            "regStatus_en": field_content_to_translate(gongshang.get("regStatus", "")),  # 经营状态
                             "date": datetime.date.fromtimestamp(time.time()),
                         }, xn_href=xn_href
                     )
