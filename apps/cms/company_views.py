@@ -162,11 +162,11 @@ class DelPubCompany(View):
     def post(self, request):
         """删除公司"""
         pk = request.POST.get('pk')
-        news = GongShang.objects.filter(pk=pk)
-        Desc.objects.filter(xn_href=news.values("xn_href")).delete()
-        HuaXiang.objects.filter(xn_href=news.values("xn_href")).delete()
-        RongZi.objects.filter(xn_href=news.values("xn_href")).delete()
-        news.delete()
-        logger.warning('删除公司%s!' % news.values('fullName'))
+        gs_info = GongShang.objects.get(pk=pk)
+        Desc.objects.filter(xn_href=gs_info.xn_href).delete()
+        HuaXiang.objects.filter(xn_href=gs_info.xn_href).delete()
+        RongZi.objects.filter(xn_href=gs_info.xn_href).delete()
+        gs_info.delete()
+        logger.warning('删除公司%s!' % gs_info.fullName)
 
         return restful.ok()
