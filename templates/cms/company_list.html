@@ -1,7 +1,7 @@
 {% extends 'cms/base.html' %}
 {% load news_filters %}
 {% block title %}
-    文章管理
+    公司管理
 {% endblock %}
 
 {% block head %}
@@ -21,7 +21,7 @@
     <script src="{% static 'adminlte/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js' %}"></script>
     {# 导入中文文件 其中：zh-CN.min.js必须在bootstrip-datepicker.js文件后面 #}
     <script src="{% static 'adminlte/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-CN.min.js' %}"></script>
-    <script src="{% static 'js/cms_news_list.js' %}"></script>
+    <script src="{% static 'js/cms_company_list.js' %}"></script>
 {% endblock %}
 
 {% block content-header %}
@@ -51,7 +51,7 @@
                 <button class="btn btn-primary">查询</button>
             </div>
             <div class="form-group left-group">
-                <a href="{% url 'cms:news_list' %}">清除查询</a>
+                <a href="{% url 'cms:company_list' %}">清除查询</a>
             </div>
         </form>
     </div>
@@ -77,7 +77,7 @@
                             {# 使用这种形式传递参数/edit_news/?pk=? #}
                             <a href="{% url 'cms:company_edit' %}?pk={{ com.pk }}" class="btn btn-info btn-xs">编辑</a>
                             <a href="{% url 'cms:company_edit' %}?pk={{ com.pk }}&lang=en" class="btn btn-info btn-xs">英文编辑</a>
-                            <button class="btn btn-danger btn-xs delete-btn" data-news-id="{{ com.pk }}">删除</button>
+                            <button class="btn btn-danger btn-xs delete-btn" data-company-id="{{ com.pk }}">删除</button>
                             {# 绑定pk,可以直接在前后端获取 #}
                         </td>
                     </tr>

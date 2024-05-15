@@ -8,7 +8,7 @@ from django.core.paginator import Paginator  # django自带分页处理
 from apps.xfzauth.decorators import xfz_permission_required
 # from apps.course.serializers import TeacherSerializers
 # from apps.course.models import CourseCategory, Teacher, Course
-from apps.company.models import Desc,GongShang
+from apps.company.models import Desc,GongShang,HuaXiang,RongZi
 from .forms import AddCourseForm, EditCoursesCategoryForm  # 导入需要的form表单
 from utils import restful  # 导入返回信息判断文件
 
@@ -150,12 +150,23 @@ class EditPubCompany(View):
                 company_url=form.get("company_url",""),
                 phone=form.get("phone",""))
                 
-            # else:
-            #     GongShang.objects.filter(
-            #         pk=form.get("pk",0)).update(
-            #         legalPersonName=form.get("legalPersonName",""),
-            #         businessScope=form.get("businessScope",""))
-           
+
             return restful.ok()
         else:
             return restful.params_error(form.get_error())
+
+
+@method_decorator(login_required, name='dispatch')
+class DelPubCompany(View):
+
+    def post(self, request):
+        """删除公司"""
+        pk = request.POST.get('pk')
+        news = GongShang.objects.filter(pk=pk)
+        Desc.objects.filter(xn_href=news.values("xn_href")).delete()
+        HuaXiang.objects.filter(xn_href=news.values("xn_href")).delete()
+        RongZi.objects.filter(xn_href=news.values("xn_href")).delete()
+        news.delete()
+        logger.warning('删除公司%s!' % news.values('fullName'))
+
+        return restful.ok()
