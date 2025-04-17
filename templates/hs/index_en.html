@@ -16,7 +16,8 @@
 
                 <h1 class="hero__title hero__title--animated">Always be <span class="blue_bold">Able</span> and <span
                         class="blue_bold">Humble</span> to World<br>
-                    Bridge the world, and Accompany Entrepreneur and Family through Cycles
+                    Focus on serving entrepreneurs and investors in the semiconductor, AI, and robotics fields.
+
                 </h1>
 
 
@@ -29,7 +30,8 @@
                 <div class="grid__instances" data-grid-columns="12">
                     {% for news in newses %}
                     {% if forloop.counter0 in smalles %}
-                    <div class="grid__instance aos-init" data-size="sm" data-aos="fade-in" data-aos-duration="1000"
+                    {% else %}
+                    <!-- <div class="grid__instance aos-init" data-size="lg" data-aos="fade-in" data-aos-duration="1000"
                         data-aos-delay="100">
                         <div class="grid__content"><a class="ink" style="background-color:#1b1916;"
                                 href="{% url 'news:news_detail' news_id=news.pk %}?&lang=en">
@@ -58,9 +60,9 @@
                                     </div>
                                 </div>
                             </a></div>
-                    </div>
+                    </div> -->
 
-                    {% else %}
+                    {% endif %}
 
 
                     <div class="grid__instance aos-init aos-animate" data-size="lg" data-aos="fade-in"
@@ -92,7 +94,7 @@
                                 </div>
                             </a></div>
                     </div>
-                    {% endif %}
+                
 
                     {% endfor %}
 
@@ -104,7 +106,7 @@
 
 
     <article id="about_us" class="content is-layout-constrained has-global-padding wysiwyg">
-        <div class="container_sj">
+        <!-- <div class="container_sj">
 
             <div class="column_sj column_sj-1"></div>
             <div class="column_sj column_sj-2">
@@ -122,7 +124,7 @@
 
 
             </div>
-        </div>
+        </div> -->
         <div class="container_sj">
 
             <div class="column_sj">
@@ -236,7 +238,8 @@
         </h4>
         <h4></h4>
         <h4>
-            <bold>Mission : </bold>Bridge the world, and Accompany Entrepreneur and Family through Cycles
+            <bold>Mission : </bold>Focus on serving entrepreneurs and investors in the semiconductor, AI, and robotics fields.
+
         </h4>
 
     </article>

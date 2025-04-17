@@ -19,7 +19,7 @@
                 {% else %}
                 <h1 class="hero__title hero__title--animated">巍巍中<span class="blue_bold">华</span>, 和光同<span
                     class="blue_bold">尘</span>
-                    <br>成为中国与世界的桥梁，陪伴企业和家族穿越周期 <br>
+                    <br>专注服务半导体,AI,机器人领域的创业者和投资人 <br>
                     <!-- <span class="hero__animation-container">产业界的「参天大树」<svg
                             preserveAspectRatio="none" viewBox="0 0 595 97" fill="none"
                             xmlns="http://www.w3.org/2000/svg" class="hero__animation hero__animation">
@@ -37,7 +37,7 @@
         <div class="ink-collection">
             <div class="ink-collection__grid grid">
                 <div class="grid__instances" data-grid-columns="12">
-                    <div class="grid__instance aos-init aos-animate" data-size="lg" data-aos="fade-in"
+                    <!-- <div class="grid__instance aos-init aos-animate" data-size="lg" data-aos="fade-in"
                     data-aos-duration="1000" data-aos-delay="100">
                         <div class="grid__content"><a class="ink" style="background-color:#1b1916;"
                                 href="{% url 'xfzauth:project_register'   %}">
@@ -57,11 +57,13 @@
                                     </div>
                                 </div>
                             </a></div>
-                </div>
+                    </div> -->
 
                     {% for news in newses %}
                     {% if forloop.counter0 in smalles %}
-                    <div class="grid__instance aos-init" data-size="sm" data-aos="fade-in" data-aos-duration="1000"
+                    <!-- <div class="grid__instance aos-init" data-size="sm" data-aos="fade-in" data-aos-duration="1000"
+                        data-aos-delay="100"> -->
+                               <div class="grid__instance aos-init" data-size="lg" data-aos="fade-in" data-aos-duration="1000"
                         data-aos-delay="100">
                         <div class="grid__content"><a class="ink" style="background-color:#1b1916;"
                                 href="{% url 'news:news_detail' news_id=news.pk %}">
@@ -119,7 +121,7 @@
     </article>
 
     <article id="about_us" class="content is-layout-constrained has-global-padding wysiwyg">
-        <div class="container_sj">
+        <!-- <div class="container_sj">
 
             <div class="column_sj column_sj-1"></div>
             <div class="column_sj column_sj-1">
@@ -137,7 +139,7 @@
 
 
             </div>
-        </div>
+        </div> -->
         <div class="container_sj">
 
             <div class="column_sj">
@@ -249,7 +251,7 @@
         </h4>
         <h4></h4>
         <h4>
-            <bold>使命：</bold>成为中国与世界的桥梁，陪伴企业和家族穿越周期
+            <bold>使命：</bold>专注服务半导体,AI,机器人领域的创业者和投资人
         </h4>
 
     </article>

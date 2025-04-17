@@ -9,7 +9,7 @@
     <main class="main" id="main">
         <article class="content content--padded-top has-global-padding is-layout-constrained wysiwyg">
             {% if lang == "en" %}
-                <section class="wp-block-mg-hero-stack hero-stack"><h1 class="hero-stack__title">{{ news.title_en }}</h1>
+                <section class="wp-block-mg-hero-stack hero-stack"><h3 class="hero-stack__title">{{ news.title_en }}</h3>
                     {% if news.desc_en %}
                         <div class="hero-stack__paragraph"><p>{{ news.desc_en }}</p></div>
                     {% endif %}
@@ -23,7 +23,7 @@
                     {{ news.content_en|safe }}
                 </section>
             {% else %}
-                <section class="wp-block-mg-hero-stack hero-stack"><h1 class="hero-stack__title">{{ news.title }}</h1>
+                <section class="wp-block-mg-hero-stack hero-stack"><h3 class="hero-stack__title">{{ news.title }}</h3>
                     {% if news.desc %}
                         <div class="hero-stack__paragraph"><p>{{ news.desc }}</p></div>
                     {% endif %}

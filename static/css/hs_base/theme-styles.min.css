@@ -12852,7 +12852,7 @@ figure.block-editor-block-list__block.wp-block-gallery {
 
 @media (min-width: 1920px) {
     .hero-stack {
-        padding-top: 20.8rem
+        /* padding-top: 20.8rem */
     }
 }
 
@@ -12869,13 +12869,13 @@ figure.block-editor-block-list__block.wp-block-gallery {
 
 .hero-stack__title {
     font-family: Unica, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, FZLanTingHeiS, sans-serif;
-    font-size: clamp(4rem, 1.8873239437rem + 5.6338028169vw, 10rem);
+    font-size: clamp(4rem, 1.8873239437rem + 5.6338028169vw, 6rem);
     line-height: 1.1
 }
 
 @media (min-width: 375px) {
     .hero-stack__title {
-        max-width: clamp(33rem, 10.4647887324rem + 60.0938967136vw, 97rem)
+        /* max-width: clamp(33rem, 10.4647887324rem + 60.0938967136vw, 97rem) */
     }
 }
 
@@ -12906,7 +12906,7 @@ figure.block-editor-block-list__block.wp-block-gallery {
 
 @media (min-width: 375px) {
     .hero-stack__paragraph {
-        max-width: clamp(33rem, 24.1971830986rem + 23.4741784038vw, 58rem)
+        /* max-width: clamp(33rem, 24.1971830986rem + 23.4741784038vw, 58rem) */
     }
 }
 
