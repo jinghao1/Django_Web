@@ -7806,7 +7806,7 @@ body {
 }
 
 .footer {
-    background-color: #00a33a;
+    background-color: rgb(221, 168, 89);
     color: hsla(0, 0%, 100%, .8);
     font-family: Unica, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, FZLanTingHeiS, sans-serif;
     margin-top: auto;
